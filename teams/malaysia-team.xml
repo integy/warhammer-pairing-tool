@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<team>
+    <name>Malaysia</name>
+    <players>
+        <player>
+            <name>Adeptus Mechanicus</name>
+            <army>Adeptus Mechanicus</army>
+            <scores>
+                <score opponent="Tyranids">-1</score>
+                <score opponent="Grey Knights">-1</score>
+                <score opponent="Custodes">-1</score>
+                <score opponent="Orks">-1</score>
+                <score opponent="Imperial Knights">-1</score>
+                <score opponent="Aeldari">-1</score>
+                <score opponent="Thousand Sons">-1</score>
+            </scores>
+        </player>
+        <player>
+            <name>Tyranids</name>
+            <army>Tyranids</army>
+            <scores>
+                <score opponent="Adeptus Mechanicus">-1</score>
+                <score opponent="Grey Knights">-1</score>
+                <score opponent="Custodes">-1</score>
+                <score opponent="Orks">-1</score>
+                <score opponent="Imperial Knights">-1</score>
+                <score opponent="Aeldari">-1</score>
+                <score opponent="Thousand Sons">-1</score>
+            </scores>
+        </player>
+        <player>
+            <name>Grey Knights</name>
+            <army>Grey Knights</army>
+            <scores>
+                <score opponent="Adeptus Mechanicus">-1</score>
+                <score opponent="Tyranids">-1</score>
+                <score opponent="Custodes">-1</score>
+                <score opponent="Orks">-1</score>
+                <score opponent="Imperial Knights">-1</score>
+                <score opponent="Aeldari">-1</score>
+                <score opponent="Thousand Sons">-1</score>
+            </scores>
+        </player>
+        <player>
+            <name>Custodes</name>
+            <army>Custodes</army>
+            <scores>
+                <score opponent="Adeptus Mechanicus">-1</score>
+                <score opponent="Tyranids">-1</score>
+                <score opponent="Grey Knights">-1</score>
+                <score opponent="Orks">-1</score>
+                <score opponent="Imperial Knights">-1</score>
+                <score opponent="Aeldari">-1</score>
+                <score opponent="Thousand Sons">-1</score>
+            </scores>
+        </player>
+        <player>
+            <name>Orks</name>
+            <army>Orks</army>
+            <scores>
+                <score opponent="Adeptus Mechanicus">-1</score>
+                <score opponent="Tyranids">-1</score>
+                <score opponent="Grey Knights">-1</score>
+                <score opponent="Custodes">-1</score>
+                <score opponent="Imperial Knights">-1</score>
+                <score opponent="Aeldari">-1</score>
+                <score opponent="Thousand Sons">-1</score>
+            </scores>
+        </player>
+        <player>
+            <name>Imperial Knights</name>
+            <army>Imperial Knights</army>
+            <scores>
+                <score opponent="Adeptus Mechanicus">-1</score>
+                <score opponent="Tyranids">-1</score>
+                <score opponent="Grey Knights">-1</score>
+                <score opponent="Custodes">-1</score>
+                <score opponent="Orks">-1</score>
+                <score opponent="Aeldari">-1</score>
+                <score opponent="Thousand Sons">-1</score>
+            </scores>
+        </player>
+        <player>
+            <name>Aeldari</name>
+            <army>Aeldari</army>
+            <scores>
+                <score opponent="Adeptus Mechanicus">-1</score>
+                <score opponent="Tyranids">-1</score>
+                <score opponent="Grey Knights">-1</score>
+                <score opponent="Custodes">-1</score>
+                <score opponent="Orks">-1</score>
+                <score opponent="Imperial Knights">-1</score>
+                <score opponent="Thousand Sons">-1</score>
+            </scores>
+        </player>
+        <player>
+            <name>Thousand Sons</name>
+            <army>Thousand Sons</army>
+            <scores>
+                <score opponent="Adeptus Mechanicus">-1</score>
+                <score opponent="Tyranids">-1</score>
+                <score opponent="Grey Knights">-1</score>
+                <score opponent="Custodes">-1</score>
+                <score opponent="Orks">-1</score>
+                <score opponent="Imperial Knights">-1</score>
+                <score opponent="Aeldari">-1</score>
+            </scores>
+        </player>
+    </players>
+</team>
