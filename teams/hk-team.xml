@@ -17,7 +17,7 @@
         </player>
         <player>
             <name>Terrence</name>
-            <army>Adeptus Mechanicus</army>
+            <army>Sisters</army>
             <scores>
                 <score opponent="Kris">2.5</score>
                 <score opponent="Ivan">4.0</score>
@@ -30,7 +30,7 @@
         </player>
         <player>
             <name>Kris</name>
-            <army>Drukhari</army>
+            <army>Death Guard</army>
             <scores>
                 <score opponent="Eric">2.0</score>
                 <score opponent="Ivan">3.5</score>
@@ -43,7 +43,7 @@
         </player>
         <player>
             <name>Ivan</name>
-            <army>Votann</army>
+            <army>Thousand Sons</army>
             <scores>
                 <score opponent="Eric">3.5</score>
                 <score opponent="Kris">4.0</score>
@@ -56,7 +56,7 @@
         </player>
         <player>
             <name>Jireh</name>
-            <army>Death Guard</army>
+            <army>Necrons</army>
             <scores>
                 <score opponent="Eric">2.5</score>
                 <score opponent="Kris">1.5</score>
@@ -69,7 +69,7 @@
         </player>
         <player>
             <name>Kevin</name>
-            <army>Black Templars</army>
+            <army>World Eaters</army>
             <scores>
                 <score opponent="Eric">3.0</score>
                 <score opponent="Kris">4.5</score>
@@ -82,7 +82,7 @@
         </player>
         <player>
             <name>Quentin</name>
-            <army>Orks</army>
+            <army>Chaos Space Marine</army>
             <scores>
                 <score opponent="Eric">2.0</score>
                 <score opponent="Kris">3.5</score>
@@ -95,7 +95,7 @@
         </player>
         <player>
             <name>Gabrielle</name>
-            <army>World Eaters</army>
+            <army>Imperial Guard</army>
             <scores>
                 <score opponent="Eric">4.0</score>
                 <score opponent="Kris">2.5</score>
