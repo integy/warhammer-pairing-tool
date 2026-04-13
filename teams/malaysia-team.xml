@@ -3,107 +3,115 @@
     <name>Malaysia</name>
     <players>
         <player>
-            <name>Adeptus Mechanicus</name>
-            <army>Adeptus Mechanicus</army>
+            <name>Necrons - Canoptek Court</name>
+            <army>Necrons</army>
             <scores>
-                <score opponent="Tyranids">-1</score>
-                <score opponent="Grey Knights">-1</score>
-                <score opponent="Custodes">-1</score>
-                <score opponent="Orks">-1</score>
-                <score opponent="Imperial Knights">-1</score>
-                <score opponent="Aeldari">-1</score>
-                <score opponent="Thousand Sons">-1</score>
+                <score opponent="Eric">3</score>
+                <score opponent="Gabrielle">3</score>
+                <score opponent="Ivan">0</score>
+                <score opponent="Jireh">0</score>
+                <score opponent="Kevin">3</score>
+                <score opponent="Terrence">2</score>
+                <score opponent="Quentin">0</score>
+                <score opponent="Kris">1</score>
             </scores>
         </player>
         <player>
-            <name>Tyranids</name>
-            <army>Tyranids</army>
+            <name>CSM - Pactbound Zealots</name>
+            <army>Chaos Space Marines</army>
             <scores>
-                <score opponent="Adeptus Mechanicus">-1</score>
-                <score opponent="Grey Knights">-1</score>
-                <score opponent="Custodes">-1</score>
-                <score opponent="Orks">-1</score>
-                <score opponent="Imperial Knights">-1</score>
-                <score opponent="Aeldari">-1</score>
-                <score opponent="Thousand Sons">-1</score>
+                <score opponent="Eric">2.5</score>
+                <score opponent="Gabrielle">3.5</score>
+                <score opponent="Ivan">0</score>
+                <score opponent="Jireh">0</score>
+                <score opponent="Kevin">0</score>
+                <score opponent="Terrence">3</score>
+                <score opponent="Quentin">0</score>
+                <score opponent="Kris">2.5</score>
             </scores>
         </player>
         <player>
-            <name>Grey Knights</name>
-            <army>Grey Knights</army>
+            <name>Tau - Mont'ka</name>
+            <army>Tau</army>
             <scores>
-                <score opponent="Adeptus Mechanicus">-1</score>
-                <score opponent="Tyranids">-1</score>
-                <score opponent="Custodes">-1</score>
-                <score opponent="Orks">-1</score>
-                <score opponent="Imperial Knights">-1</score>
-                <score opponent="Aeldari">-1</score>
-                <score opponent="Thousand Sons">-1</score>
+                <score opponent="Eric">3.5</score>
+                <score opponent="Gabrielle">3</score>
+                <score opponent="Ivan">0</score>
+                <score opponent="Jireh">0</score>
+                <score opponent="Kevin">0</score>
+                <score opponent="Terrence">3</score>
+                <score opponent="Quentin">0</score>
+                <score opponent="Kris">0</score>
             </scores>
         </player>
         <player>
-            <name>Custodes</name>
-            <army>Custodes</army>
-            <scores>
-                <score opponent="Adeptus Mechanicus">-1</score>
-                <score opponent="Tyranids">-1</score>
-                <score opponent="Grey Knights">-1</score>
-                <score opponent="Orks">-1</score>
-                <score opponent="Imperial Knights">-1</score>
-                <score opponent="Aeldari">-1</score>
-                <score opponent="Thousand Sons">-1</score>
-            </scores>
-        </player>
-        <player>
-            <name>Orks</name>
-            <army>Orks</army>
-            <scores>
-                <score opponent="Adeptus Mechanicus">-1</score>
-                <score opponent="Tyranids">-1</score>
-                <score opponent="Grey Knights">-1</score>
-                <score opponent="Custodes">-1</score>
-                <score opponent="Imperial Knights">-1</score>
-                <score opponent="Aeldari">-1</score>
-                <score opponent="Thousand Sons">-1</score>
-            </scores>
-        </player>
-        <player>
-            <name>Imperial Knights</name>
-            <army>Imperial Knights</army>
-            <scores>
-                <score opponent="Adeptus Mechanicus">-1</score>
-                <score opponent="Tyranids">-1</score>
-                <score opponent="Grey Knights">-1</score>
-                <score opponent="Custodes">-1</score>
-                <score opponent="Orks">-1</score>
-                <score opponent="Aeldari">-1</score>
-                <score opponent="Thousand Sons">-1</score>
-            </scores>
-        </player>
-        <player>
-            <name>Aeldari</name>
-            <army>Aeldari</army>
-            <scores>
-                <score opponent="Adeptus Mechanicus">-1</score>
-                <score opponent="Tyranids">-1</score>
-                <score opponent="Grey Knights">-1</score>
-                <score opponent="Custodes">-1</score>
-                <score opponent="Orks">-1</score>
-                <score opponent="Imperial Knights">-1</score>
-                <score opponent="Thousand Sons">-1</score>
-            </scores>
-        </player>
-        <player>
-            <name>Thousand Sons</name>
+            <name>TSS - Warpforged Cabal</name>
             <army>Thousand Sons</army>
             <scores>
-                <score opponent="Adeptus Mechanicus">-1</score>
-                <score opponent="Tyranids">-1</score>
-                <score opponent="Grey Knights">-1</score>
-                <score opponent="Custodes">-1</score>
-                <score opponent="Orks">-1</score>
-                <score opponent="Imperial Knights">-1</score>
-                <score opponent="Aeldari">-1</score>
+                <score opponent="Eric">3</score>
+                <score opponent="Gabrielle">3.5</score>
+                <score opponent="Ivan">0</score>
+                <score opponent="Jireh">0</score>
+                <score opponent="Kevin">0</score>
+                <score opponent="Terrence">3.5</score>
+                <score opponent="Quentin">0</score>
+                <score opponent="Kris">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>EC - Coterie of the Conceited</name>
+            <army>Drukhari</army>
+            <scores>
+                <score opponent="Eric">3.5</score>
+                <score opponent="Gabrielle">3</score>
+                <score opponent="Ivan">0</score>
+                <score opponent="Jireh">0</score>
+                <score opponent="Kevin">0</score>
+                <score opponent="Terrence">3.5</score>
+                <score opponent="Quentin">0</score>
+                <score opponent="Kris">4</score>
+            </scores>
+        </player>
+        <player>
+            <name>Deathwatch - Black Spear Task Force</name>
+            <army>Deathwatch</army>
+            <scores>
+                <score opponent="Eric">1</score>
+                <score opponent="Gabrielle">3.5</score>
+                <score opponent="Ivan">0</score>
+                <score opponent="Jireh">0</score>
+                <score opponent="Kevin">0</score>
+                <score opponent="Terrence">3</score>
+                <score opponent="Quentin">0</score>
+                <score opponent="Kris">3</score>
+            </scores>
+        </player>
+        <player>
+            <name>GK - Banishers</name>
+            <army>Grey Knights</army>
+            <scores>
+                <score opponent="Eric">2</score>
+                <score opponent="Gabrielle">2</score>
+                <score opponent="Ivan">0</score>
+                <score opponent="Jireh">0</score>
+                <score opponent="Kevin">0</score>
+                <score opponent="Terrence">3</score>
+                <score opponent="Quentin">0</score>
+                <score opponent="Kris">3</score>
+            </scores>
+        </player>
+        <player>
+            <name>Guard - Grizzled Company</name>
+            <army>Imperial Guard</army>
+            <scores>
+                <score opponent="Eric">2.5</score>
+                <score opponent="Gabrielle">3</score>
+                <score opponent="Ivan">0</score>
+                <score opponent="Jireh">0</score>
+                <score opponent="Kevin">2</score>
+                <score opponent="Terrence">2.5</score>
+                <score opponent="Quentin">0</score>
+                <score opponent="Kris">2</score>
             </scores>
         </player>
     </players>
