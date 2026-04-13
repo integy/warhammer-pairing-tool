@@ -667,9 +667,11 @@
             
             let html = '<thead><tr><th>Opp \\ HK</th>';
             hkNames.forEach((n, i) => {
+                const hkIdx = hkIndices[i];
+                const hkArmy = hkTeam.players[hkIdx]?.army || '';
                 const isBest = bestIndices.has(i);
                 const marker = isBest ? ' ⭐' : '';
-                html += `<th${isBest ? ' style="background:#2d5a2d;color:#4ade80;"' : ''}>${n}${marker}</th>`;
+                html += `<th${isBest ? ' style="background:#2d5a2d;color:#4ade80;"' : ''}>${n}${marker}<br><span style="font-size:0.65rem;color:#888;">${hkArmy}</span></th>`;
             });
             html += '<th class="avg-col">Avg</th></tr></thead><tbody>';
             
@@ -759,7 +761,7 @@
             
             // Header: HK names + Avg column
             let headerHtml = '<tr><th>Opp \\ HK</th>';
-            hkNames.forEach(name => headerHtml += `<th>${name}</th>`);
+            hkTeam.players.forEach((p, i) => headerHtml += `<th>${p.name}<br><span style="font-size:0.65rem;color:#888;">${p.army || ''}</span></th>`);
             headerHtml += '<th class="avg-col">Avg</th></tr>';
             matrixHead.innerHTML = headerHtml;
             
@@ -1046,7 +1048,7 @@
                                 const hkDefPlayer = hkTeam.players[hkDef];
                                 const defScore = hkDefPlayer?.scores?.[p.name];
                                 const isSelected = rounds[1].pickopp === i ? ' selected' : '';
-                                return `<button class="pick-btn${isSelected}" onclick="r1PickAtt('opp', ${i}, this)">${p.name}${getScoreDisplayBoth(attScore, defScore)}</button>`;
+                                return `<button class="pick-btn${isSelected}" onclick="r1PickAtt('opp', ${i}, this)">${p.name} <span style="color:#888;font-size:0.7rem;">${p.army}</span>${getScoreDisplayBoth(attScore, defScore)}</button>`;
                             }).join('')}
                         </div>
                     </div>
@@ -1074,7 +1076,7 @@
                                 const oppDefPlayer = oppTeam.players[oppDef];
                                 const defScore = oppDefPlayer?.scores?.[p.name];
                                 const isSelected = rounds[1].pickhk === i ? ' selected' : '';
-                                return `<button class="pick-btn${isSelected}" onclick="r1PickAtt('hk', ${i}, this)">${p.name}${getScoreDisplayBoth(attScore, defScore)}</button>`;
+                                return `<button class="pick-btn${isSelected}" onclick="r1PickAtt('hk', ${i}, this)">${p.name} <span style="color:#888;font-size:0.7rem;">${p.army}</span>${getScoreDisplayBoth(attScore, defScore)}</button>`;
                             }).join('')}
                         </div>
                     </div>
@@ -1324,7 +1326,7 @@
                                 const p = oppTeam.players[i];
                                 const score = p.scores?.[hkDefName];
                                 const isSelected = rounds[2].pickopp === i ? ' selected' : '';
-                                return `<button class="pick-btn${isSelected}" onclick="r2Pick('opp', ${i}, this)">${p.name}${getScoreDisplay(score)}</button>`;
+                                return `<button class="pick-btn${isSelected}" onclick="r2Pick('opp', ${i}, this)">${p.name} <span style="color:#888;font-size:0.7rem;">${p.army}</span>${getScoreDisplay(score)}</button>`;
                             }).join('')}
                         </div>
                     </div>
@@ -1350,7 +1352,7 @@
                                 const p = hkTeam.players[i];
                                 const score = p.scores?.[oppDefName];
                                 const isSelected = rounds[2].pickhk === i ? ' selected' : '';
-                                return `<button class="pick-btn${isSelected}" onclick="r2Pick('hk', ${i}, this)">${p.name}${getScoreDisplay(score)}</button>`;
+                                return `<button class="pick-btn${isSelected}" onclick="r2Pick('hk', ${i}, this)">${p.name} <span style="color:#888;font-size:0.7rem;">${p.army}</span>${getScoreDisplay(score)}</button>`;
                             }).join('')}
                         </div>
                     </div>
@@ -1530,7 +1532,7 @@
                                 const p = oppTeam.players[i];
                                 const score = p.scores?.[hkDefName];
                                 const isSelected = rounds[3].pickopp === i ? ' selected' : '';
-                                return `<button class="pick-btn${isSelected}" onclick="r3Pick('opp', ${i}, this)">${p.name}${getScoreDisplay(score)}</button>`;
+                                return `<button class="pick-btn${isSelected}" onclick="r3Pick('opp', ${i}, this)">${p.name} <span style="color:#888;font-size:0.7rem;">${p.army}</span>${getScoreDisplay(score)}</button>`;
                             }).join('')}
                         </div>
                     </div>
@@ -1556,7 +1558,7 @@
                                 const p = hkTeam.players[i];
                                 const score = p.scores?.[oppDefName];
                                 const isSelected = rounds[3].pickhk === i ? ' selected' : '';
-                                return `<button class="pick-btn${isSelected}" onclick="r3Pick('hk', ${i}, this)">${p.name}${getScoreDisplay(score)}</button>`;
+                                return `<button class="pick-btn${isSelected}" onclick="r3Pick('hk', ${i}, this)">${p.name} <span style="color:#888;font-size:0.7rem;">${p.army}</span>${getScoreDisplay(score)}</button>`;
                             }).join('')}
                         </div>
                     </div>
