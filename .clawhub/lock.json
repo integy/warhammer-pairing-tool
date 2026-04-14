@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "skills": {
+    "automation-workflows": {
+      "version": "0.1.0",
+      "installedAt": 1776202696310
+    },
+    "openclaw-automation-recipes": {
+      "version": "1.1.0",
+      "installedAt": 1776204500096
+    },
+    "productivity-automation-kit": {
+      "version": "1.0.0",
+      "installedAt": 1776204506612
+    },
+    "agentic-workflow-automation": {
+      "version": "0.1.0",
+      "installedAt": 1776204512327
+    },
+    "ai-automation-workflow": {
+      "version": "1.0.0",
+      "installedAt": 1776204514663
+    }
+  }
+}
