@@ -1,0 +1,7 @@
+# xg.glass app config
+sdkPath: "/Users/eric/.openclaw/workspace/projects/xg-glass"
+entryClass: "com.example.xgglassapp.logic.LookRememberEntry"
+rayneoMercuryAarDir: "/Users/eric/.openclaw/workspace/projects/xg-glass/third_party/rayneo/aar"
+variant: "debug"
+module: "app"
+applicationId: "com.example.lookremember"
