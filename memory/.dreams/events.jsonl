@@ -1,0 +1,2 @@
+{"type":"memory.recall.recorded","timestamp":"2026-04-16T10:13:52.969Z","query":"recent status summary todo calendar email","resultCount":2,"results":[{"path":"memory/2026-04-13.md","startLine":23,"endLine":48,"score":0.6314296398885182},{"path":"memory/2026-04-13.md","startLine":1,"endLine":29,"score":0.6311705304262311}]}
+{"type":"memory.recall.recorded","timestamp":"2026-04-16T10:43:08.570Z","query":"recent tasks calendar events news","resultCount":1,"results":[{"path":"memory/2026-04-13.md","startLine":23,"endLine":48,"score":0.6314296398885182}]}

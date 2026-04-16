@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-16T02:54:49.015Z",
+  "updatedAt": "2026-04-16T10:43:08.570Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -11,6 +11,7 @@
       "snippet": "- **All skills list**: arduino, automation, automation-tool, automation-workflow-builder, automation-workflows, browser-automation, build123d-cad, jaka-robotics-control, n8n-workflow-automation, nwo-robotics, openclaw-robotics, peaq-robotics, personal-productivity, print-failure-analyst, printpal-3d, productivity, productivity-automation-kit, productivity-bot, robotics-engineer, robotics-vla, ros2-expert, ros2-skill, warhammer-40k-assistant ### Evolver Directory - Cycle files: gep_prompt_Cycle_#0681-0683 - State files: memory_graph, personality_state, reflection_log ### Evolver Cycle Check - \"no cycle summary found\" ## 待處理 - 用戶未確認邊個 skills 要安裝",
       "recallCount": 1,
       "dailyCount": 0,
+      "groundedCount": 0,
       "totalScore": 0.8127196238302062,
       "maxScore": 0.8127196238302062,
       "firstRecalledAt": "2026-04-13T03:50:23.693Z",
@@ -41,6 +42,7 @@
       "snippet": "# 2026-04-10 Daily Notes ## WAL Check (12:32) - Security audit: 119 skills ✅, 6 warnings (false positives), 0 issues - Disk: 232Gi free / 926Gi total (7%) - Gateway: PID 46892, 87MB RSS, 648MB VSZ, 4% CPU ✅ - Health overall: 🟡 warning (memory elevated at 688MB approaching limit) - WhatsApp: ✅ connected - Cron jobs: 18 active ## 待清理 - `pending-approvals.md` (3天前，Apr 7) - 可能過期 - `working-buffer.md` (4天前，Apr 6) - 待處理 --- *Created by WAL Check* ## Async Tasks Completed (18:06-18:07) ### ClawHub Skill Searches - **GitHub Trending**: Trending Cn (3.522), Github Trending (3.491), github-trending-stable (3.455), etc. - **Robotics skills**: openclaw-robotics (3.382), NWO Robotics (3.298), JAKA",
       "recallCount": 1,
       "dailyCount": 0,
+      "groundedCount": 0,
       "totalScore": 0.8126392471216651,
       "maxScore": 0.8126392471216651,
       "firstRecalledAt": "2026-04-13T03:50:23.693Z",
@@ -71,6 +73,7 @@
       "snippet": "- Browser: browser-automation, browser-use, fast-browser-use, agent-browser - AI Agents: agent-orchestrator, agent-autonomy-kit, proactive-agent - Productivity: productivity (already installed), focus-deep-work (new) ### Summary - Evolution protocol continues optimizing prompt/asset handling (gene_gep_optimize_prompt_and_assets) - Installed focus-deep-work for productivity tracking - No skill gaps identified for user's interests - System healthy ---",
       "recallCount": 1,
       "dailyCount": 0,
+      "groundedCount": 0,
       "totalScore": 0.8099690909512909,
       "maxScore": 0.8099690909512909,
       "firstRecalledAt": "2026-04-13T03:50:23.693Z",
@@ -99,12 +102,13 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "- **capability-evolver** directory reports as \"not found\" by some cron agents (contradictory) - clawhub CLI: sometimes not installed, sometimes works - WhatsApp creds.json corruption (Bad MAC errors) — still unresolved since Apr 2 ## Skills - 100-130+ skills installed (reports vary by agent) - No new skills installed — library comprehensive - Evolver stagnation: gene_gep_optimize_prompt_and_assets selected repeatedly (same gene last 5+ cycles) - ClawHavoc cleanup: ClawHub has 3,286 skills (down from 13,729+) - Moltbook: DEAD (domain parked at Porkbun), confirmed geo-blocked Apr 2, now completely gone ## News Summary (Apr 13 morning) - 何超蕸逝世, 立法會罷戰, 清明偷衣包 - 美CPI出爐降息預期降溫, 比特幣 $82K, Manus AI",
-      "recallCount": 29,
+      "recallCount": 31,
       "dailyCount": 0,
-      "totalScore": 0.00003455211307673376,
-      "maxScore": 0.00000173945875089147,
+      "groundedCount": 0,
+      "totalScore": 1.262893831890113,
+      "maxScore": 0.6314296398885182,
       "firstRecalledAt": "2026-04-13T10:07:02.822Z",
-      "lastRecalledAt": "2026-04-16T02:54:49.015Z",
+      "lastRecalledAt": "2026-04-16T10:43:08.570Z",
       "queryHashes": [
         "5c79bd3441ff",
         "d45ff061dd71",
@@ -129,7 +133,9 @@
         "401f8446b750",
         "5fa9477d3d49",
         "0ac8e400f735",
-        "4913a80e0f6d"
+        "4913a80e0f6d",
+        "bce89d4f3bb8",
+        "f37497f1ed7e"
       ],
       "recallDays": [
         "2026-04-13",
@@ -155,12 +161,13 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# Daily Memory — 2026-04-13 ## System Health - Gateway: stable, memory oscillating 453-840MB, GC self-correcting repeatedly - **healthcheck.sh MISSING** — deleted by evolver or other operation (12:04 confirmed via exec). Needs recreation. - Disk: 75% — now consistently at 75% (was 74% for months) - MEMORY.md truncation: 26% removed by bootstrap (max/file limit ~18KB). Recommend raising `agents.defaults.bootstrapMaxChars` to 30000+ ## WhatsApp Status - Session 428: appeared at 01:24 Apr 11, 05:17 Apr 11, 00:30 Apr 12, 01:01 Apr 13, 11:49+11:50 Apr 13 (back-to-back 428s) - **428 is worsening** — multiple occurrences Apr 11-13. User should prepare to re-link. - 499 cycle: ~30 min period, auto",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
-      "totalScore": 0.000013791671686617133,
-      "maxScore": 0.0000015203973553325804,
+      "groundedCount": 0,
+      "totalScore": 0.6311843220979176,
+      "maxScore": 0.6311705304262311,
       "firstRecalledAt": "2026-04-13T10:31:22.887Z",
-      "lastRecalledAt": "2026-04-16T01:13:05.140Z",
+      "lastRecalledAt": "2026-04-16T10:13:52.969Z",
       "queryHashes": [
         "b0e7562293f1",
         "f523e2bf8677",
@@ -172,7 +179,8 @@
         "fbcc1c56f1a6",
         "fbf2d92f23c5",
         "5fa9477d3d49",
-        "4913a80e0f6d"
+        "4913a80e0f6d",
+        "bce89d4f3bb8"
       ],
       "recallDays": [
         "2026-04-13",

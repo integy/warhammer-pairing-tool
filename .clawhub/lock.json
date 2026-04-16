@@ -32,6 +32,14 @@
     "cad-agent": {
       "version": "1.0.0",
       "installedAt": 1776325501845
+    },
+    "capability-evolver-pro": {
+      "version": "1.0.2",
+      "installedAt": 1776367228701
+    },
+    "skill-manager": {
+      "version": "1.0.3",
+      "installedAt": 1776367234835
     }
   }
 }
