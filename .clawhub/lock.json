@@ -24,6 +24,14 @@
     "self-improving-agent": {
       "version": "3.0.13",
       "installedAt": 1776265943478
+    },
+    "openclaw-robotics": {
+      "version": "2.1.0",
+      "installedAt": 1776325442930
+    },
+    "cad-agent": {
+      "version": "1.0.0",
+      "installedAt": 1776325501845
     }
   }
 }
