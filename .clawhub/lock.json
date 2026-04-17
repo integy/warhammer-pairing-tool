@@ -103,7 +103,27 @@
     },
     "github-trending-report": {
       "version": "1.0.2",
-      "installedAt": 1776439157630
+      "installedAt": 1776450059239
+    },
+    "ai-writing-agent": {
+      "version": "1.1.0",
+      "installedAt": 1776442842276
+    },
+    "robotics-vla": {
+      "version": "1.1.0",
+      "installedAt": 1776450085963
+    },
+    "github-ops": {
+      "version": "1.0.0",
+      "installedAt": 1776453636917
+    },
+    "self-improving": {
+      "version": "1.2.16",
+      "installedAt": 1776453641273
+    },
+    "n8n-workflow-automation-1-0-0": {
+      "version": "1.0.0",
+      "installedAt": 1776453657836
     }
   }
 }
