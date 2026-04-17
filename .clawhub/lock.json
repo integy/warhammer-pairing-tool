@@ -40,6 +40,50 @@
     "skill-manager": {
       "version": "1.0.3",
       "installedAt": 1776367234835
+    },
+    "devops": {
+      "version": "1.0.0",
+      "installedAt": 1776377957858
+    },
+    "agents": {
+      "version": "1.0.0",
+      "installedAt": 1776377958789
+    },
+    "bambu-studio-ai": {
+      "version": "1.0.1",
+      "installedAt": 1776377965290
+    },
+    "cicd-pipeline-generator": {
+      "version": "0.1.0",
+      "installedAt": 1776377969534
+    },
+    "home-assistant": {
+      "version": "1.0.0",
+      "installedAt": 1776377984072
+    },
+    "smart-home-energy-saver": {
+      "version": "1.0.0",
+      "installedAt": 1776377992248
+    },
+    "github-trending": {
+      "version": "1.0.0",
+      "installedAt": 1776381638045
+    },
+    "daily-trending": {
+      "version": "1.0.0",
+      "installedAt": 1776381639080
+    },
+    "personal-productivity": {
+      "version": "1.0.0",
+      "installedAt": 1776388752286
+    },
+    "homey-cli": {
+      "version": "1.0.0",
+      "installedAt": 1776388757338
+    },
+    "homekit": {
+      "version": "1.0.6",
+      "installedAt": 1776388761044
     }
   }
 }
