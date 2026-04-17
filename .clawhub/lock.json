@@ -84,6 +84,14 @@
     "homekit": {
       "version": "1.0.6",
       "installedAt": 1776388761044
+    },
+    "obsidian-direct": {
+      "version": "1.0.0",
+      "installedAt": 1776410426767
+    },
+    "firecrawl-search": {
+      "version": "1.0.0",
+      "installedAt": 1776410461919
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-16T10:43:08.570Z",
+  "updatedAt": "2026-04-17T07:50:33.744Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -102,13 +102,13 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "- **capability-evolver** directory reports as \"not found\" by some cron agents (contradictory) - clawhub CLI: sometimes not installed, sometimes works - WhatsApp creds.json corruption (Bad MAC errors) — still unresolved since Apr 2 ## Skills - 100-130+ skills installed (reports vary by agent) - No new skills installed — library comprehensive - Evolver stagnation: gene_gep_optimize_prompt_and_assets selected repeatedly (same gene last 5+ cycles) - ClawHavoc cleanup: ClawHub has 3,286 skills (down from 13,729+) - Moltbook: DEAD (domain parked at Porkbun), confirmed geo-blocked Apr 2, now completely gone ## News Summary (Apr 13 morning) - 何超蕸逝世, 立法會罷戰, 清明偷衣包 - 美CPI出爐降息預期降溫, 比特幣 $82K, Manus AI",
-      "recallCount": 31,
+      "recallCount": 33,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.262893831890113,
+      "totalScore": 2.5257530774266654,
       "maxScore": 0.6314296398885182,
       "firstRecalledAt": "2026-04-13T10:07:02.822Z",
-      "lastRecalledAt": "2026-04-16T10:43:08.570Z",
+      "lastRecalledAt": "2026-04-17T07:50:33.744Z",
       "queryHashes": [
         "5c79bd3441ff",
         "d45ff061dd71",
@@ -135,13 +135,16 @@
         "0ac8e400f735",
         "4913a80e0f6d",
         "bce89d4f3bb8",
-        "f37497f1ed7e"
+        "f37497f1ed7e",
+        "88de9e7078a6",
+        "73be1b41bf6a"
       ],
       "recallDays": [
         "2026-04-13",
         "2026-04-14",
         "2026-04-15",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "capability-evolver",
