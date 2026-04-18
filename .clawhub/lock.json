@@ -136,6 +136,10 @@
     "code-review-assistant": {
       "version": "1.0.0",
       "installedAt": 1776471644670
+    },
+    "3dprint": {
+      "version": "1.2.0",
+      "installedAt": 1776500435391
     }
   }
 }
