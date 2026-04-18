@@ -3,7 +3,7 @@
   "skills": {
     "automation-workflows": {
       "version": "0.1.0",
-      "installedAt": 1776202696310
+      "installedAt": 1776464474498
     },
     "openclaw-automation-recipes": {
       "version": "1.1.0",
@@ -27,7 +27,7 @@
     },
     "openclaw-robotics": {
       "version": "2.1.0",
-      "installedAt": 1776325442930
+      "installedAt": 1776464489376
     },
     "cad-agent": {
       "version": "1.0.0",
@@ -35,7 +35,7 @@
     },
     "capability-evolver-pro": {
       "version": "1.0.2",
-      "installedAt": 1776367228701
+      "installedAt": 1776464466226
     },
     "skill-manager": {
       "version": "1.0.3",
@@ -119,11 +119,23 @@
     },
     "self-improving": {
       "version": "1.2.16",
-      "installedAt": 1776453641273
+      "installedAt": 1776464488136
     },
     "n8n-workflow-automation-1-0-0": {
       "version": "1.0.0",
       "installedAt": 1776453657836
+    },
+    "n8n-workflow-automation": {
+      "version": "1.0.0",
+      "installedAt": 1776475280362
+    },
+    "critical-code-reviewer": {
+      "version": "0.1.0",
+      "installedAt": 1776471640780
+    },
+    "code-review-assistant": {
+      "version": "1.0.0",
+      "installedAt": 1776471644670
     }
   }
 }

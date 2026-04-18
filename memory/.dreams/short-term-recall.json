@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-17T11:50:33.847Z",
+  "updatedAt": "2026-04-18T02:02:14.314Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -102,13 +102,13 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "- **capability-evolver** directory reports as \"not found\" by some cron agents (contradictory) - clawhub CLI: sometimes not installed, sometimes works - WhatsApp creds.json corruption (Bad MAC errors) — still unresolved since Apr 2 ## Skills - 100-130+ skills installed (reports vary by agent) - No new skills installed — library comprehensive - Evolver stagnation: gene_gep_optimize_prompt_and_assets selected repeatedly (same gene last 5+ cycles) - ClawHavoc cleanup: ClawHub has 3,286 skills (down from 13,729+) - Moltbook: DEAD (domain parked at Porkbun), confirmed geo-blocked Apr 2, now completely gone ## News Summary (Apr 13 morning) - 何超蕸逝世, 立法會罷戰, 清明偷衣包 - 美CPI出爐降息預期降溫, 比特幣 $82K, Manus AI",
-      "recallCount": 34,
+      "recallCount": 36,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.1571826830746996,
-      "maxScore": 0.6314296398885182,
+      "totalScore": 4.989397975043954,
+      "maxScore": 1,
       "firstRecalledAt": "2026-04-13T10:07:02.822Z",
-      "lastRecalledAt": "2026-04-17T11:50:33.847Z",
+      "lastRecalledAt": "2026-04-18T02:02:14.314Z",
       "queryHashes": [
         "5c79bd3441ff",
         "d45ff061dd71",
@@ -138,14 +138,17 @@
         "f37497f1ed7e",
         "88de9e7078a6",
         "73be1b41bf6a",
-        "976843a118a0"
+        "976843a118a0",
+        "24a159b5263c",
+        "2f562a14522b"
       ],
       "recallDays": [
         "2026-04-13",
         "2026-04-14",
         "2026-04-15",
         "2026-04-16",
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-18"
       ],
       "conceptTags": [
         "capability-evolver",
@@ -165,13 +168,13 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# Daily Memory — 2026-04-13 ## System Health - Gateway: stable, memory oscillating 453-840MB, GC self-correcting repeatedly - **healthcheck.sh MISSING** — deleted by evolver or other operation (12:04 confirmed via exec). Needs recreation. - Disk: 75% — now consistently at 75% (was 74% for months) - MEMORY.md truncation: 26% removed by bootstrap (max/file limit ~18KB). Recommend raising `agents.defaults.bootstrapMaxChars` to 30000+ ## WhatsApp Status - Session 428: appeared at 01:24 Apr 11, 05:17 Apr 11, 00:30 Apr 12, 01:01 Apr 13, 11:49+11:50 Apr 13 (back-to-back 428s) - **428 is worsening** — multiple occurrences Apr 11-13. User should prepare to re-link. - 499 cycle: ~30 min period, auto",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.6311843220979176,
-      "maxScore": 0.6311705304262311,
+      "totalScore": 1.5006139849148792,
+      "maxScore": 0.8694296628169615,
       "firstRecalledAt": "2026-04-13T10:31:22.887Z",
-      "lastRecalledAt": "2026-04-16T10:13:52.969Z",
+      "lastRecalledAt": "2026-04-18T02:02:14.314Z",
       "queryHashes": [
         "b0e7562293f1",
         "f523e2bf8677",
@@ -184,13 +187,15 @@
         "fbf2d92f23c5",
         "5fa9477d3d49",
         "4913a80e0f6d",
-        "bce89d4f3bb8"
+        "bce89d4f3bb8",
+        "2f562a14522b"
       ],
       "recallDays": [
         "2026-04-13",
         "2026-04-14",
         "2026-04-15",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-18"
       ],
       "conceptTags": [
         "gateway",
@@ -201,6 +206,69 @@
         "max/file",
         "back-to-back",
         "11-13"
+      ]
+    },
+    "memory:memory/2026-04-18.md:34:47": {
+      "key": "memory:memory/2026-04-18.md:34:47",
+      "path": "memory/2026-04-18.md",
+      "startLine": 34,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "- Not installed ### Decision - NOT installing self-evolve (SUSPICIOUS security) - agent-autonomy-kit: CLEAN status, interesting for proactive automation - Will install agent-autonomy-kit (healthy system, proactive work) ### Actions Taken 1. Ran clawhub searches for trending categories 2. Inspected several candidate skills 3. Found agent-autonomy-kit (clean security, recent update) 4. Skipped auto-skill-hunter (SUSPICIOUS) 5. Skipped self-evolve (SUSPICIOUS)",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-18T01:00:40.387Z",
+      "lastRecalledAt": "2026-04-18T02:02:14.314Z",
+      "queryHashes": [
+        "24a159b5263c",
+        "2f562a14522b"
+      ],
+      "recallDays": [
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "self-evolve",
+        "agent-autonomy-kit",
+        "auto-skill-hunter",
+        "not",
+        "installed",
+        "decision",
+        "installing",
+        "self"
+      ]
+    },
+    "memory:memory/2026-04-18.md:1:43": {
+      "key": "memory:memory/2026-04-18.md:1:43",
+      "path": "memory/2026-04-18.md",
+      "startLine": 1,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "# 2026-04-18 Daily Notes ## Capability Evolver Cron Run (4:19 AM HKT) ### Skills Directory - 31 skills currently installed in `/Users/eric/.openclaw/workspace/skills/` - No `capability-evolver` skill (only `capability-evolver-pro`) - `capability-evolver-pro` is a TypeScript skill handler (not CLI), takes actions: analyze, evolve, status ### ClawHub Search Results **3D Printing / CAD / Slicing:** - render-stl-png (1.063) - already installed as find-stl, image-to-relief-stl - bambu-studio-ai (1.033) - already installed - printpal-3d (0.909) - not installed - 3dprint / Flashforge 3D Print (0.906) - not installed **Warhammer / Gaming:** - No dedicated Warhammer skill found - trpg-session (0.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-18T02:02:14.314Z",
+      "lastRecalledAt": "2026-04-18T02:02:14.314Z",
+      "queryHashes": [
+        "2f562a14522b"
+      ],
+      "recallDays": [
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "users/eric",
+        "openclaw/workspace/skills",
+        "capability-evolver",
+        "capability-evolver-pro",
+        "render-stl-png",
+        "1.063",
+        "find-stl",
+        "image-to-relief-stl"
       ]
     }
   }
