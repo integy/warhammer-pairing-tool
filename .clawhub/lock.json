@@ -35,7 +35,7 @@
     },
     "capability-evolver-pro": {
       "version": "1.0.2",
-      "installedAt": 1776464466226
+      "installedAt": 1776565519348
     },
     "skill-manager": {
       "version": "1.0.3",
@@ -99,7 +99,7 @@
     },
     "image-to-relief-stl": {
       "version": "0.1.0",
-      "installedAt": 1776432040365
+      "installedAt": 1776558361920
     },
     "github-trending-report": {
       "version": "1.0.2",
@@ -148,6 +148,10 @@
     "deep-research-prime": {
       "version": "0.1.0",
       "installedAt": 1776518535595
+    },
+    "article-writer": {
+      "version": "1.0.0",
+      "installedAt": 1776569111356
     }
   }
 }
