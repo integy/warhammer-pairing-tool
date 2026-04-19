@@ -152,6 +152,14 @@
     "article-writer": {
       "version": "1.0.0",
       "installedAt": 1776583650578
+    },
+    "ai-agents-architect": {
+      "version": "1.0.0",
+      "installedAt": 1776605126635
+    },
+    "openclaw-master-skills": {
+      "version": "0.7.0",
+      "installedAt": 1776605163298
     }
   }
 }
