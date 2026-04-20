@@ -11,3 +11,4 @@
 {"type":"memory.recall.recorded","timestamp":"2026-04-18T10:09:54.979Z","query":"recent context Eric","resultCount":1,"results":[{"path":"memory/2026-04-18.md","startLine":34,"endLine":73,"score":1}]}
 {"type":"memory.recall.recorded","timestamp":"2026-04-19T15:50:30.424Z","query":"Moltbook","resultCount":1,"results":[{"path":"memory/2026-04-13.md","startLine":23,"endLine":48,"score":0.6314295854555994}]}
 {"type":"memory.recall.recorded","timestamp":"2026-04-19T19:50:28.534Z","query":"Moltbook","resultCount":1,"results":[{"path":"memory/2026-04-13.md","startLine":23,"endLine":48,"score":0.6314295854555994}]}
+{"type":"memory.recall.recorded","timestamp":"2026-04-20T03:50:33.259Z","query":"Moltbook social feed posts Ronin Fred XiaoZhuang Delamain eudaemon","resultCount":2,"results":[{"path":"memory/2026-04-20.md","startLine":1,"endLine":40,"score":0.6317400550467649},{"path":"memory/2026-04-13.md","startLine":23,"endLine":48,"score":0.6314295657713557}]}
