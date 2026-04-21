@@ -15,7 +15,7 @@
     },
     "agentic-workflow-automation": {
       "version": "0.1.0",
-      "installedAt": 1776745690638
+      "installedAt": 1776767161897
     },
     "ai-automation-workflow": {
       "version": "1.0.0",
@@ -39,7 +39,7 @@
     },
     "skill-manager": {
       "version": "1.0.3",
-      "installedAt": 1776745706109
+      "installedAt": 1776767170567
     },
     "devops": {
       "version": "1.0.0",
@@ -147,7 +147,7 @@
     },
     "deep-research-prime": {
       "version": "0.1.0",
-      "installedAt": 1776745811466
+      "installedAt": 1776767170532
     },
     "article-writer": {
       "version": "1.0.0",
@@ -159,7 +159,7 @@
     },
     "openclaw-master-skills": {
       "version": "0.7.0",
-      "installedAt": 1776745820809
+      "installedAt": 1776767162222
     },
     "3d-model-generator": {
       "version": "1.0.0",
@@ -192,6 +192,14 @@
     "gaming": {
       "version": "1.0.0",
       "installedAt": 1776749172048
+    },
+    "openclaw-cli": {
+      "version": "1.0.0",
+      "installedAt": 1776767161900
+    },
+    "openclaw-ops-guardrails": {
+      "version": "0.1.1",
+      "installedAt": 1776767162061
     }
   }
 }
