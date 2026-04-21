@@ -3,183 +3,195 @@
   "skills": {
     "automation-workflows": {
       "version": "0.1.0",
-      "installedAt": 1776673561257
+      "installedAt": 1776745683928
     },
     "openclaw-automation-recipes": {
       "version": "1.1.0",
-      "installedAt": 1776673563905
+      "installedAt": 1776745686973
     },
     "productivity-automation-kit": {
       "version": "1.0.0",
-      "installedAt": 1776673566556
+      "installedAt": 1776745688793
     },
     "agentic-workflow-automation": {
       "version": "0.1.0",
-      "installedAt": 1776673568991
+      "installedAt": 1776745690638
     },
     "ai-automation-workflow": {
       "version": "1.0.0",
-      "installedAt": 1776673571345
+      "installedAt": 1776745692149
     },
     "self-improving-agent": {
       "version": "3.0.16",
-      "installedAt": 1776673573520
+      "installedAt": 1776745697412
     },
     "openclaw-robotics": {
       "version": "2.1.0",
-      "installedAt": 1776673578039
+      "installedAt": 1776745700277
     },
     "cad-agent": {
       "version": "1.0.0",
-      "installedAt": 1776673580432
+      "installedAt": 1776745701783
     },
     "capability-evolver-pro": {
       "version": "1.0.2",
-      "installedAt": 1776687947489
+      "installedAt": 1776745703603
     },
     "skill-manager": {
       "version": "1.0.3",
-      "installedAt": 1776673584660
+      "installedAt": 1776745706109
     },
     "devops": {
       "version": "1.0.0",
-      "installedAt": 1776673587136
+      "installedAt": 1776745708213
     },
     "agents": {
       "version": "1.0.0",
-      "installedAt": 1776673589847
+      "installedAt": 1776745710083
     },
     "bambu-studio-ai": {
       "version": "1.0.1",
-      "installedAt": 1776673595772
+      "installedAt": 1776745715098
     },
     "cicd-pipeline-generator": {
       "version": "0.1.0",
-      "installedAt": 1776673622344
+      "installedAt": 1776745717214
     },
     "home-assistant": {
       "version": "1.0.0",
-      "installedAt": 1776673624526
+      "installedAt": 1776745719133
     },
     "smart-home-energy-saver": {
       "version": "1.0.0",
-      "installedAt": 1776673627300
+      "installedAt": 1776745720840
     },
     "github-trending": {
       "version": "1.0.0",
-      "installedAt": 1776673629801
+      "installedAt": 1776745722623
     },
     "daily-trending": {
       "version": "1.0.0",
-      "installedAt": 1776673632230
+      "installedAt": 1776745724166
     },
     "personal-productivity": {
       "version": "1.0.0",
-      "installedAt": 1776698785169
+      "installedAt": 1776745725940
     },
     "homey-cli": {
       "version": "1.0.0",
-      "installedAt": 1776673636746
+      "installedAt": 1776745741214
     },
     "homekit": {
       "version": "1.0.6",
-      "installedAt": 1776673639343
+      "installedAt": 1776745742852
     },
     "obsidian-direct": {
       "version": "1.0.0",
-      "installedAt": 1776673641907
+      "installedAt": 1776745744474
     },
     "firecrawl-search": {
       "version": "1.0.0",
-      "installedAt": 1776673644327
+      "installedAt": 1776745746240
     },
     "find-stl": {
       "version": "0.1.0",
-      "installedAt": 1776673646739
+      "installedAt": 1776745747670
     },
     "image-to-relief-stl": {
       "version": "0.1.0",
-      "installedAt": 1776673681967
+      "installedAt": 1776745749203
     },
     "github-trending-report": {
       "version": "1.0.2",
-      "installedAt": 1776673684222
+      "installedAt": 1776745750740
     },
     "ai-writing-agent": {
       "version": "1.1.0",
-      "installedAt": 1776673686554
+      "installedAt": 1776745752481
     },
     "robotics-vla": {
       "version": "1.1.0",
-      "installedAt": 1776673688742
+      "installedAt": 1776745753998
     },
     "github-ops": {
       "version": "1.0.0",
-      "installedAt": 1776673690542
+      "installedAt": 1776745756268
     },
     "self-improving": {
       "version": "1.2.16",
-      "installedAt": 1776673692952
+      "installedAt": 1776745758744
     },
     "n8n-workflow-automation-1-0-0": {
       "version": "1.0.0",
-      "installedAt": 1776673694672
+      "installedAt": 1776745761393
     },
     "n8n-workflow-automation": {
       "version": "1.0.0",
-      "installedAt": 1776673696625
+      "installedAt": 1776745763643
     },
     "critical-code-reviewer": {
       "version": "0.1.0",
-      "installedAt": 1776673742021
+      "installedAt": 1776745765902
     },
     "code-review-assistant": {
       "version": "1.0.0",
-      "installedAt": 1776673743976
+      "installedAt": 1776745803207
     },
     "3dprint": {
       "version": "1.2.0",
-      "installedAt": 1776673745805
+      "installedAt": 1776745806974
     },
     "in-depth-research": {
       "version": "1.0.0",
-      "installedAt": 1776698822026
+      "installedAt": 1776745809113
     },
     "deep-research-prime": {
       "version": "0.1.0",
-      "installedAt": 1776673750094
+      "installedAt": 1776745811466
     },
     "article-writer": {
       "version": "1.0.0",
-      "installedAt": 1776673755011
+      "installedAt": 1776745815866
     },
     "ai-agents-architect": {
       "version": "1.0.0",
-      "installedAt": 1776673757190
+      "installedAt": 1776745818225
     },
     "openclaw-master-skills": {
       "version": "0.7.0",
-      "installedAt": 1776673759808
+      "installedAt": 1776745820809
     },
     "3d-model-generator": {
       "version": "1.0.0",
-      "installedAt": 1776673761989
+      "installedAt": 1776745822942
     },
     "agent-autonomy-kit": {
       "version": "1.0.0",
-      "installedAt": 1776673764267
+      "installedAt": 1776745825382
     },
     "ai-agent-helper": {
       "version": "1.0.0",
-      "installedAt": 1776673766446
+      "installedAt": 1776745827131
     },
     "miniature-world-generator": {
       "version": "1.0.0",
-      "installedAt": 1776673768778
+      "installedAt": 1776745829690
     },
     "mcp-hass": {
       "version": "1.0.1",
-      "installedAt": 1776688005214
+      "installedAt": 1776745861495
+    },
+    "openclaw-ics-reminder": {
+      "version": "1.0.1",
+      "installedAt": 1776749155842
+    },
+    "web-scraping": {
+      "version": "1.0.0",
+      "installedAt": 1776749160374
+    },
+    "gaming": {
+      "version": "1.0.0",
+      "installedAt": 1776749172048
     }
   }
 }
