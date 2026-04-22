@@ -171,7 +171,7 @@
     },
     "ai-agent-helper": {
       "version": "1.0.0",
-      "installedAt": 1776745827131
+      "installedAt": 1776831962074
     },
     "miniature-world-generator": {
       "version": "1.0.0",
@@ -200,6 +200,18 @@
     "openclaw-ops-guardrails": {
       "version": "0.1.1",
       "installedAt": 1776767162061
+    },
+    "deep-research-pro": {
+      "version": "1.0.2",
+      "installedAt": 1776839182540
+    },
+    "smart-home": {
+      "version": "1.0.0",
+      "installedAt": 1776839183465
+    },
+    "iot": {
+      "version": "1.0.0",
+      "installedAt": 1776839195958
     }
   }
 }
