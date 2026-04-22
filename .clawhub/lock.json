@@ -212,6 +212,26 @@
     "iot": {
       "version": "1.0.0",
       "installedAt": 1776839195958
+    },
+    "deep-work-orchestrator": {
+      "version": "1.0.0",
+      "installedAt": 1776885945276
+    },
+    "agentic-workflow-automation-v2": {
+      "version": "2.0.0",
+      "installedAt": 1776885963061
+    },
+    "openclaw-agent-optimize": {
+      "version": "1.2.1",
+      "installedAt": 1776885997065
+    },
+    "jaka-robotics-control": {
+      "version": "1.0.1",
+      "installedAt": 1776886001007
+    },
+    "agent-evaluation": {
+      "version": "1.0.0",
+      "installedAt": 1776886021069
     }
   }
 }
