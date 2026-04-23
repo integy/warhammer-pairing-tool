@@ -3,7 +3,7 @@
   "skills": {
     "automation-workflows": {
       "version": "0.1.0",
-      "installedAt": 1776745683928
+      "installedAt": 1776947229748
     },
     "openclaw-automation-recipes": {
       "version": "1.1.0",
@@ -11,7 +11,7 @@
     },
     "productivity-automation-kit": {
       "version": "1.0.0",
-      "installedAt": 1776925621893
+      "installedAt": 1776947243880
     },
     "agentic-workflow-automation": {
       "version": "0.1.0",
@@ -167,7 +167,7 @@
     },
     "agent-autonomy-kit": {
       "version": "1.0.0",
-      "installedAt": 1776745825382
+      "installedAt": 1776947243128
     },
     "ai-agent-helper": {
       "version": "1.0.0",
@@ -260,6 +260,14 @@
     "email-to-calendar": {
       "version": "1.13.1",
       "installedAt": 1776929322573
+    },
+    "agent-directory": {
+      "version": "1.2.0",
+      "installedAt": 1776939975750
+    },
+    "openclaw-agent-discovery": {
+      "version": "1.0.0",
+      "installedAt": 1776939975853
     }
   }
 }
