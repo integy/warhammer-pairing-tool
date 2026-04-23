@@ -232,6 +232,10 @@
     "agent-evaluation": {
       "version": "1.0.0",
       "installedAt": 1776886021069
+    },
+    "focus-deep-work": {
+      "version": "1.0.0",
+      "installedAt": 1776907583489
     }
   }
 }
