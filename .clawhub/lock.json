@@ -276,6 +276,14 @@
     "bambu-cli": {
       "version": "1.0.0",
       "installedAt": 1777015599656
+    },
+    "agent-orchestration-multi-agent-optimize": {
+      "version": "1.0.0",
+      "installedAt": 1777033668891
+    },
+    "ai-workflow-automation": {
+      "version": "1.0.0",
+      "installedAt": 1777033684742
     }
   }
 }
