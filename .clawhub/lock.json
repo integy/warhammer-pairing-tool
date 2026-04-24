@@ -272,6 +272,10 @@
     "n8n-monitor": {
       "version": "1.0.1",
       "installedAt": 1776986927826
+    },
+    "bambu-cli": {
+      "version": "1.0.0",
+      "installedAt": 1777015599656
     }
   }
 }
