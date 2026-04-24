@@ -284,6 +284,22 @@
     "ai-workflow-automation": {
       "version": "1.0.0",
       "installedAt": 1777033684742
+    },
+    "ollama-local": {
+      "version": "1.1.0",
+      "installedAt": 1777055198463
+    },
+    "memory-tiering": {
+      "version": "1.0.0",
+      "installedAt": 1777062369850
+    },
+    "fluid-memory": {
+      "version": "1.0.9",
+      "installedAt": 1777062375137
+    },
+    "structured-workflow": {
+      "version": "1.0.0",
+      "installedAt": 1777062380178
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "registry": "https://clawhub.ai",
-  "slug": "openclaw-automation-recipes",
+  "slug": "ollama-local",
   "installedVersion": "1.1.0",
-  "installedAt": 1777051571657
+  "installedAt": 1777055198460
 }
