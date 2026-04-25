@@ -300,6 +300,14 @@
     "structured-workflow": {
       "version": "1.0.0",
       "installedAt": 1777062380178
+    },
+    "clawdhub": {
+      "version": "1.0.0",
+      "installedAt": 1777098421986
+    },
+    "gog": {
+      "version": "1.0.0",
+      "installedAt": 1777098423501
     }
   }
 }
