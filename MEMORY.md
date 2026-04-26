@@ -67,4 +67,13 @@ automation-workflows, openclaw-automation-recipes, productivity-automation-kit, 
 - Gateway restart loop FIXED (Apr 16): created SESSION-STATE.md, MEMORY.md, memory/working-buffer.md blanks
 
 ---
-_Last updated: 2026-04-22_
+## Recent Updates (Apr 22-26)
+- Capability evolver runs daily (multiple subagents doing redundant searches) — all report "no new skills needed, already comprehensive"
+- Skills inventory: 78-90+ installed (reports vary by source)
+- MOLTBOOK DEAD: Meta acquired Moltbook March 10, geo-blocked since Apr 2, Porkbun parked
+- ClawHub trending: automation-workflows, productivity-automation-kit top scorers
+- VirusTotal flags: bambu-local, xiaomi-home, automation-workflow-builder, octoclaw-print skipped
+- WAL agent false positives: SESSION-STATE.md and MEMORY.md exist but WAL keeps reporting missing
+- Security audit script deleted by evolver (Apr 13-14) — not reinstalled yet
+- exec policy remains allow-always needed but cron jobs continue to fail silently
+_Last updated: 2026-04-26_
