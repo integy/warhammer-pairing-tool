@@ -19,7 +19,7 @@
     },
     "ai-automation-workflow": {
       "version": "1.0.0",
-      "installedAt": 1776986760202
+      "installedAt": 1777210016745
     },
     "self-improving-agent": {
       "version": "3.0.16",
@@ -27,7 +27,7 @@
     },
     "openclaw-robotics": {
       "version": "2.1.0",
-      "installedAt": 1776986767075
+      "installedAt": 1777209990384
     },
     "cad-agent": {
       "version": "1.0.0",
@@ -75,7 +75,7 @@
     },
     "personal-productivity": {
       "version": "1.0.0",
-      "installedAt": 1776986798936
+      "installedAt": 1777210006853
     },
     "homey-cli": {
       "version": "1.0.0",
@@ -95,11 +95,11 @@
     },
     "find-stl": {
       "version": "0.1.0",
-      "installedAt": 1776986811745
+      "installedAt": 1777210005000
     },
     "image-to-relief-stl": {
       "version": "0.1.0",
-      "installedAt": 1776986814161
+      "installedAt": 1777210014864
     },
     "github-trending-report": {
       "version": "1.0.2",
@@ -111,7 +111,7 @@
     },
     "robotics-vla": {
       "version": "1.1.0",
-      "installedAt": 1776986824198
+      "installedAt": 1777209988747
     },
     "github-ops": {
       "version": "1.0.0",
@@ -139,7 +139,7 @@
     },
     "3dprint": {
       "version": "1.2.0",
-      "installedAt": 1776986840681
+      "installedAt": 1777210002644
     },
     "in-depth-research": {
       "version": "1.0.0",
@@ -147,7 +147,7 @@
     },
     "deep-research-prime": {
       "version": "0.1.0",
-      "installedAt": 1776986845805
+      "installedAt": 1777210019098
     },
     "article-writer": {
       "version": "1.0.0",
@@ -275,7 +275,7 @@
     },
     "bambu-cli": {
       "version": "1.0.0",
-      "installedAt": 1777015599656
+      "installedAt": 1777209992674
     },
     "agent-orchestration-multi-agent-optimize": {
       "version": "1.0.0",
@@ -308,6 +308,22 @@
     "gog": {
       "version": "1.0.0",
       "installedAt": 1777098423501
+    },
+    "robotics-engineer": {
+      "version": "1.0.0",
+      "installedAt": 1777209991137
+    },
+    "printpal-3d": {
+      "version": "1.0.4",
+      "installedAt": 1777217267577
+    },
+    "openclaw-3d-printing-skill": {
+      "version": "1.0.1",
+      "installedAt": 1777217275163
+    },
+    "memory-qdrant": {
+      "version": "1.0.10",
+      "installedAt": 1777217287748
     }
   }
 }
