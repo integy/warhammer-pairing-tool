@@ -324,6 +324,22 @@
     "memory-qdrant": {
       "version": "1.0.10",
       "installedAt": 1777217287748
+    },
+    "autonomy": {
+      "version": "1.0.1",
+      "installedAt": 1777228133123
+    },
+    "autonomous-tasks": {
+      "version": "10.3.1",
+      "installedAt": 1777228139639
+    },
+    "3d-cog": {
+      "version": "1.0.10",
+      "installedAt": 1777228146488
+    },
+    "agent-team-orchestration": {
+      "version": "1.0.0",
+      "installedAt": 1777228147012
     }
   }
 }
