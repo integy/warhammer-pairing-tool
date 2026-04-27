@@ -340,6 +340,14 @@
     "agent-team-orchestration": {
       "version": "1.0.0",
       "installedAt": 1777228147012
+    },
+    "github-trending-daily": {
+      "version": "1.0.0",
+      "installedAt": 1777245972904
+    },
+    "claw3d": {
+      "version": "1.0.0",
+      "installedAt": 1777245978851
     }
   }
 }
