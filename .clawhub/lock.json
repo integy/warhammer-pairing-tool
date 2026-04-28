@@ -352,6 +352,10 @@
     "batch-content-factory": {
       "version": "1.0.0",
       "installedAt": 1777339649571
+    },
+    "proactive-agent-lite": {
+      "version": "1.0.0",
+      "installedAt": 1777386493528
     }
   }
 }
