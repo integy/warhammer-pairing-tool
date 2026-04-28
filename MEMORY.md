@@ -76,4 +76,4 @@ automation-workflows, openclaw-automation-recipes, productivity-automation-kit, 
 - WAL agent false positives: SESSION-STATE.md and MEMORY.md exist but WAL keeps reporting missing
 - Security audit script deleted by evolver (Apr 13-14) — not reinstalled yet
 - exec policy remains allow-always needed but cron jobs continue to fail silently
-_Last updated: 2026-04-28_
+_Last updated: 2026-04-29_
