@@ -348,6 +348,10 @@
     "claw3d": {
       "version": "1.0.0",
       "installedAt": 1777307616511
+    },
+    "batch-content-factory": {
+      "version": "1.0.0",
+      "installedAt": 1777339649571
     }
   }
 }
