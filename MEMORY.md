@@ -37,8 +37,8 @@
 10. **capability-evolver cron mismatch** — cron calls capability-evolver/index.js run but capability-evolver-pro is TypeScript. Cron task needs updating.
 11. **bambu-agent flagged suspicious** — VirusTotal detected risky patterns in bambu-agent (Apr 23). Skipped auto-install.
 
-## Skills Installed (21 as of Apr 17, 2026)
-automation-workflows, openclaw-automation-recipes, productivity-automation-kit, agentic-workflow-automation, ai-automation-workflow, self-improving-agent, agents, skill-manager, openclaw-robotics, cad-agent, bambu-studio-ai, home-assistant, homey-cli, homekit, smart-home-energy-saver, devops, cicd-pipeline-generator, github-trending, daily-trending, capability-evolver-pro, personal-productivity
+## Skills Installed (22 as of Apr 29, 2026)
+automation-workflows, openclaw-automation-recipes, productivity-automation-kit, agentic-workflow-automation, ai-automation-workflow, self-improving-agent, agents, skill-manager, openclaw-robotics, cad-agent, bambu-studio-ai, home-assistant, homey-cli, homekit, smart-home-energy-saver, devops, cicd-pipeline-generator, github-trending, daily-trending, capability-evolver-pro, personal-productivity, paper-scout (Apr 29)
 
 ## Capability Evolver Run (Apr 24, 2026)
 - **capability-evolver** original: NOT installed (deleted prior). ClawHub version flagged security risk.
