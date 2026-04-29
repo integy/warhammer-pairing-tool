@@ -356,6 +356,10 @@
     "proactive-agent-lite": {
       "version": "1.0.0",
       "installedAt": 1777386493528
+    },
+    "paper-scout": {
+      "version": "0.1.0",
+      "installedAt": 1777472821820
     }
   }
 }
