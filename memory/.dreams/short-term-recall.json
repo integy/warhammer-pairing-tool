@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-30T02:00:18.792Z",
+  "updatedAt": "2026-04-30T07:19:05.336Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -261,13 +261,13 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "# 2026-04-18 Daily Notes ## Capability Evolver Cron Run (4:19 AM HKT) ### Skills Directory - 31 skills currently installed in `/Users/eric/.openclaw/workspace/skills/` - No `capability-evolver` skill (only `capability-evolver-pro`) - `capability-evolver-pro` is a TypeScript skill handler (not CLI), takes actions: analyze, evolve, status ### ClawHub Search Results **3D Printing / CAD / Slicing:** - render-stl-png (1.063) - already installed as find-stl, image-to-relief-stl - bambu-studio-ai (1.033) - already installed - printpal-3d (0.909) - not installed - 3dprint / Flashforge 3D Print (0.906) - not installed **Warhammer / Gaming:** - No dedicated Warhammer skill found - trpg-session (0.",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9,
+      "totalScore": 10,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-18T02:02:14.314Z",
-      "lastRecalledAt": "2026-04-24T22:03:47.182Z",
+      "lastRecalledAt": "2026-04-30T04:02:57.737Z",
       "queryHashes": [
         "2f562a14522b",
         "0752279ef23e",
@@ -277,13 +277,15 @@
         "8c6fd640029b",
         "b729b3cabb40",
         "7cb67ce8a8d9",
-        "56e46a6d09ee"
+        "56e46a6d09ee",
+        "f9aa709db373"
       ],
       "recallDays": [
         "2026-04-18",
         "2026-04-20",
         "2026-04-21",
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-30"
       ],
       "conceptTags": [
         "users/eric",
@@ -303,13 +305,13 @@
       "endLine": 73,
       "source": "memory",
       "snippet": "- Not installed ### Decision - NOT installing self-evolve (SUSPICIOUS security) - agent-autonomy-kit: CLEAN status, interesting for proactive automation - Will install agent-autonomy-kit (healthy system, proactive work) ### Actions Taken 1. Ran clawhub searches for trending categories 2. Inspected several candidate skills 3. Found agent-autonomy-kit (clean security, recent update) 4. Skipped auto-skill-hunter (SUSPICIOUS) 5. Skipped self-evolve (SUSPICIOUS) ## Capability Evolver Cron Run (4:19 PM HKT) ### Status - `capability-evolver` CLI not found (only `capability-evolver-pro`) - Explored ClawHub for new skills across target categories - Inspected and installed 1 new skill ### Skills",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11,
+      "totalScore": 12,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-18T10:06:27.107Z",
-      "lastRecalledAt": "2026-04-25T13:00:39.151Z",
+      "lastRecalledAt": "2026-04-30T04:02:57.737Z",
       "queryHashes": [
         "27a133fdfd05",
         "d9ab0cc2db5c",
@@ -321,14 +323,16 @@
         "038197bfab1a",
         "104a62399406",
         "56e46a6d09ee",
-        "c079031ecc98"
+        "c079031ecc98",
+        "f9aa709db373"
       ],
       "recallDays": [
         "2026-04-18",
         "2026-04-21",
         "2026-04-23",
         "2026-04-24",
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-30"
       ],
       "conceptTags": [
         "self-evolve",
@@ -433,22 +437,24 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-04-24 Daily Memory ## Session Log ### WAL Check (18:03 HKT) - SESSION-STATE.md verified current (updated 06:04) - working-buffer.md empty - MEMORY.md current (updated Apr 22) - Security audit script NOT FOUND — path no longer exists; skipped - No context loss events - No active subagents ### Healthcheck (18:03 HKT) - Gateway Memory: 689.406 MB (below 800MB threshold — healthy) - Disk: 10% used - WhatsApp: check gateway status (gateway probe ok) - No restart needed ### Notes - WAL agent幻觉: continues to report false positives about missing files; ignore - security-audit.sh deleted (was in openclaw-skills-proactive-agent/scripts/, now gone) - healthcheck.sh exists and runs correctly",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-25T02:02:09.488Z",
-      "lastRecalledAt": "2026-04-28T02:02:12.011Z",
+      "lastRecalledAt": "2026-04-30T04:02:57.737Z",
       "queryHashes": [
         "8c49bc4e75e2",
         "c079031ecc98",
-        "89ba13d3f8d5"
+        "89ba13d3f8d5",
+        "f9aa709db373"
       ],
       "recallDays": [
         "2026-04-25",
         "2026-04-26",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-30"
       ],
       "conceptTags": [
         "gateway",
@@ -490,6 +496,68 @@
         "ai-agents-architect",
         "ai-automation-workflow",
         "ai-writing-agent"
+      ]
+    },
+    "memory:memory/2026-04-30.md:11:42": {
+      "key": "memory:memory/2026-04-30.md:11:42",
+      "path": "memory/2026-04-30.md",
+      "startLine": 11,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "- robotics-vla (3.314) - Robotics VLA - NOT installed - automation-workflows (3.798) - Automation - already installed - ai-agents-architect (3.417) - AI Agents - already installed - personal-productivity (3.588) - Personal Productivity - already installed ### Evolver Status: - capability-evolver-pro directory exists but node path issue - clawhub CLI working fine ### Actions Taken: - Ran clawhub trending searches - Compared installed vs available skills - Found robotics and 3D printing skills not installed but relevant to interests ## Capability Evolver Run #2 (14:25 HK Time) ### Evolver Execution: - `capability-evolver` (original path) does not exist — skill renamed to `capability-evolve",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T07:19:05.336Z",
+      "lastRecalledAt": "2026-04-30T07:19:05.336Z",
+      "queryHashes": [
+        "7b437f05522b"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "robotics-vla",
+        "3.314",
+        "automation-workflows",
+        "3.798",
+        "ai-agents-architect",
+        "3.417",
+        "personal-productivity",
+        "3.588"
+      ]
+    },
+    "memory:memory/2026-04-30.md:37:64": {
+      "key": "memory:memory/2026-04-30.md:37:64",
+      "path": "memory/2026-04-30.md",
+      "startLine": 37,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "- Fix: Use direct `node /path/to/script.js` instead of `cd && node` 2. **HIGH** — embedded run timeout on minimax/MiniMax-M2.7 (3 occurrences) - Root cause: Context overflow + model timeout - Fix: Add retry logic or switch model 3. **MEDIUM** — WhatsApp WebSocket 408/503 connection errors 4. **MEDIUM** — image model does not support images (media-understanding) 5. **INFO** — sqlite-vec unavailable (vector memory degraded) ### Recommendations: - Fix exec preflight: scripts should use `node /full/path/script.js` not `cd && node` - Add model retry/fallback for minimax timeouts - WhatsApp connection monitoring looks ok (auto-reconnect working) - image model limitation: cu",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T07:19:05.336Z",
+      "lastRecalledAt": "2026-04-30T07:19:05.336Z",
+      "queryHashes": [
+        "7b437f05522b"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "path/to/script.js",
+        "minimax/minimax-m2.7",
+        "408/503",
+        "media-understanding",
+        "sqlite-vec",
+        "full/path/script.js",
+        "retry/fallback",
+        "auto-reconnect"
       ]
     }
   }

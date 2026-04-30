@@ -368,6 +368,10 @@
     "bambu-local": {
       "version": "1.0.1",
       "installedAt": 1777519801847
+    },
+    "oc-daily-business-report": {
+      "version": "1.0.0",
+      "installedAt": 1777523344337
     }
   }
 }
