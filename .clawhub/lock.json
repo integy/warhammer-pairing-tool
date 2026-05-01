@@ -384,6 +384,10 @@
     "meshy-3d-agent": {
       "version": "0.1.1",
       "installedAt": 1777588058940
+    },
+    "gaming-session-scheduler": {
+      "version": "1.0.0",
+      "installedAt": 1777624049446
     }
   }
 }
