@@ -376,6 +376,14 @@
     "automation-workflow-builder": {
       "version": "1.0.0",
       "installedAt": 1777555603658
+    },
+    "afrexai-business-automation": {
+      "version": "1.0.0",
+      "installedAt": 1777588046860
+    },
+    "meshy-3d-agent": {
+      "version": "0.1.1",
+      "installedAt": 1777588058940
     }
   }
 }
