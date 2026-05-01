@@ -40,13 +40,14 @@
 ## Skills Installed (22 as of Apr 29, 2026)
 automation-workflows, openclaw-automation-recipes, productivity-automation-kit, agentic-workflow-automation, ai-automation-workflow, self-improving-agent, agents, skill-manager, openclaw-robotics, cad-agent, bambu-studio-ai, home-assistant, homey-cli, homekit, smart-home-energy-saver, devops, cicd-pipeline-generator, github-trending, daily-trending, capability-evolver-pro, personal-productivity, paper-scout (Apr 29)
 
-## Capability Evolver Run (Apr 24, 2026)
-- **capability-evolver** original: NOT installed (deleted prior). ClawHub version flagged security risk.
-- **capability-evolver-pro**: Installed (v1.0.2) but TypeScript — cannot run `node index.js run`.
-- **bambu-agent**: Found (v1.0.0, Apr 23 update) — VirusTotal SUSPICIOUS flag. Skipped.
-- **robotics-vla**: Already installed.
-- **nwo-robotics**: Not installed — openclaw-robotics covers this.
-- No Warhammer skills on ClawHub.
+## Capability Evolver Run (May 2, 2026)
+- **capability-evolver**: NOT installed (deleted; no JS entry point found)
+- **capability-evolver-pro**: Installed (v1.0.2 TypeScript — cannot run `node index.js run`)
+- **Cron task mismatch**: cron calls `capability-evolver/index.js run` but skill missing/TS-incompatible
+- **ai-web-automation**: NEWLY INSTALLED (v1.0.0) — web automation, form filling, scraping, monitoring
+- **tripo-3d-generation**: VirusTotal flagged → SKIPPED
+- No Warhammer skills on ClawHub
+- Workspace skills: 105 total installed
 
 ## Projects
 - **xg-glass** — Android skill for glass device management (awaiting user response)

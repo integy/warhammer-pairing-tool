@@ -119,7 +119,7 @@
     },
     "self-improving": {
       "version": "1.2.16",
-      "installedAt": 1777566511724
+      "installedAt": 1777643325183
     },
     "n8n-workflow-automation-1-0-0": {
       "version": "1.0.0",
@@ -215,7 +215,7 @@
     },
     "deep-work-orchestrator": {
       "version": "1.0.0",
-      "installedAt": 1777559347010
+      "installedAt": 1777643401966
     },
     "agentic-workflow-automation-v2": {
       "version": "2.0.0",
@@ -388,6 +388,22 @@
     "gaming-session-scheduler": {
       "version": "1.0.0",
       "installedAt": 1777624049446
+    },
+    "openclaw-backup": {
+      "version": "1.0.0",
+      "installedAt": 1777661427761
+    },
+    "openclaw-mem": {
+      "version": "2.3.0",
+      "installedAt": 1777661461386
+    },
+    "openclaw-token-optimizer": {
+      "version": "3.0.0",
+      "installedAt": 1777661462482
+    },
+    "ai-web-automation": {
+      "version": "1.0.0",
+      "installedAt": 1777664941456
     }
   }
 }
