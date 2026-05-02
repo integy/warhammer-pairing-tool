@@ -404,6 +404,10 @@
     "ai-web-automation": {
       "version": "1.0.0",
       "installedAt": 1777664941456
+    },
+    "fleet": {
+      "version": "4.0.1",
+      "installedAt": 1777754945189
     }
   }
 }
