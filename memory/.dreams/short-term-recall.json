@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-02T04:29:03.650Z",
+  "updatedAt": "2026-05-02T10:05:36.205Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -311,13 +311,13 @@
       "endLine": 73,
       "source": "memory",
       "snippet": "- Not installed ### Decision - NOT installing self-evolve (SUSPICIOUS security) - agent-autonomy-kit: CLEAN status, interesting for proactive automation - Will install agent-autonomy-kit (healthy system, proactive work) ### Actions Taken 1. Ran clawhub searches for trending categories 2. Inspected several candidate skills 3. Found agent-autonomy-kit (clean security, recent update) 4. Skipped auto-skill-hunter (SUSPICIOUS) 5. Skipped self-evolve (SUSPICIOUS) ## Capability Evolver Cron Run (4:19 PM HKT) ### Status - `capability-evolver` CLI not found (only `capability-evolver-pro`) - Explored ClawHub for new skills across target categories - Inspected and installed 1 new skill ### Skills",
-      "recallCount": 17,
+      "recallCount": 18,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 17,
+      "totalScore": 18,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-18T10:06:27.107Z",
-      "lastRecalledAt": "2026-05-02T04:29:03.650Z",
+      "lastRecalledAt": "2026-05-02T10:05:36.205Z",
       "queryHashes": [
         "27a133fdfd05",
         "d9ab0cc2db5c",
@@ -334,7 +334,8 @@
         "6f0bb556750d",
         "6c8954d6f6f7",
         "bcf6754a4c8f",
-        "d5ac06e84c87"
+        "d5ac06e84c87",
+        "aeec998fc13b"
       ],
       "recallDays": [
         "2026-04-18",
@@ -414,13 +415,13 @@
       "endLine": 65,
       "source": "memory",
       "snippet": "| 3D printing | cad-agent (1.0), threejs (0.97), bambu-studio-ai (0.94), bambu-local (0.92) | | Warhammer | no results | ### 3. Installed Skills (Already Optimized) All relevant categories already covered: - ✅ automation → `automation-workflows`, `ai-automation-workflow`, `productivity-automation-kit` - ✅ AI agents → `agency-agents`, `agent-autonomy-kit` - ✅ productivity → `productivity-automation-kit`, `self-improving` - ✅ robotics → `openclaw-robotics` - ✅ 3D printing/CAD → `cad-agent` - ✅ GitHub → `github-trending-report` - ✅ Home automation → `home-assistant` - ✅ n8n/workflow → `n8n-workflow-automation` ### 4. New Skills Considered None auto-installed — all top candidates already ha",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9,
+      "totalScore": 10,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-21T13:02:38.337Z",
-      "lastRecalledAt": "2026-05-02T04:29:03.650Z",
+      "lastRecalledAt": "2026-05-02T10:05:36.205Z",
       "queryHashes": [
         "7cb67ce8a8d9",
         "3bd7aa3c622e",
@@ -430,7 +431,8 @@
         "6f0bb556750d",
         "6c8954d6f6f7",
         "d5ac06e84c87",
-        "56e46a6d09ee"
+        "56e46a6d09ee",
+        "aeec998fc13b"
       ],
       "recallDays": [
         "2026-04-21",
@@ -659,18 +661,19 @@
       "endLine": 39,
       "source": "memory",
       "snippet": "# 2026-04-29.md # Capability Evolver Report **Date:** 2026-04-29 01:25 HKT **Trigger:** hourly cron (e5f004fe) --- ## Capability Evolver Status ✅ **capability-evolver-pro** (v2.0.0) — installed and operational - Pure-logic TypeScript handler; no index.js runner needed - Actions: analyze, evolve, status - Supported strategies: auto, balanced, innovate, harden, repair-only **Cron Status:** running --- ## Skills Inventory **Total installed:** 95 skill directories in `~/.openclaw/workspace/skills/` **Key coverage areas:** - Automation: automation-workflows, productivity-automation-kit, ai-automation-workflow, agentic-workflow-automation-v2, agent-autonomy-kit, deep-work-orchestrator,",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-01T10:19:33.255Z",
-      "lastRecalledAt": "2026-05-02T04:29:03.650Z",
+      "lastRecalledAt": "2026-05-02T10:05:36.205Z",
       "queryHashes": [
         "6f0bb556750d",
         "6c8954d6f6f7",
         "d5ac06e84c87",
-        "56e46a6d09ee"
+        "56e46a6d09ee",
+        "aeec998fc13b"
       ],
       "recallDays": [
         "2026-05-01",
@@ -748,6 +751,37 @@
         "warhammer-related",
         "capability-evolver-pro",
         "pure-logic"
+      ]
+    },
+    "memory:memory/2026-05-02.md:24:60": {
+      "key": "memory:memory/2026-05-02.md:24:60",
+      "path": "memory/2026-05-02.md",
+      "startLine": 24,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "- M2.1 then throws `Cannot read properties of undefined (reading 'type')` — often a code path bug - Root cause: context overflow / long-running tasks exhausting context 3. **MEDIUM** — WhatsApp WebSocket 499 errors: No messages in 30m triggers restart - Idle disconnection during night/morning hours - Auto-reconnect working, not critical 4. **INFO** — sqlite-vec unavailable: Vector embeddings not being written - All memory/*.md files chunks written without vector embeddings - Affects memory recall quality - Not blocking but worth noting ### Clawhub Search Results (Trending Categories): **Automation (top scores):** - web-automation (3.999) — installed: no → **Consider:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T10:05:36.205Z",
+      "lastRecalledAt": "2026-05-02T10:05:36.205Z",
+      "queryHashes": [
+        "aeec998fc13b"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "embedding",
+        "embeddings",
+        "m2.1",
+        "long-running",
+        "night/morning",
+        "auto-reconnect",
+        "sqlite-vec",
+        "web-automation"
       ]
     }
   }
