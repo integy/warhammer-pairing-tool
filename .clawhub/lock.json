@@ -416,6 +416,10 @@
     "hotspot-writer": {
       "version": "1.1.0",
       "installedAt": 1777837760243
+    },
+    "productivity": {
+      "version": "1.0.4",
+      "installedAt": 1777870081709
     }
   }
 }
