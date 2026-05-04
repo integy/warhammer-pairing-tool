@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-03T04:09:52.886Z",
+  "updatedAt": "2026-05-04T02:02:24.057Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -473,27 +473,29 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-04-24 Daily Memory ## Session Log ### WAL Check (18:03 HKT) - SESSION-STATE.md verified current (updated 06:04) - working-buffer.md empty - MEMORY.md current (updated Apr 22) - Security audit script NOT FOUND — path no longer exists; skipped - No context loss events - No active subagents ### Healthcheck (18:03 HKT) - Gateway Memory: 689.406 MB (below 800MB threshold — healthy) - Disk: 10% used - WhatsApp: check gateway status (gateway probe ok) - No restart needed ### Notes - WAL agent幻觉: continues to report false positives about missing files; ignore - security-audit.sh deleted (was in openclaw-skills-proactive-agent/scripts/, now gone) - healthcheck.sh exists and runs correctly",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6.632470352766077,
+      "totalScore": 7.632470352766077,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-25T02:02:09.488Z",
-      "lastRecalledAt": "2026-05-01T10:43:40.794Z",
+      "lastRecalledAt": "2026-05-04T02:02:24.057Z",
       "queryHashes": [
         "8c49bc4e75e2",
         "c079031ecc98",
         "89ba13d3f8d5",
         "f9aa709db373",
         "4b0db9a063dd",
-        "bcf6754a4c8f"
+        "bcf6754a4c8f",
+        "22fe496fc7b7"
       ],
       "recallDays": [
         "2026-04-25",
         "2026-04-26",
         "2026-04-28",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04"
       ],
       "conceptTags": [
         "gateway",
@@ -579,18 +581,20 @@
       "endLine": 64,
       "source": "memory",
       "snippet": "- Fix: Use direct `node /path/to/script.js` instead of `cd && node` 2. **HIGH** — embedded run timeout on minimax/MiniMax-M2.7 (3 occurrences) - Root cause: Context overflow + model timeout - Fix: Add retry logic or switch model 3. **MEDIUM** — WhatsApp WebSocket 408/503 connection errors 4. **MEDIUM** — image model does not support images (media-understanding) 5. **INFO** — sqlite-vec unavailable (vector memory degraded) ### Recommendations: - Fix exec preflight: scripts should use `node /full/path/script.js` not `cd && node` - Add model retry/fallback for minimax timeouts - WhatsApp connection monitoring looks ok (auto-reconnect working) - image model limitation: cu",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T07:19:05.336Z",
-      "lastRecalledAt": "2026-04-30T07:19:05.336Z",
+      "lastRecalledAt": "2026-05-04T02:02:24.057Z",
       "queryHashes": [
-        "7b437f05522b"
+        "7b437f05522b",
+        "22fe496fc7b7"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-04"
       ],
       "conceptTags": [
         "path/to/script.js",
@@ -675,13 +679,13 @@
       "endLine": 39,
       "source": "memory",
       "snippet": "# 2026-04-29.md # Capability Evolver Report **Date:** 2026-04-29 01:25 HKT **Trigger:** hourly cron (e5f004fe) --- ## Capability Evolver Status ✅ **capability-evolver-pro** (v2.0.0) — installed and operational - Pure-logic TypeScript handler; no index.js runner needed - Actions: analyze, evolve, status - Supported strategies: auto, balanced, innovate, harden, repair-only **Cron Status:** running --- ## Skills Inventory **Total installed:** 95 skill directories in `~/.openclaw/workspace/skills/` **Key coverage areas:** - Automation: automation-workflows, productivity-automation-kit, ai-automation-workflow, agentic-workflow-automation-v2, agent-autonomy-kit, deep-work-orchestrator,",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-01T10:19:33.255Z",
-      "lastRecalledAt": "2026-05-03T04:09:52.886Z",
+      "lastRecalledAt": "2026-05-04T02:02:24.057Z",
       "queryHashes": [
         "6f0bb556750d",
         "6c8954d6f6f7",
@@ -690,12 +694,14 @@
         "aeec998fc13b",
         "650d6ddc3a72",
         "22a54fd0df22",
-        "dc8a65370e6a"
+        "dc8a65370e6a",
+        "22fe496fc7b7"
       ],
       "recallDays": [
         "2026-05-01",
         "2026-05-02",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ],
       "conceptTags": [
         "capability-evolver-pro",
@@ -833,6 +839,68 @@
         "smart-home",
         "home-assistant",
         "homey-cli"
+      ]
+    },
+    "memory:memory/2026-04-18.md:67:79": {
+      "key": "memory:memory/2026-04-18.md:67:79",
+      "path": "memory/2026-04-18.md",
+      "startLine": 67,
+      "endLine": 79,
+      "source": "memory",
+      "snippet": "### Skipped (Security/Browser-Only/Redundant) - **printpal-3d** - flagged suspicious by VirusTotal ⚠️ - **openclaw-robotics** - already installed (2.1.0) - **ai-agent-helper** - similar to existing agents skills - **ai-automation-workflow** - similar to existing n8n/automation skills - No Warhammer-specific skill found on ClawHub ### Optimization Notes - Current setup well-covered for: 3D printing, home automation, DevOps, coding - Robotics skills present (openclaw-robotics, robotics-vla) - Gap: no dedicated Warhammer/TTRPG skill on ClawHub - printpal-3d flagged suspicious - not installing",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T02:02:24.057Z",
+      "lastRecalledAt": "2026-05-04T02:02:24.057Z",
+      "queryHashes": [
+        "22fe496fc7b7"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "security/browser-only/redundant",
+        "printpal-3d",
+        "openclaw-robotics",
+        "2.1.0",
+        "ai-agent-helper",
+        "ai-automation-workflow",
+        "n8n/automation",
+        "warhammer-specific"
+      ]
+    },
+    "memory:memory/2026-04-28.md:1:40": {
+      "key": "memory:memory/2026-04-28.md:1:40",
+      "path": "memory/2026-04-28.md",
+      "startLine": 1,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "# 2026-04-28.md # Capability Evolver Report **Date:** 2026-04-28 04:25 HKT **Trigger:** hourly cron (e5f004fe) --- ## Capability Evolver Status ⚠️ **capability-evolver** — directory not found at expected path - `~/.openclaw/workspace/skills/capability-evolver/` does not exist - `capability-evolver-pro` (v1.0.2) IS installed and operational via clawhub - Note: previous report noted `index.js run` not applicable for TypeScript skill **Cron Status:** running --- ## Skills Inventory **Total installed:** 87 skills (clawhub list) **Key coverage areas:** - Automation: automation-workflows, productivity-automation-kit, ai-automation-workflow, agentic-workflow-automation, agent-autonomy-k",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T02:02:24.057Z",
+      "lastRecalledAt": "2026-05-04T02:02:24.057Z",
+      "queryHashes": [
+        "22fe496fc7b7"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "capability-evolver",
+        "capability-evolver-pro",
+        "v1.0.2",
+        "index.js",
+        "automation-workflows",
+        "productivity-automation-kit",
+        "ai-automation-workflow",
+        "agentic-workflow-automation"
       ]
     }
   }
