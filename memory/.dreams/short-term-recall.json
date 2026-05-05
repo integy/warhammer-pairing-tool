@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-04T13:02:43.009Z",
+  "updatedAt": "2026-05-05T02:00:27.786Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -263,13 +263,13 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "# 2026-04-18 Daily Notes ## Capability Evolver Cron Run (4:19 AM HKT) ### Skills Directory - 31 skills currently installed in `/Users/eric/.openclaw/workspace/skills/` - No `capability-evolver` skill (only `capability-evolver-pro`) - `capability-evolver-pro` is a TypeScript skill handler (not CLI), takes actions: analyze, evolve, status ### ClawHub Search Results **3D Printing / CAD / Slicing:** - render-stl-png (1.063) - already installed as find-stl, image-to-relief-stl - bambu-studio-ai (1.033) - already installed - printpal-3d (0.909) - not installed - 3dprint / Flashforge 3D Print (0.906) - not installed **Warhammer / Gaming:** - No dedicated Warhammer skill found - trpg-session (0.",
-      "recallCount": 18,
+      "recallCount": 19,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 18,
+      "totalScore": 19,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-18T02:02:14.314Z",
-      "lastRecalledAt": "2026-05-04T13:02:43.009Z",
+      "lastRecalledAt": "2026-05-05T02:00:27.786Z",
       "queryHashes": [
         "2f562a14522b",
         "0752279ef23e",
@@ -287,7 +287,8 @@
         "d5ac06e84c87",
         "22a54fd0df22",
         "dc8a65370e6a",
-        "e01d925f90b8"
+        "e01d925f90b8",
+        "66ac60ac0105"
       ],
       "recallDays": [
         "2026-04-18",
@@ -298,7 +299,8 @@
         "2026-05-01",
         "2026-05-02",
         "2026-05-03",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ],
       "conceptTags": [
         "users/eric",
@@ -318,13 +320,13 @@
       "endLine": 73,
       "source": "memory",
       "snippet": "- Not installed ### Decision - NOT installing self-evolve (SUSPICIOUS security) - agent-autonomy-kit: CLEAN status, interesting for proactive automation - Will install agent-autonomy-kit (healthy system, proactive work) ### Actions Taken 1. Ran clawhub searches for trending categories 2. Inspected several candidate skills 3. Found agent-autonomy-kit (clean security, recent update) 4. Skipped auto-skill-hunter (SUSPICIOUS) 5. Skipped self-evolve (SUSPICIOUS) ## Capability Evolver Cron Run (4:19 PM HKT) ### Status - `capability-evolver` CLI not found (only `capability-evolver-pro`) - Explored ClawHub for new skills across target categories - Inspected and installed 1 new skill ### Skills",
-      "recallCount": 20,
+      "recallCount": 21,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 20,
+      "totalScore": 21,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-18T10:06:27.107Z",
-      "lastRecalledAt": "2026-05-03T04:09:52.886Z",
+      "lastRecalledAt": "2026-05-05T02:00:27.786Z",
       "queryHashes": [
         "27a133fdfd05",
         "d9ab0cc2db5c",
@@ -344,7 +346,8 @@
         "d5ac06e84c87",
         "aeec998fc13b",
         "22a54fd0df22",
-        "dc8a65370e6a"
+        "dc8a65370e6a",
+        "66ac60ac0105"
       ],
       "recallDays": [
         "2026-04-18",
@@ -355,7 +358,8 @@
         "2026-04-30",
         "2026-05-01",
         "2026-05-02",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-05"
       ],
       "conceptTags": [
         "self-evolve",
@@ -375,13 +379,13 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "# 2026-04-20 - Capability Evolver Run ## Status: COMPLETED (partial) ### Findings **capability-evolver-pro**: Installed locally at `~/.openclaw/skills/capability-evolver-pro/` (v2.0.0). It's a TypeScript skill module, not a CLI with a `run` subcommand. To invoke it, need to pass action inputs (analyze/evolve/status) via the skill runner. **Existing Skills** (12 installed): - ai-automation-workflow - automation-workflows - cad-agent - capability-evolver-pro ← meta-skill - daily-trending - github-trending-report - home-assistant - moltbook-api - n8n-workflow-automation - openclaw-robotics - productivity-automation-kit - self-improving **ClawHub Search Results**: - Trending: agentic-workfl",
-      "recallCount": 13,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11.877817309708618,
+      "totalScore": 12.516523435601904,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-20T03:50:33.259Z",
-      "lastRecalledAt": "2026-05-03T02:02:18.461Z",
+      "lastRecalledAt": "2026-05-04T23:47:34.684Z",
       "queryHashes": [
         "b9d03502a787",
         "506d717efeb6",
@@ -395,7 +399,8 @@
         "0978adb45ba9",
         "26219446d3d4",
         "26be20cc7d36",
-        "e833c5be4542"
+        "e833c5be4542",
+        "1ff2b282aa1d"
       ],
       "recallDays": [
         "2026-04-20",
@@ -407,7 +412,8 @@
         "2026-04-30",
         "2026-05-01",
         "2026-05-02",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-05"
       ],
       "conceptTags": [
         "capability-evolver-pro",
@@ -554,18 +560,21 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- robotics-vla (3.314) - Robotics VLA - NOT installed - automation-workflows (3.798) - Automation - already installed - ai-agents-architect (3.417) - AI Agents - already installed - personal-productivity (3.588) - Personal Productivity - already installed ### Evolver Status: - capability-evolver-pro directory exists but node path issue - clawhub CLI working fine ### Actions Taken: - Ran clawhub trending searches - Compared installed vs available skills - Found robotics and 3D printing skills not installed but relevant to interests ## Capability Evolver Run #2 (14:25 HK Time) ### Evolver Execution: - `capability-evolver` (original path) does not exist — skill renamed to `capability-evolve",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T07:19:05.336Z",
-      "lastRecalledAt": "2026-04-30T07:19:05.336Z",
+      "lastRecalledAt": "2026-05-05T00:07:06.641Z",
       "queryHashes": [
-        "7b437f05522b"
+        "7b437f05522b",
+        "abdcb8c078d1",
+        "1e4b20906f82"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-05"
       ],
       "conceptTags": [
         "robotics-vla",
@@ -683,13 +692,13 @@
       "endLine": 39,
       "source": "memory",
       "snippet": "# 2026-04-29.md # Capability Evolver Report **Date:** 2026-04-29 01:25 HKT **Trigger:** hourly cron (e5f004fe) --- ## Capability Evolver Status ✅ **capability-evolver-pro** (v2.0.0) — installed and operational - Pure-logic TypeScript handler; no index.js runner needed - Actions: analyze, evolve, status - Supported strategies: auto, balanced, innovate, harden, repair-only **Cron Status:** running --- ## Skills Inventory **Total installed:** 95 skill directories in `~/.openclaw/workspace/skills/` **Key coverage areas:** - Automation: automation-workflows, productivity-automation-kit, ai-automation-workflow, agentic-workflow-automation-v2, agent-autonomy-kit, deep-work-orchestrator,",
-      "recallCount": 9,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9,
+      "totalScore": 12,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-01T10:19:33.255Z",
-      "lastRecalledAt": "2026-05-04T02:02:24.057Z",
+      "lastRecalledAt": "2026-05-05T02:00:27.786Z",
       "queryHashes": [
         "6f0bb556750d",
         "6c8954d6f6f7",
@@ -699,13 +708,17 @@
         "650d6ddc3a72",
         "22a54fd0df22",
         "dc8a65370e6a",
-        "22fe496fc7b7"
+        "22fe496fc7b7",
+        "abdcb8c078d1",
+        "1e4b20906f82",
+        "66ac60ac0105"
       ],
       "recallDays": [
         "2026-05-01",
         "2026-05-02",
         "2026-05-03",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ],
       "conceptTags": [
         "capability-evolver-pro",
@@ -758,19 +771,21 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "- Inspected openclaw-robotics - supports Unitree GO1/GO2/G1/H1 robots ### No New Skills Installed - All potentially new skills (agentic-workflow-automation, n8n-workflow-automation) overlap with existing automation-workflows and n8n-workflow-automation already installed - openclaw-robotics already installed - No Warhammer-related skills exist on ClawHub ### Notes - capability-evolver-pro status: healthy, pure-logic, no external dependencies - To run full log analysis: invoke skill with action='analyze' and log entries",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6339229086410754,
+      "totalScore": 2.2835402085877083,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-01T10:40:42.859Z",
-      "lastRecalledAt": "2026-05-01T10:43:40.794Z",
+      "lastRecalledAt": "2026-05-04T23:47:34.684Z",
       "queryHashes": [
         "6c8954d6f6f7",
-        "bcf6754a4c8f"
+        "bcf6754a4c8f",
+        "1ff2b282aa1d"
       ],
       "recallDays": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-05"
       ],
       "conceptTags": [
         "openclaw-robotics",
@@ -883,18 +898,20 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "# 2026-04-28.md # Capability Evolver Report **Date:** 2026-04-28 04:25 HKT **Trigger:** hourly cron (e5f004fe) --- ## Capability Evolver Status ⚠️ **capability-evolver** — directory not found at expected path - `~/.openclaw/workspace/skills/capability-evolver/` does not exist - `capability-evolver-pro` (v1.0.2) IS installed and operational via clawhub - Note: previous report noted `index.js run` not applicable for TypeScript skill **Cron Status:** running --- ## Skills Inventory **Total installed:** 87 skills (clawhub list) **Key coverage areas:** - Automation: automation-workflows, productivity-automation-kit, ai-automation-workflow, agentic-workflow-automation, agent-autonomy-k",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T02:02:24.057Z",
-      "lastRecalledAt": "2026-05-04T02:02:24.057Z",
+      "lastRecalledAt": "2026-05-05T02:00:27.786Z",
       "queryHashes": [
-        "22fe496fc7b7"
+        "22fe496fc7b7",
+        "66ac60ac0105"
       ],
       "recallDays": [
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-05"
       ],
       "conceptTags": [
         "capability-evolver",
@@ -905,6 +922,198 @@
         "productivity-automation-kit",
         "ai-automation-workflow",
         "agentic-workflow-automation"
+      ]
+    },
+    "memory:memory/2026-05-04.md:23:34": {
+      "key": "memory:memory/2026-05-04.md:23:34",
+      "path": "memory/2026-05-04.md",
+      "startLine": 23,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "- capability-evolver-pro has `.clawhub/` marker (verified clean install) ### Recommendations 1. **devops-automation-pack** — consider installing (score 3.104, not yet installed, devops-adjacent but not duplicate) 2. Cron task `capability-evolver/index.js run` needs updating to `capability-evolver-pro` (TypeScript incompatible with `node index.js run`) 3. No new skills auto-installed — ecosystem already fully covered for Eric's interests ### No Changes Made - All useful trending skills already installed - No duplicates, no suspicious packages - Workspace clean",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.646959123041153,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T23:47:34.684Z",
+      "lastRecalledAt": "2026-05-05T00:07:06.641Z",
+      "queryHashes": [
+        "1ff2b282aa1d",
+        "abdcb8c078d1",
+        "1e4b20906f82"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "capability-evolver-pro",
+        "devops-automation-pack",
+        "3.104",
+        "devops-adjacent",
+        "capability-evolver/index.js",
+        "index.js",
+        "auto-installed",
+        "capability"
+      ]
+    },
+    "memory:memory/2026-04-28.md:70:83": {
+      "key": "memory:memory/2026-04-28.md:70:83",
+      "path": "memory/2026-04-28.md",
+      "startLine": 70,
+      "endLine": 83,
+      "source": "memory",
+      "snippet": "- Other cron jobs: ✅ presumed ok (see 2026-04-27 report for full list) --- ## Recommendations 1. **capability-evolver directory missing** — the \"capability-evolver\" skill (plain) doesn't exist, only \"capability-evolver-pro\" (TypeScript). Previous report may have confused the two. 2. **No action needed** — registry is empty, all relevant skills installed 3. **Warhammer skill** — still no ClawHub offering; custom skill could be authored if desired (skill-creator available) 4. **Self-improvement skills updated** — self-improving-agent now at 3.0.18 --- **Status:** ✅ Comprehensive — 87 skills covering automation, AI agents, robotics, 3D printing, smart home. No critical gaps. Registry has n",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6419141755109838,
+      "maxScore": 0.6419141755109838,
+      "firstRecalledAt": "2026-05-04T23:47:34.684Z",
+      "lastRecalledAt": "2026-05-04T23:47:34.684Z",
+      "queryHashes": [
+        "1ff2b282aa1d"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "capability-evolver",
+        "capability-evolver-pro",
+        "skill-creator",
+        "self-improvement",
+        "self-improving-agent",
+        "3.0.18",
+        "other",
+        "cron"
+      ]
+    },
+    "memory:memory/2026-04-29.md:56:87": {
+      "key": "memory:memory/2026-04-29.md:56:87",
+      "path": "memory/2026-04-29.md",
+      "startLine": 56,
+      "endLine": 87,
+      "source": "memory",
+      "snippet": "- Comprehensive coverage across all target domains (95 skills) --- ## Updates Since Yesterday - capability-evolver-pro: still v2.0.0 (no update) - self-improving-agent: still 3.0.18 (no change) --- ## Automation Improvements **Potential optimization identified:** 1. Multiple overlapping automation skills installed — consider consolidation: - agentic-workflow-automation AND agentic-workflow-automation-v2 - n8n-workflow-automation AND n8n-workflow-automation-1-0-0 - openclaw-automation-recipes AND automation-workflows 2. Could add a \"skill health audit\" to the evolver to identify redundant/overlapping skills --- ## Recommendations 1. **No new skills needed** — all target doma",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6402127929854556,
+      "maxScore": 0.6402127929854556,
+      "firstRecalledAt": "2026-05-04T23:47:34.684Z",
+      "lastRecalledAt": "2026-05-04T23:47:34.684Z",
+      "queryHashes": [
+        "1ff2b282aa1d"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "capability-evolver-pro",
+        "v2.0.0",
+        "self-improving-agent",
+        "3.0.18",
+        "agentic-workflow-automation",
+        "agentic-workflow-automation-v2",
+        "n8n-workflow-automation",
+        "n8n-workflow-automation-1-0-0"
+      ]
+    },
+    "memory:memory/2026-05-04.md:1:27": {
+      "key": "memory:memory/2026-05-04.md:1:27",
+      "path": "memory/2026-05-04.md",
+      "startLine": 1,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "# 2026-05-04 - Daily Memory ## Capability Evolver Run (Evening - 12:47 UTC / 20:47 HKT) ### Evolver Status - **capability-evolver**: NOT installed (deleted previously; no JS entry point) - **capability-evolver-pro**: v1.0.2 (TypeScript) — installed at `skills/capability-evolver-pro/` - **Cron task mismatch**: cron still calls `capability-evolver/index.js run` but skill is TypeScript ### ClawHub Searches - automation: productivity-automation-kit, ai-automation-workflow, openclaw-automation-recipes — ALL already installed - 3D printing: claw3d, openclaw-3d-printing-skill, printpal-3d, Bambu Lab skills — ALL already installed - robotics: nwo-robotics, jaka-robotics-control, openclaw-robotics",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.638782759586439,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T23:47:34.684Z",
+      "lastRecalledAt": "2026-05-05T00:07:06.641Z",
+      "queryHashes": [
+        "1ff2b282aa1d",
+        "abdcb8c078d1",
+        "1e4b20906f82"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "capability-evolver",
+        "capability-evolver-pro",
+        "v1.0.2",
+        "skills/capability-evolver-pro",
+        "capability-evolver/index.js",
+        "productivity-automation-kit",
+        "ai-automation-workflow",
+        "openclaw-automation-recipes"
+      ]
+    },
+    "memory:memory/2026-05-01.md:25:49": {
+      "key": "memory:memory/2026-05-01.md:25:49",
+      "path": "memory/2026-05-01.md",
+      "startLine": 25,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "- Happens during idle/night hours 4. **INFO** — Bonjour watchdog: non-announced service watchdog firing repeatedly - Gateway re-advertising every ~1 minute ### Health Score: ~50-60/100 (moderate) - Same issues as previous runs, no regression but no improvement - Cron job itself generating noise ### Clawhub Search Results (Fresh): **Robotics:** openclaw-robotics (3.397), nwo-robotics (3.334), jaka-robotics-control (3.318), robotics-vla (3.317) **3D Printing:** bambu-studio-ai (0.933), 3d-cog (0.930), find-stl (0.908), printpal-3d (0.844), 3d-maker-companion (0.802) **Automation:** automation-workflows (3.798), ai-web-automation (3.662), agentic-workflow-automation-v2 (3.616) ### Ski",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-05T00:07:02.530Z",
+      "lastRecalledAt": "2026-05-05T00:07:06.641Z",
+      "queryHashes": [
+        "abdcb8c078d1",
+        "1e4b20906f82"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "gateway",
+        "idle/night",
+        "non-announced",
+        "re-advertising",
+        "50-60/100",
+        "openclaw-robotics",
+        "3.397",
+        "nwo-robotics"
+      ]
+    },
+    "memory:memory/2026-04-21.md:1:39": {
+      "key": "memory:memory/2026-04-21.md:1:39",
+      "path": "memory/2026-04-21.md",
+      "startLine": 1,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "# Capability Evolver Cron — 2026-04-21 ## Execution Summary ### 1. Evolver Status The cron attempted to run: ``` cd ~/.openclaw/workspace/skills/capability-evolver && node index.js run ``` **Result: FAILED** — file not found. The actual installed skill is `capability-evolver-pro` (TypeScript handler at `~/.openclaw/skills/capability-evolver-pro/`), not the Node.js version. The workspace path `~/.openclaw/workspace/skills/capability-evolver/index.js` doesn't exist. The correct way to invoke it is via OpenClaw's skill runner (agent.run('capability-evolver', {action:'status'})). ### 2. ClawHub Search Results **Top trending skills on ClawHub:** - 52.7k tools · 180k users · 12M downloads",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-05T00:07:02.530Z",
+      "lastRecalledAt": "2026-05-05T00:07:06.641Z",
+      "queryHashes": [
+        "abdcb8c078d1",
+        "1e4b20906f82"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "index.js",
+        "capability-evolver-pro",
+        "node.js",
+        "agent.run",
+        "capability-evolver",
+        "52.7k",
+        "capability",
+        "evolver"
       ]
     }
   }
