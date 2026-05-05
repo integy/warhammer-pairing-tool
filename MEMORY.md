@@ -57,6 +57,7 @@ automation-workflows, openclaw-automation-recipes, productivity-automation-kit, 
 
 ## Preferences & Notes
 - News in Cantonese, short bullets
+- **Always use Traditional Chinese (繁體字) in replies, NOT Simplified Chinese (簡體字)**
 - Gateway memory healthy at 200-700MB range
 - WhatsApp auto-reconnects in <5 seconds
 - No unsolicited WhatsApp messages unless status alerts

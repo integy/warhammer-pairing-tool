@@ -420,6 +420,14 @@
     "productivity": {
       "version": "1.0.4",
       "installedAt": 1777870081709
+    },
+    "review-evo": {
+      "version": "0.1.1",
+      "installedAt": 1777956515508
+    },
+    "jina-web-fetcher": {
+      "version": "1.0.0",
+      "installedAt": 1777956522564
     }
   }
 }
