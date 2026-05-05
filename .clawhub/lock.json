@@ -428,6 +428,14 @@
     "jina-web-fetcher": {
       "version": "1.0.0",
       "installedAt": 1777956522564
+    },
+    "skill-hunter": {
+      "version": "1.0.6",
+      "installedAt": 1778014087901
+    },
+    "openclaw-aegis-signer": {
+      "version": "1.0.1",
+      "installedAt": 1778017816252
     }
   }
 }
