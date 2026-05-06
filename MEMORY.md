@@ -79,3 +79,9 @@ automation-workflows, openclaw-automation-recipes, productivity-automation-kit, 
 - Security audit script deleted by evolver (Apr 13-14) — not reinstalled yet
 - exec policy remains allow-always needed but cron jobs continue to fail silently
 _Last updated: 2026-04-29_
+
+## Capability Evolver Run (May 6, 2026)
+- 110 skills installed (up from ~105 in late April)
+- No new skills needed — ecosystem comprehensively covered
+- **cron path bug**: cron task calls `capability-evolver/index.js run` but skill is actually `capability-evolver-pro` (TypeScript)
+- nwo-robotics skipped — user already has 3 robotics skills
