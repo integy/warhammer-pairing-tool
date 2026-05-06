@@ -440,6 +440,10 @@
     "system-resource-monitor": {
       "version": "1.0.0",
       "installedAt": 1778028487019
+    },
+    "inspirai-audit": {
+      "version": "1.0.0",
+      "installedAt": 1778050255545
     }
   }
 }
