@@ -1,1 +1,8 @@
-night
+{
+  "lastChecks": {
+    "email": null,
+    "calendar": null,
+    "weather": null
+  },
+  "lastWALCheck": 1749272400
+}

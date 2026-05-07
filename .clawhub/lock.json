@@ -444,6 +444,10 @@
     "inspirai-audit": {
       "version": "1.0.0",
       "installedAt": 1778050255545
+    },
+    "session-handoff": {
+      "version": "0.1.0",
+      "installedAt": 1778125833818
     }
   }
 }
