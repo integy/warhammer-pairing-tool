@@ -1,0 +1,51 @@
+{
+  "workspace": "~/workspace",
+  "gateway": {
+    "port": 48391,
+    "name": "brain",
+    "role": "coordinator",
+    "model": "strategic-default"
+  },
+  "agents": [
+    {
+      "name": "coder",
+      "port": 48520,
+      "role": "implementation",
+      "model": "coding-default",
+      "tokenEnv": "FLEET_CODER_TOKEN"
+    },
+    {
+      "name": "reviewer",
+      "port": 48540,
+      "role": "code-review",
+      "model": "coding-default",
+      "tokenEnv": "FLEET_REVIEWER_TOKEN"
+    }
+  ],
+  "endpoints": [
+    {
+      "name": "website",
+      "url": "https://myapp.com"
+    },
+    {
+      "name": "api",
+      "url": "https://api.myapp.com/health"
+    }
+  ],
+  "repos": [
+    {
+      "name": "web",
+      "repo": "myorg/web"
+    },
+    {
+      "name": "backend",
+      "repo": "myorg/backend"
+    }
+  ],
+  "linear": {
+    "teams": [
+      "PROJ"
+    ],
+    "apiKeyEnv": "LINEAR_API_KEY"
+  }
+}

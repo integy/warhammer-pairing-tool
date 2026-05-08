@@ -1,0 +1,23 @@
+{
+  "workspace": "~/workspace",
+  "gateway": {
+    "port": 48391,
+    "name": "main",
+    "role": "coordinator",
+    "model": "default"
+  },
+  "agents": [],
+  "runtimes": [],
+  "endpoints": [],
+  "repos": [],
+  "constitution": {
+    "enabled": false,
+    "rules": [],
+    "applyTo": [
+      "task",
+      "parallel",
+      "steer"
+    ],
+    "required": false
+  }
+}
