@@ -423,7 +423,7 @@
     },
     "review-evo": {
       "version": "0.1.1",
-      "installedAt": 1777956515508
+      "installedAt": 1778197684660
     },
     "jina-web-fetcher": {
       "version": "1.0.0",
@@ -448,6 +448,10 @@
     "session-handoff": {
       "version": "0.1.0",
       "installedAt": 1778125833818
+    },
+    "openclaw-coding-agent-playbook": {
+      "version": "0.1.1",
+      "installedAt": 1778197710987
     }
   }
 }
