@@ -44,6 +44,18 @@
     "agent-autonomy-kit": {
       "version": "1.0.0",
       "installedAt": 1778413840884
+    },
+    "session-watchdog": {
+      "version": "1.0.0",
+      "installedAt": 1778446148229
+    },
+    "beacon": {
+      "version": "2.16.0",
+      "installedAt": 1778446164943
+    },
+    "openclaw-macos-security": {
+      "version": "1.0.4",
+      "installedAt": 1778446182155
     }
   }
 }
