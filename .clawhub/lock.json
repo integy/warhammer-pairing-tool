@@ -36,6 +36,14 @@
     "skill-vetter": {
       "version": "1.0.0",
       "installedAt": 1778406525928
+    },
+    "openclaw-master-skills": {
+      "version": "0.13.0",
+      "installedAt": 1778413795034
+    },
+    "agent-autonomy-kit": {
+      "version": "1.0.0",
+      "installedAt": 1778413840884
     }
   }
 }
