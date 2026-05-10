@@ -28,6 +28,14 @@
     "agent-maker-2": {
       "version": "1.0.0",
       "installedAt": 1778345475370
+    },
+    "gateway-watchdog": {
+      "version": "1.4.0",
+      "installedAt": 1778388647537
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1778406525928
     }
   }
 }
