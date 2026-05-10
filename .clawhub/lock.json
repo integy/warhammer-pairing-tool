@@ -3,11 +3,11 @@
   "skills": {
     "openclaw-agent-discovery": {
       "version": "1.0.0",
-      "installedAt": 1778345439315
+      "installedAt": 1778381315318
     },
     "openclaw-agent-optimize": {
       "version": "1.2.1",
-      "installedAt": 1778345440194
+      "installedAt": 1778381317824
     },
     "outlook": {
       "version": "1.3.0",
@@ -15,7 +15,7 @@
     },
     "wan-image-video-generation-editting": {
       "version": "1.0.2",
-      "installedAt": 1778345453535
+      "installedAt": 1778381320332
     },
     "smart-memory": {
       "version": "3.1.0",
@@ -23,7 +23,7 @@
     },
     "knowledge-graph": {
       "version": "1.0.0",
-      "installedAt": 1778345475068
+      "installedAt": 1778381322695
     },
     "agent-maker-2": {
       "version": "1.0.0",
