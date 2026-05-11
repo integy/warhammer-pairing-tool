@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-11T02:02:22.827Z",
+  "updatedAt": "2026-05-11T15:48:38.965Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -321,13 +321,13 @@
       "endLine": 73,
       "source": "memory",
       "snippet": "- Not installed ### Decision - NOT installing self-evolve (SUSPICIOUS security) - agent-autonomy-kit: CLEAN status, interesting for proactive automation - Will install agent-autonomy-kit (healthy system, proactive work) ### Actions Taken 1. Ran clawhub searches for trending categories 2. Inspected several candidate skills 3. Found agent-autonomy-kit (clean security, recent update) 4. Skipped auto-skill-hunter (SUSPICIOUS) 5. Skipped self-evolve (SUSPICIOUS) ## Capability Evolver Cron Run (4:19 PM HKT) ### Status - `capability-evolver` CLI not found (only `capability-evolver-pro`) - Explored ClawHub for new skills across target categories - Inspected and installed 1 new skill ### Skills",
-      "recallCount": 25,
+      "recallCount": 26,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 25,
+      "totalScore": 26,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-18T10:06:27.107Z",
-      "lastRecalledAt": "2026-05-09T02:02:16.624Z",
+      "lastRecalledAt": "2026-05-11T14:48:31.234Z",
       "queryHashes": [
         "27a133fdfd05",
         "d9ab0cc2db5c",
@@ -351,7 +351,8 @@
         "66ac60ac0105",
         "3e6e3db35568",
         "eb9f26a817ea",
-        "3a30723ecf1e"
+        "3a30723ecf1e",
+        "4813091f9fce"
       ],
       "recallDays": [
         "2026-04-18",
@@ -366,7 +367,8 @@
         "2026-05-05",
         "2026-05-06",
         "2026-05-07",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-11"
       ],
       "conceptTags": [
         "self-evolve",
@@ -588,21 +590,23 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- robotics-vla (3.314) - Robotics VLA - NOT installed - automation-workflows (3.798) - Automation - already installed - ai-agents-architect (3.417) - AI Agents - already installed - personal-productivity (3.588) - Personal Productivity - already installed ### Evolver Status: - capability-evolver-pro directory exists but node path issue - clawhub CLI working fine ### Actions Taken: - Ran clawhub trending searches - Compared installed vs available skills - Found robotics and 3D printing skills not installed but relevant to interests ## Capability Evolver Run #2 (14:25 HK Time) ### Evolver Execution: - `capability-evolver` (original path) does not exist — skill renamed to `capability-evolve",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T07:19:05.336Z",
-      "lastRecalledAt": "2026-05-05T00:07:06.641Z",
+      "lastRecalledAt": "2026-05-11T15:48:38.965Z",
       "queryHashes": [
         "7b437f05522b",
         "abdcb8c078d1",
-        "1e4b20906f82"
+        "1e4b20906f82",
+        "1e9c0fcb1d0d"
       ],
       "recallDays": [
         "2026-04-30",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-11"
       ],
       "conceptTags": [
         "robotics-vla",
@@ -622,18 +626,19 @@
       "endLine": 64,
       "source": "memory",
       "snippet": "- Fix: Use direct `node /path/to/script.js` instead of `cd && node` 2. **HIGH** — embedded run timeout on minimax/MiniMax-M2.7 (3 occurrences) - Root cause: Context overflow + model timeout - Fix: Add retry logic or switch model 3. **MEDIUM** — WhatsApp WebSocket 408/503 connection errors 4. **MEDIUM** — image model does not support images (media-understanding) 5. **INFO** — sqlite-vec unavailable (vector memory degraded) ### Recommendations: - Fix exec preflight: scripts should use `node /full/path/script.js` not `cd && node` - Add model retry/fallback for minimax timeouts - WhatsApp connection monitoring looks ok (auto-reconnect working) - image model limitation: cu",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T07:19:05.336Z",
-      "lastRecalledAt": "2026-05-11T02:02:22.827Z",
+      "lastRecalledAt": "2026-05-11T15:48:38.965Z",
       "queryHashes": [
         "7b437f05522b",
         "22fe496fc7b7",
         "9c85cccec9d4",
-        "9de42cfd8bea"
+        "9de42cfd8bea",
+        "1e9c0fcb1d0d"
       ],
       "recallDays": [
         "2026-04-30",
@@ -815,23 +820,25 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "- Inspected openclaw-robotics - supports Unitree GO1/GO2/G1/H1 robots ### No New Skills Installed - All potentially new skills (agentic-workflow-automation, n8n-workflow-automation) overlap with existing automation-workflows and n8n-workflow-automation already installed - openclaw-robotics already installed - No Warhammer-related skills exist on ClawHub ### Notes - capability-evolver-pro status: healthy, pure-logic, no external dependencies - To run full log analysis: invoke skill with action='analyze' and log entries",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.93315566810531,
+      "totalScore": 3.567079129454444,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-01T10:40:42.859Z",
-      "lastRecalledAt": "2026-05-09T06:47:39.076Z",
+      "lastRecalledAt": "2026-05-11T14:48:31.234Z",
       "queryHashes": [
         "6c8954d6f6f7",
         "bcf6754a4c8f",
         "1ff2b282aa1d",
-        "0fbd6f84aef0"
+        "0fbd6f84aef0",
+        "4813091f9fce"
       ],
       "recallDays": [
         "2026-05-01",
         "2026-05-05",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-11"
       ],
       "conceptTags": [
         "openclaw-robotics",
@@ -913,17 +920,18 @@
       "endLine": 79,
       "source": "memory",
       "snippet": "### Skipped (Security/Browser-Only/Redundant) - **printpal-3d** - flagged suspicious by VirusTotal ⚠️ - **openclaw-robotics** - already installed (2.1.0) - **ai-agent-helper** - similar to existing agents skills - **ai-automation-workflow** - similar to existing n8n/automation skills - No Warhammer-specific skill found on ClawHub ### Optimization Notes - Current setup well-covered for: 3D printing, home automation, DevOps, coding - Robotics skills present (openclaw-robotics, robotics-vla) - Gap: no dedicated Warhammer/TTRPG skill on ClawHub - printpal-3d flagged suspicious - not installing",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 3.6337054975065874,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T02:02:24.057Z",
-      "lastRecalledAt": "2026-05-11T02:02:22.827Z",
+      "lastRecalledAt": "2026-05-11T14:48:31.234Z",
       "queryHashes": [
         "22fe496fc7b7",
         "9c85cccec9d4",
-        "9de42cfd8bea"
+        "9de42cfd8bea",
+        "4813091f9fce"
       ],
       "recallDays": [
         "2026-05-04",
@@ -983,25 +991,27 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "- capability-evolver-pro has `.clawhub/` marker (verified clean install) ### Recommendations 1. **devops-automation-pack** — consider installing (score 3.104, not yet installed, devops-adjacent but not duplicate) 2. Cron task `capability-evolver/index.js run` needs updating to `capability-evolver-pro` (TypeScript incompatible with `node index.js run`) 3. No new skills auto-installed — ecosystem already fully covered for Eric's interests ### No Changes Made - All useful trending skills already installed - No duplicates, no suspicious packages - Workspace clean",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.29391657883112,
+      "totalScore": 5.927308198288929,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T23:47:34.684Z",
-      "lastRecalledAt": "2026-05-09T06:47:39.076Z",
+      "lastRecalledAt": "2026-05-11T14:48:31.234Z",
       "queryHashes": [
         "1ff2b282aa1d",
         "abdcb8c078d1",
         "1e4b20906f82",
         "1fe231088f19",
         "02f21ecfaed6",
-        "0fbd6f84aef0"
+        "0fbd6f84aef0",
+        "4813091f9fce"
       ],
       "recallDays": [
         "2026-05-05",
         "2026-05-07",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-11"
       ],
       "conceptTags": [
         "capability-evolver-pro",
@@ -1366,6 +1376,99 @@
         "productivity-automation-kit",
         "afrexai-business-automation",
         "ai-automation-workflow"
+      ]
+    },
+    "memory:memory/2026-04-30.md:84:106": {
+      "key": "memory:memory/2026-04-30.md:84:106",
+      "path": "memory/2026-04-30.md",
+      "startLine": 84,
+      "endLine": 106,
+      "source": "memory",
+      "snippet": "- image model limitation — MiniMax-M2.7 doesn't support images (expected) ### Clawhub Trending (new since last run): - secretary-memory v1.3.0 — Secretary-style multi-zone memory (NEW, looks impressive) - cad-mesh-3dgs v0.1.0 — CAD↔Mesh↔3DGS bridging (NEW) - reliable-tool-context v1.0.0 — Better tool context from command output (NEW) - institutional-tracker-ai v0.1.0 — Chinese quant trading (NEW) - ai-short-film-producer v1.0.3 — AI short film production (NEW) - linkedin-skill / linkedapi-linkedin — LinkedIn automation (NEW) ### New Skills Assessed: - **secretary-memory** — Multi-zone memory system with auto-summarization + preference extraction. Looks well-built but **agent-memory** alre",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-11T15:48:38.965Z",
+      "lastRecalledAt": "2026-05-11T15:48:38.965Z",
+      "queryHashes": [
+        "1e9c0fcb1d0d"
+      ],
+      "recallDays": [
+        "2026-05-11"
+      ],
+      "conceptTags": [
+        "minimax-m2.7",
+        "secretary-memory",
+        "v1.3.0",
+        "secretary-style",
+        "multi-zone",
+        "cad-mesh-3dgs",
+        "v0.1.0",
+        "reliable-tool-context"
+      ]
+    },
+    "memory:memory/2026-05-02.md:18:41": {
+      "key": "memory:memory/2026-05-02.md:18:41",
+      "path": "memory/2026-05-02.md",
+      "startLine": 18,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "3. **tripo-3d-generation** (v2.0.5) — Text/image → 3D model generation, already have similar skills (meshy, bambu-studio-ai, etc.) ### Clawhub Search Results: **Automation:** ai-web-automation (3.663), agentic-workflow-automation (3.617), windows-ui-automation (3.604), productivity-automation-kit (3.598) — all already installed **Robotics:** nwo-robotics (3.339), jaka-robotics-control (3.320), openclaw-robotics (3.030), robotics-vla (2.936) — all already installed **3D Printing:** openclaw-3d-printing-skill (3.209), bambu-studio-ai (0.934), find-stl (0.908), printpal-3d (0.844), tripo-3d-generation (0.764) — all already installed except tripo (not needed, redundant) ### No New Skills Insta",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-11T15:48:38.965Z",
+      "lastRecalledAt": "2026-05-11T15:48:38.965Z",
+      "queryHashes": [
+        "1e9c0fcb1d0d"
+      ],
+      "recallDays": [
+        "2026-05-11"
+      ],
+      "conceptTags": [
+        "tripo-3d-generation",
+        "v2.0.5",
+        "text/image",
+        "bambu-studio-ai",
+        "ai-web-automation",
+        "3.663",
+        "agentic-workflow-automation",
+        "3.617"
+      ]
+    },
+    "memory:memory/2026-04-30.md:59:89": {
+      "key": "memory:memory/2026-04-30.md:59:89",
+      "path": "memory/2026-04-30.md",
+      "startLine": 59,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "### New Skills to Install: NONE - All relevant skills already installed (openclaw-robotics, openclaw-3d-printing-skill, bamblu-studio-ai, find-stl, printpal-3d, automation-workflows, ai-agents-architect) - No duplicates found, no gaps to fill - Skills library is comprehensive for user's interests ### Workflow Optimizations: 1. exec preflight: Stop using `cd path && node index.js` pattern — use `node /full/path/index.js` 2. Model timeout: The MiniMax-M2.7 model times out on long context — consider compacting context or adding explicit retry 3. sqlite-vec: Consider installing sqlite-vec extension for proper vector memory ### Summary: System health is moderate (50/100) with fixable issues. Sk",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-11T15:48:38.965Z",
+      "lastRecalledAt": "2026-05-11T15:48:38.965Z",
+      "queryHashes": [
+        "1e9c0fcb1d0d"
+      ],
+      "recallDays": [
+        "2026-05-11"
+      ],
+      "conceptTags": [
+        "openclaw-robotics",
+        "openclaw-3d-printing-skill",
+        "bamblu-studio-ai",
+        "find-stl",
+        "printpal-3d",
+        "automation-workflows",
+        "ai-agents-architect",
+        "index.js"
       ]
     }
   }
