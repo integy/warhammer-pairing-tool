@@ -68,6 +68,18 @@
     "skylv-team-workflow-automation": {
       "version": "1.0.0",
       "installedAt": 1778467727386
+    },
+    "capability-evolver-pro": {
+      "version": "1.0.2",
+      "installedAt": 1778474893759
+    },
+    "fl-multi-agent-orchestrator": {
+      "version": "1.0.0",
+      "installedAt": 1778493003580
+    },
+    "swarmvault": {
+      "version": "3.14.1",
+      "installedAt": 1778493020244
     }
   }
 }
