@@ -80,6 +80,10 @@
     "swarmvault": {
       "version": "3.14.1",
       "installedAt": 1778493020244
+    },
+    "trending-skills": {
+      "version": "0.1.0",
+      "installedAt": 1778528916452
     }
   }
 }
