@@ -56,6 +56,18 @@
     "openclaw-macos-security": {
       "version": "1.0.4",
       "installedAt": 1778446182155
+    },
+    "game-cog": {
+      "version": "1.0.13",
+      "installedAt": 1778453322503
+    },
+    "3d-maker-companion": {
+      "version": "1.0.2",
+      "installedAt": 1778453323098
+    },
+    "skylv-team-workflow-automation": {
+      "version": "1.0.0",
+      "installedAt": 1778467727386
     }
   }
 }

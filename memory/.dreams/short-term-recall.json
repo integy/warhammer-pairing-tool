@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-09T06:47:39.076Z",
+  "updatedAt": "2026-05-11T02:02:22.827Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -499,13 +499,13 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-04-24 Daily Memory ## Session Log ### WAL Check (18:03 HKT) - SESSION-STATE.md verified current (updated 06:04) - working-buffer.md empty - MEMORY.md current (updated Apr 22) - Security audit script NOT FOUND — path no longer exists; skipped - No context loss events - No active subagents ### Healthcheck (18:03 HKT) - Gateway Memory: 689.406 MB (below 800MB threshold — healthy) - Disk: 10% used - WhatsApp: check gateway status (gateway probe ok) - No restart needed ### Notes - WAL agent幻觉: continues to report false positives about missing files; ignore - security-audit.sh deleted (was in openclaw-skills-proactive-agent/scripts/, now gone) - healthcheck.sh exists and runs correctly",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10.632470352766077,
+      "totalScore": 11.632470352766077,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-25T02:02:09.488Z",
-      "lastRecalledAt": "2026-05-09T02:00:11.839Z",
+      "lastRecalledAt": "2026-05-11T02:02:22.827Z",
       "queryHashes": [
         "8c49bc4e75e2",
         "c079031ecc98",
@@ -516,7 +516,8 @@
         "22fe496fc7b7",
         "3e6e3db35568",
         "9c85cccec9d4",
-        "3284d8f628bf"
+        "3284d8f628bf",
+        "9de42cfd8bea"
       ],
       "recallDays": [
         "2026-04-25",
@@ -527,7 +528,8 @@
         "2026-05-04",
         "2026-05-06",
         "2026-05-08",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-11"
       ],
       "conceptTags": [
         "gateway",
@@ -620,22 +622,24 @@
       "endLine": 64,
       "source": "memory",
       "snippet": "- Fix: Use direct `node /path/to/script.js` instead of `cd && node` 2. **HIGH** — embedded run timeout on minimax/MiniMax-M2.7 (3 occurrences) - Root cause: Context overflow + model timeout - Fix: Add retry logic or switch model 3. **MEDIUM** — WhatsApp WebSocket 408/503 connection errors 4. **MEDIUM** — image model does not support images (media-understanding) 5. **INFO** — sqlite-vec unavailable (vector memory degraded) ### Recommendations: - Fix exec preflight: scripts should use `node /full/path/script.js` not `cd && node` - Add model retry/fallback for minimax timeouts - WhatsApp connection monitoring looks ok (auto-reconnect working) - image model limitation: cu",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T07:19:05.336Z",
-      "lastRecalledAt": "2026-05-08T02:00:38.446Z",
+      "lastRecalledAt": "2026-05-11T02:02:22.827Z",
       "queryHashes": [
         "7b437f05522b",
         "22fe496fc7b7",
-        "9c85cccec9d4"
+        "9c85cccec9d4",
+        "9de42cfd8bea"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-05-04",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-11"
       ],
       "conceptTags": [
         "path/to/script.js",
@@ -724,13 +728,13 @@
       "endLine": 39,
       "source": "memory",
       "snippet": "# 2026-04-29.md # Capability Evolver Report **Date:** 2026-04-29 01:25 HKT **Trigger:** hourly cron (e5f004fe) --- ## Capability Evolver Status ✅ **capability-evolver-pro** (v2.0.0) — installed and operational - Pure-logic TypeScript handler; no index.js runner needed - Actions: analyze, evolve, status - Supported strategies: auto, balanced, innovate, harden, repair-only **Cron Status:** running --- ## Skills Inventory **Total installed:** 95 skill directories in `~/.openclaw/workspace/skills/` **Key coverage areas:** - Automation: automation-workflows, productivity-automation-kit, ai-automation-workflow, agentic-workflow-automation-v2, agent-autonomy-kit, deep-work-orchestrator,",
-      "recallCount": 14,
+      "recallCount": 15,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 14,
+      "totalScore": 15,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-01T10:19:33.255Z",
-      "lastRecalledAt": "2026-05-08T02:00:38.446Z",
+      "lastRecalledAt": "2026-05-11T02:02:22.827Z",
       "queryHashes": [
         "6f0bb556750d",
         "6c8954d6f6f7",
@@ -745,7 +749,8 @@
         "1e4b20906f82",
         "66ac60ac0105",
         "104a62399406",
-        "9c85cccec9d4"
+        "9c85cccec9d4",
+        "9de42cfd8bea"
       ],
       "recallDays": [
         "2026-05-01",
@@ -754,7 +759,8 @@
         "2026-05-04",
         "2026-05-05",
         "2026-05-07",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-11"
       ],
       "conceptTags": [
         "capability-evolver-pro",
@@ -907,20 +913,22 @@
       "endLine": 79,
       "source": "memory",
       "snippet": "### Skipped (Security/Browser-Only/Redundant) - **printpal-3d** - flagged suspicious by VirusTotal ⚠️ - **openclaw-robotics** - already installed (2.1.0) - **ai-agent-helper** - similar to existing agents skills - **ai-automation-workflow** - similar to existing n8n/automation skills - No Warhammer-specific skill found on ClawHub ### Optimization Notes - Current setup well-covered for: 3D printing, home automation, DevOps, coding - Robotics skills present (openclaw-robotics, robotics-vla) - Gap: no dedicated Warhammer/TTRPG skill on ClawHub - printpal-3d flagged suspicious - not installing",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T02:02:24.057Z",
-      "lastRecalledAt": "2026-05-08T02:00:38.446Z",
+      "lastRecalledAt": "2026-05-11T02:02:22.827Z",
       "queryHashes": [
         "22fe496fc7b7",
-        "9c85cccec9d4"
+        "9c85cccec9d4",
+        "9de42cfd8bea"
       ],
       "recallDays": [
         "2026-05-04",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-11"
       ],
       "conceptTags": [
         "security/browser-only/redundant",
