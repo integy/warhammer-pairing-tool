@@ -87,11 +87,11 @@
     },
     "skill-enhance": {
       "version": "1.0.2",
-      "installedAt": 1778572277482
+      "installedAt": 1778608165564
     },
     "find-skills-clark": {
       "version": "1.0.0",
-      "installedAt": 1778572293591
+      "installedAt": 1778608167290
     },
     "skill-sonar": {
       "version": "1.0.2",
@@ -108,6 +108,14 @@
     "personal-assistant": {
       "version": "1.0.0",
       "installedAt": 1778579430035
+    },
+    "ai-agent-opsec": {
+      "version": "1.4.0",
+      "installedAt": 1778604542149
+    },
+    "autonomous-research": {
+      "version": "1.0.0",
+      "installedAt": 1778611751589
     }
   }
 }
