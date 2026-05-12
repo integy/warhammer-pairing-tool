@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-11T15:48:38.965Z",
+  "updatedAt": "2026-05-12T02:03:15.254Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -102,15 +102,14 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "- **capability-evolver** directory reports as \"not found\" by some cron agents (contradictory) - clawhub CLI: sometimes not installed, sometimes works - WhatsApp creds.json corruption (Bad MAC errors) — still unresolved since Apr 2 ## Skills - 100-130+ skills installed (reports vary by agent) - No new skills installed — library comprehensive - Evolver stagnation: gene_gep_optimize_prompt_and_assets selected repeatedly (same gene last 5+ cycles) - ClawHavoc cleanup: ClawHub has 3,286 skills (down from 13,729+) - Moltbook: DEAD (domain parked at Porkbun), confirmed geo-blocked Apr 2, now completely gone ## News Summary (Apr 13 morning) - 何超蕸逝世, 立法會罷戰, 清明偷衣包 - 美CPI出爐降息預期降溫, 比特幣 $82K, Manus AI",
-      "recallCount": 59,
+      "recallCount": 60,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 26.55361993609213,
+      "totalScore": 27.55361993609213,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-13T10:07:02.822Z",
-      "lastRecalledAt": "2026-05-09T02:00:11.839Z",
+      "lastRecalledAt": "2026-05-12T02:02:41.875Z",
       "queryHashes": [
-        "d376786139dc",
         "a05b193a28cb",
         "fbf2d92f23c5",
         "401f8446b750",
@@ -141,10 +140,10 @@
         "e833c5be4542",
         "e01d925f90b8",
         "b9c7309eb3b2",
-        "c27473a9f036"
+        "c27473a9f036",
+        "94f82e44e18f"
       ],
       "recallDays": [
-        "2026-04-20",
         "2026-04-21",
         "2026-04-22",
         "2026-04-23",
@@ -159,7 +158,8 @@
         "2026-05-04",
         "2026-05-06",
         "2026-05-07",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-12"
       ],
       "conceptTags": [
         "capability-evolver",
@@ -388,13 +388,13 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "# 2026-04-20 - Capability Evolver Run ## Status: COMPLETED (partial) ### Findings **capability-evolver-pro**: Installed locally at `~/.openclaw/skills/capability-evolver-pro/` (v2.0.0). It's a TypeScript skill module, not a CLI with a `run` subcommand. To invoke it, need to pass action inputs (analyze/evolve/status) via the skill runner. **Existing Skills** (12 installed): - ai-automation-workflow - automation-workflows - cad-agent - capability-evolver-pro ← meta-skill - daily-trending - github-trending-report - home-assistant - moltbook-api - n8n-workflow-automation - openclaw-robotics - productivity-automation-kit - self-improving **ClawHub Search Results**: - Trending: agentic-workfl",
-      "recallCount": 17,
+      "recallCount": 18,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 15.516523435601904,
+      "totalScore": 16.516523435601904,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-20T03:50:33.259Z",
-      "lastRecalledAt": "2026-05-09T02:00:11.839Z",
+      "lastRecalledAt": "2026-05-12T02:02:41.875Z",
       "queryHashes": [
         "b9d03502a787",
         "506d717efeb6",
@@ -411,7 +411,8 @@
         "e833c5be4542",
         "1ff2b282aa1d",
         "b9c7309eb3b2",
-        "c27473a9f036"
+        "c27473a9f036",
+        "94f82e44e18f"
       ],
       "recallDays": [
         "2026-04-20",
@@ -427,7 +428,8 @@
         "2026-05-05",
         "2026-05-06",
         "2026-05-07",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-12"
       ],
       "conceptTags": [
         "capability-evolver-pro",
@@ -551,26 +553,28 @@
       "endLine": 17,
       "source": "memory",
       "snippet": "# Daily Notes - 2026-04-30 ## Capability Evolver Run ### Skills Already Installed (full list): 3d-model-generator, 3dprint, agency-agents, agent-autonomy-kit, agentic-workflow-automation, agents, ai-agent-helper, ai-agents-architect, ai-automation-workflow, ai-writing-agent, article-writer, automation-workflows, bamblu-studio-ai, cad-agent, capability-evolver-pro, cicd-pipeline-generator, claw3d, code-review-assistant, critical-code-reviewer, daily-trending, deep-research-prime, devops, find-stl, firecrawl-search, github-ops, github-trending, github-trending-report, home-assistant, homekit, homey-cli, image-to-relief-stl, in-depth-research, mcp-hass, miniature-world-generator, moltbook-api",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T02:00:18.792Z",
-      "lastRecalledAt": "2026-05-09T02:00:11.839Z",
+      "lastRecalledAt": "2026-05-12T02:02:41.875Z",
       "queryHashes": [
         "0978adb45ba9",
         "26219446d3d4",
         "e833c5be4542",
         "b9c7309eb3b2",
-        "9ebc9c4086e7"
+        "9ebc9c4086e7",
+        "94f82e44e18f"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-05-01",
         "2026-05-03",
         "2026-05-06",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-12"
       ],
       "conceptTags": [
         "3d-model-generator",
@@ -820,25 +824,27 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "- Inspected openclaw-robotics - supports Unitree GO1/GO2/G1/H1 robots ### No New Skills Installed - All potentially new skills (agentic-workflow-automation, n8n-workflow-automation) overlap with existing automation-workflows and n8n-workflow-automation already installed - openclaw-robotics already installed - No Warhammer-related skills exist on ClawHub ### Notes - capability-evolver-pro status: healthy, pure-logic, no external dependencies - To run full log analysis: invoke skill with action='analyze' and log entries",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.567079129454444,
+      "totalScore": 4.201002590803578,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-01T10:40:42.859Z",
-      "lastRecalledAt": "2026-05-11T14:48:31.234Z",
+      "lastRecalledAt": "2026-05-12T02:03:15.254Z",
       "queryHashes": [
         "6c8954d6f6f7",
         "bcf6754a4c8f",
         "1ff2b282aa1d",
         "0fbd6f84aef0",
-        "4813091f9fce"
+        "4813091f9fce",
+        "4038a1c3675e"
       ],
       "recallDays": [
         "2026-05-01",
         "2026-05-05",
         "2026-05-09",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "openclaw-robotics",
@@ -889,18 +895,20 @@
       "endLine": 70,
       "source": "memory",
       "snippet": "- Self-improvement: self-improving-agent (3.0.18), self-improving (1.2.16) - Smart Home: smart-home, home-assistant, homekit, homey-cli, smart-home-energy-saver, mcp-hass, iot - GitHub: github-trending, daily-trending, github-trending-report, github-ops --- ## ClawHub Searches Performed | Query | Result | |-------|--------| | automation, AI agents, productivity | ai-agent-helper (already installed) | | robotics, 3D printing | (search pending) | | Warhammer | (no results) | | clawhub explore (trending) | 20 skills (game-music, cold-email-salesblink, xerg, a2a-client, etc.) — all niche/content-focused | **clawhub explore trending skills:** - game-music, beginners-photo-video, cold-email-sa",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-03T02:02:41.773Z",
-      "lastRecalledAt": "2026-05-03T02:02:41.773Z",
+      "lastRecalledAt": "2026-05-12T02:03:15.254Z",
       "queryHashes": [
-        "650d6ddc3a72"
+        "650d6ddc3a72",
+        "4038a1c3675e"
       ],
       "recallDays": [
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-12"
       ],
       "conceptTags": [
         "self-improvement",
@@ -1095,21 +1103,23 @@
       "endLine": 27,
       "source": "memory",
       "snippet": "# 2026-05-04 - Daily Memory ## Capability Evolver Run (Evening - 12:47 UTC / 20:47 HKT) ### Evolver Status - **capability-evolver**: NOT installed (deleted previously; no JS entry point) - **capability-evolver-pro**: v1.0.2 (TypeScript) — installed at `skills/capability-evolver-pro/` - **Cron task mismatch**: cron still calls `capability-evolver/index.js run` but skill is TypeScript ### ClawHub Searches - automation: productivity-automation-kit, ai-automation-workflow, openclaw-automation-recipes — ALL already installed - 3D printing: claw3d, openclaw-3d-printing-skill, printpal-3d, Bambu Lab skills — ALL already installed - robotics: nwo-robotics, jaka-robotics-control, openclaw-robotics",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.638782759586439,
+      "totalScore": 4.638782759586439,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T23:47:34.684Z",
-      "lastRecalledAt": "2026-05-05T04:03:05.059Z",
+      "lastRecalledAt": "2026-05-12T02:03:15.254Z",
       "queryHashes": [
         "1ff2b282aa1d",
         "abdcb8c078d1",
         "1e4b20906f82",
-        "1fe231088f19"
+        "1fe231088f19",
+        "4038a1c3675e"
       ],
       "recallDays": [
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-12"
       ],
       "conceptTags": [
         "capability-evolver",
