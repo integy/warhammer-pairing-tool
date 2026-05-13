@@ -124,6 +124,10 @@
     "peaq-robotics": {
       "version": "0.1.7",
       "installedAt": 1778662170879
+    },
+    "steam-gaming-companion": {
+      "version": "1.0.0",
+      "installedAt": 1778672966017
     }
   }
 }

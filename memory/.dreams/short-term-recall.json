@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-13T02:02:25.966Z",
+  "updatedAt": "2026-05-13T13:50:53.745Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -102,15 +102,14 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "- **capability-evolver** directory reports as \"not found\" by some cron agents (contradictory) - clawhub CLI: sometimes not installed, sometimes works - WhatsApp creds.json corruption (Bad MAC errors) — still unresolved since Apr 2 ## Skills - 100-130+ skills installed (reports vary by agent) - No new skills installed — library comprehensive - Evolver stagnation: gene_gep_optimize_prompt_and_assets selected repeatedly (same gene last 5+ cycles) - ClawHavoc cleanup: ClawHub has 3,286 skills (down from 13,729+) - Moltbook: DEAD (domain parked at Porkbun), confirmed geo-blocked Apr 2, now completely gone ## News Summary (Apr 13 morning) - 何超蕸逝世, 立法會罷戰, 清明偷衣包 - 美CPI出爐降息預期降溫, 比特幣 $82K, Manus AI",
-      "recallCount": 61,
+      "recallCount": 62,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 28.55361993609213,
+      "totalScore": 29.55361993609213,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-13T10:07:02.822Z",
-      "lastRecalledAt": "2026-05-13T01:00:43.447Z",
+      "lastRecalledAt": "2026-05-13T13:50:53.745Z",
       "queryHashes": [
-        "fbf2d92f23c5",
         "401f8446b750",
         "5fa9477d3d49",
         "0ac8e400f735",
@@ -141,7 +140,8 @@
         "b9c7309eb3b2",
         "c27473a9f036",
         "94f82e44e18f",
-        "5c0e55b6b705"
+        "5c0e55b6b705",
+        "f9a4bbd4928a"
       ],
       "recallDays": [
         "2026-04-22",
@@ -179,13 +179,13 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# Daily Memory — 2026-04-13 ## System Health - Gateway: stable, memory oscillating 453-840MB, GC self-correcting repeatedly - **healthcheck.sh MISSING** — deleted by evolver or other operation (12:04 confirmed via exec). Needs recreation. - Disk: 75% — now consistently at 75% (was 74% for months) - MEMORY.md truncation: 26% removed by bootstrap (max/file limit ~18KB). Recommend raising `agents.defaults.bootstrapMaxChars` to 30000+ ## WhatsApp Status - Session 428: appeared at 01:24 Apr 11, 05:17 Apr 11, 00:30 Apr 12, 01:01 Apr 13, 11:49+11:50 Apr 13 (back-to-back 428s) - **428 is worsening** — multiple occurrences Apr 11-13. User should prepare to re-link. - 499 cycle: ~30 min period, auto",
-      "recallCount": 15,
+      "recallCount": 16,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.500613984914879,
+      "totalScore": 4.500613984914879,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-13T10:31:22.887Z",
-      "lastRecalledAt": "2026-05-04T13:02:43.009Z",
+      "lastRecalledAt": "2026-05-13T13:50:53.745Z",
       "queryHashes": [
         "b0e7562293f1",
         "f523e2bf8677",
@@ -201,7 +201,8 @@
         "bce89d4f3bb8",
         "2f562a14522b",
         "58f011d285c7",
-        "e01d925f90b8"
+        "e01d925f90b8",
+        "f9a4bbd4928a"
       ],
       "recallDays": [
         "2026-04-13",
@@ -210,7 +211,8 @@
         "2026-04-16",
         "2026-04-18",
         "2026-04-29",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-13"
       ],
       "conceptTags": [
         "gateway",
@@ -706,18 +708,19 @@
       "endLine": 118,
       "source": "memory",
       "snippet": "- 3D Printing: bambu-studio-ai, bambulab, 3dprint, find-stl, printpal-3d, openclaw-3d-printing-skill, claw3d, image-to-relief-stl, 3d-model-generator, miniature-world-generator - Automation: automation-workflows, productivity-automation-kit, personal-productivity, ai-automation-workflow, agentic-workflow-automation - AI Agents: agents, ai-agents-architect, agency-agents, self-improving, self-improving-agent ### New Skills to Install: **NONE** - All potentially useful new skills duplicate existing coverage or are too niche - Skills library is comprehensive for user's robotics + 3D printing + automation interests ### Workflow Optimizations (same as Run #2): 1. exec preflight: Use `node /full",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-01T10:16:09.339Z",
-      "lastRecalledAt": "2026-05-13T01:00:43.447Z",
+      "lastRecalledAt": "2026-05-13T13:50:53.745Z",
       "queryHashes": [
         "c8fb4c1fdcc1",
         "02f21ecfaed6",
         "3a30723ecf1e",
-        "5c0e55b6b705"
+        "5c0e55b6b705",
+        "f9a4bbd4928a"
       ],
       "recallDays": [
         "2026-05-01",
@@ -1244,20 +1247,22 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "### Installed Skills Count: 107 total ### No New Skills Installed - All trending skills across target domains already present - nwo-robotics (score 3.353) NOT installed — openclaw-robotics + jaka-robotics + robotics-vla provide adequate coverage - No Warhammer-related ClawHub offering - Ecosystem fully covered ### Known Issues - **Evolver cron mismatch**: cron calls `capability-evolver/index.js run` but skill is `capability-evolver-pro` (TS) at different path - **nwo-robotics**: Not installed but trending in robotics — could be added if user wants deeper robotics coverage ### No Changes Made - Comprehensive coverage, no duplicates, no new additions",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6456332297067076,
+      "totalScore": 2.6456332297067076,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T10:48:22.780Z",
-      "lastRecalledAt": "2026-05-09T06:47:39.076Z",
+      "lastRecalledAt": "2026-05-13T13:50:53.745Z",
       "queryHashes": [
         "02f21ecfaed6",
-        "0fbd6f84aef0"
+        "0fbd6f84aef0",
+        "f9a4bbd4928a"
       ],
       "recallDays": [
         "2026-05-07",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-13"
       ],
       "conceptTags": [
         "nwo-robotics",
@@ -1277,18 +1282,20 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "| Robotics | nwo-robotics (3.357), jaka-robotics-control (3.329), openclaw-robotics (3.035) | openclaw-robotics ✓, jaka-robotics ✓, robotics-vla ✓; nwo-robotics ✗ | | 3D Printing | openclaw-3d-printing-skill (3.230), bambu-studio-ai | openclaw-3d-printing-skill ✓; bambu-studio-ai ✗ | | Warhammer | (no results) | No skill exists | ### Installed Skills Count: 110 total ### Changes Made - **No new skills installed** — ecosystem comprehensively covered across all target domains - **nwo-robotics** NOT installed — user already has 3 robotics skills (openclaw-robotics, jaka-robotics, robotics-vla); adding nwo-robotics would be redundant ### Cron Path Bug - Cron task calls `capability-evolver/ind",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T10:48:22.780Z",
-      "lastRecalledAt": "2026-05-07T10:48:22.780Z",
+      "lastRecalledAt": "2026-05-13T13:50:53.745Z",
       "queryHashes": [
-        "02f21ecfaed6"
+        "02f21ecfaed6",
+        "f9a4bbd4928a"
       ],
       "recallDays": [
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-13"
       ],
       "conceptTags": [
         "nwo-robotics",
