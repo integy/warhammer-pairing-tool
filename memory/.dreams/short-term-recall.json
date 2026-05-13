@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-12T02:03:15.254Z",
+  "updatedAt": "2026-05-13T02:02:25.966Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -102,15 +102,14 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "- **capability-evolver** directory reports as \"not found\" by some cron agents (contradictory) - clawhub CLI: sometimes not installed, sometimes works - WhatsApp creds.json corruption (Bad MAC errors) — still unresolved since Apr 2 ## Skills - 100-130+ skills installed (reports vary by agent) - No new skills installed — library comprehensive - Evolver stagnation: gene_gep_optimize_prompt_and_assets selected repeatedly (same gene last 5+ cycles) - ClawHavoc cleanup: ClawHub has 3,286 skills (down from 13,729+) - Moltbook: DEAD (domain parked at Porkbun), confirmed geo-blocked Apr 2, now completely gone ## News Summary (Apr 13 morning) - 何超蕸逝世, 立法會罷戰, 清明偷衣包 - 美CPI出爐降息預期降溫, 比特幣 $82K, Manus AI",
-      "recallCount": 60,
+      "recallCount": 61,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 27.55361993609213,
+      "totalScore": 28.55361993609213,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-13T10:07:02.822Z",
-      "lastRecalledAt": "2026-05-12T02:02:41.875Z",
+      "lastRecalledAt": "2026-05-13T01:00:43.447Z",
       "queryHashes": [
-        "a05b193a28cb",
         "fbf2d92f23c5",
         "401f8446b750",
         "5fa9477d3d49",
@@ -141,10 +140,10 @@
         "e01d925f90b8",
         "b9c7309eb3b2",
         "c27473a9f036",
-        "94f82e44e18f"
+        "94f82e44e18f",
+        "5c0e55b6b705"
       ],
       "recallDays": [
-        "2026-04-21",
         "2026-04-22",
         "2026-04-23",
         "2026-04-24",
@@ -159,7 +158,8 @@
         "2026-05-06",
         "2026-05-07",
         "2026-05-09",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-13"
       ],
       "conceptTags": [
         "capability-evolver",
@@ -503,13 +503,13 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-04-24 Daily Memory ## Session Log ### WAL Check (18:03 HKT) - SESSION-STATE.md verified current (updated 06:04) - working-buffer.md empty - MEMORY.md current (updated Apr 22) - Security audit script NOT FOUND — path no longer exists; skipped - No context loss events - No active subagents ### Healthcheck (18:03 HKT) - Gateway Memory: 689.406 MB (below 800MB threshold — healthy) - Disk: 10% used - WhatsApp: check gateway status (gateway probe ok) - No restart needed ### Notes - WAL agent幻觉: continues to report false positives about missing files; ignore - security-audit.sh deleted (was in openclaw-skills-proactive-agent/scripts/, now gone) - healthcheck.sh exists and runs correctly",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11.632470352766077,
+      "totalScore": 12.632470352766077,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-25T02:02:09.488Z",
-      "lastRecalledAt": "2026-05-11T02:02:22.827Z",
+      "lastRecalledAt": "2026-05-13T02:02:25.966Z",
       "queryHashes": [
         "8c49bc4e75e2",
         "c079031ecc98",
@@ -521,7 +521,8 @@
         "3e6e3db35568",
         "9c85cccec9d4",
         "3284d8f628bf",
-        "9de42cfd8bea"
+        "9de42cfd8bea",
+        "337b1fe4d0ba"
       ],
       "recallDays": [
         "2026-04-25",
@@ -533,7 +534,8 @@
         "2026-05-06",
         "2026-05-08",
         "2026-05-09",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-13"
       ],
       "conceptTags": [
         "gateway",
@@ -630,25 +632,27 @@
       "endLine": 64,
       "source": "memory",
       "snippet": "- Fix: Use direct `node /path/to/script.js` instead of `cd && node` 2. **HIGH** — embedded run timeout on minimax/MiniMax-M2.7 (3 occurrences) - Root cause: Context overflow + model timeout - Fix: Add retry logic or switch model 3. **MEDIUM** — WhatsApp WebSocket 408/503 connection errors 4. **MEDIUM** — image model does not support images (media-understanding) 5. **INFO** — sqlite-vec unavailable (vector memory degraded) ### Recommendations: - Fix exec preflight: scripts should use `node /full/path/script.js` not `cd && node` - Add model retry/fallback for minimax timeouts - WhatsApp connection monitoring looks ok (auto-reconnect working) - image model limitation: cu",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T07:19:05.336Z",
-      "lastRecalledAt": "2026-05-11T15:48:38.965Z",
+      "lastRecalledAt": "2026-05-13T02:02:25.966Z",
       "queryHashes": [
         "7b437f05522b",
         "22fe496fc7b7",
         "9c85cccec9d4",
         "9de42cfd8bea",
-        "1e9c0fcb1d0d"
+        "1e9c0fcb1d0d",
+        "337b1fe4d0ba"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-05-04",
         "2026-05-08",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-13"
       ],
       "conceptTags": [
         "path/to/script.js",
@@ -702,22 +706,24 @@
       "endLine": 118,
       "source": "memory",
       "snippet": "- 3D Printing: bambu-studio-ai, bambulab, 3dprint, find-stl, printpal-3d, openclaw-3d-printing-skill, claw3d, image-to-relief-stl, 3d-model-generator, miniature-world-generator - Automation: automation-workflows, productivity-automation-kit, personal-productivity, ai-automation-workflow, agentic-workflow-automation - AI Agents: agents, ai-agents-architect, agency-agents, self-improving, self-improving-agent ### New Skills to Install: **NONE** - All potentially useful new skills duplicate existing coverage or are too niche - Skills library is comprehensive for user's robotics + 3D printing + automation interests ### Workflow Optimizations (same as Run #2): 1. exec preflight: Use `node /full",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-01T10:16:09.339Z",
-      "lastRecalledAt": "2026-05-09T02:02:16.624Z",
+      "lastRecalledAt": "2026-05-13T01:00:43.447Z",
       "queryHashes": [
         "c8fb4c1fdcc1",
         "02f21ecfaed6",
-        "3a30723ecf1e"
+        "3a30723ecf1e",
+        "5c0e55b6b705"
       ],
       "recallDays": [
         "2026-05-01",
         "2026-05-07",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-13"
       ],
       "conceptTags": [
         "bambu-studio-ai",
@@ -928,23 +934,25 @@
       "endLine": 79,
       "source": "memory",
       "snippet": "### Skipped (Security/Browser-Only/Redundant) - **printpal-3d** - flagged suspicious by VirusTotal ⚠️ - **openclaw-robotics** - already installed (2.1.0) - **ai-agent-helper** - similar to existing agents skills - **ai-automation-workflow** - similar to existing n8n/automation skills - No Warhammer-specific skill found on ClawHub ### Optimization Notes - Current setup well-covered for: 3D printing, home automation, DevOps, coding - Robotics skills present (openclaw-robotics, robotics-vla) - Gap: no dedicated Warhammer/TTRPG skill on ClawHub - printpal-3d flagged suspicious - not installing",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.6337054975065874,
+      "totalScore": 4.633705497506588,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T02:02:24.057Z",
-      "lastRecalledAt": "2026-05-11T14:48:31.234Z",
+      "lastRecalledAt": "2026-05-13T02:02:25.966Z",
       "queryHashes": [
         "22fe496fc7b7",
         "9c85cccec9d4",
         "9de42cfd8bea",
-        "4813091f9fce"
+        "4813091f9fce",
+        "337b1fe4d0ba"
       ],
       "recallDays": [
         "2026-05-04",
         "2026-05-08",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-13"
       ],
       "conceptTags": [
         "security/browser-only/redundant",
@@ -1300,20 +1308,22 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "Automation: automation-workflows, ai-automation-workflow, productivity-automation-kit, personal-productivity, agentic-workflow-automation, automation-workflow-builder AI Agents: ai-agents-architect, agency-agents, agents ### New Skills to Install: **NONE** - All available relevant skills already installed - Skills library comprehensive for robotics + 3D printing + automation ### Action Items (from this run): 1. **CRON JOB ISSUE** — The capability-evolver cron is running every 2h with the wrong command (`cd && node index.js run`). It's generating only errors, no value. Recommend: disable this cron or fix the command to use direct skill execution. 2. Model timeout: Consider adding explicit r",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T10:48:22.780Z",
-      "lastRecalledAt": "2026-05-09T02:02:16.624Z",
+      "lastRecalledAt": "2026-05-13T01:00:43.447Z",
       "queryHashes": [
         "02f21ecfaed6",
-        "3a30723ecf1e"
+        "3a30723ecf1e",
+        "5c0e55b6b705"
       ],
       "recallDays": [
         "2026-05-07",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-13"
       ],
       "conceptTags": [
         "automation-workflows",
@@ -1479,6 +1489,37 @@
         "automation-workflows",
         "ai-agents-architect",
         "index.js"
+      ]
+    },
+    "memory:memory/2026-05-13.md:1:15": {
+      "key": "memory:memory/2026-05-13.md:1:15",
+      "path": "memory/2026-05-13.md",
+      "startLine": 1,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "# 2026-05-13 ## 06:03 — Morning WAL Check - SESSION-STATE.md verified current - MEMORY.md confirmed current (May 6) - No daily memory file for May 12 or 13 yet — creating this one - Gateway PID changed: 28618 → 3091 (restarted since last check) - Gateway memory: 659 MB (healthy, below 800 MB threshold) - Disk: 10% used (healthy) - Security audit script: missing (skills path doesn't exist) - working-buffer.md: does not exist (empty/non-existent) - No active subagents or cron jobs - RPC probe: ok",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T02:02:25.966Z",
+      "lastRecalledAt": "2026-05-13T02:02:25.966Z",
+      "queryHashes": [
+        "337b1fe4d0ba"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "gateway",
+        "session-state.md",
+        "memory.md",
+        "working-buffer.md",
+        "empty/non-existent",
+        "morning",
+        "wal",
+        "check"
       ]
     }
   }
