@@ -128,6 +128,22 @@
     "steam-gaming-companion": {
       "version": "1.0.0",
       "installedAt": 1778672966017
+    },
+    "hermes-skills": {
+      "version": "1.0.0",
+      "installedAt": 1778701734765
+    },
+    "anti-hallucination-skill": {
+      "version": "1.0.1",
+      "installedAt": 1778701734809
+    },
+    "azure-ai-agents-py": {
+      "version": "0.1.0",
+      "installedAt": 1778705333999
+    },
+    "nai-print-failure-analyst": {
+      "version": "1.0.0",
+      "installedAt": 1778708921038
     }
   }
 }
