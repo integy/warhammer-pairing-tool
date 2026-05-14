@@ -144,6 +144,14 @@
     "nai-print-failure-analyst": {
       "version": "1.0.0",
       "installedAt": 1778708921038
+    },
+    "ai-workflow-automation": {
+      "version": "1.0.0",
+      "installedAt": 1778773745070
+    },
+    "agent-automation-scripter": {
+      "version": "1.0.0",
+      "installedAt": 1778773753795
     }
   }
 }
