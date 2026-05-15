@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-15T02:02:20.149Z",
+  "updatedAt": "2026-05-15T04:02:04.398Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -323,13 +323,13 @@
       "endLine": 73,
       "source": "memory",
       "snippet": "- Not installed ### Decision - NOT installing self-evolve (SUSPICIOUS security) - agent-autonomy-kit: CLEAN status, interesting for proactive automation - Will install agent-autonomy-kit (healthy system, proactive work) ### Actions Taken 1. Ran clawhub searches for trending categories 2. Inspected several candidate skills 3. Found agent-autonomy-kit (clean security, recent update) 4. Skipped auto-skill-hunter (SUSPICIOUS) 5. Skipped self-evolve (SUSPICIOUS) ## Capability Evolver Cron Run (4:19 PM HKT) ### Status - `capability-evolver` CLI not found (only `capability-evolver-pro`) - Explored ClawHub for new skills across target categories - Inspected and installed 1 new skill ### Skills",
-      "recallCount": 26,
+      "recallCount": 27,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 26,
+      "totalScore": 27,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-18T10:06:27.107Z",
-      "lastRecalledAt": "2026-05-11T14:48:31.234Z",
+      "lastRecalledAt": "2026-05-15T04:02:04.398Z",
       "queryHashes": [
         "27a133fdfd05",
         "d9ab0cc2db5c",
@@ -354,7 +354,8 @@
         "3e6e3db35568",
         "eb9f26a817ea",
         "3a30723ecf1e",
-        "4813091f9fce"
+        "4813091f9fce",
+        "f4d5aca518e9"
       ],
       "recallDays": [
         "2026-04-18",
@@ -370,7 +371,8 @@
         "2026-05-06",
         "2026-05-07",
         "2026-05-09",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-15"
       ],
       "conceptTags": [
         "self-evolve",
@@ -452,13 +454,13 @@
       "endLine": 65,
       "source": "memory",
       "snippet": "| 3D printing | cad-agent (1.0), threejs (0.97), bambu-studio-ai (0.94), bambu-local (0.92) | | Warhammer | no results | ### 3. Installed Skills (Already Optimized) All relevant categories already covered: - ✅ automation → `automation-workflows`, `ai-automation-workflow`, `productivity-automation-kit` - ✅ AI agents → `agency-agents`, `agent-autonomy-kit` - ✅ productivity → `productivity-automation-kit`, `self-improving` - ✅ robotics → `openclaw-robotics` - ✅ 3D printing/CAD → `cad-agent` - ✅ GitHub → `github-trending-report` - ✅ Home automation → `home-assistant` - ✅ n8n/workflow → `n8n-workflow-automation` ### 4. New Skills Considered None auto-installed — all top candidates already ha",
-      "recallCount": 16,
+      "recallCount": 17,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 16,
+      "totalScore": 17,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-21T13:02:38.337Z",
-      "lastRecalledAt": "2026-05-09T02:02:16.624Z",
+      "lastRecalledAt": "2026-05-15T04:02:04.398Z",
       "queryHashes": [
         "7cb67ce8a8d9",
         "3bd7aa3c622e",
@@ -474,7 +476,8 @@
         "22a54fd0df22",
         "dc8a65370e6a",
         "eb9f26a817ea",
-        "3a30723ecf1e"
+        "3a30723ecf1e",
+        "f4d5aca518e9"
       ],
       "recallDays": [
         "2026-04-21",
@@ -486,7 +489,8 @@
         "2026-05-02",
         "2026-05-03",
         "2026-05-07",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-15"
       ],
       "conceptTags": [
         "cad-agent",
@@ -750,13 +754,13 @@
       "endLine": 39,
       "source": "memory",
       "snippet": "# 2026-04-29.md # Capability Evolver Report **Date:** 2026-04-29 01:25 HKT **Trigger:** hourly cron (e5f004fe) --- ## Capability Evolver Status ✅ **capability-evolver-pro** (v2.0.0) — installed and operational - Pure-logic TypeScript handler; no index.js runner needed - Actions: analyze, evolve, status - Supported strategies: auto, balanced, innovate, harden, repair-only **Cron Status:** running --- ## Skills Inventory **Total installed:** 95 skill directories in `~/.openclaw/workspace/skills/` **Key coverage areas:** - Automation: automation-workflows, productivity-automation-kit, ai-automation-workflow, agentic-workflow-automation-v2, agent-autonomy-kit, deep-work-orchestrator,",
-      "recallCount": 15,
+      "recallCount": 16,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 15,
+      "totalScore": 16,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-01T10:19:33.255Z",
-      "lastRecalledAt": "2026-05-11T02:02:22.827Z",
+      "lastRecalledAt": "2026-05-15T04:02:04.398Z",
       "queryHashes": [
         "6f0bb556750d",
         "6c8954d6f6f7",
@@ -772,7 +776,8 @@
         "66ac60ac0105",
         "104a62399406",
         "9c85cccec9d4",
-        "9de42cfd8bea"
+        "9de42cfd8bea",
+        "f4d5aca518e9"
       ],
       "recallDays": [
         "2026-05-01",
@@ -782,7 +787,8 @@
         "2026-05-05",
         "2026-05-07",
         "2026-05-08",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-15"
       ],
       "conceptTags": [
         "capability-evolver-pro",
@@ -802,22 +808,24 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "# Daily Notes - 2026-05-01 ## Capability Evolver Run #4 (07:25 HK Time) ### Evolver Execution: - `capability-evolver-pro` v1.0.2 at `~/.openclaw/workspace/skills/capability-evolver-pro/` - No `index.js` — runs as OpenClaw skill via agent, not CLI - Exec preflight blocks `cd && node` chained commands (recurring issue) ### Log Analysis (gateway.err.log — latest segment): **Patterns detected:** 1. **CRITICAL** — exec preflight blocks `cd && node` pattern: 6+ occurrences since midnight, same command every 2h - `cd ~/.openclaw/workspace/skills/capability-evolver && node index.js run` - This is the cron-triggered evolver run — the command is wrong (skill has no index.js) - Fix: Remove",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-01T10:40:42.859Z",
-      "lastRecalledAt": "2026-05-06T22:02:46.396Z",
+      "lastRecalledAt": "2026-05-15T04:02:04.398Z",
       "queryHashes": [
         "6c8954d6f6f7",
         "650d6ddc3a72",
-        "104a62399406"
+        "104a62399406",
+        "f4d5aca518e9"
       ],
       "recallDays": [
         "2026-05-01",
         "2026-05-03",
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-15"
       ],
       "conceptTags": [
         "gateway",
@@ -1540,15 +1548,16 @@
       "endLine": 21,
       "source": "memory",
       "snippet": "# 2026-05-14 — Daily Notes ## 00:02 — WAL + Performance Check (cron) ### WAL Protocol ✓ - SESSION-STATE.md: current (updated 00:02) - working-buffer.md: empty - MEMORY.md: current (May 6) - Security audit script: missing (path doesn't exist), skipped - Context loss events: none ### Performance ✓ - Gateway: PID 32696, running, RPC ok - Memory: 559MB (healthy, below 800MB threshold) - Disk: 10% used (15Gi / 926Gi) - No restart needed ### Actions - healthcheck.sh: ran, all clear - Gateway status: checked, all healthy - SESSION-STATE.md: updated",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-15T02:02:20.149Z",
-      "lastRecalledAt": "2026-05-15T02:02:20.149Z",
+      "lastRecalledAt": "2026-05-15T04:02:04.398Z",
       "queryHashes": [
-        "c421b274a73b"
+        "c421b274a73b",
+        "f4d5aca518e9"
       ],
       "recallDays": [
         "2026-05-15"
