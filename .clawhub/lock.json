@@ -152,6 +152,22 @@
     "agent-automation-scripter": {
       "version": "1.0.0",
       "installedAt": 1778773753795
+    },
+    "public-api-finder": {
+      "version": "0.5.10",
+      "installedAt": 1778798903611
+    },
+    "builtbyecho-research": {
+      "version": "0.5.4",
+      "installedAt": 1778798910130
+    },
+    "agent-work-receipts": {
+      "version": "0.1.2",
+      "installedAt": 1778798910151
+    },
+    "trustlog": {
+      "version": "0.2.3",
+      "installedAt": 1778798914311
     }
   }
 }
