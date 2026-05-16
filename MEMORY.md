@@ -85,3 +85,12 @@ _Last updated: 2026-04-29_
 - No new skills needed — ecosystem comprehensively covered
 - **cron path bug**: cron task calls `capability-evolver/index.js run` but skill is actually `capability-evolver-pro` (TypeScript)
 - nwo-robotics skipped — user already has 3 robotics skills
+
+## Capability Evolver Run (May 16, 2026)
+- **Health score: 49/100** ⚠️ — low, driven by two recurring issues
+- **Bad MAC errors (critical):** 16 errors in gateway.err.log — session_cipher.js Signal MAC verification failures. User already has this noted as issue #9 (creds.json corruption since Apr 2). Likely same root cause.
+- **Subagent announce failures (high):** Transient failures in subagent result delivery, 2 gave-ups at retry-limit. Effects mostly self-recover but unreliability is ongoing.
+- **Monitoring gap (high):** No alerting thresholds — both issues went undetected until this log analysis
+- **Estimated improvement:** 49 → ~74 if recommendations applied
+- **No new skills** — ecosystem comprehensively covered
+- **Cron path mismatch persists** — evolver cron calling old JS path against capability-evolver-pro TypeScript
