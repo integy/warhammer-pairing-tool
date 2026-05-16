@@ -172,6 +172,10 @@
     "claw-switch": {
       "version": "1.0.0",
       "installedAt": 1778910519919
+    },
+    "self-improving-compound": {
+      "version": "6.0.1",
+      "installedAt": 1778950177309
     }
   }
 }
