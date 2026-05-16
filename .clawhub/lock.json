@@ -168,6 +168,10 @@
     "trustlog": {
       "version": "0.2.3",
       "installedAt": 1778798914311
+    },
+    "claw-switch": {
+      "version": "1.0.0",
+      "installedAt": 1778910519919
     }
   }
 }
