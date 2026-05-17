@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-16T02:02:22.754Z",
+  "updatedAt": "2026-05-17T02:02:10.594Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -610,23 +610,25 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- robotics-vla (3.314) - Robotics VLA - NOT installed - automation-workflows (3.798) - Automation - already installed - ai-agents-architect (3.417) - AI Agents - already installed - personal-productivity (3.588) - Personal Productivity - already installed ### Evolver Status: - capability-evolver-pro directory exists but node path issue - clawhub CLI working fine ### Actions Taken: - Ran clawhub trending searches - Compared installed vs available skills - Found robotics and 3D printing skills not installed but relevant to interests ## Capability Evolver Run #2 (14:25 HK Time) ### Evolver Execution: - `capability-evolver` (original path) does not exist — skill renamed to `capability-evolve",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T07:19:05.336Z",
-      "lastRecalledAt": "2026-05-11T15:48:38.965Z",
+      "lastRecalledAt": "2026-05-17T02:02:10.594Z",
       "queryHashes": [
         "7b437f05522b",
         "abdcb8c078d1",
         "1e4b20906f82",
-        "1e9c0fcb1d0d"
+        "1e9c0fcb1d0d",
+        "7ff98cbc2e01"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-05-05",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-17"
       ],
       "conceptTags": [
         "robotics-vla",
@@ -720,25 +722,27 @@
       "endLine": 118,
       "source": "memory",
       "snippet": "- 3D Printing: bambu-studio-ai, bambulab, 3dprint, find-stl, printpal-3d, openclaw-3d-printing-skill, claw3d, image-to-relief-stl, 3d-model-generator, miniature-world-generator - Automation: automation-workflows, productivity-automation-kit, personal-productivity, ai-automation-workflow, agentic-workflow-automation - AI Agents: agents, ai-agents-architect, agency-agents, self-improving, self-improving-agent ### New Skills to Install: **NONE** - All potentially useful new skills duplicate existing coverage or are too niche - Skills library is comprehensive for user's robotics + 3D printing + automation interests ### Workflow Optimizations (same as Run #2): 1. exec preflight: Use `node /full",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-01T10:16:09.339Z",
-      "lastRecalledAt": "2026-05-13T13:50:53.745Z",
+      "lastRecalledAt": "2026-05-17T02:02:10.594Z",
       "queryHashes": [
         "c8fb4c1fdcc1",
         "02f21ecfaed6",
         "3a30723ecf1e",
         "5c0e55b6b705",
-        "f9a4bbd4928a"
+        "f9a4bbd4928a",
+        "7ff98cbc2e01"
       ],
       "recallDays": [
         "2026-05-01",
         "2026-05-07",
         "2026-05-09",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-17"
       ],
       "conceptTags": [
         "bambu-studio-ai",
@@ -1036,13 +1040,13 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "- capability-evolver-pro has `.clawhub/` marker (verified clean install) ### Recommendations 1. **devops-automation-pack** — consider installing (score 3.104, not yet installed, devops-adjacent but not duplicate) 2. Cron task `capability-evolver/index.js run` needs updating to `capability-evolver-pro` (TypeScript incompatible with `node index.js run`) 3. No new skills auto-installed — ecosystem already fully covered for Eric's interests ### No Changes Made - All useful trending skills already installed - No duplicates, no suspicious packages - Workspace clean",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6.56069981129583,
+      "totalScore": 7.56069981129583,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T23:47:34.684Z",
-      "lastRecalledAt": "2026-05-15T12:47:41.725Z",
+      "lastRecalledAt": "2026-05-17T02:02:10.594Z",
       "queryHashes": [
         "1ff2b282aa1d",
         "abdcb8c078d1",
@@ -1051,14 +1055,16 @@
         "02f21ecfaed6",
         "0fbd6f84aef0",
         "4813091f9fce",
-        "180506ba0352"
+        "180506ba0352",
+        "7ff98cbc2e01"
       ],
       "recallDays": [
         "2026-05-05",
         "2026-05-07",
         "2026-05-09",
         "2026-05-11",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-17"
       ],
       "conceptTags": [
         "capability-evolver-pro",
