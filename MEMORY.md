@@ -34,7 +34,7 @@
 7. **capability-evolver** — workspace skill missing. ClawHub version has security flag. capability-evolver-pro installed instead.
 8. **WAL agent幻觉** — sub-agents report SESSION-STATE.md/MEMORY.md missing but they exist. Ignore these false positives.
 9. **WhatsApp creds.json Bad MAC** — corruption since Apr 2, unresolved.
-10. **capability-evolver cron mismatch** — cron calls capability-evolver/index.js run but capability-evolver-pro is TypeScript. Cron task needs updating.
+10. **capability-evolver cron mismatch** — FIXED (May 18). Cron was calling `capability-evolver/index.js run` (non-existent path). Updated cron message to use filesystem inspection + clawhub search approach instead. Cron now runs correctly hourly.
 11. **bambu-agent flagged suspicious** — VirusTotal detected risky patterns in bambu-agent (Apr 23). Skipped auto-install.
 
 ## Skills Installed (22 as of Apr 29, 2026)
