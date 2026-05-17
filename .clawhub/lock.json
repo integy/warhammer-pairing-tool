@@ -176,6 +176,10 @@
     "self-improving-compound": {
       "version": "6.0.1",
       "installedAt": 1778950177309
+    },
+    "openclaw-sacred-rules": {
+      "version": "1.0.0",
+      "installedAt": 1779011379489
     }
   }
 }
