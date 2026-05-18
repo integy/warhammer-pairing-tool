@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-18T02:01:32.930Z",
+  "updatedAt": "2026-05-18T04:05:29.284Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -265,13 +265,13 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "# 2026-04-18 Daily Notes ## Capability Evolver Cron Run (4:19 AM HKT) ### Skills Directory - 31 skills currently installed in `/Users/eric/.openclaw/workspace/skills/` - No `capability-evolver` skill (only `capability-evolver-pro`) - `capability-evolver-pro` is a TypeScript skill handler (not CLI), takes actions: analyze, evolve, status ### ClawHub Search Results **3D Printing / CAD / Slicing:** - render-stl-png (1.063) - already installed as find-stl, image-to-relief-stl - bambu-studio-ai (1.033) - already installed - printpal-3d (0.909) - not installed - 3dprint / Flashforge 3D Print (0.906) - not installed **Warhammer / Gaming:** - No dedicated Warhammer skill found - trpg-session (0.",
-      "recallCount": 20,
+      "recallCount": 21,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 20,
+      "totalScore": 21,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-18T02:02:14.314Z",
-      "lastRecalledAt": "2026-05-05T04:03:05.059Z",
+      "lastRecalledAt": "2026-05-18T04:05:29.284Z",
       "queryHashes": [
         "2f562a14522b",
         "0752279ef23e",
@@ -291,7 +291,8 @@
         "dc8a65370e6a",
         "e01d925f90b8",
         "66ac60ac0105",
-        "1fe231088f19"
+        "1fe231088f19",
+        "0231d84d960d"
       ],
       "recallDays": [
         "2026-04-18",
@@ -303,7 +304,8 @@
         "2026-05-02",
         "2026-05-03",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-18"
       ],
       "conceptTags": [
         "users/eric",
@@ -1042,13 +1044,13 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "- capability-evolver-pro has `.clawhub/` marker (verified clean install) ### Recommendations 1. **devops-automation-pack** — consider installing (score 3.104, not yet installed, devops-adjacent but not duplicate) 2. Cron task `capability-evolver/index.js run` needs updating to `capability-evolver-pro` (TypeScript incompatible with `node index.js run`) 3. No new skills auto-installed — ecosystem already fully covered for Eric's interests ### No Changes Made - All useful trending skills already installed - No duplicates, no suspicious packages - Workspace clean",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7.56069981129583,
+      "totalScore": 8.56069981129583,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T23:47:34.684Z",
-      "lastRecalledAt": "2026-05-17T02:02:10.594Z",
+      "lastRecalledAt": "2026-05-18T04:05:29.284Z",
       "queryHashes": [
         "1ff2b282aa1d",
         "abdcb8c078d1",
@@ -1058,7 +1060,8 @@
         "0fbd6f84aef0",
         "4813091f9fce",
         "180506ba0352",
-        "7ff98cbc2e01"
+        "7ff98cbc2e01",
+        "0231d84d960d"
       ],
       "recallDays": [
         "2026-05-05",
@@ -1066,7 +1069,8 @@
         "2026-05-09",
         "2026-05-11",
         "2026-05-15",
-        "2026-05-17"
+        "2026-05-17",
+        "2026-05-18"
       ],
       "conceptTags": [
         "capability-evolver-pro",
@@ -1150,23 +1154,25 @@
       "endLine": 27,
       "source": "memory",
       "snippet": "# 2026-05-04 - Daily Memory ## Capability Evolver Run (Evening - 12:47 UTC / 20:47 HKT) ### Evolver Status - **capability-evolver**: NOT installed (deleted previously; no JS entry point) - **capability-evolver-pro**: v1.0.2 (TypeScript) — installed at `skills/capability-evolver-pro/` - **Cron task mismatch**: cron still calls `capability-evolver/index.js run` but skill is TypeScript ### ClawHub Searches - automation: productivity-automation-kit, ai-automation-workflow, openclaw-automation-recipes — ALL already installed - 3D printing: claw3d, openclaw-3d-printing-skill, printpal-3d, Bambu Lab skills — ALL already installed - robotics: nwo-robotics, jaka-robotics-control, openclaw-robotics",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.638782759586439,
+      "totalScore": 5.638782759586439,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T23:47:34.684Z",
-      "lastRecalledAt": "2026-05-12T02:03:15.254Z",
+      "lastRecalledAt": "2026-05-18T04:05:29.284Z",
       "queryHashes": [
         "1ff2b282aa1d",
         "abdcb8c078d1",
         "1e4b20906f82",
         "1fe231088f19",
-        "4038a1c3675e"
+        "4038a1c3675e",
+        "0231d84d960d"
       ],
       "recallDays": [
         "2026-05-05",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-18"
       ],
       "conceptTags": [
         "capability-evolver",
@@ -1250,20 +1256,22 @@
       "endLine": 24,
       "source": "memory",
       "snippet": "# 2026-05-06 - Daily Memory ## Capability Evolver Run (Afternoon - 12:47 HKT / 04:47 UTC) ### Evolver Status - **capability-evolver-pro**: v1.0.2 TypeScript — installed at `skills/capability-evolver-pro/` - **capability-evolver** (original JS): NOT installed — `skills/capability-evolver/` directory does not exist - Cron task uses wrong path `capability-evolver/index.js run` — evolver is actually `capability-evolver-pro` with different entry point - Executed via clawhub CLI directly (no index.js run needed) ### ClawHub Searches (Today's Results) | Domain | Top Results | Installed? | |--------|-----------|------------| | Trending | daily-trending, github-trending-feed, weibo-trending-topics",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6396240336408474,
+      "totalScore": 2.6396240336408474,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T10:48:22.780Z",
-      "lastRecalledAt": "2026-05-09T06:47:39.076Z",
+      "lastRecalledAt": "2026-05-18T04:05:29.284Z",
       "queryHashes": [
         "02f21ecfaed6",
-        "0fbd6f84aef0"
+        "0fbd6f84aef0",
+        "0231d84d960d"
       ],
       "recallDays": [
         "2026-05-07",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-18"
       ],
       "conceptTags": [
         "capability-evolver-pro",
@@ -1421,18 +1429,20 @@
       "endLine": 30,
       "source": "memory",
       "snippet": "# 2026-05-05 - Daily Memory ## Capability Evolver Run (Afternoon - 13:47 HKT / 05:47 UTC) ### Evolver Status - **capability-evolver**: NOT installed (deleted; no workspace entry point) - **capability-evolver-pro**: v1.0.2 TypeScript — installed but cron task uses wrong path `capability-evolver/index.js run` - **Script execution**: `node index.js run` with `cd` prefix blocked by exec preflight - **Alternative used**: clawhub CLI directly ### ClawHub Searches | Domain | Top Results | Installed? | |--------|-----------|------------| | Automation | productivity-automation-kit, afrexai-business-automation, ai-automation-workflow | ALL ✓ | | Robotics | nwo-robotics, jaka-robotics-control, openc",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.6390174154662555,
-      "maxScore": 0.6390174154662555,
+      "totalScore": 1.6390174154662556,
+      "maxScore": 1,
       "firstRecalledAt": "2026-05-09T06:47:39.076Z",
-      "lastRecalledAt": "2026-05-09T06:47:39.076Z",
+      "lastRecalledAt": "2026-05-18T04:05:29.284Z",
       "queryHashes": [
-        "0fbd6f84aef0"
+        "0fbd6f84aef0",
+        "0231d84d960d"
       ],
       "recallDays": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-18"
       ],
       "conceptTags": [
         "capability-evolver",
