@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-19T04:05:13.221Z",
+  "updatedAt": "2026-05-19T17:48:09.849Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -656,13 +656,13 @@
       "endLine": 64,
       "source": "memory",
       "snippet": "- Fix: Use direct `node /path/to/script.js` instead of `cd && node` 2. **HIGH** — embedded run timeout on minimax/MiniMax-M2.7 (3 occurrences) - Root cause: Context overflow + model timeout - Fix: Add retry logic or switch model 3. **MEDIUM** — WhatsApp WebSocket 408/503 connection errors 4. **MEDIUM** — image model does not support images (media-understanding) 5. **INFO** — sqlite-vec unavailable (vector memory degraded) ### Recommendations: - Fix exec preflight: scripts should use `node /full/path/script.js` not `cd && node` - Add model retry/fallback for minimax timeouts - WhatsApp connection monitoring looks ok (auto-reconnect working) - image model limitation: cu",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T07:19:05.336Z",
-      "lastRecalledAt": "2026-05-19T02:02:25.319Z",
+      "lastRecalledAt": "2026-05-19T17:48:09.849Z",
       "queryHashes": [
         "7b437f05522b",
         "22fe496fc7b7",
@@ -670,7 +670,8 @@
         "9de42cfd8bea",
         "1e9c0fcb1d0d",
         "337b1fe4d0ba",
-        "febf849090e1"
+        "febf849090e1",
+        "e1a9b1b17fef"
       ],
       "recallDays": [
         "2026-04-30",
@@ -678,7 +679,8 @@
         "2026-05-08",
         "2026-05-11",
         "2026-05-13",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-20"
       ],
       "conceptTags": [
         "path/to/script.js",
@@ -732,13 +734,13 @@
       "endLine": 118,
       "source": "memory",
       "snippet": "- 3D Printing: bambu-studio-ai, bambulab, 3dprint, find-stl, printpal-3d, openclaw-3d-printing-skill, claw3d, image-to-relief-stl, 3d-model-generator, miniature-world-generator - Automation: automation-workflows, productivity-automation-kit, personal-productivity, ai-automation-workflow, agentic-workflow-automation - AI Agents: agents, ai-agents-architect, agency-agents, self-improving, self-improving-agent ### New Skills to Install: **NONE** - All potentially useful new skills duplicate existing coverage or are too niche - Skills library is comprehensive for user's robotics + 3D printing + automation interests ### Workflow Optimizations (same as Run #2): 1. exec preflight: Use `node /full",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-01T10:16:09.339Z",
-      "lastRecalledAt": "2026-05-18T19:02:58.688Z",
+      "lastRecalledAt": "2026-05-19T17:48:09.849Z",
       "queryHashes": [
         "c8fb4c1fdcc1",
         "02f21ecfaed6",
@@ -746,7 +748,8 @@
         "5c0e55b6b705",
         "f9a4bbd4928a",
         "7ff98cbc2e01",
-        "2c8ccaa93a40"
+        "2c8ccaa93a40",
+        "e1a9b1b17fef"
       ],
       "recallDays": [
         "2026-05-01",
@@ -754,7 +757,8 @@
         "2026-05-09",
         "2026-05-13",
         "2026-05-17",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-20"
       ],
       "conceptTags": [
         "bambu-studio-ai",
@@ -1054,13 +1058,13 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "- capability-evolver-pro has `.clawhub/` marker (verified clean install) ### Recommendations 1. **devops-automation-pack** — consider installing (score 3.104, not yet installed, devops-adjacent but not duplicate) 2. Cron task `capability-evolver/index.js run` needs updating to `capability-evolver-pro` (TypeScript incompatible with `node index.js run`) 3. No new skills auto-installed — ecosystem already fully covered for Eric's interests ### No Changes Made - All useful trending skills already installed - No duplicates, no suspicious packages - Workspace clean",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9.56069981129583,
+      "totalScore": 10.56069981129583,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T23:47:34.684Z",
-      "lastRecalledAt": "2026-05-19T04:05:13.221Z",
+      "lastRecalledAt": "2026-05-19T17:48:09.849Z",
       "queryHashes": [
         "1ff2b282aa1d",
         "abdcb8c078d1",
@@ -1072,7 +1076,8 @@
         "180506ba0352",
         "7ff98cbc2e01",
         "0231d84d960d",
-        "56e46a6d09ee"
+        "56e46a6d09ee",
+        "e1a9b1b17fef"
       ],
       "recallDays": [
         "2026-05-05",
@@ -1082,7 +1087,8 @@
         "2026-05-15",
         "2026-05-17",
         "2026-05-18",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-20"
       ],
       "conceptTags": [
         "capability-evolver-pro",
@@ -1480,20 +1486,22 @@
       "endLine": 106,
       "source": "memory",
       "snippet": "- image model limitation — MiniMax-M2.7 doesn't support images (expected) ### Clawhub Trending (new since last run): - secretary-memory v1.3.0 — Secretary-style multi-zone memory (NEW, looks impressive) - cad-mesh-3dgs v0.1.0 — CAD↔Mesh↔3DGS bridging (NEW) - reliable-tool-context v1.0.0 — Better tool context from command output (NEW) - institutional-tracker-ai v0.1.0 — Chinese quant trading (NEW) - ai-short-film-producer v1.0.3 — AI short film production (NEW) - linkedin-skill / linkedapi-linkedin — LinkedIn automation (NEW) ### New Skills Assessed: - **secretary-memory** — Multi-zone memory system with auto-summarization + preference extraction. Looks well-built but **agent-memory** alre",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T15:48:38.965Z",
-      "lastRecalledAt": "2026-05-18T19:02:58.688Z",
+      "lastRecalledAt": "2026-05-19T17:48:09.849Z",
       "queryHashes": [
         "1e9c0fcb1d0d",
-        "2c8ccaa93a40"
+        "2c8ccaa93a40",
+        "e1a9b1b17fef"
       ],
       "recallDays": [
         "2026-05-11",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-20"
       ],
       "conceptTags": [
         "minimax-m2.7",
@@ -1513,18 +1521,20 @@
       "endLine": 41,
       "source": "memory",
       "snippet": "3. **tripo-3d-generation** (v2.0.5) — Text/image → 3D model generation, already have similar skills (meshy, bambu-studio-ai, etc.) ### Clawhub Search Results: **Automation:** ai-web-automation (3.663), agentic-workflow-automation (3.617), windows-ui-automation (3.604), productivity-automation-kit (3.598) — all already installed **Robotics:** nwo-robotics (3.339), jaka-robotics-control (3.320), openclaw-robotics (3.030), robotics-vla (2.936) — all already installed **3D Printing:** openclaw-3d-printing-skill (3.209), bambu-studio-ai (0.934), find-stl (0.908), printpal-3d (0.844), tripo-3d-generation (0.764) — all already installed except tripo (not needed, redundant) ### No New Skills Insta",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T15:48:38.965Z",
-      "lastRecalledAt": "2026-05-11T15:48:38.965Z",
+      "lastRecalledAt": "2026-05-19T17:48:09.849Z",
       "queryHashes": [
-        "1e9c0fcb1d0d"
+        "1e9c0fcb1d0d",
+        "e1a9b1b17fef"
       ],
       "recallDays": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-20"
       ],
       "conceptTags": [
         "tripo-3d-generation",
