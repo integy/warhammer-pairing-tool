@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-18T19:02:58.688Z",
+  "updatedAt": "2026-05-19T02:02:25.319Z",
   "entries": {
     "memory:memory/2026-04-10.md:25:36": {
       "key": "memory:memory/2026-04-10.md:25:36",
@@ -517,13 +517,13 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-04-24 Daily Memory ## Session Log ### WAL Check (18:03 HKT) - SESSION-STATE.md verified current (updated 06:04) - working-buffer.md empty - MEMORY.md current (updated Apr 22) - Security audit script NOT FOUND — path no longer exists; skipped - No context loss events - No active subagents ### Healthcheck (18:03 HKT) - Gateway Memory: 689.406 MB (below 800MB threshold — healthy) - Disk: 10% used - WhatsApp: check gateway status (gateway probe ok) - No restart needed ### Notes - WAL agent幻觉: continues to report false positives about missing files; ignore - security-audit.sh deleted (was in openclaw-skills-proactive-agent/scripts/, now gone) - healthcheck.sh exists and runs correctly",
-      "recallCount": 15,
+      "recallCount": 16,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 14.632470352766077,
+      "totalScore": 15.632470352766077,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-25T02:02:09.488Z",
-      "lastRecalledAt": "2026-05-18T02:01:32.929Z",
+      "lastRecalledAt": "2026-05-19T02:02:25.319Z",
       "queryHashes": [
         "8c49bc4e75e2",
         "c079031ecc98",
@@ -537,7 +537,8 @@
         "3284d8f628bf",
         "9de42cfd8bea",
         "337b1fe4d0ba",
-        "c421b274a73b"
+        "c421b274a73b",
+        "febf849090e1"
       ],
       "recallDays": [
         "2026-04-25",
@@ -552,7 +553,8 @@
         "2026-05-11",
         "2026-05-13",
         "2026-05-15",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-19"
       ],
       "conceptTags": [
         "gateway",
@@ -653,27 +655,29 @@
       "endLine": 64,
       "source": "memory",
       "snippet": "- Fix: Use direct `node /path/to/script.js` instead of `cd && node` 2. **HIGH** — embedded run timeout on minimax/MiniMax-M2.7 (3 occurrences) - Root cause: Context overflow + model timeout - Fix: Add retry logic or switch model 3. **MEDIUM** — WhatsApp WebSocket 408/503 connection errors 4. **MEDIUM** — image model does not support images (media-understanding) 5. **INFO** — sqlite-vec unavailable (vector memory degraded) ### Recommendations: - Fix exec preflight: scripts should use `node /full/path/script.js` not `cd && node` - Add model retry/fallback for minimax timeouts - WhatsApp connection monitoring looks ok (auto-reconnect working) - image model limitation: cu",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T07:19:05.336Z",
-      "lastRecalledAt": "2026-05-13T02:02:25.966Z",
+      "lastRecalledAt": "2026-05-19T02:02:25.319Z",
       "queryHashes": [
         "7b437f05522b",
         "22fe496fc7b7",
         "9c85cccec9d4",
         "9de42cfd8bea",
         "1e9c0fcb1d0d",
-        "337b1fe4d0ba"
+        "337b1fe4d0ba",
+        "febf849090e1"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-05-04",
         "2026-05-08",
         "2026-05-11",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-19"
       ],
       "conceptTags": [
         "path/to/script.js",
@@ -970,27 +974,29 @@
       "endLine": 79,
       "source": "memory",
       "snippet": "### Skipped (Security/Browser-Only/Redundant) - **printpal-3d** - flagged suspicious by VirusTotal ⚠️ - **openclaw-robotics** - already installed (2.1.0) - **ai-agent-helper** - similar to existing agents skills - **ai-automation-workflow** - similar to existing n8n/automation skills - No Warhammer-specific skill found on ClawHub ### Optimization Notes - Current setup well-covered for: 3D printing, home automation, DevOps, coding - Robotics skills present (openclaw-robotics, robotics-vla) - Gap: no dedicated Warhammer/TTRPG skill on ClawHub - printpal-3d flagged suspicious - not installing",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.2674109886929985,
+      "totalScore": 6.2674109886929985,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T02:02:24.057Z",
-      "lastRecalledAt": "2026-05-15T12:47:41.725Z",
+      "lastRecalledAt": "2026-05-19T02:02:25.319Z",
       "queryHashes": [
         "22fe496fc7b7",
         "9c85cccec9d4",
         "9de42cfd8bea",
         "4813091f9fce",
         "337b1fe4d0ba",
-        "180506ba0352"
+        "180506ba0352",
+        "febf849090e1"
       ],
       "recallDays": [
         "2026-05-04",
         "2026-05-08",
         "2026-05-11",
         "2026-05-13",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-19"
       ],
       "conceptTags": [
         "security/browser-only/redundant",
@@ -1562,18 +1568,20 @@
       "endLine": 15,
       "source": "memory",
       "snippet": "# 2026-05-13 ## 06:03 — Morning WAL Check - SESSION-STATE.md verified current - MEMORY.md confirmed current (May 6) - No daily memory file for May 12 or 13 yet — creating this one - Gateway PID changed: 28618 → 3091 (restarted since last check) - Gateway memory: 659 MB (healthy, below 800 MB threshold) - Disk: 10% used (healthy) - Security audit script: missing (skills path doesn't exist) - working-buffer.md: does not exist (empty/non-existent) - No active subagents or cron jobs - RPC probe: ok",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-13T02:02:25.966Z",
-      "lastRecalledAt": "2026-05-13T02:02:25.966Z",
+      "lastRecalledAt": "2026-05-19T02:02:25.319Z",
       "queryHashes": [
-        "337b1fe4d0ba"
+        "337b1fe4d0ba",
+        "febf849090e1"
       ],
       "recallDays": [
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-19"
       ],
       "conceptTags": [
         "gateway",
@@ -1593,18 +1601,19 @@
       "endLine": 21,
       "source": "memory",
       "snippet": "# 2026-05-14 — Daily Notes ## 00:02 — WAL + Performance Check (cron) ### WAL Protocol ✓ - SESSION-STATE.md: current (updated 00:02) - working-buffer.md: empty - MEMORY.md: current (May 6) - Security audit script: missing (path doesn't exist), skipped - Context loss events: none ### Performance ✓ - Gateway: PID 32696, running, RPC ok - Memory: 559MB (healthy, below 800MB threshold) - Disk: 10% used (15Gi / 926Gi) - No restart needed ### Actions - healthcheck.sh: ran, all clear - Gateway status: checked, all healthy - SESSION-STATE.md: updated",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-15T02:02:20.149Z",
-      "lastRecalledAt": "2026-05-18T19:02:58.688Z",
+      "lastRecalledAt": "2026-05-19T02:02:25.319Z",
       "queryHashes": [
         "c421b274a73b",
         "f4d5aca518e9",
         "3284d8f628bf",
-        "2c8ccaa93a40"
+        "2c8ccaa93a40",
+        "febf849090e1"
       ],
       "recallDays": [
         "2026-05-15",
@@ -1651,6 +1660,37 @@
         "fix",
         "cron",
         "command"
+      ]
+    },
+    "memory:memory/2026-05-17.md:22:47": {
+      "key": "memory:memory/2026-05-17.md:22:47",
+      "path": "memory/2026-05-17.md",
+      "startLine": 22,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "| openclaw-sacred-rules | safety/backup | new today | ✗ | Useful safety coverage — candidate for install | | channels-setup | IM channels | new today | ✗ | Nice to have for multi-channel setup | | gemini-ops | auth lifecycle | new today | ✗ | Specific to Linux/GCP — Linux-only | | notebooklm-ops | auth lifecycle | new today | ✗ | Specific to Linux GCP — Linux-only | | tempo-workspace | integration | new today | ✗ | Unfamiliar — limited utility without Tempo account | | polymarket-pro | crypto | new today | ✗ | Crypto markets — outside current interests | ### ClawHub Search Results (Automation/AI/Productivity) | Query | Top Result | Score | Installed? | |-------|-----------|-------|---------",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-19T02:02:25.319Z",
+      "lastRecalledAt": "2026-05-19T02:02:25.319Z",
+      "queryHashes": [
+        "febf849090e1"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "backup",
+        "openclaw-sacred-rules",
+        "safety/backup",
+        "channels-setup",
+        "multi-channel",
+        "gemini-ops",
+        "linux/gcp",
+        "linux-only"
       ]
     }
   }
