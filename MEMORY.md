@@ -78,7 +78,17 @@ automation-workflows, openclaw-automation-recipes, productivity-automation-kit, 
 - WAL agent false positives: SESSION-STATE.md and MEMORY.md exist but WAL keeps reporting missing
 - Security audit script deleted by evolver (Apr 13-14) — not reinstalled yet
 - exec policy remains allow-always needed but cron jobs continue to fail silently
-_Last updated: 2026-04-29_
+## WAL Check + Performance (May 22, 2026)
+- SESSION-STATE.md: **MISSING** — not present, no recent cron creates it
+- working-buffer.md: **MISSING** — not present
+- MEMORY.md: Updated Apr 29, out of date
+- security-audit.sh: **MISSING** — was deleted by evolver, not restored
+- healthcheck.sh: Healthy — 653MB gateway memory, 10% disk, 0 active cron jobs
+- Gateway: running, RPC ok, loopback on port 18790
+- Gateway restart: executed to keep memory healthy
+- Today's memory entry: git push FAILED (SIGKILL/timeouts), 18 commits behind
+
+_Last updated: 2026-05-22_
 
 ## Capability Evolver Run (May 6, 2026)
 - 110 skills installed (up from ~105 in late April)
