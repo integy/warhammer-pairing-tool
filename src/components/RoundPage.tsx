@@ -74,22 +74,25 @@ export function RoundPage({ round }: { round: number }) {
     const result = autoOptimalRound(hkTeam, oppTeam, poolHK, poolOpp);
     setHkDef(result.hkDefender);
     setOppDef(result.oppDefender);
-    setHkAtts(result.hkAttackers.slice(0, 2));
-    setOppAtts(result.oppAttackers.slice(0, 2));
+    const maxAtt = round === 3 ? 1 : 2;
+    setHkAtts(result.hkAttackers.slice(0, maxAtt));
+    setOppAtts(result.oppAttackers.slice(0, maxAtt));
     setStep('pairing');
   };
 
   const toggleHkAtt = (idx: number) => {
+    const max = round === 3 ? 1 : 2;
     setHkAtts(prev => {
       if (prev.includes(idx)) return prev.filter(i => i !== idx);
-      if (prev.length >= 2) { alert('Max 2 attackers!'); return prev; }
+      if (prev.length >= max) { alert(`Max ${max} attacker(s)!`); return prev; }
       return [...prev, idx];
     });
   };
   const toggleOppAtt = (idx: number) => {
+    const max = round === 3 ? 1 : 2;
     setOppAtts(prev => {
       if (prev.includes(idx)) return prev.filter(i => i !== idx);
-      if (prev.length >= 2) { alert('Max 2 attackers!'); return prev; }
+      if (prev.length >= max) { alert(`Max ${max} attacker(s)!`); return prev; }
       return [...prev, idx];
     });
   };
@@ -100,7 +103,7 @@ export function RoundPage({ round }: { round: number }) {
     if (pickHK === undefined || pickOpp === undefined) {
       alert('Both defenders must pick an opponent!'); return;
     }
-    const matches = state.allMatches;
+    const matches = [...state.allMatches];
 
     // Match 1: HK Defender vs Opp attacker picked by HK defender
     matches.push({ round, hk: hkDef!, hkRole: 'defender', opp: pickOpp, oppRole: 'attacker' });
