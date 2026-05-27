@@ -131,10 +131,8 @@ export function RoundPage({ round }: { round: number }) {
         setCurrentRound(2);
       }
     } else if (round === 2) {
-      // Round 3: remaining players + unpicked attackers
-      const r3PoolHK = [...unusedHK, ...hkAtts.filter(i => i !== pickHK)];
-      const r3PoolOpp = [...unusedOpp, ...oppAtts.filter(i => i !== pickOpp)];
-      updateRounds({ 3: { ...createEmptyRound(r3PoolHK, r3PoolOpp), poolHK: r3PoolHK, poolOpp: r3PoolOpp } });
+      // R3 pool = unused players from R2 (unpicked attacker already in unused, no double-count)
+      updateRounds({ 3: { ...createEmptyRound(unusedHK, unusedOpp), poolHK: unusedHK, poolOpp: unusedOpp } });
       setCurrentRound(3);
     } else if (round === 3) {
       // Auto-pair remaining
