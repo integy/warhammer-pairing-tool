@@ -1,5 +1,4 @@
-*.xml
-!teams/*.xml
-*.md
-README
 .DS_Store
+*.swp
+*.swo
+*~
