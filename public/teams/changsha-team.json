@@ -1,0 +1,78 @@
+{
+  "key": "changsha",
+  "name": "長沙battle",
+  "players": [
+    {
+      "name": "Guard",
+      "army": "Astra Militarum",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 2.5,
+        "Ivan": 3.0,
+        "Gabriel": 3.0
+      }
+    },
+    {
+      "name": "Necrons",
+      "army": "Necrons",
+      "scores": {
+        "Eric": 3.5,
+        "Morris": 3.0,
+        "Jireh": 3.0,
+        "Kevin": 3.5,
+        "Ivan": 3.5,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "TSS",
+      "army": "Thousand Sons",
+      "scores": {
+        "Eric": 2.0,
+        "Morris": 3.0,
+        "Jireh": 3.0,
+        "Kevin": 2.5,
+        "Ivan": 3.0,
+        "Gabriel": 3.0
+      }
+    },
+    {
+      "name": "Custodes",
+      "army": "Adeptus Custodes",
+      "scores": {
+        "Eric": 4.0,
+        "Morris": 4.0,
+        "Jireh": 3.5,
+        "Kevin": 3.5,
+        "Ivan": 3.0,
+        "Gabriel": 4.0
+      }
+    },
+    {
+      "name": "CK",
+      "army": "Chaos Knights",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.5,
+        "Jireh": 3.5,
+        "Kevin": 4.0,
+        "Ivan": 3.5,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "BA",
+      "army": "Blood Angels",
+      "scores": {
+        "Eric": 4.0,
+        "Morris": 3.0,
+        "Jireh": 3.0,
+        "Kevin": 2.5,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      }
+    }
+  ]
+}

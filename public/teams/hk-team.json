@@ -1,0 +1,110 @@
+{
+  "key": "hk",
+  "name": "Hong Kong",
+  "players": [
+    {
+      "name": "Eric",
+      "army": "Aeldari",
+      "scores": {
+        "Kris": 4.5,
+        "Ivan": 3.0,
+        "Jireh": 4.0,
+        "Kevin": 3.5,
+        "Quentin": 4.5,
+        "Gabrielle": 3.5,
+        "Terrence": 3.0
+      }
+    },
+    {
+      "name": "Terrence",
+      "army": "Sisters",
+      "scores": {
+        "Kris": 2.5,
+        "Ivan": 4.0,
+        "Jireh": 3.0,
+        "Kevin": 2.5,
+        "Quentin": 4.5,
+        "Gabrielle": 3.5,
+        "Eric": 3.0
+      }
+    },
+    {
+      "name": "Kris",
+      "army": "Death Guard",
+      "scores": {
+        "Eric": 2.0,
+        "Ivan": 3.5,
+        "Jireh": 4.5,
+        "Kevin": 3.0,
+        "Quentin": 2.5,
+        "Gabrielle": 4.0,
+        "Terrence": 3.5
+      }
+    },
+    {
+      "name": "Ivan",
+      "army": "Thousand Sons",
+      "scores": {
+        "Eric": 3.5,
+        "Kris": 4.0,
+        "Jireh": 2.5,
+        "Kevin": 3.0,
+        "Quentin": 4.5,
+        "Gabrielle": 2.0,
+        "Terrence": 3.5
+      }
+    },
+    {
+      "name": "Jireh",
+      "army": "Necrons",
+      "scores": {
+        "Eric": 2.5,
+        "Kris": 1.5,
+        "Ivan": 4.5,
+        "Kevin": 3.5,
+        "Quentin": 4.0,
+        "Gabrielle": 3.0,
+        "Terrence": 2.5
+      }
+    },
+    {
+      "name": "Kevin",
+      "army": "World Eaters",
+      "scores": {
+        "Eric": 3.0,
+        "Kris": 4.5,
+        "Ivan": 4.0,
+        "Jireh": 2.0,
+        "Quentin": 3.5,
+        "Gabrielle": 2.5,
+        "Terrence": 4.5
+      }
+    },
+    {
+      "name": "Quentin",
+      "army": "Chaos Space Marine",
+      "scores": {
+        "Eric": 2.0,
+        "Kris": 3.5,
+        "Ivan": 1.5,
+        "Jireh": 3.0,
+        "Kevin": 4.5,
+        "Gabrielle": 4.0,
+        "Terrence": 2.0
+      }
+    },
+    {
+      "name": "Gabrielle",
+      "army": "Imperial Guard",
+      "scores": {
+        "Eric": 4.0,
+        "Kris": 2.5,
+        "Ivan": 3.5,
+        "Jireh": 4.5,
+        "Kevin": 3.0,
+        "Quentin": 2.0,
+        "Terrence": 3.5
+      }
+    }
+  ]
+}

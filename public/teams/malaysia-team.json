@@ -1,0 +1,118 @@
+{
+  "key": "malaysia",
+  "name": "Malaysia",
+  "players": [
+    {
+      "name": "Necrons - Canoptek Court",
+      "army": "Necrons",
+      "scores": {
+        "Eric": 3.0,
+        "Gabrielle": 3.0,
+        "Ivan": 0.0,
+        "Jireh": 0.0,
+        "Kevin": 3.0,
+        "Terrence": 2.0,
+        "Quentin": 0.0,
+        "Kris": 1.0
+      }
+    },
+    {
+      "name": "CSM - Pactbound Zealots",
+      "army": "Chaos Space Marines",
+      "scores": {
+        "Eric": 2.5,
+        "Gabrielle": 3.5,
+        "Ivan": 0.0,
+        "Jireh": 0.0,
+        "Kevin": 0.0,
+        "Terrence": 3.0,
+        "Quentin": 0.0,
+        "Kris": 2.5
+      }
+    },
+    {
+      "name": "Tau - Mont'ka",
+      "army": "Tau",
+      "scores": {
+        "Eric": 3.5,
+        "Gabrielle": 3.0,
+        "Ivan": 0.0,
+        "Jireh": 0.0,
+        "Kevin": 0.0,
+        "Terrence": 3.0,
+        "Quentin": 0.0,
+        "Kris": 0.0
+      }
+    },
+    {
+      "name": "TSS - Warpforged Cabal",
+      "army": "Thousand Sons",
+      "scores": {
+        "Eric": 3.0,
+        "Gabrielle": 3.5,
+        "Ivan": 0.0,
+        "Jireh": 0.0,
+        "Kevin": 0.0,
+        "Terrence": 3.5,
+        "Quentin": 0.0,
+        "Kris": 3.5
+      }
+    },
+    {
+      "name": "EC - Coterie of the Conceited",
+      "army": "Drukhari",
+      "scores": {
+        "Eric": 3.5,
+        "Gabrielle": 3.0,
+        "Ivan": 0.0,
+        "Jireh": 0.0,
+        "Kevin": 0.0,
+        "Terrence": 3.5,
+        "Quentin": 0.0,
+        "Kris": 4.0
+      }
+    },
+    {
+      "name": "Deathwatch - Black Spear Task Force",
+      "army": "Deathwatch",
+      "scores": {
+        "Eric": 1.0,
+        "Gabrielle": 3.5,
+        "Ivan": 0.0,
+        "Jireh": 0.0,
+        "Kevin": 0.0,
+        "Terrence": 3.0,
+        "Quentin": 0.0,
+        "Kris": 3.0
+      }
+    },
+    {
+      "name": "GK - Banishers",
+      "army": "Grey Knights",
+      "scores": {
+        "Eric": 2.0,
+        "Gabrielle": 2.0,
+        "Ivan": 0.0,
+        "Jireh": 0.0,
+        "Kevin": 0.0,
+        "Terrence": 3.0,
+        "Quentin": 0.0,
+        "Kris": 3.0
+      }
+    },
+    {
+      "name": "Guard - Grizzled Company",
+      "army": "Imperial Guard",
+      "scores": {
+        "Eric": 2.5,
+        "Gabrielle": 3.0,
+        "Ivan": 0.0,
+        "Jireh": 0.0,
+        "Kevin": 2.0,
+        "Terrence": 2.5,
+        "Quentin": 0.0,
+        "Kris": 2.0
+      }
+    }
+  ]
+}
