@@ -24,13 +24,14 @@
     background: var(--bg); color: var(--text); min-height: 100vh;
     background-image: radial-gradient(ellipse at 50% 0%, #1a1a35 0%, var(--bg) 70%);
   }
-  .container { max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
   
   header { text-align: center; margin-bottom: 32px; }
   header h1 { 
     font-size: 2rem; font-weight: 800; letter-spacing: 2px;
     background: linear-gradient(180deg, var(--gold) 0%, #ccaa00 100%);
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 4px;
   }
   header .sub { color: var(--text-dim); font-size: 0.9rem; }
@@ -78,11 +79,11 @@
   .mission-cards {
     display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px;
   }
-  @media (max-width: 640px) { .mission-cards { grid-template-columns: 1fr; } }
+  @media (max-width: 800px) { .mission-cards { grid-template-columns: 1fr; } }
 
   .mission-card {
     background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-    padding: 20px; position: relative; overflow: hidden;
+    padding: 16px; position: relative; overflow: hidden;
   }
   .mission-card::before {
     content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
@@ -90,8 +91,12 @@
   .mission-card.p1-card::before { background: linear-gradient(90deg, var(--cyan), transparent); }
   .mission-card.p2-card::before { background: linear-gradient(90deg, var(--red), transparent); }
 
+  .mission-card .card-img {
+    width: 100%; max-width: 210px; margin: 0 auto 12px; display: block;
+    border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
   .mission-card h3 {
-    font-size: 1.3rem; font-weight: 800; margin-bottom: 4px;
+    font-size: 1.1rem; font-weight: 800; margin-bottom: 4px;
     letter-spacing: 1px;
   }
   .mission-card .disposition-tag {
@@ -180,274 +185,179 @@
   </div>
 
   <footer>
-    Data sourced from Goonhammer / Tabletop Battles · 11th Edition Force Disposition Reviews (June 2–6, 2026)<br>
-    Based on Games Workshop preview rules · <a href="https://www.goonhammer.com/warhammer-40k-11th-edition/" target="_blank">goonhammer.com</a>
+    Mission card images from <a href="https://gdmissions.app/11th/primary-missions" target="_blank">GDM 2026</a> ·
+    Data sourced from Goonhammer / Tabletop Battles (June 2–6, 2026) ·
+    Based on Games Workshop preview rules
   </footer>
 </div>
 
 <script>
-// ─── Mission Data (GW terminology) ───
+// ─── Mission Data ───
+const BASE_IMG = 'mission-cards';
+
 const MISSIONS = {
   disruption: {
     name: "Disruption",
-    description: "Hit-and-run tactics, mixing action play with objective control. Disruption missions reward fast, small, lethal units that can move around the table, perform actions, and destroy key enemy targets.",
+    description: "Hit-and-run tactics, mixing action play with objective control. Rewards fast, small, lethal units.",
     color: "disruption",
     missions: {
       disruption: {
-        name: "Outmanoeuvre",
-        objectives: 5,
+        name: "Outmanoeuvre", objectives: 5,
+        image: `${BASE_IMG}/disruption__outmanoeuvre.png`,
         scoring: [
-          "<span class=vp>10 VP</span> — Control your opponent's home objective. [Any battle round, end of your turn]",
+          "<span class=vp>10 VP</span> — Control opponent's home objective. [Any battle round, end of your turn]",
           "<span class=vp>4 VP</span> each — Control each objective excluding home. [1st battle round, end of your turn]",
-          "<span class=vp>5 VP</span> each — Control each objective excluding home. [2nd–3rd battle rounds, end of your Command phase]",
-          "<span class=vp>6 VP</span> each — Control each objective excluding home. [4th battle round onwards, end of your turn]"
+          "<span class=vp>5 VP</span> each — Control each objective excluding home. [2nd–3rd, end of Command phase]",
+          "<span class=vp>6 VP</span> each — Control each objective excluding home. [4th+, end of your turn]"
         ]
       },
       "take-and-hold": {
-        name: "Death Trap",
-        objectives: 5,
-        scoring: [
-          "Perform actions on objectives you control to score VP. Requires fast units with decent OC.",
-          "Control objectives in No Man's Land for additional scoring.",
-          "Opponent (Take and Hold): scores purely by holding objectives."
-        ]
+        name: "Death Trap", objectives: 5,
+        image: `${BASE_IMG}/disruption__death-trap.png`,
+        scoring: ["Perform actions on objectives you control to score VP. Fast units with decent OC essential.", "Control No Man's Land objectives for additional scoring.", "Opponent (Take and Hold): scores purely by holding objectives."]
       },
       "purge-the-foe": {
-        name: "Delaying Action",
-        objectives: 5,
-        scoring: [
-          "Perform actions on objectives to score VP.",
-          "Each enemy unit destroyed: <span class=vp>1 VP</span> [End of your turn].",
-          "Balance between completing actions and stalling the Purge the Foe opponent."
-        ]
+        name: "Delaying Action", objectives: 5,
+        image: `${BASE_IMG}/disruption__delaying-action.png`,
+        scoring: ["Perform actions on objectives to score VP.", "Each enemy unit destroyed: <span class=vp>1 VP</span> [End of your turn].", "Stall the Purge the Foe opponent while completing actions."]
       },
       "priority-assets": {
-        name: "Locate and Deny",
-        objectives: 5,
-        scoring: [
-          "Both players have actions to complete. Disruption player must identify and deny the opponent's priority assets.",
-          "Control objectives in No Man's Land for additional scoring.",
-          "Fast action units are essential to outpace the Priority Assets player."
-        ]
+        name: "Locate and Deny", objectives: 5,
+        image: `${BASE_IMG}/disruption__locate-and-deny.png`,
+        scoring: ["Both players have actions. Identify and deny opponent's priority assets.", "Control No Man's Land objectives for additional scoring.", "Fast action units essential to outpace Priority Assets."]
       },
       reconnaissance: {
-        name: "Smoke and Mirrors",
-        objectives: 6,
-        scoring: [
-          "The only 6-objective Disruption mission. Two central objectives instead of one.",
-          "Perform actions on objectives to score VP.",
-          "Highly mobile cat-and-mouse game against Reconnaissance. Deception and speed are key."
-        ]
+        name: "Smoke and Mirrors", objectives: 6,
+        image: `${BASE_IMG}/disruption__smoke-and-mirrors.png`,
+        scoring: ["Only 6-objective Disruption mission. Two central objectives.", "Perform actions on objectives. Highly mobile cat-and-mouse vs Reconnaissance.", "Deception and speed are key."]
       }
     }
   },
   "purge-the-foe": {
     name: "Purge the Foe",
-    description: "The most straightforward Force Disposition. Missions reward destroying enemy units and holding objectives — things Warhammer armies are already built to do. Widely considered the strongest disposition.",
+    description: "The most straightforward disposition. Rewards destroying enemy units and holding objectives — what armies are already built to do.",
     color: "purge",
     missions: {
       "purge-the-foe": {
-        name: "Meatgrinder",
-        objectives: 5,
-        scoring: [
-          "Mirror match. Both players score by destroying enemy units and holding objectives.",
-          "Pure attrition warfare — the player with superior killing power wins.",
-          "Control objectives outside your deployment zone for additional VP."
-        ]
+        name: "Meatgrinder", objectives: 5,
+        image: `${BASE_IMG}/purge-the-foe__meatgrinder.png`,
+        scoring: ["Mirror match. Both players score by destroying enemy units + holding objectives.", "Pure attrition — superior killing power wins.", "Control objectives outside your deployment zone for additional VP."]
       },
       "take-and-hold": {
-        name: "Unstoppable Force",
-        objectives: 5,
-        scoring: [
-          "Destroy one or more enemy units: score VP each turn.",
-          "Control objectives outside your deployment zone: score VP [Command phase, 2nd round onwards].",
-          "Control an objective you did not control at the start of your turn: <span class=vp>3 VP</span> [End of your turn].",
-          "End of battle: <span class=vp>5 VP</span> for controlling the central objective."
-        ]
+        name: "Unstoppable Force", objectives: 5,
+        image: `${BASE_IMG}/purge-the-foe__unstoppable-force.png`,
+        scoring: ["Destroy ≥1 enemy unit: score VP each turn.", "Control objectives outside deployment zone: score VP [Command phase, 2nd+].", "Control objective you didn't control at start of turn: <span class=vp>3 VP</span> [End of turn].", "End of battle: <span class=vp>5 VP</span> for controlling Central Objective."]
       },
       disruption: {
-        name: "Punishment",
-        objectives: 5,
-        scoring: [
-          "Primary scoring through destroying enemy units.",
-          "Control objectives outside your deployment zone for additional VP.",
-          "Punish the Disruption opponent's hit-and-run tactics with overwhelming firepower."
-        ]
+        name: "Punishment", objectives: 5,
+        image: `${BASE_IMG}/purge-the-foe__punishment.png`,
+        scoring: ["Primary scoring through destroying enemy units.", "Control objectives outside deployment zone for additional VP.", "Punish Disruption's hit-and-run tactics with overwhelming firepower."]
       },
       "priority-assets": {
         name: "Destroyer's Wrath",
-        objectives: null,
-        scoring: [
-          "Destroy enemy units to score VP.",
-          "The Priority Assets opponent is busy completing actions — press the attack aggressively.",
-          "Prevent the opponent from completing their actions by eliminating their action units."
-        ]
+        image: `${BASE_IMG}/purge-the-foe__destroyers-wrath.png`,
+        scoring: ["Destroy enemy units to score VP.", "Priority Assets opponent is busy with actions — press the attack.", "Prevent opponent's action completion by eliminating action units."]
       },
       reconnaissance: {
         name: "Consecrate",
-        objectives: null,
-        scoring: [
-          "Destroy enemy units and hold objectives to score VP.",
-          "The Reconnaissance opponent spreads across the table — prevent them from moving freely.",
-          "Control key positions to deny the opponent's table-quarter scoring."
-        ]
+        image: `${BASE_IMG}/purge-the-foe__consecrate.png`,
+        scoring: ["Destroy enemy units and hold objectives to score.", "Reconnaissance opponent spreads across table — deny their movement.", "Control key positions to block table-quarter scoring."]
       }
     }
   },
   "priority-assets": {
     name: "Priority Assets",
-    description: "The most action-heavy disposition. Every mission includes a special action on top of holding objectives. Requires high-OC, fast-moving action units. Actions complete at the end of your turn — no need to survive the opponent's turn.",
+    description: "The most action-heavy disposition. Every mission has a special action. Requires high-OC, fast action units. Actions complete end of your turn.",
     color: "priority",
     missions: {
       "priority-assets": {
         name: "Sabotage",
-        objectives: null,
-        scoring: [
-          "Mirror match. Both players complete actions to score VP.",
-          "Pure action economy — whoever completes more actions faster wins.",
-          "Control objectives to enable action completion."
-        ]
+        image: `${BASE_IMG}/priority-assets__sabotage.png`,
+        scoring: ["Mirror match. Both players complete actions to score.", "Pure action economy — whoever completes more actions faster wins.", "Control objectives to enable action completion."]
       },
       "take-and-hold": {
-        name: "Secure Asset",
-        objectives: 6,
-        scoring: [
-          "<span class=vp>4 VP</span> — Perform the Secure Asset action on an objective (excluding home). [End of your turn]",
-          "<span class=vp>2 VP</span> — Destroy one or more units within range of a Central Objective. [End of your turn]",
-          "<span class=vp>4 VP</span> — Control an objective excluding home. [Command phase, 2nd round onwards]",
-          "<span class=vp>4 VP</span> (additional) — Control three or more objectives including home."
-        ]
+        name: "Secure Asset", objectives: 6,
+        image: `${BASE_IMG}/priority-assets__secure-asset.png`,
+        scoring: ["<span class=vp>4 VP</span> — Secure Asset action on an objective (excl. home). [End of turn]", "<span class=vp>2 VP</span> — Destroy ≥1 unit within range of a Central Objective. [End of turn]", "<span class=vp>4 VP</span> — Control objective excl. home. [Command phase, 2nd+]", "<span class=vp>4 VP</span> bonus — Control 3+ objectives including home."]
       },
       "purge-the-foe": {
         name: "Vital Link",
-        objectives: null,
-        scoring: [
-          "Complete critical actions to establish a Vital Link and score VP.",
-          "The Purge the Foe opponent focuses on destroying units — speed is your advantage.",
-          "Control objectives to enable and protect your actions."
-        ]
+        image: `${BASE_IMG}/priority-assets__vital-link.png`,
+        scoring: ["Complete critical actions to establish a Vital Link.", "Purge the Foe opponent focuses on killing — speed is your advantage.", "Control objectives to protect your actions."]
       },
       disruption: {
         name: "Extract Relic",
-        objectives: null,
-        scoring: [
-          "Extract the relic by completing actions on key objectives.",
-          "Both players have actions — race to complete yours first.",
-          "Fast, expendable action units are critical."
-        ]
+        image: `${BASE_IMG}/priority-assets__extract-relic.png`,
+        scoring: ["Extract the relic by completing actions on key objectives.", "Both players have actions — race to complete yours first.", "Fast, expendable action units are critical."]
       },
       reconnaissance: {
         name: "Vanguard Operation",
-        objectives: null,
-        scoring: [
-          "Execute vanguard actions while controlling objectives.",
-          "The Reconnaissance opponent is also highly mobile — an action-economy duel.",
-          "Push forward aggressively to complete actions before the opponent can react."
-        ]
+        image: `${BASE_IMG}/priority-assets__vanguard-operation.png`,
+        scoring: ["Execute vanguard actions while controlling objectives.", "Both players highly mobile — action-economy duel.", "Push forward aggressively to complete actions first."]
       }
     }
   },
   "take-and-hold": {
     name: "Take and Hold",
-    description: "The most classic Warhammer experience — pure objective holding, no actions required. The only disposition that can score VP for holding your home objective. Suits durable or high-model-count armies.",
+    description: "Classic Warhammer — pure objective holding, no actions. The only disposition that can score VP for holding your home objective.",
     color: "takehold",
     missions: {
       "take-and-hold": {
-        name: "Battlefield Dominance",
-        objectives: 5,
-        scoring: [
-          "<span class=vp>2 VP</span> — Control more objectives than your opponent. [1st–2nd battle rounds, end of your turn]",
-          "<span class=vp>3 VP</span> each — Control each objective. [2nd round onwards, end of Command phase]",
-          "<span class=vp>+2 VP</span> each — Bonus for each objective excluding home, if you control your home objective."
-        ]
+        name: "Battlefield Dominance", objectives: 5,
+        image: `${BASE_IMG}/take-and-hold__battlefield-dominance.png`,
+        scoring: ["<span class=vp>2 VP</span> — Control more objectives than opponent. [1st–2nd, end of turn]", "<span class=vp>3 VP</span> each — Control each objective. [2nd+, end of Command phase]", "<span class=vp>+2 VP</span> each — Bonus for each excl. home, if you control home objective."]
       },
       disruption: {
-        name: "Determined Acquisition",
-        objectives: 5,
-        scoring: [
-          "Score VP by holding objectives. The Disruption opponent is busy with actions.",
-          "Hold your ground — do not let the opponent's hit-and-run tactics dislodge you.",
-          "Durable objective-holding units are essential."
-        ]
+        name: "Determined Acquisition", objectives: 5,
+        image: `${BASE_IMG}/take-and-hold__determined-acquisition.png`,
+        scoring: ["Score VP by holding objectives. Disruption opponent busy with actions.", "Hold your ground — don't let hit-and-run tactics dislodge you.", "Durable objective-holding units essential."]
       },
       "purge-the-foe": {
-        name: "Immovable Object",
-        objectives: 5,
-        scoring: [
-          "Hold objectives to score VP. The Purge the Foe opponent tries to kill your units to stop you.",
-          "Survive the onslaught and maintain objective control.",
-          "The longer you hold, the more you score — resilience is everything."
-        ]
+        name: "Immovable Object", objectives: 5,
+        image: `${BASE_IMG}/take-and-hold__immovable-object.png`,
+        scoring: ["Hold objectives to score VP. Purge opponent kills your units to stop you.", "Survive the onslaught and maintain objective control.", "Resilience is everything — the longer you hold, the more you score."]
       },
       "priority-assets": {
-        name: "Inescapable Dominion",
-        objectives: 6,
-        scoring: [
-          "The only 6-objective Take and Hold mission. Favours the Take and Hold player.",
-          "Score VP by holding objectives. The Priority Assets opponent is spread thin doing actions.",
-          "Two central objectives provide safer scoring opportunities."
-        ]
+        name: "Inescapable Dominion", objectives: 6,
+        image: `${BASE_IMG}/take-and-hold__inescapable-dominion.png`,
+        scoring: ["Only 6-objective Take and Hold mission. Favours Take and Hold.", "Score VP by holding objectives. Priority Assets spread thin on actions.", "Two central objectives provide safer scoring."]
       },
       reconnaissance: {
-        name: "Purge and Secure",
-        objectives: 5,
-        scoring: [
-          "Hold objectives to score VP. The Reconnaissance opponent moves around the table edges.",
-          "Clear the area and secure objectives before the opponent can flank you.",
-          "Prevent encirclement by holding key positions."
-        ]
+        name: "Purge and Secure", objectives: 5,
+        image: `${BASE_IMG}/take-and-hold__purge-and-secure.png`,
+        scoring: ["Hold objectives to score VP. Reconnaissance moves around table edges.", "Clear the area and secure objectives before being flanked.", "Prevent encirclement by holding key positions."]
       }
     }
   },
   reconnaissance: {
     name: "Reconnaissance",
-    description: "The most mobility-focused disposition. Rewards table-quarter control, actions at specific locations, and fast repositioning. Favours MSU (Multiple Small Units) playstyles over mid-board brawling.",
+    description: "The most mobility-focused disposition. Rewards table-quarter control, actions at specific locations, and fast repositioning. Favours MSU playstyles.",
     color: "recon",
     missions: {
       reconnaissance: {
         name: "Gather Intel",
-        objectives: null,
-        scoring: [
-          "Mirror match. Both players race to gather intelligence at key locations.",
-          "Move fast, complete actions, and deny the opponent's intel-gathering.",
-          "Pure mobility duel."
-        ]
+        image: `${BASE_IMG}/reconnaissance__gather-intel.png`,
+        scoring: ["Mirror match. Race to gather intelligence at key locations.", "Move fast, complete actions, deny opponent's intel-gathering.", "Pure mobility duel."]
       },
       "take-and-hold": {
-        name: "Reconnaissance Sweep",
-        objectives: 5,
-        scoring: [
-          "<span class=vp>3 VP</span> — Three or more units wholly within three different table quarters (not within 6\" of centre). [End of your turn]",
-          "<span class=vp>6 VP</span> — Four or more units wholly within four different table quarters (not within 6\" of centre).",
-          "<span class=vp>1 VP</span> each — Destroy an enemy unit. [End of turn]"
-        ]
+        name: "Reconnaissance Sweep", objectives: 5,
+        image: `${BASE_IMG}/reconnaissance__reconnaissance-sweep.png`,
+        scoring: ["<span class=vp>3 VP</span> — 3+ units wholly within 3 different table quarters (not within 6\" of centre). [End of turn]", "<span class=vp>6 VP</span> — 4+ units wholly within 4 different table quarters.", "<span class=vp>1 VP</span> each — Destroy an enemy unit. [End of turn]"]
       },
       "purge-the-foe": {
         name: "Triangulation",
-        objectives: null,
-        scoring: [
-          "Complete actions at multiple locations to triangulate and score VP.",
-          "The Purge the Foe opponent tries to intercept — speed vs. firepower.",
-          "Spread out and complete actions before the opponent can respond."
-        ]
+        image: `${BASE_IMG}/reconnaissance__triangulation.png`,
+        scoring: ["Complete actions at multiple locations to triangulate and score.", "Purge opponent tries to intercept — speed vs. firepower.", "Spread out and complete actions before opponent responds."]
       },
       disruption: {
         name: "Surveil the Foe",
-        objectives: null,
-        scoring: [
-          "Deploy units at specific locations to surveil the enemy and score VP.",
-          "Both players are highly mobile — a game of cat and mouse.",
-          "Positioning and timing are more important than raw killing power."
-        ]
+        image: `${BASE_IMG}/reconnaissance__surveil-the-foe.png`,
+        scoring: ["Deploy units at specific locations to surveil the enemy.", "Both players highly mobile — cat and mouse.", "Positioning and timing over raw killing power."]
       },
       "priority-assets": {
         name: "Search and Scour",
-        objectives: null,
-        scoring: [
-          "Search target zones and complete actions to score VP.",
-          "Both players have heavy action requirements — the ultimate action-economy matchup.",
-          "Fast, sacrificial action units are essential."
-        ]
+        image: `${BASE_IMG}/reconnaissance__search-and-scour.png`,
+        scoring: ["Search target zones and complete actions to score.", "Both players heavy on actions — ultimate action-economy matchup.", "Fast, sacrificial action units essential."]
       }
     }
   }
@@ -459,11 +369,10 @@ function init() {
   const sel1 = document.getElementById('p1Disposition');
   const sel2 = document.getElementById('p2Disposition');
   DISPOSITION_KEYS.forEach(key => {
-    const d = MISSIONS[key];
     [sel1, sel2].forEach(sel => {
       const opt = document.createElement('option');
       opt.value = key;
-      opt.textContent = d.name;
+      opt.textContent = MISSIONS[key].name;
       sel.appendChild(opt);
     });
   });
@@ -475,48 +384,32 @@ function updateMissions() {
   const resultArea = document.getElementById('resultArea');
   const missionCards = document.getElementById('missionCards');
   const infoBox = document.getElementById('infoBox');
-
   if (!p1 || !p2) { resultArea.classList.remove('active'); return; }
   resultArea.classList.add('active');
-
-  const p1Data = MISSIONS[p1];
-  const p2Data = MISSIONS[p2];
-  const p1Mission = p1Data.missions[p2];
-  const p2Mission = p2Data.missions[p1];
-
-  const renderScoring = (items) => items.map(s => `<li>${s}</li>`).join('');
-
-  missionCards.innerHTML = `
-    <div class="mission-card p1-card">
-      <span class="disposition-tag tag-${p1Data.color}">${p1Data.name}</span>
-      <h3>${p1Mission.name}</h3>
+  const p1Data = MISSIONS[p1], p2Data = MISSIONS[p2];
+  const p1Mission = p1Data.missions[p2], p2Mission = p2Data.missions[p1];
+  const renderScoring = items => items.map(s => `<li>${s}</li>`).join('');
+  const card = (data, mission, cls) => `
+    <div class="mission-card ${cls}">
+      <img class="card-img" src="${mission.image}" alt="${mission.name}" loading="lazy">
+      <span class="disposition-tag tag-${data.color}">${data.name}</span>
+      <h3>${mission.name}</h3>
       <div class="meta">
-        <span>vs ${p2Data.name}</span>
-        ${p1Mission.objectives ? `<span>🎯 ${p1Mission.objectives} Objective Markers</span>` : ''}
+        <span>vs ${data === p1Data ? p2Data.name : p1Data.name}</span>
+        ${mission.objectives ? `<span>🎯 ${mission.objectives} Objective Markers</span>` : ''}
       </div>
-      <div class="scoring"><strong>Primary Scoring:</strong><ul>${renderScoring(p1Mission.scoring)}</ul></div>
-    </div>
-    <div class="mission-card p2-card">
-      <span class="disposition-tag tag-${p2Data.color}">${p2Data.name}</span>
-      <h3>${p2Mission.name}</h3>
-      <div class="meta">
-        <span>vs ${p1Data.name}</span>
-        ${p2Mission.objectives ? `<span>🎯 ${p2Mission.objectives} Objective Markers</span>` : ''}
-      </div>
-      <div class="scoring"><strong>Primary Scoring:</strong><ul>${renderScoring(p2Mission.scoring)}</ul></div>
-    </div>
-  `;
-
-  const sameDisposition = p1 === p2;
+      <div class="scoring"><strong>Primary Scoring:</strong><ul>${renderScoring(mission.scoring)}</ul></div>
+    </div>`;
+  missionCards.innerHTML = card(p1Data, p1Mission, 'p1-card') + card(p2Data, p2Mission, 'p2-card');
+  const same = p1 === p2;
   infoBox.innerHTML = `
     <h4>📋 Pairing Summary</h4>
     <p>
-      <strong>${p1Data.name}</strong> → Primary Mission: <strong>${p1Mission.name}</strong><br>
-      <strong>${p2Data.name}</strong> → Primary Mission: <strong>${p2Mission.name}</strong><br>
-      ${sameDisposition ? '<br>⚠️ Mirror Disposition — each player has a different mission from the same category.' : '<br>Different Dispositions — each player has a fundamentally different mission experience.'}
-      <br><br>
-      <strong>VP Cap:</strong> Maximum 45 VP from Primary Mission (max 15 VP per battle round)<br>
-      <strong>Going Second:</strong> Scores at the end of your turn on battle round 5 (instead of Command phase)
+      <strong>${p1Data.name}</strong> → <strong>${p1Mission.name}</strong><br>
+      <strong>${p2Data.name}</strong> → <strong>${p2Mission.name}</strong><br>
+      ${same ? '<br>⚠️ Mirror Disposition — each player has a different mission from the same category.' : '<br>Different Dispositions — each player has a fundamentally different mission experience.'}
+      <br><br><strong>VP Cap:</strong> Max 45 VP from Primary Mission (max 15 VP per battle round)<br>
+      <strong>Going Second:</strong> Scores at end of your turn on battle round 5 (instead of Command phase)
     </p>`;
 }
 
