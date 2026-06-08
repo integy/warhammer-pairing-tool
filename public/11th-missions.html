@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-HK">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WH40K 11th Edition — Primary Mission 配對工具</title>
+<title>WH40K 11th Edition — Primary Mission Lookup</title>
 <style>
   :root {
     --bg: #0a0a14;
@@ -111,10 +111,12 @@
   .mission-card .meta span { 
     background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 4px;
   }
-  .mission-card .description { 
-    font-size: 0.9rem; line-height: 1.6; color: var(--text-dim);
+  .mission-card .scoring { 
+    font-size: 0.82rem; line-height: 1.6; color: var(--text-dim);
     border-top: 1px solid var(--border); padding-top: 12px;
   }
+  .mission-card .scoring strong { color: var(--text); }
+  .mission-card .scoring .vp { color: var(--gold); font-weight: 700; }
 
   .info-box {
     background: var(--card); border: 1px solid var(--border); border-radius: 12px;
@@ -145,29 +147,29 @@
   <header>
     <span class="aquila">🦅</span>
     <h1>WARHAMMER 40,000</h1>
-    <div class="sub">11th Edition · Primary Mission 配對工具</div>
+    <div class="sub">11th Edition · Primary Mission Lookup</div>
   </header>
 
   <div class="legend">
-    <div class="legend-item"><span class="legend-dot" style="background:var(--cyan)"></span> Disruption 擾亂</div>
-    <div class="legend-item"><span class="legend-dot" style="background:var(--red)"></span> Purge the Foe 殲滅</div>
-    <div class="legend-item"><span class="legend-dot" style="background:var(--purple)"></span> Priority Assets 優先資產</div>
-    <div class="legend-item"><span class="legend-dot" style="background:var(--green)"></span> Take and Hold 佔領</div>
-    <div class="legend-item"><span class="legend-dot" style="background:var(--gold)"></span> Reconnaissance 偵察</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--cyan)"></span> Disruption</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--red)"></span> Purge the Foe</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--purple)"></span> Priority Assets</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--green)"></span> Take and Hold</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--gold)"></span> Reconnaissance</div>
   </div>
 
   <div class="selector-pair">
     <div class="player-box p1">
-      <h2>⚔️ 玩家一</h2>
+      <h2>⚔️ PLAYER 1</h2>
       <select id="p1Disposition" onchange="updateMissions()">
-        <option value="">— 選擇 Force Disposition —</option>
+        <option value="">— Select Force Disposition —</option>
       </select>
     </div>
     <div class="vs-badge">⚡VS⚡</div>
     <div class="player-box p2">
-      <h2>🛡️ 玩家二</h2>
+      <h2>🛡️ PLAYER 2</h2>
       <select id="p2Disposition" onchange="updateMissions()">
-        <option value="">— 選擇 Force Disposition —</option>
+        <option value="">— Select Force Disposition —</option>
       </select>
     </div>
   </div>
@@ -178,176 +180,274 @@
   </div>
 
   <footer>
-    資料來源：Goonhammer / Tabletop Battles · 11th Edition Force Disposition Reviews (2026-06-02 ~ 06-06)<br>
-    Games Workshop 預覽規則 · <a href="https://www.goonhammer.com/warhammer-40k-11th-edition/" target="_blank">goonhammer.com</a>
+    Data sourced from Goonhammer / Tabletop Battles · 11th Edition Force Disposition Reviews (June 2–6, 2026)<br>
+    Based on Games Workshop preview rules · <a href="https://www.goonhammer.com/warhammer-40k-11th-edition/" target="_blank">goonhammer.com</a>
   </footer>
 </div>
 
 <script>
-// ─── Mission Data ───
+// ─── Mission Data (GW terminology) ───
 const MISSIONS = {
   disruption: {
     name: "Disruption",
-    nameZH: "擾亂",
+    description: "Hit-and-run tactics, mixing action play with objective control. Disruption missions reward fast, small, lethal units that can move around the table, perform actions, and destroy key enemy targets.",
     color: "disruption",
-    description: "打帶跑戰術，Action + 佔點混合。需要快速、小型、致命單位，能滿桌移動、做 Action 並消滅關鍵目標。",
     missions: {
       disruption: {
         name: "Outmanoeuvre",
         objectives: 5,
-        description: "純佔點任務。控制對手 home objective 得 10 VP；每回合佔領非 home 的 objective 得分（第1回合 4 VP、第2-3回合 5 VP、第4回合起 6 VP）。五個 objective 地圖。"
+        scoring: [
+          "<span class=vp>10 VP</span> — Control your opponent's home objective. [Any battle round, end of your turn]",
+          "<span class=vp>4 VP</span> each — Control each objective excluding home. [1st battle round, end of your turn]",
+          "<span class=vp>5 VP</span> each — Control each objective excluding home. [2nd–3rd battle rounds, end of your Command phase]",
+          "<span class=vp>6 VP</span> each — Control each objective excluding home. [4th battle round onwards, end of your turn]"
+        ]
       },
       "take-and-hold": {
         name: "Death Trap",
         objectives: 5,
-        description: "Disruption vs Take and Hold。Disruption 方需要做 Action 來得分，同時控制中場 objectives。Take and Hold 方純佔點得分。五個 objective 地圖。"
+        scoring: [
+          "Perform actions on objectives you control to score VP. Requires fast units with decent OC.",
+          "Control objectives in No Man's Land for additional scoring.",
+          "Opponent (Take and Hold): scores purely by holding objectives."
+        ]
       },
       "purge-the-foe": {
         name: "Delaying Action",
         objectives: 5,
-        description: "Disruption vs Purge the Foe。Disruption 方做 Action 得分，同時阻止 Purge 方殺太多單位。需要在拖延與得分之間取得平衡。五個 objective 地圖。"
+        scoring: [
+          "Perform actions on objectives to score VP.",
+          "Each enemy unit destroyed: <span class=vp>1 VP</span> [End of your turn].",
+          "Balance between completing actions and stalling the Purge the Foe opponent."
+        ]
       },
       "priority-assets": {
         name: "Locate and Deny",
         objectives: 5,
-        description: "Disruption vs Priority Assets。雙方都有 Action 要完成。Disruption 需要找出對方的優先資產並阻止對方完成 Action。五個 objective 地圖。"
+        scoring: [
+          "Both players have actions to complete. Disruption player must identify and deny the opponent's priority assets.",
+          "Control objectives in No Man's Land for additional scoring.",
+          "Fast action units are essential to outpace the Priority Assets player."
+        ]
       },
       reconnaissance: {
         name: "Smoke and Mirrors",
         objectives: 6,
-        description: "Disruption vs Reconnaissance。唯一六 objective 任務。兩方都是高度機動型任務，Disruption 需要迷惑對手並搶先完成關鍵 Action。六個 objective 地圖。"
+        scoring: [
+          "The only 6-objective Disruption mission. Two central objectives instead of one.",
+          "Perform actions on objectives to score VP.",
+          "Highly mobile cat-and-mouse game against Reconnaissance. Deception and speed are key."
+        ]
       }
     }
   },
   "purge-the-foe": {
     name: "Purge the Foe",
-    nameZH: "殲滅敵軍",
+    description: "The most straightforward Force Disposition. Missions reward destroying enemy units and holding objectives — things Warhammer armies are already built to do. Widely considered the strongest disposition.",
     color: "purge",
-    description: "最直接的任務類型。殺敵方單位 + 佔領 objectives。獎勵軍隊本來就想做的事——殺戮和佔點。被認為是最「強」的 Disposition。",
     missions: {
       "purge-the-foe": {
         name: "Meatgrinder",
         objectives: 5,
-        description: "Purge the Foe mirror match。純粹的絞肉機——殺敵方單位得分，同時佔領 objectives。雙方都在做同樣的事情，比拼誰的殺傷力更強。"
+        scoring: [
+          "Mirror match. Both players score by destroying enemy units and holding objectives.",
+          "Pure attrition warfare — the player with superior killing power wins.",
+          "Control objectives outside your deployment zone for additional VP."
+        ]
       },
       "take-and-hold": {
         name: "Unstoppable Force",
         objectives: 5,
-        description: "Purge vs Take and Hold。Purge 方每回合殺敵得分 + 佔點得分 + 奪取新 objective 額外 3 VP + 終局控制中央 objective 加 5 VP。對 Take and Hold 非常不利——只有一個中央 objective。"
+        scoring: [
+          "Destroy one or more enemy units: score VP each turn.",
+          "Control objectives outside your deployment zone: score VP [Command phase, 2nd round onwards].",
+          "Control an objective you did not control at the start of your turn: <span class=vp>3 VP</span> [End of your turn].",
+          "End of battle: <span class=vp>5 VP</span> for controlling the central objective."
+        ]
       },
       disruption: {
         name: "Punishment",
         objectives: 5,
-        description: "Purge vs Disruption。Purge 方以殺敵為主要得分手段，懲罰對手的游擊戰術。佔領 objectives 提供額外分數。"
+        scoring: [
+          "Primary scoring through destroying enemy units.",
+          "Control objectives outside your deployment zone for additional VP.",
+          "Punish the Disruption opponent's hit-and-run tactics with overwhelming firepower."
+        ]
       },
       "priority-assets": {
         name: "Destroyer's Wrath",
         objectives: null,
-        description: "Purge vs Priority Assets。Purge 方摧毀敵方 units 得分，Priority Assets 方忙於完成 Actions。Purge 需要積極進攻阻止對手完成目標。"
+        scoring: [
+          "Destroy enemy units to score VP.",
+          "The Priority Assets opponent is busy completing actions — press the attack aggressively.",
+          "Prevent the opponent from completing their actions by eliminating their action units."
+        ]
       },
       reconnaissance: {
         name: "Consecrate",
         objectives: null,
-        description: "Purge vs Reconnaissance。Purge 方殺敵 + 佔點得分。Reconnaissance 方四處移動做 Action。Purge 需要阻止對手在地圖上自由行動。"
+        scoring: [
+          "Destroy enemy units and hold objectives to score VP.",
+          "The Reconnaissance opponent spreads across the table — prevent them from moving freely.",
+          "Control key positions to deny the opponent's table-quarter scoring."
+        ]
       }
     }
   },
   "priority-assets": {
     name: "Priority Assets",
-    nameZH: "優先資產",
+    description: "The most action-heavy disposition. Every mission includes a special action on top of holding objectives. Requires high-OC, fast-moving action units. Actions complete at the end of your turn — no need to survive the opponent's turn.",
     color: "priority",
-    description: "最 Action-heavy 的 Disposition。每個任務都有特殊 Action 要做。需要高 OC、快速移動的 Action 單位。Action 在你的回合結束時完成。",
     missions: {
       "priority-assets": {
         name: "Sabotage",
         objectives: null,
-        description: "Priority Assets mirror match。雙方都要完成 Action 來得分。純粹的行動經濟戰——誰能更快完成更多 Actions 誰就贏。"
+        scoring: [
+          "Mirror match. Both players complete actions to score VP.",
+          "Pure action economy — whoever completes more actions faster wins.",
+          "Control objectives to enable action completion."
+        ]
       },
       "take-and-hold": {
         name: "Secure Asset",
         objectives: 6,
-        description: "Priority vs Take and Hold。Priority 方做 Secure Asset Action 得 4 VP + 殺死中央 objective 範圍內的敵人得 2 VP + 第二回合起佔點得分。六 objective 地圖。"
+        scoring: [
+          "<span class=vp>4 VP</span> — Perform the Secure Asset action on an objective (excluding home). [End of your turn]",
+          "<span class=vp>2 VP</span> — Destroy one or more units within range of a Central Objective. [End of your turn]",
+          "<span class=vp>4 VP</span> — Control an objective excluding home. [Command phase, 2nd round onwards]",
+          "<span class=vp>4 VP</span> (additional) — Control three or more objectives including home."
+        ]
       },
       "purge-the-foe": {
         name: "Vital Link",
         objectives: null,
-        description: "Priority vs Purge。Priority 方需要完成關鍵 Action 來建立「Vital Link」。Purge 方以殺敵為主。速度是關鍵。"
+        scoring: [
+          "Complete critical actions to establish a Vital Link and score VP.",
+          "The Purge the Foe opponent focuses on destroying units — speed is your advantage.",
+          "Control objectives to enable and protect your actions."
+        ]
       },
       disruption: {
         name: "Extract Relic",
         objectives: null,
-        description: "Priority vs Disruption。Priority 方嘗試提取聖物 (Extract Relic)。雙方都有 Action，比拼誰能先完成關鍵目標。"
+        scoring: [
+          "Extract the relic by completing actions on key objectives.",
+          "Both players have actions — race to complete yours first.",
+          "Fast, expendable action units are critical."
+        ]
       },
       reconnaissance: {
         name: "Vanguard Operation",
         objectives: null,
-        description: "Priority vs Reconnaissance。Priority 方執行先鋒行動，需要同時推進 Action 進度並控制 objectives。兩方都是高速機動型。"
+        scoring: [
+          "Execute vanguard actions while controlling objectives.",
+          "The Reconnaissance opponent is also highly mobile — an action-economy duel.",
+          "Push forward aggressively to complete actions before the opponent can react."
+        ]
       }
     }
   },
   "take-and-hold": {
     name: "Take and Hold",
-    nameZH: "佔領固守",
+    description: "The most classic Warhammer experience — pure objective holding, no actions required. The only disposition that can score VP for holding your home objective. Suits durable or high-model-count armies.",
     color: "takehold",
-    description: "最經典的 Warhammer 體驗——純佔點，無 Actions。唯一可以靠守住 home objective 得分的 Disposition。適合耐打或數量多的軍隊。",
     missions: {
       "take-and-hold": {
         name: "Battlefield Dominance",
         objectives: 5,
-        description: "Take and Hold mirror match。比對手控制更多 objectives 得 2 VP（第1-2回合）；第二回合起每個 objective 3 VP（控制 home 則非 home 每個 +2 VP）。五個 objective 地圖。"
+        scoring: [
+          "<span class=vp>2 VP</span> — Control more objectives than your opponent. [1st–2nd battle rounds, end of your turn]",
+          "<span class=vp>3 VP</span> each — Control each objective. [2nd round onwards, end of Command phase]",
+          "<span class=vp>+2 VP</span> each — Bonus for each objective excluding home, if you control your home objective."
+        ]
       },
       disruption: {
         name: "Determined Acquisition",
         objectives: 5,
-        description: "Take and Hold vs Disruption。Take and Hold 純佔點得分；Disruption 忙於 Action。Take and Hold 需要堅守陣地不被擾亂。五個 objective 地圖。"
+        scoring: [
+          "Score VP by holding objectives. The Disruption opponent is busy with actions.",
+          "Hold your ground — do not let the opponent's hit-and-run tactics dislodge you.",
+          "Durable objective-holding units are essential."
+        ]
       },
       "purge-the-foe": {
         name: "Immovable Object",
         objectives: 5,
-        description: "Take and Hold vs Purge。Take and Hold 需要像不可動搖之物般堅守 objectives。Purge 方會試圖殺掉你的單位來阻止你得分。五個 objective 地圖。"
+        scoring: [
+          "Hold objectives to score VP. The Purge the Foe opponent tries to kill your units to stop you.",
+          "Survive the onslaught and maintain objective control.",
+          "The longer you hold, the more you score — resilience is everything."
+        ]
       },
       "priority-assets": {
         name: "Inescapable Dominion",
         objectives: 6,
-        description: "Take and Hold vs Priority Assets。唯一的六 objective Take and Hold 任務。Take and Hold 方佔點，Priority Assets 方到處做 Action。六個 objectives 對佔點方有利。"
+        scoring: [
+          "The only 6-objective Take and Hold mission. Favours the Take and Hold player.",
+          "Score VP by holding objectives. The Priority Assets opponent is spread thin doing actions.",
+          "Two central objectives provide safer scoring opportunities."
+        ]
       },
       reconnaissance: {
         name: "Purge and Secure",
         objectives: 5,
-        description: "Take and Hold vs Reconnaissance。Take and Hold 需要清除範圍並鞏固 objectives。Reconnaissance 在四周移動，Take and Hold 需要防止被包圍。"
+        scoring: [
+          "Hold objectives to score VP. The Reconnaissance opponent moves around the table edges.",
+          "Clear the area and secure objectives before the opponent can flank you.",
+          "Prevent encirclement by holding key positions."
+        ]
       }
     }
   },
   reconnaissance: {
     name: "Reconnaissance",
-    nameZH: "偵察",
+    description: "The most mobility-focused disposition. Rewards table-quarter control, actions at specific locations, and fast repositioning. Favours MSU (Multiple Small Units) playstyles over mid-board brawling.",
     color: "recon",
-    description: "最注重移動和位置控制的 Disposition。圍繞桌角、Action 和快速定位。獎勵快速 MSU 風格，而非中場硬碰硬。",
     missions: {
       reconnaissance: {
         name: "Gather Intel",
         objectives: null,
-        description: "Reconnaissance mirror match。雙方爭奪情報。需要快速移動到關鍵位置做 Action。純機動性對決。"
+        scoring: [
+          "Mirror match. Both players race to gather intelligence at key locations.",
+          "Move fast, complete actions, and deny the opponent's intel-gathering.",
+          "Pure mobility duel."
+        ]
       },
       "take-and-hold": {
         name: "Reconnaissance Sweep",
         objectives: 5,
-        description: "Recon vs Take and Hold。Recon 方佔領桌角得分（3-4 桌角 3-6 VP）+ 殺敵得分。完全不依賴 end-of-turn 佔點。五個 objective 地圖。"
+        scoring: [
+          "<span class=vp>3 VP</span> — Three or more units wholly within three different table quarters (not within 6\" of centre). [End of your turn]",
+          "<span class=vp>6 VP</span> — Four or more units wholly within four different table quarters (not within 6\" of centre).",
+          "<span class=vp>1 VP</span> each — Destroy an enemy unit. [End of turn]"
+        ]
       },
       "purge-the-foe": {
         name: "Triangulation",
         objectives: null,
-        description: "Recon vs Purge。Recon 方需要三角定位——在多個位置完成 Action。Purge 方試圖攔截。速度 vs 火力。"
+        scoring: [
+          "Complete actions at multiple locations to triangulate and score VP.",
+          "The Purge the Foe opponent tries to intercept — speed vs. firepower.",
+          "Spread out and complete actions before the opponent can respond."
+        ]
       },
       disruption: {
         name: "Surveil the Foe",
         objectives: null,
-        description: "Recon vs Disruption。Recon 方監視對手行動，需要在特定位置部署單位來得分。兩方都是高度機動的貓捉老鼠遊戲。"
+        scoring: [
+          "Deploy units at specific locations to surveil the enemy and score VP.",
+          "Both players are highly mobile — a game of cat and mouse.",
+          "Positioning and timing are more important than raw killing power."
+        ]
       },
       "priority-assets": {
         name: "Search and Scour",
         objectives: null,
-        description: "Recon vs Priority Assets。Recon 方搜索並清除目標區域。雙方都有大量 Action，是 Action 經濟的極致對決。"
+        scoring: [
+          "Search target zones and complete actions to score VP.",
+          "Both players have heavy action requirements — the ultimate action-economy matchup.",
+          "Fast, sacrificial action units are essential."
+        ]
       }
     }
   }
@@ -360,14 +460,12 @@ function init() {
   const sel2 = document.getElementById('p2Disposition');
   DISPOSITION_KEYS.forEach(key => {
     const d = MISSIONS[key];
-    const opt1 = document.createElement('option');
-    opt1.value = key;
-    opt1.textContent = `${d.name} (${d.nameZH})`;
-    sel1.appendChild(opt1);
-    const opt2 = document.createElement('option');
-    opt2.value = key;
-    opt2.textContent = `${d.name} (${d.nameZH})`;
-    sel2.appendChild(opt2);
+    [sel1, sel2].forEach(sel => {
+      const opt = document.createElement('option');
+      opt.value = key;
+      opt.textContent = d.name;
+      sel.appendChild(opt);
+    });
   });
 }
 
@@ -386,37 +484,39 @@ function updateMissions() {
   const p1Mission = p1Data.missions[p2];
   const p2Mission = p2Data.missions[p1];
 
+  const renderScoring = (items) => items.map(s => `<li>${s}</li>`).join('');
+
   missionCards.innerHTML = `
     <div class="mission-card p1-card">
-      <span class="disposition-tag tag-${p1Data.color}">${p1Data.nameZH}</span>
+      <span class="disposition-tag tag-${p1Data.color}">${p1Data.name}</span>
       <h3>${p1Mission.name}</h3>
       <div class="meta">
-        <span>vs ${p2Data.nameZH}</span>
-        ${p1Mission.objectives ? `<span>🎯 ${p1Mission.objectives} Objectives</span>` : ''}
+        <span>vs ${p2Data.name}</span>
+        ${p1Mission.objectives ? `<span>🎯 ${p1Mission.objectives} Objective Markers</span>` : ''}
       </div>
-      <div class="description">${p1Mission.description}</div>
+      <div class="scoring"><strong>Primary Scoring:</strong><ul>${renderScoring(p1Mission.scoring)}</ul></div>
     </div>
     <div class="mission-card p2-card">
-      <span class="disposition-tag tag-${p2Data.color}">${p2Data.nameZH}</span>
+      <span class="disposition-tag tag-${p2Data.color}">${p2Data.name}</span>
       <h3>${p2Mission.name}</h3>
       <div class="meta">
-        <span>vs ${p1Data.nameZH}</span>
-        ${p2Mission.objectives ? `<span>🎯 ${p2Mission.objectives} Objectives</span>` : ''}
+        <span>vs ${p1Data.name}</span>
+        ${p2Mission.objectives ? `<span>🎯 ${p2Mission.objectives} Objective Markers</span>` : ''}
       </div>
-      <div class="description">${p2Mission.description}</div>
+      <div class="scoring"><strong>Primary Scoring:</strong><ul>${renderScoring(p2Mission.scoring)}</ul></div>
     </div>
   `;
 
   const sameDisposition = p1 === p2;
   infoBox.innerHTML = `
-    <h4>📋 配對摘要</h4>
+    <h4>📋 Pairing Summary</h4>
     <p>
-      <strong>${p1Data.nameZH}</strong> → 玩 <strong>「${p1Mission.name}」</strong><br>
-      <strong>${p2Data.nameZH}</strong> → 玩 <strong>「${p2Mission.name}」</strong><br>
-      ${sameDisposition ? '<br>⚠️ Mirror Match — 雙方玩不同任務但 Disposition 相同' : '<br>雙方 Disposition 不同，任務體驗完全不同'}
+      <strong>${p1Data.name}</strong> → Primary Mission: <strong>${p1Mission.name}</strong><br>
+      <strong>${p2Data.name}</strong> → Primary Mission: <strong>${p2Mission.name}</strong><br>
+      ${sameDisposition ? '<br>⚠️ Mirror Disposition — each player has a different mission from the same category.' : '<br>Different Dispositions — each player has a fundamentally different mission experience.'}
       <br><br>
-      <strong>計分上限：</strong>Primary 最高 45 VP（每回合最多 15 VP）<br>
-      <strong>後手優勢：</strong>第五回合在回合結束時計分（非 Command Phase）
+      <strong>VP Cap:</strong> Maximum 45 VP from Primary Mission (max 15 VP per battle round)<br>
+      <strong>Going Second:</strong> Scores at the end of your turn on battle round 5 (instead of Command phase)
     </p>`;
 }
 
