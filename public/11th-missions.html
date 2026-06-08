@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WH40K 11th Edition — Primary Mission 配對工具</title>
+<style>
+  :root {
+    --bg: #0a0a14;
+    --card: #12122a;
+    --border: #2a2a4a;
+    --red: #DE2910;
+    --gold: #FFDE00;
+    --cyan: #00d4ff;
+    --green: #00cc66;
+    --purple: #b44dff;
+    --text: #c8c8d4;
+    --text-dim: #7a7a8a;
+    --accent: #1a1a3a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg); color: var(--text); min-height: 100vh;
+    background-image: radial-gradient(ellipse at 50% 0%, #1a1a35 0%, var(--bg) 70%);
+  }
+  .container { max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
+  
+  header { text-align: center; margin-bottom: 32px; }
+  header h1 { 
+    font-size: 2rem; font-weight: 800; letter-spacing: 2px;
+    background: linear-gradient(180deg, var(--gold) 0%, #ccaa00 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    margin-bottom: 4px;
+  }
+  header .sub { color: var(--text-dim); font-size: 0.9rem; }
+  header .aquila { font-size: 2.5rem; display: block; }
+
+  .selector-pair { 
+    display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; 
+    align-items: end; margin-bottom: 32px;
+  }
+  @media (max-width: 640px) { .selector-pair { grid-template-columns: 1fr; } }
+  
+  .player-box {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px; text-align: center;
+  }
+  .player-box h2 { 
+    font-size: 1.1rem; font-weight: 700; margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+  .p1 h2 { color: var(--cyan); }
+  .p2 h2 { color: var(--red); }
+  
+  select {
+    width: 100%; padding: 12px 16px; font-size: 1rem;
+    background: var(--accent); color: var(--text);
+    border: 2px solid var(--border); border-radius: 8px;
+    cursor: pointer; font-family: inherit;
+    appearance: none; -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237a7a8a' fill='none' stroke-width='2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 16px center;
+  }
+  select:focus { outline: none; border-color: var(--cyan); }
+  .p2 select:focus { border-color: var(--red); }
+
+  .vs-badge {
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.8rem; font-weight: 900; color: var(--gold);
+    text-shadow: 0 0 20px rgba(255,222,0,0.3);
+    padding-bottom: 8px;
+  }
+
+  .result-area { display: none; }
+  .result-area.active { display: block; }
+
+  .mission-cards {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px;
+  }
+  @media (max-width: 640px) { .mission-cards { grid-template-columns: 1fr; } }
+
+  .mission-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px; position: relative; overflow: hidden;
+  }
+  .mission-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  }
+  .mission-card.p1-card::before { background: linear-gradient(90deg, var(--cyan), transparent); }
+  .mission-card.p2-card::before { background: linear-gradient(90deg, var(--red), transparent); }
+
+  .mission-card h3 {
+    font-size: 1.3rem; font-weight: 800; margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+  .mission-card .disposition-tag {
+    display: inline-block; padding: 2px 10px; border-radius: 4px;
+    font-size: 0.75rem; font-weight: 700; margin-bottom: 12px;
+  }
+  .tag-disruption { background: rgba(0,212,255,0.15); color: var(--cyan); }
+  .tag-purge { background: rgba(222,41,16,0.15); color: var(--red); }
+  .tag-priority { background: rgba(180,77,255,0.15); color: var(--purple); }
+  .tag-takehold { background: rgba(0,204,102,0.15); color: var(--green); }
+  .tag-recon { background: rgba(255,222,0,0.15); color: var(--gold); }
+
+  .mission-card .meta { 
+    display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px;
+    font-size: 0.85rem; color: var(--text-dim);
+  }
+  .mission-card .meta span { 
+    background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 4px;
+  }
+  .mission-card .description { 
+    font-size: 0.9rem; line-height: 1.6; color: var(--text-dim);
+    border-top: 1px solid var(--border); padding-top: 12px;
+  }
+
+  .info-box {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px 20px; margin-top: 16px;
+  }
+  .info-box h4 { 
+    font-size: 0.85rem; font-weight: 700; color: var(--gold); 
+    margin-bottom: 8px; letter-spacing: 1px;
+  }
+  .info-box p { font-size: 0.85rem; color: var(--text-dim); line-height: 1.6; }
+
+  .legend { 
+    display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+    margin-bottom: 24px; font-size: 0.8rem;
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+  footer { 
+    text-align: center; margin-top: 40px; padding-top: 20px;
+    border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.75rem;
+  }
+  footer a { color: var(--cyan); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <span class="aquila">🦅</span>
+    <h1>WARHAMMER 40,000</h1>
+    <div class="sub">11th Edition · Primary Mission 配對工具</div>
+  </header>
+
+  <div class="legend">
+    <div class="legend-item"><span class="legend-dot" style="background:var(--cyan)"></span> Disruption 擾亂</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--red)"></span> Purge the Foe 殲滅</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--purple)"></span> Priority Assets 優先資產</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--green)"></span> Take and Hold 佔領</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--gold)"></span> Reconnaissance 偵察</div>
+  </div>
+
+  <div class="selector-pair">
+    <div class="player-box p1">
+      <h2>⚔️ 玩家一</h2>
+      <select id="p1Disposition" onchange="updateMissions()">
+        <option value="">— 選擇 Force Disposition —</option>
+      </select>
+    </div>
+    <div class="vs-badge">⚡VS⚡</div>
+    <div class="player-box p2">
+      <h2>🛡️ 玩家二</h2>
+      <select id="p2Disposition" onchange="updateMissions()">
+        <option value="">— 選擇 Force Disposition —</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="result-area" id="resultArea">
+    <div class="mission-cards" id="missionCards"></div>
+    <div class="info-box" id="infoBox"></div>
+  </div>
+
+  <footer>
+    資料來源：Goonhammer / Tabletop Battles · 11th Edition Force Disposition Reviews (2026-06-02 ~ 06-06)<br>
+    Games Workshop 預覽規則 · <a href="https://www.goonhammer.com/warhammer-40k-11th-edition/" target="_blank">goonhammer.com</a>
+  </footer>
+</div>
+
+<script>
+// ─── Mission Data ───
+const MISSIONS = {
+  disruption: {
+    name: "Disruption",
+    nameZH: "擾亂",
+    color: "disruption",
+    description: "打帶跑戰術，Action + 佔點混合。需要快速、小型、致命單位，能滿桌移動、做 Action 並消滅關鍵目標。",
+    missions: {
+      disruption: {
+        name: "Outmanoeuvre",
+        objectives: 5,
+        description: "純佔點任務。控制對手 home objective 得 10 VP；每回合佔領非 home 的 objective 得分（第1回合 4 VP、第2-3回合 5 VP、第4回合起 6 VP）。五個 objective 地圖。"
+      },
+      "take-and-hold": {
+        name: "Death Trap",
+        objectives: 5,
+        description: "Disruption vs Take and Hold。Disruption 方需要做 Action 來得分，同時控制中場 objectives。Take and Hold 方純佔點得分。五個 objective 地圖。"
+      },
+      "purge-the-foe": {
+        name: "Delaying Action",
+        objectives: 5,
+        description: "Disruption vs Purge the Foe。Disruption 方做 Action 得分，同時阻止 Purge 方殺太多單位。需要在拖延與得分之間取得平衡。五個 objective 地圖。"
+      },
+      "priority-assets": {
+        name: "Locate and Deny",
+        objectives: 5,
+        description: "Disruption vs Priority Assets。雙方都有 Action 要完成。Disruption 需要找出對方的優先資產並阻止對方完成 Action。五個 objective 地圖。"
+      },
+      reconnaissance: {
+        name: "Smoke and Mirrors",
+        objectives: 6,
+        description: "Disruption vs Reconnaissance。唯一六 objective 任務。兩方都是高度機動型任務，Disruption 需要迷惑對手並搶先完成關鍵 Action。六個 objective 地圖。"
+      }
+    }
+  },
+  "purge-the-foe": {
+    name: "Purge the Foe",
+    nameZH: "殲滅敵軍",
+    color: "purge",
+    description: "最直接的任務類型。殺敵方單位 + 佔領 objectives。獎勵軍隊本來就想做的事——殺戮和佔點。被認為是最「強」的 Disposition。",
+    missions: {
+      "purge-the-foe": {
+        name: "Meatgrinder",
+        objectives: 5,
+        description: "Purge the Foe mirror match。純粹的絞肉機——殺敵方單位得分，同時佔領 objectives。雙方都在做同樣的事情，比拼誰的殺傷力更強。"
+      },
+      "take-and-hold": {
+        name: "Unstoppable Force",
+        objectives: 5,
+        description: "Purge vs Take and Hold。Purge 方每回合殺敵得分 + 佔點得分 + 奪取新 objective 額外 3 VP + 終局控制中央 objective 加 5 VP。對 Take and Hold 非常不利——只有一個中央 objective。"
+      },
+      disruption: {
+        name: "Punishment",
+        objectives: 5,
+        description: "Purge vs Disruption。Purge 方以殺敵為主要得分手段，懲罰對手的游擊戰術。佔領 objectives 提供額外分數。"
+      },
+      "priority-assets": {
+        name: "Destroyer's Wrath",
+        objectives: null,
+        description: "Purge vs Priority Assets。Purge 方摧毀敵方 units 得分，Priority Assets 方忙於完成 Actions。Purge 需要積極進攻阻止對手完成目標。"
+      },
+      reconnaissance: {
+        name: "Consecrate",
+        objectives: null,
+        description: "Purge vs Reconnaissance。Purge 方殺敵 + 佔點得分。Reconnaissance 方四處移動做 Action。Purge 需要阻止對手在地圖上自由行動。"
+      }
+    }
+  },
+  "priority-assets": {
+    name: "Priority Assets",
+    nameZH: "優先資產",
+    color: "priority",
+    description: "最 Action-heavy 的 Disposition。每個任務都有特殊 Action 要做。需要高 OC、快速移動的 Action 單位。Action 在你的回合結束時完成。",
+    missions: {
+      "priority-assets": {
+        name: "Sabotage",
+        objectives: null,
+        description: "Priority Assets mirror match。雙方都要完成 Action 來得分。純粹的行動經濟戰——誰能更快完成更多 Actions 誰就贏。"
+      },
+      "take-and-hold": {
+        name: "Secure Asset",
+        objectives: 6,
+        description: "Priority vs Take and Hold。Priority 方做 Secure Asset Action 得 4 VP + 殺死中央 objective 範圍內的敵人得 2 VP + 第二回合起佔點得分。六 objective 地圖。"
+      },
+      "purge-the-foe": {
+        name: "Vital Link",
+        objectives: null,
+        description: "Priority vs Purge。Priority 方需要完成關鍵 Action 來建立「Vital Link」。Purge 方以殺敵為主。速度是關鍵。"
+      },
+      disruption: {
+        name: "Extract Relic",
+        objectives: null,
+        description: "Priority vs Disruption。Priority 方嘗試提取聖物 (Extract Relic)。雙方都有 Action，比拼誰能先完成關鍵目標。"
+      },
+      reconnaissance: {
+        name: "Vanguard Operation",
+        objectives: null,
+        description: "Priority vs Reconnaissance。Priority 方執行先鋒行動，需要同時推進 Action 進度並控制 objectives。兩方都是高速機動型。"
+      }
+    }
+  },
+  "take-and-hold": {
+    name: "Take and Hold",
+    nameZH: "佔領固守",
+    color: "takehold",
+    description: "最經典的 Warhammer 體驗——純佔點，無 Actions。唯一可以靠守住 home objective 得分的 Disposition。適合耐打或數量多的軍隊。",
+    missions: {
+      "take-and-hold": {
+        name: "Battlefield Dominance",
+        objectives: 5,
+        description: "Take and Hold mirror match。比對手控制更多 objectives 得 2 VP（第1-2回合）；第二回合起每個 objective 3 VP（控制 home 則非 home 每個 +2 VP）。五個 objective 地圖。"
+      },
+      disruption: {
+        name: "Determined Acquisition",
+        objectives: 5,
+        description: "Take and Hold vs Disruption。Take and Hold 純佔點得分；Disruption 忙於 Action。Take and Hold 需要堅守陣地不被擾亂。五個 objective 地圖。"
+      },
+      "purge-the-foe": {
+        name: "Immovable Object",
+        objectives: 5,
+        description: "Take and Hold vs Purge。Take and Hold 需要像不可動搖之物般堅守 objectives。Purge 方會試圖殺掉你的單位來阻止你得分。五個 objective 地圖。"
+      },
+      "priority-assets": {
+        name: "Inescapable Dominion",
+        objectives: 6,
+        description: "Take and Hold vs Priority Assets。唯一的六 objective Take and Hold 任務。Take and Hold 方佔點，Priority Assets 方到處做 Action。六個 objectives 對佔點方有利。"
+      },
+      reconnaissance: {
+        name: "Purge and Secure",
+        objectives: 5,
+        description: "Take and Hold vs Reconnaissance。Take and Hold 需要清除範圍並鞏固 objectives。Reconnaissance 在四周移動，Take and Hold 需要防止被包圍。"
+      }
+    }
+  },
+  reconnaissance: {
+    name: "Reconnaissance",
+    nameZH: "偵察",
+    color: "recon",
+    description: "最注重移動和位置控制的 Disposition。圍繞桌角、Action 和快速定位。獎勵快速 MSU 風格，而非中場硬碰硬。",
+    missions: {
+      reconnaissance: {
+        name: "Gather Intel",
+        objectives: null,
+        description: "Reconnaissance mirror match。雙方爭奪情報。需要快速移動到關鍵位置做 Action。純機動性對決。"
+      },
+      "take-and-hold": {
+        name: "Reconnaissance Sweep",
+        objectives: 5,
+        description: "Recon vs Take and Hold。Recon 方佔領桌角得分（3-4 桌角 3-6 VP）+ 殺敵得分。完全不依賴 end-of-turn 佔點。五個 objective 地圖。"
+      },
+      "purge-the-foe": {
+        name: "Triangulation",
+        objectives: null,
+        description: "Recon vs Purge。Recon 方需要三角定位——在多個位置完成 Action。Purge 方試圖攔截。速度 vs 火力。"
+      },
+      disruption: {
+        name: "Surveil the Foe",
+        objectives: null,
+        description: "Recon vs Disruption。Recon 方監視對手行動，需要在特定位置部署單位來得分。兩方都是高度機動的貓捉老鼠遊戲。"
+      },
+      "priority-assets": {
+        name: "Search and Scour",
+        objectives: null,
+        description: "Recon vs Priority Assets。Recon 方搜索並清除目標區域。雙方都有大量 Action，是 Action 經濟的極致對決。"
+      }
+    }
+  }
+};
+
+const DISPOSITION_KEYS = ['disruption', 'purge-the-foe', 'priority-assets', 'take-and-hold', 'reconnaissance'];
+
+function init() {
+  const sel1 = document.getElementById('p1Disposition');
+  const sel2 = document.getElementById('p2Disposition');
+  DISPOSITION_KEYS.forEach(key => {
+    const d = MISSIONS[key];
+    const opt1 = document.createElement('option');
+    opt1.value = key;
+    opt1.textContent = `${d.name} (${d.nameZH})`;
+    sel1.appendChild(opt1);
+    const opt2 = document.createElement('option');
+    opt2.value = key;
+    opt2.textContent = `${d.name} (${d.nameZH})`;
+    sel2.appendChild(opt2);
+  });
+}
+
+function updateMissions() {
+  const p1 = document.getElementById('p1Disposition').value;
+  const p2 = document.getElementById('p2Disposition').value;
+  const resultArea = document.getElementById('resultArea');
+  const missionCards = document.getElementById('missionCards');
+  const infoBox = document.getElementById('infoBox');
+
+  if (!p1 || !p2) { resultArea.classList.remove('active'); return; }
+  resultArea.classList.add('active');
+
+  const p1Data = MISSIONS[p1];
+  const p2Data = MISSIONS[p2];
+  const p1Mission = p1Data.missions[p2];
+  const p2Mission = p2Data.missions[p1];
+
+  missionCards.innerHTML = `
+    <div class="mission-card p1-card">
+      <span class="disposition-tag tag-${p1Data.color}">${p1Data.nameZH}</span>
+      <h3>${p1Mission.name}</h3>
+      <div class="meta">
+        <span>vs ${p2Data.nameZH}</span>
+        ${p1Mission.objectives ? `<span>🎯 ${p1Mission.objectives} Objectives</span>` : ''}
+      </div>
+      <div class="description">${p1Mission.description}</div>
+    </div>
+    <div class="mission-card p2-card">
+      <span class="disposition-tag tag-${p2Data.color}">${p2Data.nameZH}</span>
+      <h3>${p2Mission.name}</h3>
+      <div class="meta">
+        <span>vs ${p1Data.nameZH}</span>
+        ${p2Mission.objectives ? `<span>🎯 ${p2Mission.objectives} Objectives</span>` : ''}
+      </div>
+      <div class="description">${p2Mission.description}</div>
+    </div>
+  `;
+
+  const sameDisposition = p1 === p2;
+  infoBox.innerHTML = `
+    <h4>📋 配對摘要</h4>
+    <p>
+      <strong>${p1Data.nameZH}</strong> → 玩 <strong>「${p1Mission.name}」</strong><br>
+      <strong>${p2Data.nameZH}</strong> → 玩 <strong>「${p2Mission.name}」</strong><br>
+      ${sameDisposition ? '<br>⚠️ Mirror Match — 雙方玩不同任務但 Disposition 相同' : '<br>雙方 Disposition 不同，任務體驗完全不同'}
+      <br><br>
+      <strong>計分上限：</strong>Primary 最高 45 VP（每回合最多 15 VP）<br>
+      <strong>後手優勢：</strong>第五回合在回合結束時計分（非 Command Phase）
+    </p>`;
+}
+
+init();
+</script>
+</body>
+</html>
