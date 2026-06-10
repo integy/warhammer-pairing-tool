@@ -133,14 +133,13 @@
   }
   .flip-btn:hover { border-color: var(--cyan); color: var(--cyan); }
   .flip-btn .flip-icon { font-size: 0.9rem; }
-  .card-back-img { display: none; margin-top: 8px; }
-  .card-back-img.visible { display: block; }
+  .card-back { display: none; }
+  .card-back.visible { display: block; }
 
-  /* Desktop: show back image + hide toggle button */
-  .card-back-desktop { display: none; }
+  /* Desktop: always show back image, hide flip button */
   @media (min-width: 801px) {
-    .card-back-desktop { display: block; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
-    .card-back-img, .flip-btn { display: none !important; }
+    .card-back { display: block; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+    .flip-btn { display: none; }
   }
 
   .info-box {
@@ -398,7 +397,7 @@ const DISPOSITION_KEYS = ['disruption', 'purge-the-foe', 'priority-assets', 'tak
 
 function toggleBack(btn) {
   const card = btn.closest('.mission-card');
-  const backImg = card.querySelector('.card-back-img');
+  const backImg = card.querySelector('.card-back');
   const isVisible = backImg.classList.toggle('visible');
   btn.innerHTML = isVisible
     ? '<span class="flip-icon">🔄</span> Show Front'
@@ -432,8 +431,7 @@ function updateMissions() {
   const card = (data, mission, cls) => {
     const hasBack = !!mission.back;
     const backHtml = hasBack ? `
-      <img class="card-img card-back-desktop" src="${mission.back}" alt="${mission.name} (rules)" loading="lazy">
-      <img class="card-img card-back-img" src="${mission.back}" alt="${mission.name} (rules)" loading="lazy">
+      <img class="card-img card-back" src="${mission.back}" alt="${mission.name} (rules)" loading="lazy">
       <button class="flip-btn" onclick="toggleBack(this)">
         <span class="flip-icon">🔄</span> Show Rules (back)
       </button>` : '';
