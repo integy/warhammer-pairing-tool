@@ -1,0 +1,78 @@
+{
+  "key": "right",
+  "name": "常勝榮譽裁判所（右）",
+  "players": [
+    {
+      "name": "Qifan",
+      "army": "T'au Empire",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 2.5,
+        "Jireh": 3.0,
+        "Kevin": 3.0,
+        "Ivan": 2.5,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "Abe",
+      "army": "Custodes",
+      "scores": {
+        "Eric": 3.5,
+        "Morris": 3.0,
+        "Jireh": 3.0,
+        "Kevin": 3.5,
+        "Ivan": 2.5,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "白給",
+      "army": "Astra Militarum",
+      "scores": {
+        "Eric": 3.5,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 2.5,
+        "Ivan": 3.0,
+        "Gabriel": 3.0
+      }
+    },
+    {
+      "name": "老充",
+      "army": "Blood Angels",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.5,
+        "Jireh": 3.5,
+        "Kevin": 2.5,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "Rowan",
+      "army": "Necrons",
+      "scores": {
+        "Eric": 2.5,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 3.5,
+        "Ivan": 3.5,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "Potato Tomato",
+      "army": "Chaos Space Marines",
+      "scores": {
+        "Eric": 3.5,
+        "Morris": 3.5,
+        "Jireh": 3.5,
+        "Kevin": 3.0,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      }
+    }
+  ]
+}

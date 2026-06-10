@@ -1,0 +1,78 @@
+{
+  "key": "wuhan",
+  "name": "武漢擂肥王",
+  "players": [
+    {
+      "name": "Orks",
+      "army": "Orks",
+      "scores": {
+        "Eric": 3.5,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 3.0,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "Imperial Fists",
+      "army": "Imperial Fists",
+      "scores": {
+        "Eric": 3.5,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 3.5,
+        "Ivan": 3.0,
+        "Gabriel": 4.0
+      }
+    },
+    {
+      "name": "WE",
+      "army": "World Eaters",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 2.5,
+        "Jireh": 3.0,
+        "Kevin": 4.0,
+        "Ivan": 4.0,
+        "Gabriel": 4.0
+      }
+    },
+    {
+      "name": "GSC",
+      "army": "Genestealer Cults",
+      "scores": {
+        "Eric": 2.0,
+        "Morris": 2.5,
+        "Jireh": 3.0,
+        "Kevin": 2.5,
+        "Ivan": 3.5,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "CK",
+      "army": "Chaos Knights",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.5,
+        "Jireh": 3.5,
+        "Kevin": 3.0,
+        "Ivan": 3.5,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "Custodes",
+      "army": "Adeptus Custodes",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 3.0,
+        "Ivan": 2.5,
+        "Gabriel": 3.5
+      }
+    }
+  ]
+}

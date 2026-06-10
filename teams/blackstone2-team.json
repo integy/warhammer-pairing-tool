@@ -1,0 +1,78 @@
+{
+  "key": "blackstone2",
+  "name": "黑石要塞二隊",
+  "players": [
+    {
+      "name": "Custodes",
+      "army": "Custodes",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.0,
+        "Jireh": 3.0,
+        "Kevin": 3.0,
+        "Ivan": 2.5,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "EC",
+      "army": "Emperor's Children",
+      "scores": {
+        "Eric": 4.0,
+        "Morris": 3.5,
+        "Jireh": 3.5,
+        "Kevin": 3.0,
+        "Ivan": 3.5,
+        "Gabriel": 4.0
+      }
+    },
+    {
+      "name": "Tyranids",
+      "army": "Tyranids",
+      "scores": {
+        "Eric": 2.5,
+        "Morris": 3.5,
+        "Jireh": 3.5,
+        "Kevin": 2.5,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "LOV",
+      "army": "Leagues of Votann",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 2.5,
+        "Jireh": 3.0,
+        "Kevin": 2.5,
+        "Ivan": 3.0,
+        "Gabriel": 4.0
+      }
+    },
+    {
+      "name": "Necrons",
+      "army": "Necrons",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 3.5,
+        "Ivan": 3.5,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "UM",
+      "army": "Ultra Marine",
+      "scores": {
+        "Eric": 4.0,
+        "Morris": 4.0,
+        "Jireh": 3.0,
+        "Kevin": 3.0,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      }
+    }
+  ]
+}

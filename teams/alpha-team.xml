@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<team>
+    <name>Team Sigil Alpha</name>
+    <players>
+        <player>
+            <name>Renchen</name>
+            <army>Ultramarines</army>
+            <scores>
+                <score opponent="Eric">4.0</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">3.0</score>
+                <score opponent="Ivan">3.0</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Mafi</name>
+            <army>Custodes</army>
+            <scores>
+                <score opponent="Eric">3.0</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">3.5</score>
+                <score opponent="Ivan">2.5</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Louis</name>
+            <army>T'au Empire</army>
+            <scores>
+                <score opponent="Eric">3.0</score>
+                <score opponent="Morris">3.0</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">3.0</score>
+                <score opponent="Ivan">2.5</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Erik</name>
+            <army>Thousand Sons</army>
+            <scores>
+                <score opponent="Eric">3.0</score>
+                <score opponent="Morris">3.0</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">2.5</score>
+                <score opponent="Ivan">3.0</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Kiri</name>
+            <army>Adepta Sororitas</army>
+            <scores>
+                <score opponent="Eric">3.5</score>
+                <score opponent="Morris">2.5</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">3.0</score>
+                <score opponent="Ivan">2.5</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>阿偉</name>
+            <army>Astra Militarum</army>
+            <scores>
+                <score opponent="Eric">3.5</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">2.5</score>
+                <score opponent="Ivan">3.0</score>
+                <score opponent="Gabriel">3.0</score>
+            </scores>
+        </player>
+    </players>
+</team>

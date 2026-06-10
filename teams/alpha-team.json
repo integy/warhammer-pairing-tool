@@ -1,0 +1,78 @@
+{
+  "key": "alpha",
+  "name": "Team Sigil Alpha",
+  "players": [
+    {
+      "name": "Renchen",
+      "army": "Ultramarines",
+      "scores": {
+        "Eric": 4.0,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 3.0,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "Mafi",
+      "army": "Custodes",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 3.5,
+        "Ivan": 2.5,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "Louis",
+      "army": "T'au Empire",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.0,
+        "Jireh": 3.0,
+        "Kevin": 3.0,
+        "Ivan": 2.5,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "Erik",
+      "army": "Thousand Sons",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.0,
+        "Jireh": 3.0,
+        "Kevin": 2.5,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "Kiri",
+      "army": "Adepta Sororitas",
+      "scores": {
+        "Eric": 3.5,
+        "Morris": 2.5,
+        "Jireh": 3.0,
+        "Kevin": 3.0,
+        "Ivan": 2.5,
+        "Gabriel": 3.5
+      }
+    },
+    {
+      "name": "阿偉",
+      "army": "Astra Militarum",
+      "scores": {
+        "Eric": 3.5,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 2.5,
+        "Ivan": 3.0,
+        "Gabriel": 3.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<team>
+    <name>常勝榮譽裁判所（左）</name>
+    <players>
+        <player>
+            <name>Tau</name>
+            <army>T'au Empire</army>
+            <scores>
+                <score opponent="Eric">3.0</score>
+                <score opponent="Morris">3.0</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">3.0</score>
+                <score opponent="Ivan">2.5</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>DG</name>
+            <army>Death Guard</army>
+            <scores>
+                <score opponent="Eric">3.0</score>
+                <score opponent="Morris">2.5</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">2.5</score>
+                <score opponent="Ivan">3.0</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Guard</name>
+            <army>Astra Militarum</army>
+            <scores>
+                <score opponent="Eric">3.5</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">2.0</score>
+                <score opponent="Ivan">3.0</score>
+                <score opponent="Gabriel">3.0</score>
+            </scores>
+        </player>
+        <player>
+            <name>TSS</name>
+            <army>Thousand Sons</army>
+            <scores>
+                <score opponent="Eric">2.0</score>
+                <score opponent="Morris">3.0</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">2.5</score>
+                <score opponent="Ivan">2.5</score>
+                <score opponent="Gabriel">2.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>BA</name>
+            <army>Blood Angels</army>
+            <scores>
+                <score opponent="Eric">3.5</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Jireh">3.5</score>
+                <score opponent="Kevin">2.5</score>
+                <score opponent="Ivan">3.0</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Necrons</name>
+            <army>Necrons</army>
+            <scores>
+                <score opponent="Eric">3.0</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">3.5</score>
+                <score opponent="Ivan">3.5</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+    </players>
+</team>

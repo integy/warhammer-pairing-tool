@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<team>
+    <name>嚇死你朱古力</name>
+    <players>
+        <player>
+            <name>Eric</name>
+            <army>Eldar</army>
+            <scores>
+                <score opponent="Jireh">4.0</score>
+                <score opponent="Ivan">3.5</score>
+                <score opponent="Morris">4.0</score>
+                <score opponent="Gabriel">3.0</score>
+                <score opponent="Kevin">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Jireh</name>
+            <army>Necron</army>
+            <scores>
+                <score opponent="Eric">3.0</score>
+                <score opponent="Ivan">2.5</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Gabriel">4.0</score>
+                <score opponent="Kevin">3.0</score>
+            </scores>
+        </player>
+        <player>
+            <name>Ivan</name>
+            <army>Thousand Sons</army>
+            <scores>
+                <score opponent="Eric">2.5</score>
+                <score opponent="Jireh">4.0</score>
+                <score opponent="Morris">3.0</score>
+                <score opponent="Gabriel">3.5</score>
+                <score opponent="Kevin">4.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Morris</name>
+            <army>Ultra Marine</army>
+            <scores>
+                <score opponent="Eric">3.0</score>
+                <score opponent="Jireh">4.5</score>
+                <score opponent="Ivan">3.5</score>
+                <score opponent="Gabriel">3.0</score>
+                <score opponent="Kevin">4.0</score>
+            </scores>
+        </player>
+        <player>
+            <name>Gabriel</name>
+            <army>Imperial Guard</army>
+            <scores>
+                <score opponent="Eric">2.0</score>
+                <score opponent="Jireh">3.5</score>
+                <score opponent="Ivan">4.0</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Kevin">3.0</score>
+            </scores>
+        </player>
+        <player>
+            <name>Kevin</name>
+            <army>World Eaters</army>
+            <scores>
+                <score opponent="Eric">4.5</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Ivan">2.0</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Gabriel">4.0</score>
+            </scores>
+        </player>
+    </players>
+</team>
