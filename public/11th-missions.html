@@ -123,6 +123,26 @@
   .mission-card .scoring strong { color: var(--text); }
   .mission-card .scoring .vp { color: var(--gold); font-weight: 700; }
 
+  /* ─── Flip card styles ─── */
+  .flip-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 12px; padding: 6px 14px;
+    background: rgba(255,255,255,0.05); border: 1px solid var(--border);
+    border-radius: 6px; color: var(--text-dim); font-size: 0.8rem;
+    cursor: pointer; font-family: inherit; transition: all 0.2s;
+  }
+  .flip-btn:hover { border-color: var(--cyan); color: var(--cyan); }
+  .flip-btn .flip-icon { font-size: 0.9rem; }
+  .card-back-img { display: none; margin-top: 8px; }
+  .card-back-img.visible { display: block; }
+
+  /* Desktop: show back image + hide toggle button */
+  .card-back-desktop { display: none; }
+  @media (min-width: 801px) {
+    .card-back-desktop { display: block; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+    .card-back-img, .flip-btn { display: none !important; }
+  }
+
   .info-box {
     background: var(--card); border: 1px solid var(--border); border-radius: 12px;
     padding: 16px 20px; margin-top: 16px;
@@ -214,6 +234,7 @@ const MISSIONS = {
       "take-and-hold": {
         name: "Death Trap", objectives: 5,
         image: `${BASE_IMG}/disruption__death-trap.png`,
+        back: `${BASE_IMG}/disruption__death-trap-back.png`,
         scoring: ["Perform actions on objectives you control to score VP. Fast units with decent OC essential.", "Control No Man's Land objectives for additional scoring.", "Opponent (Take and Hold): scores purely by holding objectives."]
       },
       "purge-the-foe": {
@@ -224,11 +245,13 @@ const MISSIONS = {
       "priority-assets": {
         name: "Locate and Deny", objectives: 5,
         image: `${BASE_IMG}/disruption__locate-and-deny.png`,
+        back: `${BASE_IMG}/disruption__locate-and-deny-back.png`,
         scoring: ["Both players have actions. Identify and deny opponent's priority assets.", "Control No Man's Land objectives for additional scoring.", "Fast action units essential to outpace Priority Assets."]
       },
       reconnaissance: {
         name: "Smoke and Mirrors", objectives: 6,
         image: `${BASE_IMG}/disruption__smoke-and-mirrors.png`,
+        back: `${BASE_IMG}/disruption__smoke-and-mirrors-back.png`,
         scoring: ["Only 6-objective Disruption mission. Two central objectives.", "Perform actions on objectives. Highly mobile cat-and-mouse vs Reconnaissance.", "Deception and speed are key."]
       }
     }
@@ -273,26 +296,31 @@ const MISSIONS = {
       "priority-assets": {
         name: "Sabotage",
         image: `${BASE_IMG}/priority-assets__sabotage.png`,
+        back: `${BASE_IMG}/priority-assets__sabotage-back.png`,
         scoring: ["Mirror match. Both players complete actions to score.", "Pure action economy — whoever completes more actions faster wins.", "Control objectives to enable action completion."]
       },
       "take-and-hold": {
         name: "Secure Asset", objectives: 6,
         image: `${BASE_IMG}/priority-assets__secure-asset.png`,
+        back: `${BASE_IMG}/priority-assets__secure-asset-back.png`,
         scoring: ["<span class=vp>4 VP</span> — Secure Asset action on an objective (excl. home). [End of turn]", "<span class=vp>2 VP</span> — Destroy ≥1 unit within range of a Central Objective. [End of turn]", "<span class=vp>4 VP</span> — Control objective excl. home. [Command phase, 2nd+]", "<span class=vp>4 VP</span> bonus — Control 3+ objectives including home."]
       },
       "purge-the-foe": {
         name: "Vital Link",
         image: `${BASE_IMG}/priority-assets__vital-link.png`,
+        back: `${BASE_IMG}/priority-assets__vital-link-back.png`,
         scoring: ["Complete critical actions to establish a Vital Link.", "Purge the Foe opponent focuses on killing — speed is your advantage.", "Control objectives to protect your actions."]
       },
       disruption: {
         name: "Extract Relic",
         image: `${BASE_IMG}/priority-assets__extract-relic.png`,
+        back: `${BASE_IMG}/priority-assets__extract-relic-back.png`,
         scoring: ["Extract the relic by completing actions on key objectives.", "Both players have actions — race to complete yours first.", "Fast, expendable action units are critical."]
       },
       reconnaissance: {
         name: "Vanguard Operation",
         image: `${BASE_IMG}/priority-assets__vanguard-operation.png`,
+        back: `${BASE_IMG}/priority-assets__vanguard-operation-back.png`,
         scoring: ["Execute vanguard actions while controlling objectives.", "Both players highly mobile — action-economy duel.", "Push forward aggressively to complete actions first."]
       }
     }
@@ -337,6 +365,7 @@ const MISSIONS = {
       reconnaissance: {
         name: "Gather Intel",
         image: `${BASE_IMG}/reconnaissance__gather-intel.png`,
+        back: `${BASE_IMG}/reconnaissance__gather-intel-back.png`,
         scoring: ["Mirror match. Race to gather intelligence at key locations.", "Move fast, complete actions, deny opponent's intel-gathering.", "Pure mobility duel."]
       },
       "take-and-hold": {
@@ -347,11 +376,13 @@ const MISSIONS = {
       "purge-the-foe": {
         name: "Triangulation",
         image: `${BASE_IMG}/reconnaissance__triangulation.png`,
+        back: `${BASE_IMG}/reconnaissance__triangulation-back.png`,
         scoring: ["Complete actions at multiple locations to triangulate and score.", "Purge opponent tries to intercept — speed vs. firepower.", "Spread out and complete actions before opponent responds."]
       },
       disruption: {
         name: "Surveil the Foe",
         image: `${BASE_IMG}/reconnaissance__surveil-the-foe.png`,
+        back: `${BASE_IMG}/reconnaissance__surveil-the-foe-back.png`,
         scoring: ["Deploy units at specific locations to surveil the enemy.", "Both players highly mobile — cat and mouse.", "Positioning and timing over raw killing power."]
       },
       "priority-assets": {
@@ -364,6 +395,15 @@ const MISSIONS = {
 };
 
 const DISPOSITION_KEYS = ['disruption', 'purge-the-foe', 'priority-assets', 'take-and-hold', 'reconnaissance'];
+
+function toggleBack(btn) {
+  const card = btn.closest('.mission-card');
+  const backImg = card.querySelector('.card-back-img');
+  const isVisible = backImg.classList.toggle('visible');
+  btn.innerHTML = isVisible
+    ? '<span class="flip-icon">🔄</span> Show Front'
+    : '<span class="flip-icon">🔄</span> Show Rules (back)';
+}
 
 function init() {
   const sel1 = document.getElementById('p1Disposition');
@@ -389,9 +429,18 @@ function updateMissions() {
   const p1Data = MISSIONS[p1], p2Data = MISSIONS[p2];
   const p1Mission = p1Data.missions[p2], p2Mission = p2Data.missions[p1];
   const renderScoring = items => items.map(s => `<li>${s}</li>`).join('');
-  const card = (data, mission, cls) => `
+  const card = (data, mission, cls) => {
+    const hasBack = !!mission.back;
+    const backHtml = hasBack ? `
+      <img class="card-img card-back-desktop" src="${mission.back}" alt="${mission.name} (rules)" loading="lazy">
+      <img class="card-img card-back-img" src="${mission.back}" alt="${mission.name} (rules)" loading="lazy">
+      <button class="flip-btn" onclick="toggleBack(this)">
+        <span class="flip-icon">🔄</span> Show Rules (back)
+      </button>` : '';
+    return `
     <div class="mission-card ${cls}">
       <img class="card-img" src="${mission.image}" alt="${mission.name}" loading="lazy">
+      ${backHtml}
       <span class="disposition-tag tag-${data.color}">${data.name}</span>
       <h3>${mission.name}</h3>
       <div class="meta">
@@ -400,6 +449,7 @@ function updateMissions() {
       </div>
       <div class="scoring"><strong>Primary Scoring:</strong><ul>${renderScoring(mission.scoring)}</ul></div>
     </div>`;
+  };
   missionCards.innerHTML = card(p1Data, p1Mission, 'p1-card') + card(p2Data, p2Mission, 'p2-card');
   const same = p1 === p2;
   infoBox.innerHTML = `
