@@ -12,10 +12,12 @@ const FD_MAP: Record<string, { shortName: string; tagClass: string }> = {
   'take-and-hold': { shortName: 'Hold', tagClass: 'takehold' },
   'purge-the-foe': { shortName: 'Purge', tagClass: 'purge' },
 };
-function fdTag(key?: string, compact?: boolean) {
-  const info = key ? FD_MAP[key] : null;
-  if (!info) return null;
-  return <span className={`fd-tag fd-${info.tagClass}`} style={compact ? { fontSize: '0.6rem' } : undefined}>{info.shortName}</span>;
+function fdLabel(key?: string): string {
+  const labels: Record<string, string> = {
+    'reconnaissance': 'Recon', 'priority-assets': 'Assets',
+    'disruption': 'Disrupt', 'take-and-hold': 'Hold', 'purge-the-foe': 'Purge',
+  };
+  return key ? ` [${labels[key] ?? key}]` : '';
 }
 
 // Team manifest - will be populated from JSON files
@@ -159,8 +161,7 @@ export function SetupPage() {
                     <div key={p.name} className="player-item">
                       <div className="player-info">
                         <span>{p.name}</span>
-                        <span className="army-tag">{p.army}</span>
-                        {fdTag(p.forceDisposition)}
+                        <span className="army-tag">{p.army}{fdLabel(p.forceDisposition)}</span>
                       </div>
                     </div>
                   ))}
@@ -182,8 +183,7 @@ export function SetupPage() {
                     <div key={p.name} className="player-item">
                       <div className="player-info">
                         <span>{p.name}</span>
-                        <span className="army-tag">{p.army}</span>
-                        {fdTag(p.forceDisposition)}
+                        <span className="army-tag">{p.army}{fdLabel(p.forceDisposition)}</span>
                       </div>
                     </div>
                   ))}
@@ -218,7 +218,7 @@ export function SetupPage() {
                 <tr>
                   <th>Opponent \\ HK</th>
                   {hkTeam.players.map(p => (
-                      <th key={p.name}>{p.name}<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}</span>{p.forceDisposition && <><br />{fdTag(p.forceDisposition, true)}</>}</th>
+                      <th key={p.name}>{p.name}<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}{fdLabel(p.forceDisposition)}</span></th>
                     ))}
                   <th className="avg-col">Avg</th>
                 </tr>
@@ -228,7 +228,7 @@ export function SetupPage() {
                   const avg = hkTeam.players.reduce((s, hk) => s + (opp.scores[hk.name] || 0), 0) / hkTeam.players.length;
                   return (
                     <tr key={opp.name}>
-                      <td className="row-header">{opp.name}<br /><span style={{ fontSize: '0.7rem', color: '#888' }}>{opp.army}</span>{opp.forceDisposition && <> {fdTag(opp.forceDisposition, true)}</>}</td>
+                      <td className="row-header">{opp.name}<br /><span style={{ fontSize: '0.7rem', color: '#888' }}>{opp.army}{fdLabel(opp.forceDisposition)}</span></td>
                       {hkTeam.players.map(hk => {
                         const s = opp.scores[hk.name];
                         return <td key={hk.name} style={{ color: getScoreColor(s), fontWeight: 'bold' }}>{s !== undefined ? s.toFixed(1) : '-'}</td>;

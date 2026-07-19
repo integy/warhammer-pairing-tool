@@ -11,7 +11,13 @@ const FD_MAP: Record<string, { shortName: string; tagClass: string }> = {
   'take-and-hold': { shortName: 'Hold', tagClass: 'takehold' },
   'purge-the-foe': { shortName: 'Purge', tagClass: 'purge' },
 };
-function fdInfo(key?: string) { return key ? FD_MAP[key] : null; }
+function fdLabel(key?: string): string {
+  const labels: Record<string, string> = {
+    'reconnaissance': 'Recon', 'priority-assets': 'Assets',
+    'disruption': 'Disrupt', 'take-and-hold': 'Hold', 'purge-the-foe': 'Purge',
+  };
+  return key ? ` [${labels[key] ?? key}]` : '';
+}
 
 function ScoreBadge({ score }: { score: number | undefined }) {
   if (score === undefined) return null;
@@ -107,8 +113,8 @@ export function ResultsPage() {
               {localMatches.map((m, i) => {
                 const hk = hkTeam.players[m.hk];
                 const opp = oppTeam.players[m.opp];
-                const hkFd = hk?.forceDisposition ? fdInfo(hk.forceDisposition) : null;
-                const oppFd = opp?.forceDisposition ? fdInfo(opp.forceDisposition) : null;
+                const hkFd = fdLabel(hk?.forceDisposition);
+                const oppFd = fdLabel(opp?.forceDisposition);
                 const mission = (hk?.forceDisposition && opp?.forceDisposition)
                   ? getMission(hk.forceDisposition, opp.forceDisposition) : null;
                 return (
@@ -119,11 +125,11 @@ export function ResultsPage() {
                       <ScoreBadge score={hk?.scores?.[opp?.name]} />
                     </td>
                     <td>{hk?.army}</td>
-                    <td>{hkFd && <span className={`fd-tag fd-${hkFd.tagClass}`}>{hkFd.shortName}</span>}</td>
+                    <td style={{ fontSize: '0.75rem', color: '#8892b0' }}>{hkFd || '-'}</td>
                     <td><input type="number" className="score-input" value={m.hkScore || ''} min={0} max={20} step={0.5} onChange={e => updateScore(i, 'hk', e.target.value)} /></td>
                     <td style={{ color: '#888' }}>vs</td>
                     <td><input type="number" className="score-input" value={m.oppScore || ''} min={0} max={20} step={0.5} onChange={e => updateScore(i, 'opp', e.target.value)} /></td>
-                    <td>{oppFd && <span className={`fd-tag fd-${oppFd.tagClass}`}>{oppFd.shortName}</span>}</td>
+                    <td style={{ fontSize: '0.75rem', color: '#8892b0' }}>{oppFd || '-'}</td>
                     <td>{opp?.army}</td>
                     <td className="opp-side">
                       <div>🌐 {opp?.name}</div>

@@ -13,10 +13,12 @@ const FD_MAP: Record<string, { shortName: string; tagClass: string }> = {
   'take-and-hold': { shortName: 'Hold', tagClass: 'takehold' },
   'purge-the-foe': { shortName: 'Purge', tagClass: 'purge' },
 };
-function fdTag(key?: string, compact?: boolean) {
-  const info = key ? FD_MAP[key] : null;
-  if (!info) return null;
-  return <span className={`fd-tag fd-${info.tagClass}`} style={compact ? { fontSize: '0.6rem' } : undefined}>{info.shortName}</span>;
+function fdLabel(key?: string): string {
+  const labels: Record<string, string> = {
+    'reconnaissance': 'Recon', 'priority-assets': 'Assets',
+    'disruption': 'Disrupt', 'take-and-hold': 'Hold', 'purge-the-foe': 'Purge',
+  };
+  return key ? ` [${labels[key] ?? key}]` : '';
 }
 function fdInfo(key?: string) { return key ? FD_MAP[key] : null; }
 
@@ -567,8 +569,7 @@ export function RoundPage({ round }: { round: number }) {
                   <div className="match-content">
                     <div className="slot defender">
                       <div className="name">🇭🇰 {hkTeam.players[hkDef!].name}</div>
-                      <div className="army-tag">{hkTeam.players[hkDef!].army}</div>
-                      {fdTag(hkTeam.players[hkDef!].forceDisposition, true)}
+                      <div className="army-tag">{hkTeam.players[hkDef!].army}{fdLabel(hkTeam.players[hkDef!].forceDisposition)}</div>
                       <div className="role">DEFENDER</div>
                     </div>
                     <div className="vs">VS</div>
@@ -600,8 +601,7 @@ export function RoundPage({ round }: { round: number }) {
                   <div className="match-content">
                     <div className="slot attacker">
                       <div className="name">🌐 {oppTeam.players[oppDef!].name}</div>
-                      <div className="army-tag">{oppTeam.players[oppDef!].army}</div>
-                      {fdTag(oppTeam.players[oppDef!].forceDisposition, true)}
+                      <div className="army-tag">{oppTeam.players[oppDef!].army}{fdLabel(oppTeam.players[oppDef!].forceDisposition)}</div>
                       <div className="role">DEFENDER</div>
                     </div>
                     <div className="vs">VS</div>
