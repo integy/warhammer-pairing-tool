@@ -2,6 +2,8 @@ import { useState, useEffect, useMemo } from 'react';
 import { useApp } from '../store';
 import type { RoundState, RoundPairing } from '../types';
 import { analyzeDefenders, getTopAttackers, autoOptimalRound, createEmptyRound } from '../engine';
+import { getMission, getFD, DISPOSITIONS } from '../missionData';
+import type { ForceDisposition, MissionInfo } from '../missionData';
 
 function getScoreColor(s: number | undefined): string {
   if (s === undefined) return '#555';
@@ -14,6 +16,37 @@ function BothScores({ attScore, defScore }: { attScore: number | undefined; defS
       <span style={{ color: getScoreColor(attScore) }}>[{attScore?.toFixed(1) ?? '-'}</span>
       :<span style={{ color: getScoreColor(defScore) }}>{defScore?.toFixed(1) ?? '-'}]</span>
     </span>
+  );
+}
+
+function MissionMini({ mission, fd, vsFd }: { mission: MissionInfo; fd: ForceDisposition; vsFd: ForceDisposition }) {
+  const [showBack, setShowBack] = useState(false);
+  const fdInfo = getFD(fd);
+  const vsFdInfo = getFD(vsFd);
+  return (
+    <div className="mission-mini">
+      <h4>🎯 {mission.name}</h4>
+      <div className="mission-pair">
+        <span className={`fd-tag fd-${fdInfo.tagClass}`}>{fdInfo.emoji} {fdInfo.shortName}</span>
+        {' vs '}
+        <span className={`fd-tag fd-${vsFdInfo.tagClass}`}>{vsFdInfo.emoji} {vsFdInfo.shortName}</span>
+      </div>
+      {mission.objectives && <div className="mission-obj">🎯 {mission.objectives} Objective Markers</div>}
+      <img className="mission-img" src={mission.image} alt={mission.name} />
+      {mission.back && (
+        <>
+          <img className={`mission-back-img${showBack ? ' visible' : ''}`} src={mission.back} alt={`${mission.name} (rules)`} />
+          <button className="mission-flip-btn" onClick={() => setShowBack(!showBack)}>
+            🔄 {showBack ? 'Show Front' : 'Show Rules (back)'}
+          </button>
+        </>
+      )}
+      {mission.scoring.length > 0 && (
+        <div className="mission-desc">
+          {mission.scoring.slice(0, 2).map((s, i) => <div key={i}>• {s}</div>)}
+        </div>
+      )}
+    </div>
   );
 }
 
@@ -674,6 +707,75 @@ export function RoundPage({ round }: { round: number }) {
                 oppRole="auto-paired"
               />
             ))}
+
+            {/* ──── Mission Summary ──── */}
+            {(() => {
+              const hkDefPlayer = hkTeam.players[confirmedData.hkDef];
+              const oppAttPlayer = oppTeam.players[confirmedData.pickOpp];
+              const hkAttPlayer = hkTeam.players[confirmedData.pickHK];
+              const oppDefPlayer = oppTeam.players[confirmedData.oppDef];
+
+              const hkDefHasFD = hkDefPlayer?.forceDisposition;
+              const oppAttHasFD = oppAttPlayer?.forceDisposition;
+              const hkAttHasFD = hkAttPlayer?.forceDisposition;
+              const oppDefHasFD = oppDefPlayer?.forceDisposition;
+
+              const showMissions = hkDefHasFD || hkAttHasFD || oppDefHasFD || oppAttHasFD;
+
+              if (!showMissions) return null;
+
+              return (
+                <div style={{ marginTop: 20 }}>
+                  <h3 style={{ color: '#FFDE00', marginBottom: 15 }}>🎯 Generated Missions</h3>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
+                    {/* Match 1: HK Defender mission */}
+                    {hkDefHasFD && oppAttHasFD && (
+                      <div>
+                        <div style={{ fontSize: '0.8rem', color: '#DE2910', marginBottom: 6 }}>
+                          🇭🇰 {hkDefPlayer.name} ({hkDefPlayer.army})
+                        </div>
+                        <MissionMini
+                          mission={getMission(hkDefPlayer.forceDisposition!, oppAttPlayer.forceDisposition!)}
+                          fd={hkDefPlayer.forceDisposition!}
+                          vsFd={oppAttPlayer.forceDisposition!}
+                        />
+                      </div>
+                    )}
+                    {/* Match 2: HK Attacker mission */}
+                    {hkAttHasFD && oppDefHasFD && (
+                      <div>
+                        <div style={{ fontSize: '0.8rem', color: '#DE2910', marginBottom: 6 }}>
+                          🇭🇰 {hkAttPlayer.name} ({hkAttPlayer.army})
+                        </div>
+                        <MissionMini
+                          mission={getMission(hkAttPlayer.forceDisposition!, oppDefPlayer.forceDisposition!)}
+                          fd={hkAttPlayer.forceDisposition!}
+                          vsFd={oppDefPlayer.forceDisposition!}
+                        />
+                      </div>
+                    )}
+                  </div>
+                  {/* Auto-paired missions */}
+                  {confirmedData.autoMatches?.map((ap, i) => {
+                    const hkP = hkTeam.players[ap.hk];
+                    const oppP = oppTeam.players[ap.opp];
+                    if (!hkP?.forceDisposition || !oppP?.forceDisposition) return null;
+                    return (
+                      <div key={i} style={{ marginTop: 14 }}>
+                        <div style={{ fontSize: '0.8rem', color: '#DE2910', marginBottom: 6 }}>
+                          🇭🇰 {hkP.name} ({hkP.army}) — Auto-paired
+                        </div>
+                        <MissionMini
+                          mission={getMission(hkP.forceDisposition, oppP.forceDisposition)}
+                          fd={hkP.forceDisposition}
+                          vsFd={oppP.forceDisposition}
+                        />
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })()}
 
             {/* Actions */}
             <div className="btn-center" style={{ marginTop: 20, display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap' }}>

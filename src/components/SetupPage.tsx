@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useApp } from '../store';
 import type { Team, TeamDataFile } from '../types';
 import { createEmptyRound } from '../engine';
+import { getFD, DISPOSITIONS } from '../missionData';
 
 // Team manifest - will be populated from JSON files
 let teamDataCache: Record<string, TeamDataFile> = {};
@@ -140,12 +141,18 @@ export function SetupPage() {
             </select>
             {hkTeam && (
               <div className="player-list">
-                {hkTeam.players.map(p => (
-                  <div key={p.name} className="player-item">
-                    <span>{p.name}</span>
-                    <span className="army-tag">{p.army}</span>
-                  </div>
-                ))}
+                {hkTeam.players.map(p => {
+                  const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
+                  return (
+                    <div key={p.name} className="player-item">
+                      <div className="player-info">
+                        <span>{p.name}</span>
+                        <span className="army-tag">{p.army}</span>
+                        {fd && <span className={`fd-tag fd-${fd.tagClass}`}>{fd.emoji} {fd.shortName}</span>}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             )}
           </div>
@@ -160,12 +167,18 @@ export function SetupPage() {
             </select>
             {oppTeam && (
               <div className="player-list">
-                {oppTeam.players.map(p => (
-                  <div key={p.name} className="player-item">
-                    <span>{p.name}</span>
-                    <span className="army-tag">{p.army}</span>
-                  </div>
-                ))}
+                {oppTeam.players.map(p => {
+                  const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
+                  return (
+                    <div key={p.name} className="player-item">
+                      <div className="player-info">
+                        <span>{p.name}</span>
+                        <span className="army-tag">{p.army}</span>
+                        {fd && <span className={`fd-tag fd-${fd.tagClass}`}>{fd.emoji} {fd.shortName}</span>}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             )}
           </div>

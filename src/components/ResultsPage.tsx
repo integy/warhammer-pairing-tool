@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useApp } from '../store';
 import type { RoundPairing } from '../types';
+import { getMission, getFD } from '../missionData';
 
 function ScoreBadge({ score }: { score: number | undefined }) {
   if (score === undefined) return null;
@@ -82,17 +83,24 @@ export function ResultsPage() {
                 <th>Table</th>
                 <th>🇭🇰 HK Player</th>
                 <th>HK Army</th>
+                <th>HK FD</th>
                 <th>HK Score</th>
                 <th></th>
                 <th>Opp Score</th>
+                <th>Opp FD</th>
                 <th>Opp Army</th>
                 <th>🌐 Opp Player</th>
+                <th>🎯 Mission</th>
               </tr>
             </thead>
             <tbody>
               {localMatches.map((m, i) => {
                 const hk = hkTeam.players[m.hk];
                 const opp = oppTeam.players[m.opp];
+                const hkFd = hk?.forceDisposition ? getFD(hk.forceDisposition) : null;
+                const oppFd = opp?.forceDisposition ? getFD(opp.forceDisposition) : null;
+                const mission = (hk?.forceDisposition && opp?.forceDisposition)
+                  ? getMission(hk.forceDisposition, opp.forceDisposition) : null;
                 return (
                   <tr key={i}>
                     <td><input type="number" className="table-no" value={m.tableNo || i + 1} readOnly /></td>
@@ -101,14 +109,17 @@ export function ResultsPage() {
                       <ScoreBadge score={hk?.scores?.[opp?.name]} />
                     </td>
                     <td>{hk?.army}</td>
+                    <td>{hkFd && <span className={`fd-tag fd-${hkFd.tagClass}`}>{hkFd.emoji} {hkFd.shortName}</span>}</td>
                     <td><input type="number" className="score-input" value={m.hkScore || ''} min={0} max={20} step={0.5} onChange={e => updateScore(i, 'hk', e.target.value)} /></td>
                     <td style={{ color: '#888' }}>vs</td>
                     <td><input type="number" className="score-input" value={m.oppScore || ''} min={0} max={20} step={0.5} onChange={e => updateScore(i, 'opp', e.target.value)} /></td>
+                    <td>{oppFd && <span className={`fd-tag fd-${oppFd.tagClass}`}>{oppFd.emoji} {oppFd.shortName}</span>}</td>
                     <td>{opp?.army}</td>
                     <td className="opp-side">
                       <div>🌐 {opp?.name}</div>
                       <ScoreBadge score={opp?.scores?.[hk?.name]} />
                     </td>
+                    <td className="mission-cell">{mission ? mission.name : '-'}</td>
                   </tr>
                 );
               })}

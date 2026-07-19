@@ -12,7 +12,8 @@
         "Kevin": 3.0,
         "Ivan": 2.5,
         "Gabriel": 3.5
-      }
+      },
+      "forceDisposition": "reconnaissance"
     },
     {
       "name": "Abe",
@@ -24,7 +25,8 @@
         "Kevin": 3.5,
         "Ivan": 2.5,
         "Gabriel": 3.5
-      }
+      },
+      "forceDisposition": "take-and-hold"
     },
     {
       "name": "白給",
@@ -36,7 +38,8 @@
         "Kevin": 2.5,
         "Ivan": 3.0,
         "Gabriel": 3.0
-      }
+      },
+      "forceDisposition": "take-and-hold"
     },
     {
       "name": "老充",
@@ -48,7 +51,8 @@
         "Kevin": 2.5,
         "Ivan": 3.0,
         "Gabriel": 3.5
-      }
+      },
+      "forceDisposition": "take-and-hold"
     },
     {
       "name": "Rowan",
@@ -60,7 +64,8 @@
         "Kevin": 3.5,
         "Ivan": 3.5,
         "Gabriel": 3.5
-      }
+      },
+      "forceDisposition": "take-and-hold"
     },
     {
       "name": "Potato Tomato",
@@ -72,7 +77,8 @@
         "Kevin": 3.0,
         "Ivan": 3.0,
         "Gabriel": 3.5
-      }
+      },
+      "forceDisposition": "disruption"
     }
   ]
 }

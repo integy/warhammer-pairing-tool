@@ -1,8 +1,11 @@
+import type { ForceDisposition } from './missionData';
+
 export interface Player {
   name: string;
   army: string;
   armyList?: string;
   note?: string;
+  forceDisposition?: ForceDisposition;
   scores: Record<string, number>;
 }
 
@@ -64,6 +67,7 @@ export interface TeamDataFile {
     army: string;
     armyList?: string;
     note?: string;
+    forceDisposition?: ForceDisposition;
     scores: Record<string, number>;
   }[];
 }

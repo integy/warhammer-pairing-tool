@@ -14,7 +14,8 @@
         "Kevin": 3.0,
         "Quentin": 4.5,
         "Gabrielle": 2.0
-      }
+      },
+      "forceDisposition": "take-and-hold"
     },
     {
       "name": "Pierre",
@@ -28,7 +29,8 @@
         "Kevin": 2.0,
         "Quentin": 3.5,
         "Gabrielle": 4.5
-      }
+      },
+      "forceDisposition": "take-and-hold"
     },
     {
       "name": "Marie",
@@ -42,7 +44,8 @@
         "Kevin": 4.5,
         "Quentin": 2.5,
         "Gabrielle": 3.5
-      }
+      },
+      "forceDisposition": "purge-the-foe"
     },
     {
       "name": "Claude",
@@ -56,7 +59,8 @@
         "Kevin": 2.0,
         "Quentin": 1.5,
         "Gabrielle": 4.0
-      }
+      },
+      "forceDisposition": "purge-the-foe"
     },
     {
       "name": "Sophie",
@@ -70,7 +74,8 @@
         "Kevin": 1.5,
         "Quentin": 4.5,
         "Gabrielle": 3.0
-      }
+      },
+      "forceDisposition": "reconnaissance"
     },
     {
       "name": "Nicolas",
@@ -84,7 +89,8 @@
         "Kevin": 4.0,
         "Quentin": 2.0,
         "Gabrielle": 1.5
-      }
+      },
+      "forceDisposition": "take-and-hold"
     },
     {
       "name": "Isabelle",
@@ -98,7 +104,8 @@
         "Kevin": 2.5,
         "Quentin": 3.5,
         "Gabrielle": 4.0
-      }
+      },
+      "forceDisposition": "reconnaissance"
     },
     {
       "name": "Philippe",
@@ -112,7 +119,8 @@
         "Kevin": 4.5,
         "Quentin": 3.0,
         "Gabrielle": 2.5
-      }
+      },
+      "forceDisposition": "take-and-hold"
     }
   ]
 }
