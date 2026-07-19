@@ -179,14 +179,13 @@ export function RoundPage({ round }: { round: number }) {
     const result = autoOptimalRound(hkTeam, oppTeam, poolHK, poolOpp);
     setHkDef(result.hkDefender);
     setOppDef(result.oppDefender);
-    const maxAtt = round === 3 ? 1 : 2;
-    setHkAtts(result.hkAttackers.slice(0, maxAtt));
-    setOppAtts(result.oppAttackers.slice(0, maxAtt));
+    setHkAtts(result.hkAttackers.slice(0, 2));
+    setOppAtts(result.oppAttackers.slice(0, 2));
     setStep('pairing');
   };
 
   const toggleHkAtt = (idx: number) => {
-    const max = round === 3 ? 1 : 2;
+    const max = 2;
     setHkAtts(prev => {
       if (prev.includes(idx)) return prev.filter(i => i !== idx);
       if (prev.length >= max) { alert(`Max ${max} attacker(s)!`); return prev; }
@@ -194,7 +193,7 @@ export function RoundPage({ round }: { round: number }) {
     });
   };
   const toggleOppAtt = (idx: number) => {
-    const max = round === 3 ? 1 : 2;
+    const max = 2;
     setOppAtts(prev => {
       if (prev.includes(idx)) return prev.filter(i => i !== idx);
       if (prev.length >= max) { alert(`Max ${max} attacker(s)!`); return prev; }
@@ -497,7 +496,7 @@ export function RoundPage({ round }: { round: number }) {
             {hkDef !== undefined && oppDef !== undefined && (
               <div style={{ marginBottom: 20 }}>
                 <h4 style={{ color: '#DE2910', marginBottom: 10 }}>
-                  🇭🇰 Select {round === 3 ? '1' : '2'} Attacker{round === 3 ? '' : 's'} vs {oppTeam.players[oppDef]?.name}
+                  🇭🇰 Select 2 Attackers vs {oppTeam.players[oppDef]?.name}
                 </h4>
                 <div className="pick-btns">
                   {poolHK.filter(i => i !== hkDef).map(i => {
@@ -516,7 +515,7 @@ export function RoundPage({ round }: { round: number }) {
                 </div>
 
                 <h4 style={{ color: '#00d4ff', marginBottom: 10, marginTop: 15 }}>
-                  🌐 Select {round === 3 ? '1' : '2'} Attacker{round === 3 ? '' : 's'} vs {hkTeam.players[hkDef]?.name}
+                  🌐 Select 2 Attackers vs {hkTeam.players[hkDef]?.name}
                 </h4>
                 <div className="pick-btns">
                   {poolOpp.filter(i => i !== oppDef).map(i => {
