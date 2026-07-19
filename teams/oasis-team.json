@@ -12,7 +12,8 @@
         "Kevin": 2.5,
         "Ivan": 3.0,
         "Gabriel": 3.5
-      }
+      },
+      "forceDisposition": "take-and-hold"
     },
     {
       "name": "GK",
@@ -24,7 +25,8 @@
         "Kevin": 3.0,
         "Ivan": 3.0,
         "Gabriel": 3.5
-      }
+      },
+      "forceDisposition": "priority-assets"
     },
     {
       "name": "Tau",
@@ -36,7 +38,8 @@
         "Kevin": 2.5,
         "Ivan": 2.5,
         "Gabriel": 3.0
-      }
+      },
+      "forceDisposition": "reconnaissance"
     },
     {
       "name": "Custodes",
@@ -48,7 +51,8 @@
         "Kevin": 3.5,
         "Ivan": 2.5,
         "Gabriel": 3.5
-      }
+      },
+      "forceDisposition": "take-and-hold"
     },
     {
       "name": "Necrons",
@@ -60,7 +64,8 @@
         "Kevin": 3.5,
         "Ivan": 3.0,
         "Gabriel": 3.5
-      }
+      },
+      "forceDisposition": "take-and-hold"
     },
     {
       "name": "DeathWatch",
@@ -72,7 +77,8 @@
         "Kevin": 2.5,
         "Ivan": 2.5,
         "Gabriel": 3.5
-      }
+      },
+      "forceDisposition": "priority-assets"
     }
   ]
 }

@@ -12,7 +12,8 @@
         "Kevin": 3.0,
         "Ivan": 2.5,
         "Gabriel": 4.0
-      }
+      },
+      "forceDisposition": "take-and-hold"
     },
     {
       "name": "BA",
@@ -24,7 +25,8 @@
         "Kevin": 2.5,
         "Ivan": 3.0,
         "Gabriel": 3.5
-      }
+      },
+      "forceDisposition": "take-and-hold"
     },
     {
       "name": "Chaos Daemons",
@@ -36,7 +38,8 @@
         "Kevin": 3.0,
         "Ivan": 3.0,
         "Gabriel": 3.0
-      }
+      },
+      "forceDisposition": "disruption"
     },
     {
       "name": "Necrons",
@@ -48,7 +51,8 @@
         "Kevin": 3.5,
         "Ivan": 3.5,
         "Gabriel": 3.5
-      }
+      },
+      "forceDisposition": "take-and-hold"
     },
     {
       "name": "Tau",
@@ -60,7 +64,8 @@
         "Kevin": 3.0,
         "Ivan": 3.0,
         "Gabriel": 3.5
-      }
+      },
+      "forceDisposition": "reconnaissance"
     },
     {
       "name": "WE",
@@ -72,7 +77,8 @@
         "Kevin": 4.0,
         "Ivan": 4.0,
         "Gabriel": 4.0
-      }
+      },
+      "forceDisposition": "purge-the-foe"
     }
   ]
 }

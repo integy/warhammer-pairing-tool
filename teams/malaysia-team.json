@@ -14,7 +14,8 @@
         "Terrence": 2.0,
         "Quentin": 0.0,
         "Kris": 1.0
-      }
+      },
+      "forceDisposition": "take-and-hold"
     },
     {
       "name": "CSM - Pactbound Zealots",
@@ -28,7 +29,8 @@
         "Terrence": 3.0,
         "Quentin": 0.0,
         "Kris": 2.5
-      }
+      },
+      "forceDisposition": "disruption"
     },
     {
       "name": "Tau - Mont'ka",
@@ -42,7 +44,8 @@
         "Terrence": 3.0,
         "Quentin": 0.0,
         "Kris": 0.0
-      }
+      },
+      "forceDisposition": "reconnaissance"
     },
     {
       "name": "TSS - Warpforged Cabal",
@@ -56,7 +59,8 @@
         "Terrence": 3.5,
         "Quentin": 0.0,
         "Kris": 3.5
-      }
+      },
+      "forceDisposition": "priority-assets"
     },
     {
       "name": "EC - Coterie of the Conceited",
@@ -70,7 +74,8 @@
         "Terrence": 3.5,
         "Quentin": 0.0,
         "Kris": 4.0
-      }
+      },
+      "forceDisposition": "reconnaissance"
     },
     {
       "name": "Deathwatch - Black Spear Task Force",
@@ -84,7 +89,8 @@
         "Terrence": 3.0,
         "Quentin": 0.0,
         "Kris": 3.0
-      }
+      },
+      "forceDisposition": "priority-assets"
     },
     {
       "name": "GK - Banishers",
@@ -98,7 +104,8 @@
         "Terrence": 3.0,
         "Quentin": 0.0,
         "Kris": 3.0
-      }
+      },
+      "forceDisposition": "priority-assets"
     },
     {
       "name": "Guard - Grizzled Company",
@@ -112,7 +119,8 @@
         "Terrence": 2.5,
         "Quentin": 0.0,
         "Kris": 2.0
-      }
+      },
+      "forceDisposition": "take-and-hold"
     }
   ]
 }

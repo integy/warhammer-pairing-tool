@@ -5,6 +5,7 @@
     {
       "name": "Eric",
       "army": "Aeldari",
+      "forceDisposition": "reconnaissance",
       "scores": {
         "Kris": 4.5,
         "Ivan": 3.0,
@@ -18,6 +19,7 @@
     {
       "name": "Terrence",
       "army": "Sisters",
+      "forceDisposition": "take-and-hold",
       "scores": {
         "Kris": 2.5,
         "Ivan": 4.0,
@@ -31,6 +33,7 @@
     {
       "name": "Kris",
       "army": "Death Guard",
+      "forceDisposition": "take-and-hold",
       "scores": {
         "Eric": 2.0,
         "Ivan": 3.5,
@@ -44,6 +47,7 @@
     {
       "name": "Ivan",
       "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
       "scores": {
         "Eric": 3.5,
         "Kris": 4.0,
@@ -57,6 +61,7 @@
     {
       "name": "Jireh",
       "army": "Necrons",
+      "forceDisposition": "take-and-hold",
       "scores": {
         "Eric": 2.5,
         "Kris": 1.5,
@@ -70,6 +75,7 @@
     {
       "name": "Kevin",
       "army": "World Eaters",
+      "forceDisposition": "purge-the-foe",
       "scores": {
         "Eric": 3.0,
         "Kris": 4.5,
@@ -83,6 +89,7 @@
     {
       "name": "Quentin",
       "army": "Chaos Space Marine",
+      "forceDisposition": "disruption",
       "scores": {
         "Eric": 2.0,
         "Kris": 3.5,
@@ -96,6 +103,7 @@
     {
       "name": "Gabrielle",
       "army": "Imperial Guard",
+      "forceDisposition": "take-and-hold",
       "scores": {
         "Eric": 4.0,
         "Kris": 2.5,
