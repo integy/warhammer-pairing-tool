@@ -433,9 +433,10 @@ export function RoundPage({ round }: { round: number }) {
                       {poolHK.map(i => {
                         const p = hkTeam.players[i];
                         const isBest = bestDefIndices.has(i);
+                        const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
                         return (
                           <th key={i} style={isBest ? { background: '#2d5a2d', color: '#4ade80' } : undefined}>
-                            {p.name}⭐<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}</span>
+                            {p.name}⭐<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}</span>{fd && <><br /><span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.55rem' }}>{fd.emoji} {fd.shortName}</span></>}
                           </th>
                         );
                       })}
@@ -444,9 +445,10 @@ export function RoundPage({ round }: { round: number }) {
                   <tbody>
                     {poolOpp.map(oi => {
                       const opp = oppTeam.players[oi];
+                      const ofd = opp.forceDisposition ? getFD(opp.forceDisposition) : null;
                       return (
                         <tr key={oi}>
-                          <td className="row-header">{opp.name}</td>
+                          <td className="row-header">{opp.name}{ofd && <> <span className={`fd-tag fd-${ofd.tagClass}`} style={{ fontSize: '0.55rem' }}>{ofd.emoji}</span></>}</td>
                           {poolHK.map(hi => {
                             const s = opp.scores?.[hkTeam.players[hi].name];
                             return <td key={hi} style={{ color: getScoreColor(s), fontWeight: 'bold' }}>{s?.toFixed(1) ?? '-'}</td>;
@@ -504,9 +506,10 @@ export function RoundPage({ round }: { round: number }) {
                     const attScore = p.scores?.[oppTeam.players[oppDef!]?.name];
                     const defScore = oppTeam.players[oppDef!]?.scores?.[p.name];
                     const isTop = getTopAttackers(poolHK.filter(j => j !== hkDef), oppTeam.players[oppDef!]?.name, hkTeam).includes(i);
+                    const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
                     return (
                       <button key={i} className={`pick-btn ${hkAtts.includes(i) ? 'selected' : ''}`} onClick={() => toggleHkAtt(i)}>
-                        {p.name} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
+                        {p.name}{fd && <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.55rem', marginLeft: 4 }}>{fd.emoji}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
                         <BothScores attScore={attScore} defScore={defScore} />
                         {isTop && ' ⭐'}
                       </button>
@@ -523,9 +526,10 @@ export function RoundPage({ round }: { round: number }) {
                     const attScore = p.scores?.[hkTeam.players[hkDef!]?.name];
                     const defScore = hkTeam.players[hkDef!]?.scores?.[p.name];
                     const isTop = getTopAttackers(poolOpp.filter(j => j !== oppDef), hkTeam.players[hkDef!]?.name, oppTeam).includes(i);
+                    const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
                     return (
                       <button key={i} className={`pick-btn ${oppAtts.includes(i) ? 'selected' : ''}`} onClick={() => toggleOppAtt(i)}>
-                        {p.name} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
+                        {p.name}{fd && <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.55rem', marginLeft: 4 }}>{fd.emoji}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
                         <BothScores attScore={attScore} defScore={defScore} />
                         {isTop && ' ⭐'}
                       </button>
@@ -549,6 +553,7 @@ export function RoundPage({ round }: { round: number }) {
                     <div className="slot defender">
                       <div className="name">🇭🇰 {hkTeam.players[hkDef!].name}</div>
                       <div className="army-tag">{hkTeam.players[hkDef!].army}</div>
+                      {hkTeam.players[hkDef!].forceDisposition && (() => { const fd = getFD(hkTeam.players[hkDef!].forceDisposition!); return <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem', marginTop: 4, display: 'inline-block' }}>{fd.emoji} {fd.shortName}</span>; })()}
                       <div className="role">DEFENDER</div>
                     </div>
                     <div className="vs">VS</div>
@@ -559,9 +564,10 @@ export function RoundPage({ round }: { round: number }) {
                           const p = oppTeam.players[i];
                           const attScore = p.scores?.[hkTeam.players[hkDef!]?.name];
                           const defScore = hkTeam.players[hkDef!]?.scores?.[p.name];
+                          const ofd = p.forceDisposition ? getFD(p.forceDisposition) : null;
                           return (
                             <button key={i} className={`pick-btn ${pickOpp === i ? 'selected' : ''}`} onClick={() => setPickOpp(i)}>
-                              {p.name} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
+                              {p.name}{ofd && <span className={`fd-tag fd-${ofd.tagClass}`} style={{ fontSize: '0.55rem', marginLeft: 4 }}>{ofd.emoji}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
                               <BothScores attScore={attScore} defScore={defScore} />
                             </button>
                           );
@@ -580,6 +586,7 @@ export function RoundPage({ round }: { round: number }) {
                     <div className="slot attacker">
                       <div className="name">🌐 {oppTeam.players[oppDef!].name}</div>
                       <div className="army-tag">{oppTeam.players[oppDef!].army}</div>
+                      {oppTeam.players[oppDef!].forceDisposition && (() => { const fd = getFD(oppTeam.players[oppDef!].forceDisposition!); return <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem', marginTop: 4, display: 'inline-block' }}>{fd.emoji} {fd.shortName}</span>; })()}
                       <div className="role">DEFENDER</div>
                     </div>
                     <div className="vs">VS</div>
@@ -590,9 +597,10 @@ export function RoundPage({ round }: { round: number }) {
                           const p = hkTeam.players[i];
                           const attScore = p.scores?.[oppTeam.players[oppDef!]?.name];
                           const defScore = oppTeam.players[oppDef!]?.scores?.[p.name];
+                          const hfd = p.forceDisposition ? getFD(p.forceDisposition) : null;
                           return (
                             <button key={i} className={`pick-btn ${pickHK === i ? 'selected' : ''}`} onClick={() => setPickHK(i)}>
-                              {p.name} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
+                              {p.name}{hfd && <span className={`fd-tag fd-${hfd.tagClass}`} style={{ fontSize: '0.55rem', marginLeft: 4 }}>{hfd.emoji}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
                               <BothScores attScore={attScore} defScore={defScore} />
                             </button>
                           );

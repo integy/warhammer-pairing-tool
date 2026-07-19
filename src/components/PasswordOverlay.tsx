@@ -5,15 +5,19 @@ export function PasswordOverlay() {
   const { settings } = useApp();
   const [input, setInput] = useState('');
   const [error, setError] = useState('');
+  const [ok, setOk] = useState(false);
 
   const check = () => {
     if (input === settings.password) {
       sessionStorage.setItem('wtc-authed', '1');
+      setOk(true);
     } else {
       setError('Incorrect password');
       setInput('');
     }
   };
+
+  if (ok) return null;
 
   return (
     <div className="password-overlay">

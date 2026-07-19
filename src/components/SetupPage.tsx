@@ -209,18 +209,22 @@ export function SetupPage() {
               <thead>
                 <tr>
                   <th>Opponent \\ HK</th>
-                  {hkTeam.players.map(p => (
-                    <th key={p.name}>{p.name}<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}</span></th>
-                  ))}
+                  {hkTeam.players.map(p => {
+                    const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
+                    return (
+                      <th key={p.name}>{p.name}<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}</span>{fd && <><br /><span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.55rem' }}>{fd.emoji} {fd.shortName}</span></>}</th>
+                    );
+                  })}
                   <th className="avg-col">Avg</th>
                 </tr>
               </thead>
               <tbody>
                 {oppTeam.players.map(opp => {
                   const avg = hkTeam.players.reduce((s, hk) => s + (opp.scores[hk.name] || 0), 0) / hkTeam.players.length;
+                  const fd = opp.forceDisposition ? getFD(opp.forceDisposition) : null;
                   return (
                     <tr key={opp.name}>
-                      <td className="row-header">{opp.name}<br /><span style={{ fontSize: '0.7rem', color: '#888' }}>{opp.army}</span></td>
+                      <td className="row-header">{opp.name}<br /><span style={{ fontSize: '0.7rem', color: '#888' }}>{opp.army}</span>{fd && <> <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.55rem' }}>{fd.emoji}</span></>}</td>
                       {hkTeam.players.map(hk => {
                         const s = opp.scores[hk.name];
                         return <td key={hk.name} style={{ color: getScoreColor(s), fontWeight: 'bold' }}>{s !== undefined ? s.toFixed(1) : '-'}</td>;
