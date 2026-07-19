@@ -126,7 +126,8 @@ select:focus { outline: none; border-color: #FFDE00; }
 /* ========== FD Tags ========== */
 .fd-tag {
   display: inline-block; padding: 2px 8px; border-radius: 4px;
-  font-size: 0.65rem; font-weight: 700; letter-spacing: 0.5px;
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.5px;
+  white-space: nowrap;
 }
 .fd-recon { background: rgba(255,222,0,0.15); color: #FFDE00; }
 .fd-priority { background: rgba(180,77,255,0.15); color: #b44dff; }

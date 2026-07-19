@@ -436,7 +436,7 @@ export function RoundPage({ round }: { round: number }) {
                         const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
                         return (
                           <th key={i} style={isBest ? { background: '#2d5a2d', color: '#4ade80' } : undefined}>
-                            {p.name}⭐<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}</span>{fd && <><br /><span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.55rem' }}>{fd.shortName}</span></>}
+                            {p.name}⭐<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}</span>{fd && <><br /><span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem' }}>{fd.shortName}</span></>}
                           </th>
                         );
                       })}
@@ -448,7 +448,7 @@ export function RoundPage({ round }: { round: number }) {
                       const ofd = opp.forceDisposition ? getFD(opp.forceDisposition) : null;
                       return (
                         <tr key={oi}>
-                          <td className="row-header">{opp.name}{ofd && <> <span className={`fd-tag fd-${ofd.tagClass}`} style={{ fontSize: '0.55rem' }}>{ofd.shortName}</span></>}</td>
+                          <td className="row-header">{opp.name}{ofd && <> <span className={`fd-tag fd-${ofd.tagClass}`} style={{ fontSize: '0.6rem' }}>{ofd.shortName}</span></>}</td>
                           {poolHK.map(hi => {
                             const s = opp.scores?.[hkTeam.players[hi].name];
                             return <td key={hi} style={{ color: getScoreColor(s), fontWeight: 'bold' }}>{s?.toFixed(1) ?? '-'}</td>;
@@ -509,7 +509,7 @@ export function RoundPage({ round }: { round: number }) {
                     const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
                     return (
                       <button key={i} className={`pick-btn ${hkAtts.includes(i) ? 'selected' : ''}`} onClick={() => toggleHkAtt(i)}>
-                        {p.name}{fd && <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.55rem', marginLeft: 4 }}>{fd.shortName}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
+                        {p.name}{fd && <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem', marginLeft: 4 }}>{fd.shortName}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
                         <BothScores attScore={attScore} defScore={defScore} />
                         {isTop && ' ⭐'}
                       </button>
@@ -529,7 +529,7 @@ export function RoundPage({ round }: { round: number }) {
                     const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
                     return (
                       <button key={i} className={`pick-btn ${oppAtts.includes(i) ? 'selected' : ''}`} onClick={() => toggleOppAtt(i)}>
-                        {p.name}{fd && <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.55rem', marginLeft: 4 }}>{fd.shortName}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
+                        {p.name}{fd && <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem', marginLeft: 4 }}>{fd.shortName}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
                         <BothScores attScore={attScore} defScore={defScore} />
                         {isTop && ' ⭐'}
                       </button>
@@ -567,7 +567,7 @@ export function RoundPage({ round }: { round: number }) {
                           const ofd = p.forceDisposition ? getFD(p.forceDisposition) : null;
                           return (
                             <button key={i} className={`pick-btn ${pickOpp === i ? 'selected' : ''}`} onClick={() => setPickOpp(i)}>
-                              {p.name}{ofd && <span className={`fd-tag fd-${ofd.tagClass}`} style={{ fontSize: '0.55rem', marginLeft: 4 }}>{ofd.shortName}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
+                              {p.name}{ofd && <span className={`fd-tag fd-${ofd.tagClass}`} style={{ fontSize: '0.6rem', marginLeft: 4 }}>{ofd.shortName}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
                               <BothScores attScore={attScore} defScore={defScore} />
                             </button>
                           );
@@ -600,7 +600,7 @@ export function RoundPage({ round }: { round: number }) {
                           const hfd = p.forceDisposition ? getFD(p.forceDisposition) : null;
                           return (
                             <button key={i} className={`pick-btn ${pickHK === i ? 'selected' : ''}`} onClick={() => setPickHK(i)}>
-                              {p.name}{hfd && <span className={`fd-tag fd-${hfd.tagClass}`} style={{ fontSize: '0.55rem', marginLeft: 4 }}>{hfd.shortName}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
+                              {p.name}{hfd && <span className={`fd-tag fd-${hfd.tagClass}`} style={{ fontSize: '0.6rem', marginLeft: 4 }}>{hfd.shortName}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
                               <BothScores attScore={attScore} defScore={defScore} />
                             </button>
                           );

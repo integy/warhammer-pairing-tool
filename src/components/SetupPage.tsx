@@ -212,7 +212,7 @@ export function SetupPage() {
                   {hkTeam.players.map(p => {
                     const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
                     return (
-                      <th key={p.name}>{p.name}<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}</span>{fd && <><br /><span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.55rem' }}>{fd.shortName}</span></>}</th>
+                      <th key={p.name}>{p.name}<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}</span>{fd && <><br /><span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem' }}>{fd.shortName}</span></>}</th>
                     );
                   })}
                   <th className="avg-col">Avg</th>
@@ -224,7 +224,7 @@ export function SetupPage() {
                   const fd = opp.forceDisposition ? getFD(opp.forceDisposition) : null;
                   return (
                     <tr key={opp.name}>
-                      <td className="row-header">{opp.name}<br /><span style={{ fontSize: '0.7rem', color: '#888' }}>{opp.army}</span>{fd && <> <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.55rem' }}>{fd.shortName}</span></>}</td>
+                      <td className="row-header">{opp.name}<br /><span style={{ fontSize: '0.7rem', color: '#888' }}>{opp.army}</span>{fd && <> <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem' }}>{fd.shortName}</span></>}</td>
                       {hkTeam.players.map(hk => {
                         const s = opp.scores[hk.name];
                         return <td key={hk.name} style={{ color: getScoreColor(s), fontWeight: 'bold' }}>{s !== undefined ? s.toFixed(1) : '-'}</td>;
