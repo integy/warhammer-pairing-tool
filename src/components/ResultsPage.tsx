@@ -1,7 +1,17 @@
 import { useState } from 'react';
 import { useApp } from '../store';
 import type { RoundPairing } from '../types';
-import { getMission, getFD } from '../missionData';
+import { getMission } from '../missionData';
+
+// Inline FD lookup
+const FD_MAP: Record<string, { shortName: string; tagClass: string }> = {
+  'reconnaissance': { shortName: 'Recon', tagClass: 'recon' },
+  'priority-assets': { shortName: 'Assets', tagClass: 'priority' },
+  'disruption': { shortName: 'Disrupt', tagClass: 'disruption' },
+  'take-and-hold': { shortName: 'Hold', tagClass: 'takehold' },
+  'purge-the-foe': { shortName: 'Purge', tagClass: 'purge' },
+};
+function fdInfo(key?: string) { return key ? FD_MAP[key] : null; }
 
 function ScoreBadge({ score }: { score: number | undefined }) {
   if (score === undefined) return null;
@@ -97,8 +107,8 @@ export function ResultsPage() {
               {localMatches.map((m, i) => {
                 const hk = hkTeam.players[m.hk];
                 const opp = oppTeam.players[m.opp];
-                const hkFd = hk?.forceDisposition ? getFD(hk.forceDisposition) : null;
-                const oppFd = opp?.forceDisposition ? getFD(opp.forceDisposition) : null;
+                const hkFd = hk?.forceDisposition ? fdInfo(hk.forceDisposition) : null;
+                const oppFd = opp?.forceDisposition ? fdInfo(opp.forceDisposition) : null;
                 const mission = (hk?.forceDisposition && opp?.forceDisposition)
                   ? getMission(hk.forceDisposition, opp.forceDisposition) : null;
                 return (

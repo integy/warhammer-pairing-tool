@@ -2,7 +2,21 @@ import { useState, useEffect, useRef } from 'react';
 import { useApp } from '../store';
 import type { Team, TeamDataFile } from '../types';
 import { createEmptyRound } from '../engine';
-import { getFD, DISPOSITIONS } from '../missionData';
+import { getMission } from '../missionData';
+
+// Inline FD lookup
+const FD_MAP: Record<string, { shortName: string; tagClass: string }> = {
+  'reconnaissance': { shortName: 'Recon', tagClass: 'recon' },
+  'priority-assets': { shortName: 'Assets', tagClass: 'priority' },
+  'disruption': { shortName: 'Disrupt', tagClass: 'disruption' },
+  'take-and-hold': { shortName: 'Hold', tagClass: 'takehold' },
+  'purge-the-foe': { shortName: 'Purge', tagClass: 'purge' },
+};
+function fdTag(key?: string, compact?: boolean) {
+  const info = key ? FD_MAP[key] : null;
+  if (!info) return null;
+  return <span className={`fd-tag fd-${info.tagClass}`} style={compact ? { fontSize: '0.6rem' } : undefined}>{info.shortName}</span>;
+}
 
 // Team manifest - will be populated from JSON files
 let teamDataCache: Record<string, TeamDataFile> = {};
@@ -141,18 +155,15 @@ export function SetupPage() {
             </select>
             {hkTeam && (
               <div className="player-list">
-                {hkTeam.players.map(p => {
-                  const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
-                  return (
+                {hkTeam.players.map(p => (
                     <div key={p.name} className="player-item">
                       <div className="player-info">
                         <span>{p.name}</span>
                         <span className="army-tag">{p.army}</span>
-                        {fd && <span className={`fd-tag fd-${fd.tagClass}`}>{fd.shortName}</span>}
+                        {fdTag(p.forceDisposition)}
                       </div>
                     </div>
-                  );
-                })}
+                  ))}
               </div>
             )}
           </div>
@@ -167,18 +178,15 @@ export function SetupPage() {
             </select>
             {oppTeam && (
               <div className="player-list">
-                {oppTeam.players.map(p => {
-                  const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
-                  return (
+                {oppTeam.players.map(p => (
                     <div key={p.name} className="player-item">
                       <div className="player-info">
                         <span>{p.name}</span>
                         <span className="army-tag">{p.army}</span>
-                        {fd && <span className={`fd-tag fd-${fd.tagClass}`}>{fd.shortName}</span>}
+                        {fdTag(p.forceDisposition)}
                       </div>
                     </div>
-                  );
-                })}
+                  ))}
               </div>
             )}
           </div>
@@ -209,22 +217,18 @@ export function SetupPage() {
               <thead>
                 <tr>
                   <th>Opponent \\ HK</th>
-                  {hkTeam.players.map(p => {
-                    const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
-                    return (
-                      <th key={p.name}>{p.name}<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}</span>{fd && <><br /><span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem' }}>{fd.shortName}</span></>}</th>
-                    );
-                  })}
+                  {hkTeam.players.map(p => (
+                      <th key={p.name}>{p.name}<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}</span>{p.forceDisposition && <><br />{fdTag(p.forceDisposition, true)}</>}</th>
+                    ))}
                   <th className="avg-col">Avg</th>
                 </tr>
               </thead>
               <tbody>
                 {oppTeam.players.map(opp => {
                   const avg = hkTeam.players.reduce((s, hk) => s + (opp.scores[hk.name] || 0), 0) / hkTeam.players.length;
-                  const fd = opp.forceDisposition ? getFD(opp.forceDisposition) : null;
                   return (
                     <tr key={opp.name}>
-                      <td className="row-header">{opp.name}<br /><span style={{ fontSize: '0.7rem', color: '#888' }}>{opp.army}</span>{fd && <> <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem' }}>{fd.shortName}</span></>}</td>
+                      <td className="row-header">{opp.name}<br /><span style={{ fontSize: '0.7rem', color: '#888' }}>{opp.army}</span>{opp.forceDisposition && <> {fdTag(opp.forceDisposition, true)}</>}</td>
                       {hkTeam.players.map(hk => {
                         const s = opp.scores[hk.name];
                         return <td key={hk.name} style={{ color: getScoreColor(s), fontWeight: 'bold' }}>{s !== undefined ? s.toFixed(1) : '-'}</td>;

@@ -2,8 +2,23 @@ import { useState, useEffect, useMemo } from 'react';
 import { useApp } from '../store';
 import type { RoundState, RoundPairing } from '../types';
 import { analyzeDefenders, getTopAttackers, autoOptimalRound, createEmptyRound } from '../engine';
-import { getMission, getFD, DISPOSITIONS } from '../missionData';
+import { getMission } from '../missionData';
 import type { ForceDisposition, MissionInfo } from '../missionData';
+
+// Inline FD lookup
+const FD_MAP: Record<string, { shortName: string; tagClass: string }> = {
+  'reconnaissance': { shortName: 'Recon', tagClass: 'recon' },
+  'priority-assets': { shortName: 'Assets', tagClass: 'priority' },
+  'disruption': { shortName: 'Disrupt', tagClass: 'disruption' },
+  'take-and-hold': { shortName: 'Hold', tagClass: 'takehold' },
+  'purge-the-foe': { shortName: 'Purge', tagClass: 'purge' },
+};
+function fdTag(key?: string, compact?: boolean) {
+  const info = key ? FD_MAP[key] : null;
+  if (!info) return null;
+  return <span className={`fd-tag fd-${info.tagClass}`} style={compact ? { fontSize: '0.6rem' } : undefined}>{info.shortName}</span>;
+}
+function fdInfo(key?: string) { return key ? FD_MAP[key] : null; }
 
 function getScoreColor(s: number | undefined): string {
   if (s === undefined) return '#555';
@@ -21,15 +36,15 @@ function BothScores({ attScore, defScore }: { attScore: number | undefined; defS
 
 function MissionMini({ mission, fd, vsFd }: { mission: MissionInfo; fd: ForceDisposition; vsFd: ForceDisposition }) {
   const [showBack, setShowBack] = useState(false);
-  const fdInfo = getFD(fd);
-  const vsFdInfo = getFD(vsFd);
+  const fdData = fdInfo(fd)!;
+  const vsFdData = fdInfo(vsFd)!;
   return (
     <div className="mission-mini">
       <h4>🎯 {mission.name}</h4>
       <div className="mission-pair">
-        <span className={`fd-tag fd-${fdInfo.tagClass}`}>{fdInfo.shortName}</span>
+        <span className={`fd-tag fd-${fdData.tagClass}`}>{fdData.shortName}</span>
         {' vs '}
-        <span className={`fd-tag fd-${vsFdInfo.tagClass}`}>{vsFdInfo.shortName}</span>
+        <span className={`fd-tag fd-${vsFdData.tagClass}`}>{vsFdData.shortName}</span>
       </div>
       {mission.objectives && <div className="mission-obj">🎯 {mission.objectives} Objective Markers</div>}
       <img className="mission-img" src={mission.image} alt={mission.name} />
@@ -433,7 +448,7 @@ export function RoundPage({ round }: { round: number }) {
                       {poolHK.map(i => {
                         const p = hkTeam.players[i];
                         const isBest = bestDefIndices.has(i);
-                        const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
+                        const fd = p.forceDisposition ? fdInfo(p.forceDisposition) : null;
                         return (
                           <th key={i} style={isBest ? { background: '#2d5a2d', color: '#4ade80' } : undefined}>
                             {p.name}⭐<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}</span>{fd && <><br /><span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem' }}>{fd.shortName}</span></>}
@@ -445,7 +460,7 @@ export function RoundPage({ round }: { round: number }) {
                   <tbody>
                     {poolOpp.map(oi => {
                       const opp = oppTeam.players[oi];
-                      const ofd = opp.forceDisposition ? getFD(opp.forceDisposition) : null;
+                      const ofd = opp.forceDisposition ? fdInfo(opp.forceDisposition) : null;
                       return (
                         <tr key={oi}>
                           <td className="row-header">{opp.name}{ofd && <> <span className={`fd-tag fd-${ofd.tagClass}`} style={{ fontSize: '0.6rem' }}>{ofd.shortName}</span></>}</td>
@@ -506,7 +521,7 @@ export function RoundPage({ round }: { round: number }) {
                     const attScore = p.scores?.[oppTeam.players[oppDef!]?.name];
                     const defScore = oppTeam.players[oppDef!]?.scores?.[p.name];
                     const isTop = getTopAttackers(poolHK.filter(j => j !== hkDef), oppTeam.players[oppDef!]?.name, hkTeam).includes(i);
-                    const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
+                    const fd = p.forceDisposition ? fdInfo(p.forceDisposition) : null;
                     return (
                       <button key={i} className={`pick-btn ${hkAtts.includes(i) ? 'selected' : ''}`} onClick={() => toggleHkAtt(i)}>
                         {p.name}{fd && <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem', marginLeft: 4 }}>{fd.shortName}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
@@ -526,7 +541,7 @@ export function RoundPage({ round }: { round: number }) {
                     const attScore = p.scores?.[hkTeam.players[hkDef!]?.name];
                     const defScore = hkTeam.players[hkDef!]?.scores?.[p.name];
                     const isTop = getTopAttackers(poolOpp.filter(j => j !== oppDef), hkTeam.players[hkDef!]?.name, oppTeam).includes(i);
-                    const fd = p.forceDisposition ? getFD(p.forceDisposition) : null;
+                    const fd = p.forceDisposition ? fdInfo(p.forceDisposition) : null;
                     return (
                       <button key={i} className={`pick-btn ${oppAtts.includes(i) ? 'selected' : ''}`} onClick={() => toggleOppAtt(i)}>
                         {p.name}{fd && <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem', marginLeft: 4 }}>{fd.shortName}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
@@ -553,7 +568,7 @@ export function RoundPage({ round }: { round: number }) {
                     <div className="slot defender">
                       <div className="name">🇭🇰 {hkTeam.players[hkDef!].name}</div>
                       <div className="army-tag">{hkTeam.players[hkDef!].army}</div>
-                      {hkTeam.players[hkDef!].forceDisposition && (() => { const fd = getFD(hkTeam.players[hkDef!].forceDisposition!); return <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem', marginTop: 4, display: 'inline-block' }}>{fd.shortName}</span>; })()}
+                      {fdTag(hkTeam.players[hkDef!].forceDisposition, true)}
                       <div className="role">DEFENDER</div>
                     </div>
                     <div className="vs">VS</div>
@@ -564,7 +579,7 @@ export function RoundPage({ round }: { round: number }) {
                           const p = oppTeam.players[i];
                           const attScore = p.scores?.[hkTeam.players[hkDef!]?.name];
                           const defScore = hkTeam.players[hkDef!]?.scores?.[p.name];
-                          const ofd = p.forceDisposition ? getFD(p.forceDisposition) : null;
+                          const ofd = p.forceDisposition ? fdInfo(p.forceDisposition) : null;
                           return (
                             <button key={i} className={`pick-btn ${pickOpp === i ? 'selected' : ''}`} onClick={() => setPickOpp(i)}>
                               {p.name}{ofd && <span className={`fd-tag fd-${ofd.tagClass}`} style={{ fontSize: '0.6rem', marginLeft: 4 }}>{ofd.shortName}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
@@ -586,7 +601,7 @@ export function RoundPage({ round }: { round: number }) {
                     <div className="slot attacker">
                       <div className="name">🌐 {oppTeam.players[oppDef!].name}</div>
                       <div className="army-tag">{oppTeam.players[oppDef!].army}</div>
-                      {oppTeam.players[oppDef!].forceDisposition && (() => { const fd = getFD(oppTeam.players[oppDef!].forceDisposition!); return <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem', marginTop: 4, display: 'inline-block' }}>{fd.shortName}</span>; })()}
+                      {fdTag(oppTeam.players[oppDef!].forceDisposition, true)}
                       <div className="role">DEFENDER</div>
                     </div>
                     <div className="vs">VS</div>
@@ -597,7 +612,7 @@ export function RoundPage({ round }: { round: number }) {
                           const p = hkTeam.players[i];
                           const attScore = p.scores?.[oppTeam.players[oppDef!]?.name];
                           const defScore = oppTeam.players[oppDef!]?.scores?.[p.name];
-                          const hfd = p.forceDisposition ? getFD(p.forceDisposition) : null;
+                          const hfd = p.forceDisposition ? fdInfo(p.forceDisposition) : null;
                           return (
                             <button key={i} className={`pick-btn ${pickHK === i ? 'selected' : ''}`} onClick={() => setPickHK(i)}>
                               {p.name}{hfd && <span className={`fd-tag fd-${hfd.tagClass}`} style={{ fontSize: '0.6rem', marginLeft: 4 }}>{hfd.shortName}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
