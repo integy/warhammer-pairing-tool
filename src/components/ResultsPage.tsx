@@ -109,11 +109,11 @@ export function ResultsPage() {
                       <ScoreBadge score={hk?.scores?.[opp?.name]} />
                     </td>
                     <td>{hk?.army}</td>
-                    <td>{hkFd && <span className={`fd-tag fd-${hkFd.tagClass}`}>{hkFd.emoji} {hkFd.shortName}</span>}</td>
+                    <td>{hkFd && <span className={`fd-tag fd-${hkFd.tagClass}`}>{hkFd.shortName}</span>}</td>
                     <td><input type="number" className="score-input" value={m.hkScore || ''} min={0} max={20} step={0.5} onChange={e => updateScore(i, 'hk', e.target.value)} /></td>
                     <td style={{ color: '#888' }}>vs</td>
                     <td><input type="number" className="score-input" value={m.oppScore || ''} min={0} max={20} step={0.5} onChange={e => updateScore(i, 'opp', e.target.value)} /></td>
-                    <td>{oppFd && <span className={`fd-tag fd-${oppFd.tagClass}`}>{oppFd.emoji} {oppFd.shortName}</span>}</td>
+                    <td>{oppFd && <span className={`fd-tag fd-${oppFd.tagClass}`}>{oppFd.shortName}</span>}</td>
                     <td>{opp?.army}</td>
                     <td className="opp-side">
                       <div>🌐 {opp?.name}</div>
