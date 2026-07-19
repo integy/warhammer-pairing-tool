@@ -65,6 +65,7 @@ function dataToTeam(data: TeamDataFile): Team {
       army: p.army,
       armyList: p.armyList,
       note: p.note,
+      forceDisposition: p.forceDisposition,
       scores: p.scores || {},
     })),
   };
