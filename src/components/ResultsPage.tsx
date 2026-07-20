@@ -2,13 +2,6 @@ import { useApp } from '../store';
 import { getMission } from '../missionData';
 
 // Inline FD lookup
-const FD_MAP: Record<string, { shortName: string; tagClass: string }> = {
-  'reconnaissance': { shortName: 'Recon', tagClass: 'recon' },
-  'priority-assets': { shortName: 'Assets', tagClass: 'priority' },
-  'disruption': { shortName: 'Disrupt', tagClass: 'disruption' },
-  'take-and-hold': { shortName: 'Hold', tagClass: 'takehold' },
-  'purge-the-foe': { shortName: 'Purge', tagClass: 'purge' },
-};
 function fdLabel(key?: string): string {
   const labels: Record<string, string> = {
     'reconnaissance': 'Recon', 'priority-assets': 'Assets',
@@ -30,12 +23,19 @@ export function ResultsPage() {
     return opp.scores[hk.name];
   };
 
-  // Average score from the matrix
-  const matrixAvg = matches.length
-    ? (matches.reduce((s, m) => {
-        return s + (getMatrixScore(m.hk, m.opp) || 0);
-      }, 0) / matches.length).toFixed(2)
-    : '-';
+  // HK average: avg of column averages (each HK player's avg across opponents)
+  const hkColAvgs = hkTeam.players.map(hk => {
+    const scores = oppTeam.players.map(opp => opp.scores[hk.name]).filter(s => s !== undefined) as number[];
+    return scores.length > 0 ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
+  }).filter(a => a > 0);
+  const hkAvg = hkColAvgs.length > 0 ? (hkColAvgs.reduce((a, b) => a + b, 0) / hkColAvgs.length).toFixed(2) : '-';
+
+  // Opp average: avg of row averages (each opp player's avg across HK players)
+  const oppRowAvgs = oppTeam.players.map(opp => {
+    const scores = hkTeam.players.map(hk => opp.scores[hk.name]).filter(s => s !== undefined) as number[];
+    return scores.length > 0 ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
+  }).filter(a => a > 0);
+  const oppAvg = oppRowAvgs.length > 0 ? (oppRowAvgs.reduce((a, b) => a + b, 0) / oppRowAvgs.length).toFixed(2) : '-';
 
   const getScoreColor = (s: number | undefined): string => {
     if (s === undefined) return '#888';
@@ -67,7 +67,7 @@ export function ResultsPage() {
       const opp = oppTeam.players[m.opp];
       const s = getMatrixScore(m.hk, m.opp);
       return `Table ${i + 1}: 🇭🇰 ${hk?.name} (${hk?.army}) vs ${opp?.name} (${opp?.army}) 🌐 — Score: ${s !== undefined ? s.toFixed(1) : '-'}`;
-    }).join('\n') + `\n\n📊 Matrix Avg: ${matrixAvg}`;
+    }).join('\n') + `\n\n🇭🇰 ${hkTeam.name}: ${hkAvg} avg\n🌐 ${oppTeam.name}: ${oppAvg} avg`;
     navigator.clipboard.writeText(text).then(() => alert('Copied to clipboard!')).catch(() => alert('Failed to copy'));
   };
 
@@ -80,12 +80,12 @@ export function ResultsPage() {
         <div className="results-summary">
           <div className="result-box hk">
             <h3>🇭🇰 {hkTeam.name}</h3>
-            <div className="score">{matrixAvg}</div>
+            <div className="score">{hkAvg}</div>
             <div className="label">Matrix Avg</div>
           </div>
           <div className="result-box opp">
             <h3>🌐 {oppTeam.name}</h3>
-            <div className="score">{matrixAvg}</div>
+            <div className="score">{oppAvg}</div>
             <div className="label">Matrix Avg</div>
           </div>
         </div>
@@ -125,7 +125,7 @@ export function ResultsPage() {
                     <td>{hk?.army}</td>
                     <td style={{ fontSize: '0.75rem', color: '#8892b0' }}>{hkFd || '-'}</td>
                     <td style={{ color: getScoreColor(score), fontWeight: 'bold' }}>
-                      {score !== undefined ? score.toFixed(1) : '-'}
+                      {score !== undefined ? score.toFixed(1) : ''}
                     </td>
                     <td style={{ fontSize: '0.75rem', color: '#8892b0' }}>{oppFd || '-'}</td>
                     <td>{opp?.army}</td>

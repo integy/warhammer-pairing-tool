@@ -226,13 +226,14 @@ export function SetupPage() {
               </thead>
               <tbody>
                 {oppTeam.players.map(opp => {
-                  const avg = hkTeam.players.reduce((s, hk) => s + (opp.scores[hk.name] || 0), 0) / hkTeam.players.length;
+                  const rowScores = hkTeam.players.map(hk => opp.scores[hk.name]).filter(s => s !== undefined) as number[];
+                  const avg = rowScores.length > 0 ? rowScores.reduce((s, v) => s + v, 0) / rowScores.length : 0;
                   return (
                     <tr key={opp.name}>
                       <td className="row-header">{opp.name}<br /><span style={{ fontSize: '0.7rem', color: '#888' }}>{opp.army}{fdLabel(opp.forceDisposition)}</span></td>
                       {hkTeam.players.map(hk => {
                         const s = opp.scores[hk.name];
-                        return <td key={hk.name} style={{ color: getScoreColor(s), fontWeight: 'bold' }}>{s !== undefined ? s.toFixed(1) : '-'}</td>;
+                        return <td key={hk.name} style={{ color: getScoreColor(s), fontWeight: 'bold' }}>{s !== undefined ? s.toFixed(1) : ''}</td>;
                       })}
                       <td className="avg-col">{avg.toFixed(2)}</td>
                     </tr>
@@ -241,7 +242,8 @@ export function SetupPage() {
                 <tr>
                   <td className="row-header">Avg</td>
                   {hkTeam.players.map(hk => {
-                    const avg = oppTeam.players.reduce((s, opp) => s + (opp.scores[hk.name] || 0), 0) / oppTeam.players.length;
+                    const colScores = oppTeam.players.map(opp => opp.scores[hk.name]).filter(s => s !== undefined) as number[];
+                    const avg = colScores.length > 0 ? colScores.reduce((s, v) => s + v, 0) / colScores.length : 0;
                     return <td key={hk.name} className="avg-col">{avg.toFixed(2)}</td>;
                   })}
                   <td></td>
