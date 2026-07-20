@@ -1,6 +1,4 @@
-import { useState } from 'react';
 import { useApp } from '../store';
-import type { RoundPairing } from '../types';
 import { getMission } from '../missionData';
 
 // Inline FD lookup
@@ -19,37 +17,38 @@ function fdLabel(key?: string): string {
   return key ? ` [${labels[key] ?? key}]` : '';
 }
 
-function ScoreBadge({ score }: { score: number | undefined }) {
-  if (score === undefined) return null;
-  const color = score >= 4 ? '#4ade80' : score <= 2 ? '#ef4444' : '#fbbf24';
-  return <span style={{ color, fontSize: '0.75rem' }}>({score.toFixed(1)})</span>;
-}
-
 export function ResultsPage() {
-  const { state, updateMatches, setCurrentRound, resetState } = useApp();
+  const { state, setCurrentRound, resetState } = useApp();
   const hkTeam = state.hkTeam!;
   const oppTeam = state.oppTeam!;
-  const [localMatches, setLocalMatches] = useState<RoundPairing[]>([...state.allMatches]);
+  const matches = state.allMatches;
 
-  const updateScore = (idx: number, side: 'hk' | 'opp', val: string) => {
-    const num = parseFloat(val) || 0;
-    const updated = localMatches.map((m, i) => {
-      if (i !== idx) return m;
-      return side === 'hk' ? { ...m, hkScore: num } : { ...m, oppScore: num };
-    });
-    setLocalMatches(updated);
-    updateMatches(updated);
+  // Get matrix score for a pairing
+  const getMatrixScore = (hkIdx: number, oppIdx: number): number | undefined => {
+    const hk = hkTeam.players[hkIdx];
+    const opp = oppTeam.players[oppIdx];
+    return opp.scores[hk.name];
   };
 
-  const hkAvg = localMatches.length ? (localMatches.reduce((s, m) => s + (m.hkScore || 0), 0) / localMatches.length).toFixed(2) : '-';
-  const oppAvg = localMatches.length ? (localMatches.reduce((s, m) => s + (m.oppScore || 0), 0) / localMatches.length).toFixed(2) : '-';
+  // Average score from the matrix
+  const matrixAvg = matches.length
+    ? (matches.reduce((s, m) => {
+        return s + (getMatrixScore(m.hk, m.opp) || 0);
+      }, 0) / matches.length).toFixed(2)
+    : '-';
+
+  const getScoreColor = (s: number | undefined): string => {
+    if (s === undefined) return '#888';
+    return s >= 4 ? '#4ade80' : s <= 2 ? '#ef4444' : '#fbbf24';
+  };
 
   const exportCSV = () => {
-    const header = 'Table,HK Player,HK Army,HK Score,Opp Score,Opp Army,Opp Player';
-    const rows = localMatches.map((m, i) => {
+    const header = 'Table,HK Player,HK Army,Score,Opp Army,Opp Player';
+    const rows = matches.map((m, i) => {
       const hk = hkTeam.players[m.hk];
       const opp = oppTeam.players[m.opp];
-      return `${i + 1},"${hk?.name || '-'}","${hk?.army || '-'}",${m.hkScore || 0},${m.oppScore || 0},"${opp?.army || '-'}","${opp?.name || '-'}"`;
+      const s = getMatrixScore(m.hk, m.opp);
+      return `${i + 1},"${hk?.name || '-'}","${hk?.army || '-'}",${s !== undefined ? s.toFixed(1) : '-'},"${opp?.army || '-'}","${opp?.name || '-'}"`;
     });
     const csv = [header, ...rows].join('\n');
 
@@ -63,11 +62,12 @@ export function ResultsPage() {
   };
 
   const copyToClipboard = () => {
-    const text = localMatches.map((m, i) => {
+    const text = matches.map((m, i) => {
       const hk = hkTeam.players[m.hk];
       const opp = oppTeam.players[m.opp];
-      return `Table ${i + 1}: 🇭🇰 ${hk?.name} (${hk?.army}) ${m.hkScore || 0} - ${m.oppScore || 0} ${opp?.name} (${opp?.army}) 🌐`;
-    }).join('\n') + `\n\n🇭🇰 ${hkTeam.name}: ${hkAvg} avg\n🌐 ${oppTeam.name}: ${oppAvg} avg`;
+      const s = getMatrixScore(m.hk, m.opp);
+      return `Table ${i + 1}: 🇭🇰 ${hk?.name} (${hk?.army}) vs ${opp?.name} (${opp?.army}) 🌐 — Score: ${s !== undefined ? s.toFixed(1) : '-'}`;
+    }).join('\n') + `\n\n📊 Matrix Avg: ${matrixAvg}`;
     navigator.clipboard.writeText(text).then(() => alert('Copied to clipboard!')).catch(() => alert('Failed to copy'));
   };
 
@@ -80,13 +80,13 @@ export function ResultsPage() {
         <div className="results-summary">
           <div className="result-box hk">
             <h3>🇭🇰 {hkTeam.name}</h3>
-            <div className="score">{hkAvg}</div>
-            <div className="label">Avg Score</div>
+            <div className="score">{matrixAvg}</div>
+            <div className="label">Matrix Avg</div>
           </div>
           <div className="result-box opp">
             <h3>🌐 {oppTeam.name}</h3>
-            <div className="score">{oppAvg}</div>
-            <div className="label">Avg Score</div>
+            <div className="score">{matrixAvg}</div>
+            <div className="label">Matrix Avg</div>
           </div>
         </div>
 
@@ -100,9 +100,7 @@ export function ResultsPage() {
                 <th>🇭🇰 HK Player</th>
                 <th>HK Army</th>
                 <th>HK FD</th>
-                <th>HK Score</th>
-                <th></th>
-                <th>Opp Score</th>
+                <th>Score</th>
                 <th>Opp FD</th>
                 <th>Opp Army</th>
                 <th>🌐 Opp Player</th>
@@ -110,30 +108,29 @@ export function ResultsPage() {
               </tr>
             </thead>
             <tbody>
-              {localMatches.map((m, i) => {
+              {matches.map((m, i) => {
                 const hk = hkTeam.players[m.hk];
                 const opp = oppTeam.players[m.opp];
                 const hkFd = fdLabel(hk?.forceDisposition);
                 const oppFd = fdLabel(opp?.forceDisposition);
+                const score = getMatrixScore(m.hk, m.opp);
                 const mission = (hk?.forceDisposition && opp?.forceDisposition)
                   ? getMission(hk.forceDisposition, opp.forceDisposition) : null;
                 return (
                   <tr key={i}>
-                    <td><input type="number" className="table-no" value={m.tableNo || i + 1} readOnly /></td>
+                    <td><span className="table-no">{m.tableNo || i + 1}</span></td>
                     <td className="hk-side">
                       <div>🇭🇰 {hk?.name}</div>
-                      <ScoreBadge score={hk?.scores?.[opp?.name]} />
                     </td>
                     <td>{hk?.army}</td>
                     <td style={{ fontSize: '0.75rem', color: '#8892b0' }}>{hkFd || '-'}</td>
-                    <td><input type="number" className="score-input" value={m.hkScore || ''} min={0} max={20} step={0.5} onChange={e => updateScore(i, 'hk', e.target.value)} /></td>
-                    <td style={{ color: '#888' }}>vs</td>
-                    <td><input type="number" className="score-input" value={m.oppScore || ''} min={0} max={20} step={0.5} onChange={e => updateScore(i, 'opp', e.target.value)} /></td>
+                    <td style={{ color: getScoreColor(score), fontWeight: 'bold' }}>
+                      {score !== undefined ? score.toFixed(1) : '-'}
+                    </td>
                     <td style={{ fontSize: '0.75rem', color: '#8892b0' }}>{oppFd || '-'}</td>
                     <td>{opp?.army}</td>
                     <td className="opp-side">
                       <div>🌐 {opp?.name}</div>
-                      <ScoreBadge score={opp?.scores?.[hk?.name]} />
                     </td>
                     <td className="mission-cell">{mission ? mission.name : '-'}</td>
                   </tr>
