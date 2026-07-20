@@ -1,0 +1,84 @@
+{
+  "key": "left",
+  "name": "常勝榮譽裁判所（左）",
+  "players": [
+    {
+      "name": "Tau",
+      "army": "T'au Empire",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.0,
+        "Jireh": 3.0,
+        "Kevin": 3.0,
+        "Ivan": 2.5,
+        "Gabriel": 3.5
+      },
+      "forceDisposition": "reconnaissance"
+    },
+    {
+      "name": "DG",
+      "army": "Death Guard",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 2.5,
+        "Jireh": 3.0,
+        "Kevin": 2.5,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      },
+      "forceDisposition": "take-and-hold"
+    },
+    {
+      "name": "Guard",
+      "army": "Astra Militarum",
+      "scores": {
+        "Eric": 3.5,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 2.0,
+        "Ivan": 3.0,
+        "Gabriel": 3.0
+      },
+      "forceDisposition": "take-and-hold"
+    },
+    {
+      "name": "TSS",
+      "army": "Thousand Sons",
+      "scores": {
+        "Eric": 2.0,
+        "Morris": 3.0,
+        "Jireh": 3.0,
+        "Kevin": 2.5,
+        "Ivan": 2.5,
+        "Gabriel": 2.5
+      },
+      "forceDisposition": "priority-assets"
+    },
+    {
+      "name": "BA",
+      "army": "Blood Angels",
+      "scores": {
+        "Eric": 3.5,
+        "Morris": 3.5,
+        "Jireh": 3.5,
+        "Kevin": 2.5,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      },
+      "forceDisposition": "take-and-hold"
+    },
+    {
+      "name": "Necrons",
+      "army": "Necrons",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 3.5,
+        "Ivan": 3.5,
+        "Gabriel": 3.5
+      },
+      "forceDisposition": "take-and-hold"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "key": "sigil",
+  "name": "Team Sigil Bullet",
+  "players": [
+    {
+      "name": "Custodes",
+      "army": "Adeptus Custodes",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 3.5,
+        "Ivan": 2.5,
+        "Gabriel": 3.5
+      },
+      "forceDisposition": "take-and-hold"
+    },
+    {
+      "name": "BA",
+      "army": "Blood Angels",
+      "scores": {
+        "Eric": 3.5,
+        "Morris": 2.5,
+        "Jireh": 3.5,
+        "Kevin": 2.5,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      },
+      "forceDisposition": "take-and-hold"
+    },
+    {
+      "name": "DG",
+      "army": "Death Guard",
+      "scores": {
+        "Eric": 3.5,
+        "Morris": 2.5,
+        "Jireh": 3.0,
+        "Kevin": 2.5,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      },
+      "forceDisposition": "take-and-hold"
+    },
+    {
+      "name": "Sororitas",
+      "army": "Adepta Sororitas",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 2.5,
+        "Jireh": 3.0,
+        "Kevin": 3.0,
+        "Ivan": 2.5,
+        "Gabriel": 3.5
+      },
+      "forceDisposition": "take-and-hold"
+    },
+    {
+      "name": "Guard",
+      "army": "Astra Militarum",
+      "scores": {
+        "Eric": 3.5,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 2.5,
+        "Ivan": 3.0,
+        "Gabriel": 3.0
+      },
+      "forceDisposition": "take-and-hold"
+    },
+    {
+      "name": "Necrons",
+      "army": "Necrons",
+      "scores": {
+        "Eric": 2.5,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 3.5,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      },
+      "forceDisposition": "take-and-hold"
+    }
+  ]
+}

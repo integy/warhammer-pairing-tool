@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<team>
+    <name>常勝榮譽裁判所（右）</name>
+    <players>
+        <player>
+            <name>Qifan</name>
+            <army>T'au Empire</army>
+            <scores>
+                <score opponent="Eric">3.0</score>
+                <score opponent="Morris">2.5</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">3.0</score>
+                <score opponent="Ivan">2.5</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Abe</name>
+            <army>Custodes</army>
+            <scores>
+                <score opponent="Eric">3.5</score>
+                <score opponent="Morris">3.0</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">3.5</score>
+                <score opponent="Ivan">2.5</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>白給</name>
+            <army>Astra Militarum</army>
+            <scores>
+                <score opponent="Eric">3.5</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">2.5</score>
+                <score opponent="Ivan">3.0</score>
+                <score opponent="Gabriel">3.0</score>
+            </scores>
+        </player>
+        <player>
+            <name>老充</name>
+            <army>Blood Angels</army>
+            <scores>
+                <score opponent="Eric">3.0</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Jireh">3.5</score>
+                <score opponent="Kevin">2.5</score>
+                <score opponent="Ivan">3.0</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Rowan</name>
+            <army>Necrons</army>
+            <scores>
+                <score opponent="Eric">2.5</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">3.5</score>
+                <score opponent="Ivan">3.5</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Potato Tomato</name>
+            <army>Chaos Space Marines</army>
+            <scores>
+                <score opponent="Eric">3.5</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Jireh">3.5</score>
+                <score opponent="Kevin">3.0</score>
+                <score opponent="Ivan">3.0</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+    </players>
+</team>

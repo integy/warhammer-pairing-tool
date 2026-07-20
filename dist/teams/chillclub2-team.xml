@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<team>
+    <name>chillclub 2.0</name>
+    <players>
+        <player>
+            <name>GK</name>
+            <army>Grey Knights</army>
+            <scores>
+                <score opponent="Eric">2.0</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Jireh">3.5</score>
+                <score opponent="Kevin">3.5</score>
+                <score opponent="Ivan">3.5</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>DG</name>
+            <army>Death Guard</army>
+            <scores>
+                <score opponent="Eric">3.0</score>
+                <score opponent="Morris">3.0</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">2.0</score>
+                <score opponent="Ivan">3.0</score>
+                <score opponent="Gabriel">3.0</score>
+            </scores>
+        </player>
+        <player>
+            <name>Necrons</name>
+            <army>Necrons</army>
+            <scores>
+                <score opponent="Eric">3.5</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">3.5</score>
+                <score opponent="Ivan">3.5</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Drukhari</name>
+            <army>Drukhari</army>
+            <scores>
+                <score opponent="Eric">4.0</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Jireh">3.5</score>
+                <score opponent="Kevin">2.0</score>
+                <score opponent="Ivan">2.5</score>
+                <score opponent="Gabriel">2.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>GSC</name>
+            <army>Genestealer Cults</army>
+            <scores>
+                <score opponent="Eric">2.0</score>
+                <score opponent="Morris">3.0</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">3.5</score>
+                <score opponent="Ivan">3.0</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>UM</name>
+            <army>Ultramarines</army>
+            <scores>
+                <score opponent="Eric">4.0</score>
+                <score opponent="Morris">3.5</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">3.5</score>
+                <score opponent="Ivan">3.0</score>
+                <score opponent="Gabriel">3.5</score>
+            </scores>
+        </player>
+    </players>
+</team>

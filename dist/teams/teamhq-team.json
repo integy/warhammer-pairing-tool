@@ -1,0 +1,84 @@
+{
+  "key": "teamhq",
+  "name": "Team HQ",
+  "players": [
+    {
+      "name": "UM",
+      "army": "Ultramarines",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 4.0,
+        "Jireh": 3.0,
+        "Kevin": 3.0,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      },
+      "forceDisposition": "take-and-hold"
+    },
+    {
+      "name": "LOV",
+      "army": "Leagues of Votann",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.0,
+        "Jireh": 3.5,
+        "Kevin": 2.5,
+        "Ivan": 2.5,
+        "Gabriel": 4.0
+      },
+      "forceDisposition": "take-and-hold"
+    },
+    {
+      "name": "Chaos Daemons",
+      "army": "Chaos Daemons",
+      "scores": {
+        "Eric": 3.5,
+        "Morris": 4.0,
+        "Jireh": 3.5,
+        "Kevin": 3.5,
+        "Ivan": 3.5,
+        "Gabriel": 3.5
+      },
+      "forceDisposition": "disruption"
+    },
+    {
+      "name": "TSS",
+      "army": "Thousand Sons",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 2.5,
+        "Jireh": 3.0,
+        "Kevin": 2.0,
+        "Ivan": 3.0,
+        "Gabriel": 3.5
+      },
+      "forceDisposition": "priority-assets"
+    },
+    {
+      "name": "Drukhari",
+      "army": "Drukhari",
+      "scores": {
+        "Eric": 4.0,
+        "Morris": 4.0,
+        "Jireh": 3.0,
+        "Kevin": 2.0,
+        "Ivan": 2.5,
+        "Gabriel": 2.5
+      },
+      "forceDisposition": "reconnaissance"
+    },
+    {
+      "name": "Necrons",
+      "army": "Necrons",
+      "scores": {
+        "Eric": 3.0,
+        "Morris": 3.5,
+        "Jireh": 3.0,
+        "Kevin": 3.5,
+        "Ivan": 3.5,
+        "Gabriel": 3.5
+      },
+      "forceDisposition": "take-and-hold"
+    }
+  ]
+}

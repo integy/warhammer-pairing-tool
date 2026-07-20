@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<team>
+    <name>France</name>
+    <players>
+        <player>
+            <name>Jean-Luc</name>
+            <army>Space Marines</army>
+            <scores>
+                <score opponent="Eric">4.0</score>
+                <score opponent="Terrence">1.5</score>
+                <score opponent="Kris">3.5</score>
+                <score opponent="Ivan">4.5</score>
+                <score opponent="Jireh">2.5</score>
+                <score opponent="Kevin">3.0</score>
+                <score opponent="Quentin">4.5</score>
+                <score opponent="Gabrielle">2.0</score>
+            </scores>
+        </player>
+        <player>
+            <name>Pierre</name>
+            <army>Necrons</army>
+            <scores>
+                <score opponent="Eric">2.5</score>
+                <score opponent="Terrence">4.5</score>
+                <score opponent="Kris">1.5</score>
+                <score opponent="Ivan">3.0</score>
+                <score opponent="Jireh">4.0</score>
+                <score opponent="Kevin">2.0</score>
+                <score opponent="Quentin">3.5</score>
+                <score opponent="Gabrielle">4.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Marie</name>
+            <army>Tyranids</army>
+            <scores>
+                <score opponent="Eric">3.5</score>
+                <score opponent="Terrence">2.0</score>
+                <score opponent="Kris">4.5</score>
+                <score opponent="Ivan">1.5</score>
+                <score opponent="Jireh">3.0</score>
+                <score opponent="Kevin">4.5</score>
+                <score opponent="Quentin">2.5</score>
+                <score opponent="Gabrielle">3.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Claude</name>
+            <army>Orks</army>
+            <scores>
+                <score opponent="Eric">1.5</score>
+                <score opponent="Terrence">4.0</score>
+                <score opponent="Kris">2.5</score>
+                <score opponent="Ivan">4.5</score>
+                <score opponent="Jireh">3.5</score>
+                <score opponent="Kevin">2.0</score>
+                <score opponent="Quentin">1.5</score>
+                <score opponent="Gabrielle">4.0</score>
+            </scores>
+        </player>
+        <player>
+            <name>Sophie</name>
+            <army>Drukhari</army>
+            <scores>
+                <score opponent="Eric">4.5</score>
+                <score opponent="Terrence">3.0</score>
+                <score opponent="Kris">2.0</score>
+                <score opponent="Ivan">3.5</score>
+                <score opponent="Jireh">4.0</score>
+                <score opponent="Kevin">1.5</score>
+                <score opponent="Quentin">4.5</score>
+                <score opponent="Gabrielle">3.0</score>
+            </scores>
+        </player>
+        <player>
+            <name>Nicolas</name>
+            <army>Black Templars</army>
+            <scores>
+                <score opponent="Eric">3.0</score>
+                <score opponent="Terrence">2.5</score>
+                <score opponent="Kris">4.5</score>
+                <score opponent="Ivan">1.5</score>
+                <score opponent="Jireh">3.5</score>
+                <score opponent="Kevin">4.0</score>
+                <score opponent="Quentin">2.0</score>
+                <score opponent="Gabrielle">1.5</score>
+            </scores>
+        </player>
+        <player>
+            <name>Isabelle</name>
+            <army>Aeldari</army>
+            <scores>
+                <score opponent="Eric">2.0</score>
+                <score opponent="Terrence">4.5</score>
+                <score opponent="Kris">1.5</score>
+                <score opponent="Ivan">3.0</score>
+                <score opponent="Jireh">4.5</score>
+                <score opponent="Kevin">2.5</score>
+                <score opponent="Quentin">3.5</score>
+                <score opponent="Gabrielle">4.0</score>
+            </scores>
+        </player>
+        <player>
+            <name>Philippe</name>
+            <army>Death Guard</army>
+            <scores>
+                <score opponent="Eric">1.5</score>
+                <score opponent="Terrence">3.5</score>
+                <score opponent="Kris">4.0</score>
+                <score opponent="Ivan">2.5</score>
+                <score opponent="Jireh">1.5</score>
+                <score opponent="Kevin">4.5</score>
+                <score opponent="Quentin">3.0</score>
+                <score opponent="Gabrielle">2.5</score>
+            </scores>
+        </player>
+    </players>
+</team>
