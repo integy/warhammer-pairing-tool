@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useApp } from '../store';
 import type { RoundState, RoundPairing } from '../types';
-import { getTopAttackers, createEmptyRound } from '../engine';
+import { createEmptyRound } from '../engine';
 import { getMission } from '../missionData';
 import type { ForceDisposition, MissionInfo } from '../missionData';
 
@@ -489,13 +489,11 @@ export function RoundPage({ round }: { round: number }) {
                     const p = hkTeam.players[i];
                     const attScore = p.scores?.[oppTeam.players[oppDef!]?.name];
                     const defScore = oppTeam.players[oppDef!]?.scores?.[p.name];
-                    const isTop = getTopAttackers(poolHK.filter(j => j !== hkDef), oppTeam.players[oppDef!]?.name, hkTeam).includes(i);
                     const fd = p.forceDisposition ? fdInfo(p.forceDisposition) : null;
                     return (
                       <button key={i} className={`pick-btn ${hkAtts.includes(i) ? 'selected' : ''}`} onClick={() => toggleHkAtt(i)}>
                         {p.name}{fd && <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem', marginLeft: 4 }}>{fd.shortName}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
                         <BothScores attScore={attScore} defScore={defScore} />
-                        {isTop && ' ⭐'}
                       </button>
                     );
                   })}
@@ -509,13 +507,11 @@ export function RoundPage({ round }: { round: number }) {
                     const p = oppTeam.players[i];
                     const attScore = p.scores?.[hkTeam.players[hkDef!]?.name];
                     const defScore = hkTeam.players[hkDef!]?.scores?.[p.name];
-                    const isTop = getTopAttackers(poolOpp.filter(j => j !== oppDef), hkTeam.players[hkDef!]?.name, oppTeam).includes(i);
                     const fd = p.forceDisposition ? fdInfo(p.forceDisposition) : null;
                     return (
                       <button key={i} className={`pick-btn ${oppAtts.includes(i) ? 'selected' : ''}`} onClick={() => toggleOppAtt(i)}>
                         {p.name}{fd && <span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem', marginLeft: 4 }}>{fd.shortName}</span>} <span style={{ color: '#888', fontSize: '0.7rem' }}>{p.army}</span>
                         <BothScores attScore={attScore} defScore={defScore} />
-                        {isTop && ' ⭐'}
                       </button>
                     );
                   })}
