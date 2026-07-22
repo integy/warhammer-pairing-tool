@@ -16,26 +16,28 @@ export function ResultsPage() {
   const oppTeam = state.oppTeam!;
   const matches = state.allMatches;
 
-  // Get matrix score for a pairing
+  // Get matrix scores for a pairing (both directions)
   const getMatrixScore = (hkIdx: number, oppIdx: number): number | undefined => {
     const hk = hkTeam.players[hkIdx];
     const opp = oppTeam.players[oppIdx];
     return opp.scores[hk.name];
   };
+  const getHKScore = (hkIdx: number, oppIdx: number): number | undefined => {
+    const hk = hkTeam.players[hkIdx];
+    const opp = oppTeam.players[oppIdx];
+    return hk.scores[opp.name];
+  };
 
-  // HK average: avg of column averages (each HK player's avg across opponents)
-  const hkColAvgs = hkTeam.players.map(hk => {
-    const scores = oppTeam.players.map(opp => opp.scores[hk.name]).filter(s => s !== undefined) as number[];
-    return scores.length > 0 ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
-  }).filter(a => a > 0);
-  const hkAvg = hkColAvgs.length > 0 ? (hkColAvgs.reduce((a, b) => a + b, 0) / hkColAvgs.length).toFixed(2) : '-';
+  // Averages from actual matched pairings only
+  const hkScores = matches.map(m => getHKScore(m.hk, m.opp)).filter(s => s !== undefined) as number[];
+  const hkAvg = hkScores.length > 0
+    ? (hkScores.reduce((a, b) => a + b, 0) / hkScores.length).toFixed(2)
+    : '-';
 
-  // Opp average: avg of row averages (each opp player's avg across HK players)
-  const oppRowAvgs = oppTeam.players.map(opp => {
-    const scores = hkTeam.players.map(hk => opp.scores[hk.name]).filter(s => s !== undefined) as number[];
-    return scores.length > 0 ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
-  }).filter(a => a > 0);
-  const oppAvg = oppRowAvgs.length > 0 ? (oppRowAvgs.reduce((a, b) => a + b, 0) / oppRowAvgs.length).toFixed(2) : '-';
+  const oppScores = matches.map(m => getMatrixScore(m.hk, m.opp)).filter(s => s !== undefined) as number[];
+  const oppAvg = oppScores.length > 0
+    ? (oppScores.reduce((a, b) => a + b, 0) / oppScores.length).toFixed(2)
+    : '-';
 
   const getScoreColor = (s: number | undefined): string => {
     if (s === undefined) return '#888';
@@ -81,12 +83,12 @@ export function ResultsPage() {
           <div className="result-box hk">
             <h3>🇭🇰 {hkTeam.name}</h3>
             <div className="score">{hkAvg}</div>
-            <div className="label">Matrix Avg</div>
+            <div className="label">Matched Avg</div>
           </div>
           <div className="result-box opp">
             <h3>🌐 {oppTeam.name}</h3>
             <div className="score">{oppAvg}</div>
-            <div className="label">Matrix Avg</div>
+            <div className="label">Matched Avg</div>
           </div>
         </div>
 
