@@ -49,9 +49,7 @@ async function loadAllTeams(): Promise<TeamDataFile[]> {
   } catch { /* fallback */ }
 
   // Fallback: load known teams
-  const knownKeys = ['hk', 'hk6', 'japan', 'france', 'malaysia', 'blackstone', 'blackstone2',
-    'changsha', 'wuhan', 'shenzhen', 'chillclub2', 'oasis', 'left', 'right', 'sigil', 'alpha',
-    'biglittle', 'empire', 'moshow', 'teamhq'];
+  const knownKeys = ['hk', 'hk6', 'japan', 'france'];
   const results = await Promise.all(knownKeys.map(k => loadTeamJSON(k)));
   return results.filter(Boolean) as TeamDataFile[];
 }

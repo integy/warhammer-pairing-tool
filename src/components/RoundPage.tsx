@@ -1,7 +1,7 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import { useApp } from '../store';
 import type { RoundState, RoundPairing } from '../types';
-import { analyzeDefenders, getTopAttackers, autoOptimalRound, createEmptyRound } from '../engine';
+import { getTopAttackers, createEmptyRound } from '../engine';
 import { getMission } from '../missionData';
 import type { ForceDisposition, MissionInfo } from '../missionData';
 
@@ -180,26 +180,6 @@ export function RoundPage({ round }: { round: number }) {
 
   const poolHK = rd.poolHK || hkTeam.players.map((_, i) => i);
   const poolOpp = rd.poolOpp || oppTeam.players.map((_, i) => i);
-
-  // Backward induction analysis
-  const defenderAnalysis = useMemo(() => {
-    if (!hkTeam || !oppTeam || poolHK.length < 2 || poolOpp.length < 2) return [];
-    return analyzeDefenders(hkTeam, oppTeam, poolHK, poolOpp);
-  }, [hkTeam, oppTeam, poolHK, poolOpp, round]);
-
-  const bestDefenders = defenderAnalysis.filter(
-    d => Math.abs(d.netAdvantage - defenderAnalysis[0]?.netAdvantage) < 0.001
-  );
-  const bestDefIndices = new Set(bestDefenders.map(d => d.hkIdx));
-
-  const doAutoOptimal = () => {
-    const result = autoOptimalRound(hkTeam, oppTeam, poolHK, poolOpp);
-    setHkDef(result.hkDefender);
-    setOppDef(result.oppDefender);
-    setHkAtts(result.hkAttackers.slice(0, 2));
-    setOppAtts(result.oppAttackers.slice(0, 2));
-    setStep('pairing');
-  };
 
   const toggleHkAtt = (idx: number) => {
     const max = 2;
@@ -431,15 +411,6 @@ export function RoundPage({ round }: { round: number }) {
               {state.teamSizeMode === 6 && <span> · 6-Person Mode</span>}
             </p>
 
-            {/* Backward induction suggestion */}
-            {defenderAnalysis.length > 0 && (
-              <div className="suggestion-box">
-                💡 <b>Suggested HK Defender{bestDefenders.length > 1 ? 's (TIE)' : ''}:</b>{' '}
-                {bestDefenders.map(d => d.hkName).join(', ')}{' '}
-                | Net advantage: {bestDefenders[0].netAdvantage >= 0 ? '+' : ''}{bestDefenders[0].netAdvantage.toFixed(1)}
-              </div>
-            )}
-
             {/* Score Matrix */}
             {hkTeam && oppTeam && (
               <div style={{ marginTop: 15, marginBottom: 20, overflowX: 'auto' }}>
@@ -449,11 +420,10 @@ export function RoundPage({ round }: { round: number }) {
                       <th>Opp \\ HK</th>
                       {poolHK.map(i => {
                         const p = hkTeam.players[i];
-                        const isBest = bestDefIndices.has(i);
                         const fd = p.forceDisposition ? fdInfo(p.forceDisposition) : null;
                         return (
-                          <th key={i} style={isBest ? { background: '#2d5a2d', color: '#4ade80' } : undefined}>
-                            {p.name}⭐<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}</span>{fd && <><br /><span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem' }}>{fd.shortName}</span></>}
+                          <th key={i}>
+                            {p.name}<br /><span style={{ fontSize: '0.65rem', color: '#888' }}>{p.army}</span>{fd && <><br /><span className={`fd-tag fd-${fd.tagClass}`} style={{ fontSize: '0.6rem' }}>{fd.shortName}</span></>}
                           </th>
                         );
                       })}
@@ -502,10 +472,7 @@ export function RoundPage({ round }: { round: number }) {
               </div>
 
               <div style={{ marginTop: 12 }}>
-                <button className="btn btn-success" onClick={doAutoOptimal} disabled={poolHK.length < 2}>
-                  🤖 Auto-Optimal
-                </button>
-                <button className="btn btn-secondary" onClick={undoSelection} style={{ marginLeft: 8 }}>
+                <button className="btn btn-secondary" onClick={undoSelection}>
                   ↩️ Undo Selection
                 </button>
               </div>
