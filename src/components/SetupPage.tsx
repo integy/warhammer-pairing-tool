@@ -200,6 +200,7 @@ export function SetupPage() {
             </button>
           )}
           <button className="btn btn-secondary" onClick={() => fileInputRef.current?.click()}>📂 Import JSON</button>
+          <button className="btn btn-secondary" onClick={() => window.open('11th-missions.html', '_blank')}>📖 11th Missions</button>
           <input ref={fileInputRef} type="file" accept=".json" style={{ display: 'none' }} onChange={handleImport} />
         </div>
 
