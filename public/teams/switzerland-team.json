@@ -1,0 +1,54 @@
+{
+  "key": "switzerland",
+  "name": "Switzerland",
+  "players": [
+    {
+      "name": "Thibault Fleischmann",
+      "army": "Leagues of Votann",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Antonio Mejias",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "raphael tripod",
+      "army": "Emperor's Children",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Beranger Guichardon",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Jan Reisenauer",
+      "army": "T'au Empire",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Ares L\u00fcthi",
+      "army": "Necrons",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Brieuc Chauvin",
+      "army": "Chaos Daemons",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "William Fuhrimann",
+      "army": "Chaos Space Marines",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    }
+  ]
+}

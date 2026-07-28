@@ -1,0 +1,54 @@
+{
+  "key": "northern-ireland",
+  "name": "Northern Ireland",
+  "players": [
+    {
+      "name": "Michael McConkey",
+      "army": "T'au Empire",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Haydn Dempster",
+      "army": "Chaos Daemons",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Ross McCarroll",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Aidan Lee",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Martin Sloan",
+      "army": "Black Templars",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Dylan Usher",
+      "army": "Tyranids",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Lee McInerney",
+      "army": "Death Guard",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Mark Morrow",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    }
+  ]
+}

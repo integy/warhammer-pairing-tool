@@ -1,0 +1,54 @@
+{
+  "key": "netherlands",
+  "name": "Netherlands",
+  "players": [
+    {
+      "name": "Chris Clayton",
+      "army": "Chaos Daemons",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Dick van der Harst",
+      "army": "Chaos Knights",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "JC van der Lee",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Florian den Uijl",
+      "army": "Adeptus Mechanicus",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Ron Eliyahoo",
+      "army": "Tyranids",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Martijn Van der Most",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Sjors Meijer",
+      "army": "World Eaters",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Daan Van Herk",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    }
+  ]
+}

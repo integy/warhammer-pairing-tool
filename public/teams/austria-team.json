@@ -1,0 +1,54 @@
+{
+  "key": "austria",
+  "name": "Austria",
+  "players": [
+    {
+      "name": "Peter Steiner",
+      "army": "Leagues of Votann",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Kevin \u201eplanB_God\u201c Z\u00f6llinger",
+      "army": "Imperial Knights",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Thomas Wobak",
+      "army": "Tyranids",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Dominik Tavernaro",
+      "army": "Emperor's Children",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Stefan Stueber",
+      "army": "T'au Empire",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Sam Nowrouzi",
+      "army": "Necrons",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Fabian Huber",
+      "army": "Chaos Daemons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Konrad Schmuck",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "key": "portugal",
+  "name": "Portugal",
+  "players": [
+    {
+      "name": "Mickey Baird-Parker",
+      "army": "Emperor's Children",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Alexis Bourrat",
+      "army": "Aeldari",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Gil Dias",
+      "army": "T'au Empire",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Tobias Almeida",
+      "army": "Necrons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Francisco Ventura",
+      "army": "Imperial Knights",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Francisco Queir\u00f3s",
+      "army": "Thousand Sons",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Andr\u00e9 Ribeiro",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Gustavo Jos\u00e9 Branco Varandas de Sousa",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    }
+  ]
+}

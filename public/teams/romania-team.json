@@ -1,0 +1,54 @@
+{
+  "key": "romania",
+  "name": "Romania",
+  "players": [
+    {
+      "name": "Levente Bara",
+      "army": "T'au Empire",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Vagasi Zsombor",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Razvan Coman",
+      "army": "Space Wolves",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Bogdan-Mihai R\u00e2pea",
+      "army": "Thousand Sons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Dorin Butoiu",
+      "army": "Necrons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Rares Platon",
+      "army": "Chaos Space Marines",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Paul Silaghi",
+      "army": "Emperor's Children",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Andrei \"w4r1or\" Dobre",
+      "army": "Imperial Knights",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    }
+  ]
+}

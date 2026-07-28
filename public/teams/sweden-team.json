@@ -1,0 +1,54 @@
+{
+  "key": "sweden",
+  "name": "Sweden",
+  "players": [
+    {
+      "name": "Felix Forsmark",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Emil S\u00f6derholm",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Andreas Holm",
+      "army": "Death Guard",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Axel Ryd\u00e9n",
+      "army": "Emperor's Children",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Bj\u00f6rn Eriksson",
+      "army": "Leagues of Votann",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Jonathan Sleigh-johnson",
+      "army": "Dark Angels",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Joel Larsson",
+      "army": "Chaos Daemons",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Jesper Unander-Scharin",
+      "army": "Adeptus Mechanicus",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    }
+  ]
+}

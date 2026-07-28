@@ -1,0 +1,54 @@
+{
+  "key": "mexico",
+  "name": "Mexico",
+  "players": [
+    {
+      "name": "Jer\u00f3nimo Zizumbo Colunga",
+      "army": "Dark Angels",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Alberto Lopez",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Il\u00e1n \"Asgo\" Cordova",
+      "army": "Chaos Daemons",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Jaime Cruz",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Luis German Mu\u00f1oz Giles",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Ra\u00fal Moscoso",
+      "army": "T'au Empire",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Damian Flores D\u00edaz",
+      "army": "Aeldari",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Sebasti\u00e1n Flores Diaz",
+      "army": "Necrons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "key": "hungary",
+  "name": "Hungary",
+  "players": [
+    {
+      "name": "Imre Rad\u00f3cz",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Valentin Voros",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Varga .",
+      "army": "Necrons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Pongor S\u00e1ndor",
+      "army": "Chaos Space Marines",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Botond Blasovszky",
+      "army": "Drukhari",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Gergo Hrusko",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Rich\u00e1rd Iv\u00e1ny",
+      "army": "Emperor's Children",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Gabor Csordas",
+      "army": "Grey Knights",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    }
+  ]
+}

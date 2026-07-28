@@ -1,52 +1,52 @@
 {
-  "key": "france",
-  "name": "France",
+  "key": "scotland",
+  "name": "Scotland",
   "players": [
     {
-      "name": "Matt Bonnet",
+      "name": "David Howie",
       "army": "Orks",
       "forceDisposition": "take-and-hold",
       "scores": {}
     },
     {
-      "name": "Nicolas SEGUIER",
-      "army": "World Eaters",
+      "name": "Struan Robertson",
+      "army": "Adeptus Custodes",
       "forceDisposition": "take-and-hold",
       "scores": {}
     },
     {
-      "name": "Quentin Roch\u00e9",
-      "army": "Leagues of Votann",
+      "name": "Scott McCutcheon",
+      "army": "Genestealer Cult",
       "forceDisposition": "disruption",
       "scores": {}
     },
     {
-      "name": "Alexandre Sacco",
-      "army": "Emperor's Children",
+      "name": "Ryan Kerr",
+      "army": "T'au Empire",
       "forceDisposition": "priority-assets",
       "scores": {}
     },
     {
-      "name": "benjamin stroh",
-      "army": "Chaos Space Marines",
-      "forceDisposition": "purge-the-foe",
+      "name": "Daniel Grieves",
+      "army": "Emperor's Children",
+      "forceDisposition": "reconnaissance",
       "scores": {}
     },
     {
-      "name": "Arnaud ALLOT",
+      "name": "Chris Irvine",
       "army": "Necrons",
       "forceDisposition": "purge-the-foe",
       "scores": {}
     },
     {
-      "name": "Alban de Polignac",
-      "army": "Chaos Daemons",
+      "name": "Bruce Duffy",
+      "army": "Chaos Space Marines",
       "forceDisposition": "priority-assets",
       "scores": {}
     },
     {
-      "name": "Olivier WEISS",
-      "army": "Space Marines (Astartes)",
+      "name": "Innes Wilson",
+      "army": "Dark Angels",
       "forceDisposition": "reconnaissance",
       "scores": {}
     }

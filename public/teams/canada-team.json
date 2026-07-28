@@ -1,0 +1,54 @@
+{
+  "key": "canada",
+  "name": "Canada",
+  "players": [
+    {
+      "name": "Zach Comeau",
+      "army": "T'au Empire",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "John Winter Russell",
+      "army": "Astra Militarum",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Kasra Houshidar",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Frasier Parry",
+      "army": "Emperor's Children",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Matt McWatters",
+      "army": "Orks",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Nick \"Lizard\" Blackburn",
+      "army": "Leagues of Votann",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Fran\u00e7ois Lalonde",
+      "army": "Chaos Daemons",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Stu Angel",
+      "army": "Genestealer Cult",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    }
+  ]
+}

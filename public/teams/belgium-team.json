@@ -1,0 +1,54 @@
+{
+  "key": "belgium",
+  "name": "Belgium",
+  "players": [
+    {
+      "name": "Pierre Debey",
+      "army": "Chaos Space Marines",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Guillaume \"Razorix\" Buchkremer",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Pierre-Yves Desplanques",
+      "army": "T'au Empire",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Mathieu Clerc",
+      "army": "Leagues of Votann",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Nicolas Goletti",
+      "army": "Adeptus Mechanicus",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Florian DST.",
+      "army": "Necrons",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Guillaume Dusaussois",
+      "army": "Emperor's Children",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "liam Vsl",
+      "army": "Chaos Daemons",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    }
+  ]
+}

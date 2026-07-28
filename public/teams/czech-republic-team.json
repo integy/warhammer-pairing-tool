@@ -1,0 +1,54 @@
+{
+  "key": "czech-republic",
+  "name": "Czech Republic",
+  "players": [
+    {
+      "name": "Dan Sochor",
+      "army": "Drukhari",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Adam Tetour",
+      "army": "Emperor's Children",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Luka Ladin",
+      "army": "Adeptus Mechanicus",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Vojtech \u010cisteck\u00fd",
+      "army": "Orks",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Antonin Man",
+      "army": "Dark Angels",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Luk\u00e1\u0161 T\u00f6lg",
+      "army": "Chaos Space Marines",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Jan Tlust\u00fd",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Patrik Plsek",
+      "army": "Necrons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    }
+  ]
+}
