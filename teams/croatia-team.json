@@ -1,0 +1,54 @@
+{
+  "key": "croatia",
+  "name": "Croatia",
+  "players": [
+    {
+      "name": "Ivan Fehir",
+      "army": "Adeptus Mechanicus",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Max Sprung",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Ivan Rozga",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Karlo Krulik",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Mateo Trkulja",
+      "army": "T'au Empire",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Igor Krulik",
+      "army": "Tyranids",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "V\u00edtor Pereira",
+      "army": "Emperor's Children",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Ivan Belacic",
+      "army": "Necrons",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "key": "wales",
+  "name": "Wales",
+  "players": [
+    {
+      "name": "Tom Green",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Pierre Alexandre Hughes-Daly",
+      "army": "Tyranids",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Joshua Townley",
+      "army": "Drukhari",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Kev Hughes",
+      "army": "T'au Empire",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Toby Bennett",
+      "army": "Dark Angels",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Andrew Lewis",
+      "army": "Chaos Space Marines",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Josie Cartwright",
+      "army": "Necrons",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Liam Keane",
+      "army": "Chaos Daemons",
+      "forceDisposition": "disruption",
+      "scores": {}
+    }
+  ]
+}

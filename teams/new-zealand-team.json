@@ -1,0 +1,54 @@
+{
+  "key": "new-zealand",
+  "name": "New Zealand",
+  "players": [
+    {
+      "name": "Koby Taylor",
+      "army": "Dark Angels",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Kier Smith",
+      "army": "Necrons",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "John McLachlan",
+      "army": "Tyranids",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Michael Stewart",
+      "army": "Adeptus Mechanicus",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Alex Cameron",
+      "army": "Orks",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Matt van Wijk",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Courtney Thomson",
+      "army": "Emperor's Children",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "David Gaylard",
+      "army": "Chaos Daemons",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    }
+  ]
+}

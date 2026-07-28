@@ -1,0 +1,54 @@
+{
+  "key": "spain",
+  "name": "Spain",
+  "players": [
+    {
+      "name": "Luis \"Terroxer\" Balmori",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Jorge Tobar",
+      "army": "Imperial Knights",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Miguel \"Miwel\" Dur\u00e1",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Marco Esteban",
+      "army": "Grey Knights",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Gonzalo \"Raven\" de La Moneda",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Jes\u00fas \"Falco\" P\u00e9rez",
+      "army": "Emperor's Children",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Borja \"FM\" Fern\u00e1ndez",
+      "army": "Dark Angels",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Manuel Gil",
+      "army": "Necrons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    }
+  ]
+}

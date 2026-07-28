@@ -1,0 +1,54 @@
+{
+  "key": "india-pakistan",
+  "name": "India-Pakistan",
+  "players": [
+    {
+      "name": "Nikhil Talwar",
+      "army": "Emperor's Children",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Ali Abdeali",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Byron \ud83d\udd25\ud83c\udfb2 Sidhu",
+      "army": "Chaos Daemons",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Abbas Abdeali",
+      "army": "T'au Empire",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Mohammed Abdeali",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Ratnu Vaidya",
+      "army": "Chaos Knights",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Zan \ud83d\udd25\ud83c\udfb2 Rashid",
+      "army": "Death Guard",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Chris Cho",
+      "army": "Deathwatch",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    }
+  ]
+}

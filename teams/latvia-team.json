@@ -1,0 +1,54 @@
+{
+  "key": "latvia",
+  "name": "Latvia",
+  "players": [
+    {
+      "name": "Andrew Nuzhny",
+      "army": "Chaos Daemons",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Felix Mathiasson",
+      "army": "Adeptus Mechanicus",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Fess M.",
+      "army": "T'au Empire",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Kostya Tu",
+      "army": "Orks",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Igors Rudz\u012btis",
+      "army": "Tyranids",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Darek Nik",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Dairis Jurciks",
+      "army": "World Eaters",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "George Yu",
+      "army": "Emperor's Children",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    }
+  ]
+}

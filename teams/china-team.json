@@ -1,0 +1,54 @@
+{
+  "key": "china",
+  "name": "China",
+  "players": [
+    {
+      "name": "Chong Liu",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Wade Liang",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Mafi Chan",
+      "army": "Emperor's Children",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Alaeze Ugoala",
+      "army": "Dark Angels",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Zeen Chen",
+      "army": "Tyranids",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Chris Black",
+      "army": "Chaos Space Marines",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Qifan Zhu",
+      "army": "Necrons",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Sepian Wang",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "key": "germany",
+  "name": "Germany",
+  "players": [
+    {
+      "name": "Tim Schneider",
+      "army": "Leagues of Votann",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Pau Poensgen \ud83e\uddad",
+      "army": "Drukhari",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Niklas Fritschen",
+      "army": "Chaos Daemons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Manuel Wayand",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Luis Stiemerling",
+      "army": "Imperial Knights",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Fred Otto",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Artur G\u00fcttler",
+      "army": "T'au Empire",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Arne Zerndt",
+      "army": "Dark Angels",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    }
+  ]
+}

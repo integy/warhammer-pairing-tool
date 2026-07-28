@@ -1,0 +1,54 @@
+{
+  "key": "south-korea",
+  "name": "South Korea",
+  "players": [
+    {
+      "name": "Joshua Roberts",
+      "army": "Chaos Daemons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Minchul Kim",
+      "army": "Imperial Knights",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Thomas Byrd",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Kris Ku",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Drew Dean",
+      "army": "Leagues of Votann",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Jason Rayner",
+      "army": "Emperor's Children",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Alec Zebrick",
+      "army": "Tyranids",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Ivan Cho",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    }
+  ]
+}

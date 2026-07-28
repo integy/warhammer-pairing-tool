@@ -1,0 +1,54 @@
+{
+  "key": "malta",
+  "name": "Malta",
+  "players": [
+    {
+      "name": "Victor \u00c5str\u00f6m",
+      "army": "Dark Angels",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Daniel Xerri",
+      "army": "Imperial Knights",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Matteo Picchi",
+      "army": "Chaos Daemons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Jeremy Borg",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Rickard Wallin",
+      "army": "Adeptus Mechanicus",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Adam Brincat",
+      "army": "Tyranids",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Luke Mintoff",
+      "army": "Emperor's Children",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "James Jelliffe",
+      "army": "World Eaters",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    }
+  ]
+}

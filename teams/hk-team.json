@@ -3,23 +3,37 @@
   "name": "Hong Kong",
   "players": [
     {
-      "name": "Eric",
-      "army": "Aeldari",
+      "name": "Quentin",
+      "army": "Chaos Space Marines",
       "forceDisposition": "reconnaissance",
       "scores": {
-        "Kris": 4.5,
-        "Ivan": 3.0,
-        "Jireh": 4.0,
-        "Kevin": 3.5,
-        "Quentin": 4.5,
-        "Gabrielle": 3.5,
-        "Terrence": 3.0
+        "Eric": 2.0,
+        "Kris": 3.5,
+        "Ivan": 1.5,
+        "Jireh": 3.0,
+        "Kevin": 4.5,
+        "Gabrielle": 4.0,
+        "Terrence": 2.0
+      }
+    },
+    {
+      "name": "Kris",
+      "army": "Death Guard",
+      "forceDisposition": "purge-the-foe",
+      "scores": {
+        "Eric": 2.0,
+        "Ivan": 3.5,
+        "Jireh": 4.5,
+        "Kevin": 3.0,
+        "Quentin": 2.5,
+        "Gabrielle": 4.0,
+        "Terrence": 3.5
       }
     },
     {
       "name": "Terrence",
-      "army": "Sisters",
-      "forceDisposition": "take-and-hold",
+      "army": "Leagues of Votann",
+      "forceDisposition": "reconnaissance",
       "scores": {
         "Kris": 2.5,
         "Ivan": 4.0,
@@ -31,16 +45,16 @@
       }
     },
     {
-      "name": "Kris",
-      "army": "Death Guard",
+      "name": "Gabrielle",
+      "army": "Astra Militarum",
       "forceDisposition": "take-and-hold",
       "scores": {
-        "Eric": 2.0,
+        "Eric": 4.0,
+        "Kris": 2.5,
         "Ivan": 3.5,
         "Jireh": 4.5,
         "Kevin": 3.0,
-        "Quentin": 2.5,
-        "Gabrielle": 4.0,
+        "Quentin": 2.0,
         "Terrence": 3.5
       }
     },
@@ -59,20 +73,6 @@
       }
     },
     {
-      "name": "Jireh",
-      "army": "Necrons",
-      "forceDisposition": "take-and-hold",
-      "scores": {
-        "Eric": 2.5,
-        "Kris": 1.5,
-        "Ivan": 4.5,
-        "Kevin": 3.5,
-        "Quentin": 4.0,
-        "Gabrielle": 3.0,
-        "Terrence": 2.5
-      }
-    },
-    {
       "name": "Kevin",
       "army": "World Eaters",
       "forceDisposition": "purge-the-foe",
@@ -87,31 +87,31 @@
       }
     },
     {
-      "name": "Quentin",
-      "army": "Chaos Space Marine",
-      "forceDisposition": "disruption",
+      "name": "Jireh",
+      "army": "Necrons",
+      "forceDisposition": "priority-assets",
       "scores": {
-        "Eric": 2.0,
-        "Kris": 3.5,
-        "Ivan": 1.5,
-        "Jireh": 3.0,
-        "Kevin": 4.5,
-        "Gabrielle": 4.0,
-        "Terrence": 2.0
+        "Eric": 2.5,
+        "Kris": 1.5,
+        "Ivan": 4.5,
+        "Kevin": 3.5,
+        "Quentin": 4.0,
+        "Gabrielle": 3.0,
+        "Terrence": 2.5
       }
     },
     {
-      "name": "Gabrielle",
-      "army": "Imperial Guard",
-      "forceDisposition": "take-and-hold",
+      "name": "Eric",
+      "army": "Aeldari",
+      "forceDisposition": "disruption",
       "scores": {
-        "Eric": 4.0,
-        "Kris": 2.5,
-        "Ivan": 3.5,
-        "Jireh": 4.5,
-        "Kevin": 3.0,
-        "Quentin": 2.0,
-        "Terrence": 3.5
+        "Kris": 4.5,
+        "Ivan": 3.0,
+        "Jireh": 4.0,
+        "Kevin": 3.5,
+        "Quentin": 4.5,
+        "Gabrielle": 3.5,
+        "Terrence": 3.0
       }
     }
   ]

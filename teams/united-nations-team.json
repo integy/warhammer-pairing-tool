@@ -1,0 +1,54 @@
+{
+  "key": "united-nations",
+  "name": "United Nations",
+  "players": [
+    {
+      "name": "Gianni Govaert",
+      "army": "Emperor's Children",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "David Smith",
+      "army": "Astra Militarum",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Mark Krijntjes",
+      "army": "Chaos Daemons",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Christian \"Ryusei\" Bailly",
+      "army": "Tyranids",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Brent Mooney",
+      "army": "T'au Empire",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Mariano Florencio Quesada Monga",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Kian Tan",
+      "army": "Adepta Sororitas",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Mark Crombleholme",
+      "army": "Necrons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    }
+  ]
+}

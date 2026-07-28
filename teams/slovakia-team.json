@@ -1,0 +1,54 @@
+{
+  "key": "slovakia",
+  "name": "Slovakia",
+  "players": [
+    {
+      "name": "Matej R\u00e9k",
+      "army": "Chaos Daemons",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Luk\u00e1\u0161 Jedlovec",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Peter Timko",
+      "army": "Chaos Space Marines",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Branislav Boda",
+      "army": "Emperor's Children",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Tomas \"Alessan\" Bernat",
+      "army": "Imperial Knights",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Marek Kudlicka",
+      "army": "Dark Angels",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Martin Petriscak",
+      "army": "T'au Empire",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Richard Kopaj",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    }
+  ]
+}

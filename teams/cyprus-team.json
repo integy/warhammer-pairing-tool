@@ -1,0 +1,54 @@
+{
+  "key": "cyprus",
+  "name": "Cyprus",
+  "players": [
+    {
+      "name": "Vlad Olich",
+      "army": "Grey Knights",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Sokratis Yiannakou",
+      "army": "Tyranids",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Brett Armitage",
+      "army": "Necrons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Tom Weston",
+      "army": "Emperor's Children",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Konstantin Labin",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Alexander Mason",
+      "army": "Chaos Daemons",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Alexander Kondakov",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Marios Kontopyrgos",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    }
+  ]
+}

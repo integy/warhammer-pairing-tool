@@ -1,0 +1,54 @@
+{
+  "key": "usa",
+  "name": "USA",
+  "players": [
+    {
+      "name": "Brian Daugherty",
+      "army": "Chaos Daemons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Sam Pope",
+      "army": "Chaos Space Marines",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Nemo The Fish",
+      "army": "Astra Militarum",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Brian Seipp",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Folger Pyles",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Zach Point",
+      "army": "Necrons",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "John Lennon",
+      "army": "Dark Angels",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Anthony Vanella",
+      "army": "Emperor's Children",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    }
+  ]
+}

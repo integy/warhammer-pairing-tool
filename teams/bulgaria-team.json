@@ -1,0 +1,54 @@
+{
+  "key": "bulgaria",
+  "name": "Bulgaria",
+  "players": [
+    {
+      "name": "Dimitar \"Malice\" Peev",
+      "army": "Emperor's Children",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Yoan Trendafilov",
+      "army": "Chaos Daemons",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Todor \"Marinkata\" Mitev",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Dimitar \"Gobbo\" Donev",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Kaloyan Lozanov",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Hristo Nikolov",
+      "army": "Tyranids",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Pavel \"Kormack\" Janachkov",
+      "army": "Astra Militarum",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "George \"GG\" Georgiev",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    }
+  ]
+}

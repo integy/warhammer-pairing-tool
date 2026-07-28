@@ -1,18 +1,186 @@
 [
   {
+    "key": "australia",
+    "name": "Australia"
+  },
+  {
+    "key": "austria",
+    "name": "Austria"
+  },
+  {
+    "key": "belgium",
+    "name": "Belgium"
+  },
+  {
+    "key": "bulgaria",
+    "name": "Bulgaria"
+  },
+  {
+    "key": "canada",
+    "name": "Canada"
+  },
+  {
+    "key": "china",
+    "name": "China"
+  },
+  {
+    "key": "croatia",
+    "name": "Croatia"
+  },
+  {
+    "key": "cyprus",
+    "name": "Cyprus"
+  },
+  {
+    "key": "czech-republic",
+    "name": "Czech Republic"
+  },
+  {
+    "key": "denmark",
+    "name": "Denmark"
+  },
+  {
+    "key": "england",
+    "name": "England"
+  },
+  {
+    "key": "estonia",
+    "name": "Estonia"
+  },
+  {
+    "key": "finland",
+    "name": "Finland"
+  },
+  {
     "key": "france",
     "name": "France"
   },
   {
-    "key": "hk",
-    "name": "Hong Kong"
+    "key": "gcc",
+    "name": "GCC"
   },
   {
-    "key": "hk6",
-    "name": "嚇死你朱古力"
+    "key": "germany",
+    "name": "Germany"
+  },
+  {
+    "key": "greece",
+    "name": "Greece"
+  },
+  {
+    "key": "hungary",
+    "name": "Hungary"
+  },
+  {
+    "key": "iceland",
+    "name": "Iceland"
+  },
+  {
+    "key": "india-pakistan",
+    "name": "India-Pakistan"
+  },
+  {
+    "key": "ireland",
+    "name": "Ireland"
+  },
+  {
+    "key": "israel",
+    "name": "Israel"
+  },
+  {
+    "key": "italy",
+    "name": "Italy"
   },
   {
     "key": "japan",
     "name": "Japan"
+  },
+  {
+    "key": "latvia",
+    "name": "Latvia"
+  },
+  {
+    "key": "lithuania",
+    "name": "Lithuania"
+  },
+  {
+    "key": "luxembourg",
+    "name": "Luxembourg"
+  },
+  {
+    "key": "malta",
+    "name": "Malta"
+  },
+  {
+    "key": "mexico",
+    "name": "Mexico"
+  },
+  {
+    "key": "netherlands",
+    "name": "Netherlands"
+  },
+  {
+    "key": "new-zealand",
+    "name": "New Zealand"
+  },
+  {
+    "key": "northern-ireland",
+    "name": "Northern Ireland"
+  },
+  {
+    "key": "norway",
+    "name": "Norway"
+  },
+  {
+    "key": "poland",
+    "name": "Poland"
+  },
+  {
+    "key": "portugal",
+    "name": "Portugal"
+  },
+  {
+    "key": "romania",
+    "name": "Romania"
+  },
+  {
+    "key": "scotland",
+    "name": "Scotland"
+  },
+  {
+    "key": "slovakia",
+    "name": "Slovakia"
+  },
+  {
+    "key": "south-korea",
+    "name": "South Korea"
+  },
+  {
+    "key": "spain",
+    "name": "Spain"
+  },
+  {
+    "key": "sweden",
+    "name": "Sweden"
+  },
+  {
+    "key": "switzerland",
+    "name": "Switzerland"
+  },
+  {
+    "key": "usa",
+    "name": "USA"
+  },
+  {
+    "key": "united-nations",
+    "name": "United Nations"
+  },
+  {
+    "key": "wales",
+    "name": "Wales"
+  },
+  {
+    "key": "hk6",
+    "name": "\u5687\u6b7b\u4f60\u6731\u53e4\u529b"
   }
 ]

@@ -1,0 +1,54 @@
+{
+  "key": "poland",
+  "name": "Poland",
+  "players": [
+    {
+      "name": "Jakub \"Skark\" Wichrowski",
+      "army": "Astra Militarum",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Pawe\u0142 Kruk",
+      "army": "Emperor's Children",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Bart\u0142omiej Tokarski",
+      "army": "Orks",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Bartlomiej \u201eKaski\u201d Lubiatowski",
+      "army": "Chaos Daemons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Maciej Ptasi\u0144ski",
+      "army": "Necrons",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Maks Adamek",
+      "army": "T'au Empire",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Jay Stefko",
+      "army": "Tyranids",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Jakub Podruczny",
+      "army": "Chaos Space Marines",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    }
+  ]
+}

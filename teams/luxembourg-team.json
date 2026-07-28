@@ -1,0 +1,54 @@
+{
+  "key": "luxembourg",
+  "name": "Luxembourg",
+  "players": [
+    {
+      "name": "David Capponi",
+      "army": "T'au Empire",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Sebastian Gehart",
+      "army": "Dark Angels",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "florian faugeroux",
+      "army": "Tyranids",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Sylvere Jandel",
+      "army": "Leagues of Votann",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Charel Jentges",
+      "army": "Emperor's Children",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Thierry Allan",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Tom Kayser",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Gilles \"Bollos\" Zanen",
+      "army": "Adepta Sororitas",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    }
+  ]
+}

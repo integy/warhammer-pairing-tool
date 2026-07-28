@@ -1,0 +1,54 @@
+{
+  "key": "iceland",
+  "name": "Iceland",
+  "players": [
+    {
+      "name": "Ben Cherwien",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "\u00c6gir \u00d3li",
+      "army": "Imperial Knights",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "J\u00f6kull J\u00f3hannsson",
+      "army": "T'au Empire",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Hallmar Orri Schram",
+      "army": "Chaos Daemons",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Bergur Johannsson",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "John King",
+      "army": "Necrons",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Michael Hooper",
+      "army": "Emperor's Children",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Hei\u00f0ar \u00de\u00f3r Stef\u00e1nsson",
+      "army": "Adeptus Mechanicus",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    }
+  ]
+}

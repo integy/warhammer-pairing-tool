@@ -1,0 +1,54 @@
+{
+  "key": "lithuania",
+  "name": "Lithuania",
+  "players": [
+    {
+      "name": "Paulius Sergeda",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Eduard Berdjugin",
+      "army": "Aeldari",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Adam Wichrowski",
+      "army": "Imperial Knights",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Joonas Neva",
+      "army": "Necrons",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Kestas Abramovicius",
+      "army": "Leagues of Votann",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Vlad Zhovtenko",
+      "army": "Chaos Knights",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Egidijus Cic\u0117nas",
+      "army": "Black Templars",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Anttu Kaipainen",
+      "army": "Grey Knights",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    }
+  ]
+}

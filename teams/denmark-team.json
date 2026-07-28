@@ -1,0 +1,54 @@
+{
+  "key": "denmark",
+  "name": "Denmark",
+  "players": [
+    {
+      "name": "Anton Frost",
+      "army": "Orks",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Andy Horvath",
+      "army": "Necrons",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Alexander Storm-Jessen",
+      "army": "Thousand Sons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Simon Oberl\u00e4nder",
+      "army": "Leagues of Votann",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Paul Bridge",
+      "army": "Dark Angels",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Michael Roune",
+      "army": "Imperial Knights",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Martin Br\u00e6mer Nielsen",
+      "army": "Grey Knights",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Simon Darre",
+      "army": "Emperor's Children",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    }
+  ]
+}

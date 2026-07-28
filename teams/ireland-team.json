@@ -1,0 +1,54 @@
+{
+  "key": "ireland",
+  "name": "Ireland",
+  "players": [
+    {
+      "name": "Colin Power",
+      "army": "Chaos Daemons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Peter Dunlea",
+      "army": "Leagues of Votann",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Joseph Musgrave",
+      "army": "Imperial Knights",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Ben Keogh",
+      "army": "Tyranids",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Charles Gould",
+      "army": "Dark Angels",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Sam Nash",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Ian Wilson",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Tom Maher",
+      "army": "T'au Empire",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    }
+  ]
+}

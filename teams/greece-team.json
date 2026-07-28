@@ -1,0 +1,54 @@
+{
+  "key": "greece",
+  "name": "Greece",
+  "players": [
+    {
+      "name": "Nikos Daskalas",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Panagiotis Keladitis",
+      "army": "Chaos Daemons",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "John Stavroulakis",
+      "army": "Orks",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Liu Guanbo ilias",
+      "army": "Emperor's Children",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Ioannis Liolios",
+      "army": "Thousand Sons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Andre \u201cSukusu\u201d Boutos",
+      "army": "T'au Empire",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Georgios Floros",
+      "army": "Blood Angels",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Nikolas Papadopoulos",
+      "army": "Adeptus Mechanicus",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    }
+  ]
+}

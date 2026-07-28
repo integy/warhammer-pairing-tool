@@ -1,0 +1,54 @@
+{
+  "key": "gcc",
+  "name": "GCC",
+  "players": [
+    {
+      "name": "kasper wennerby",
+      "army": "T'au Empire",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Matt Pugh",
+      "army": "Necrons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Geoff Legg",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Matt Ed",
+      "army": "Adeptus Mechanicus",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Osama Al Rumaihi",
+      "army": "World Eaters",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "James Phillips",
+      "army": "Death Guard",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Jai Hill",
+      "army": "Leagues of Votann",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Terry Mo",
+      "army": "Emperor's Children",
+      "forceDisposition": "disruption",
+      "scores": {}
+    }
+  ]
+}

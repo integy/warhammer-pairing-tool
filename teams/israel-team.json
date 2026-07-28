@@ -1,0 +1,54 @@
+{
+  "key": "israel",
+  "name": "Israel",
+  "players": [
+    {
+      "name": "Dmitrii Sokolinskii",
+      "army": "T'au Empire",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Sergei Shchipanov",
+      "army": "Orks",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Sagi Ben Itzhak",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Guy Ophir",
+      "army": "Chaos Space Marines",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Niko Timoshek",
+      "army": "Imperial Knights",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Hilton Meyer",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Ben Bishko",
+      "army": "Necrons",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Andrei Romanov",
+      "army": "Space Wolves",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "key": "italy",
+  "name": "Italy",
+  "players": [
+    {
+      "name": "Edoardo Rinaldi",
+      "army": "Imperial Knights",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Ludovico Mazza",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Nicolo Gili",
+      "army": "Chaos Daemons",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Andrea Lelli",
+      "army": "Thousand Sons",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Marco Santopadre",
+      "army": "Emperor's Children",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Davide Lecci",
+      "army": "T'au Empire",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Marco Brandonisio",
+      "army": "Leagues of Votann",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Andrea Manfroni",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    }
+  ]
+}

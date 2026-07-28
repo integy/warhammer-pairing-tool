@@ -1,0 +1,54 @@
+{
+  "key": "estonia",
+  "name": "Estonia",
+  "players": [
+    {
+      "name": "Kim Imadari",
+      "army": "Aeldari",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Anton Poplavnoi",
+      "army": "Drukhari",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Pekka Myller",
+      "army": "Necrons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Olger Pilt",
+      "army": "Imperial Knights",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Romet Jakobson",
+      "army": "Emperor's Children",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Paul Tamm",
+      "army": "T'au Empire",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Kristjan Malmstein",
+      "army": "Chaos Daemons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Matt Smith",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    }
+  ]
+}

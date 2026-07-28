@@ -1,0 +1,54 @@
+{
+  "key": "australia",
+  "name": "Australia",
+  "players": [
+    {
+      "name": "Dave Kerr",
+      "army": "Blood Angels",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Liam Hackett",
+      "army": "Necrons",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "dan savage",
+      "army": "Chaos Daemons",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Nathan Princi",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Jordan McGregor",
+      "army": "Adepta Sororitas",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Jacob Warn",
+      "army": "Orks",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Joshua Woods",
+      "army": "Death Guard",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Erik Lathouras",
+      "army": "Tyranids",
+      "forceDisposition": "disruption",
+      "scores": {}
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "key": "norway",
+  "name": "Norway",
+  "players": [
+    {
+      "name": "Morten R\u00f8nning",
+      "army": "Space Marines (Astartes)",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    },
+    {
+      "name": "Alexander B\u00e6ra",
+      "army": "Emperor's Children",
+      "forceDisposition": "disruption",
+      "scores": {}
+    },
+    {
+      "name": "Emil S\u00e6ternes",
+      "army": "Adeptus Custodes",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Geir Dutta",
+      "army": "Necrons",
+      "forceDisposition": "purge-the-foe",
+      "scores": {}
+    },
+    {
+      "name": "Jonathan Arkin",
+      "army": "Orks",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Eirik Rokne Stensland",
+      "army": "Chaos Daemons",
+      "forceDisposition": "reconnaissance",
+      "scores": {}
+    },
+    {
+      "name": "Thomas Harkestad",
+      "army": "Tyranids",
+      "forceDisposition": "take-and-hold",
+      "scores": {}
+    },
+    {
+      "name": "Kjetil Andre Liknes",
+      "army": "Adeptus Mechanicus",
+      "forceDisposition": "priority-assets",
+      "scores": {}
+    }
+  ]
+}
