@@ -6,7 +6,15 @@
       "name": "Dave Kerr",
       "army": "Blood Angels",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Quentin": 1.0,
+        "Kris": 3.0,
+        "Terrence": 4.0,
+        "Gabrielle": 3.0,
+        "Ivan": 3.0,
+        "Kevin": 2.0,
+        "Jireh": 5.0
+      }
     },
     {
       "name": "Liam Hackett",
