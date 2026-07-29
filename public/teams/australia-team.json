@@ -8,6 +8,7 @@
       "forceDisposition": "priority-assets",
       "scores": {
         "Gabrielle": 3,
+        "Ivan": 3,
         "Eric": 2
       }
     },
@@ -17,6 +18,7 @@
       "forceDisposition": "take-and-hold",
       "scores": {
         "Gabrielle": 3,
+        "Ivan": 3,
         "Eric": 2
       }
     },
@@ -26,6 +28,7 @@
       "forceDisposition": "disruption",
       "scores": {
         "Gabrielle": 3,
+        "Ivan": 3.5,
         "Eric": 3
       }
     },
