@@ -6,49 +6,65 @@
       "name": "Nassim Fouchane",
       "army": "Space Marines (Astartes)",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Matt Bell",
       "army": "Necrons",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Christopher Langton",
       "army": "Chaos Daemons",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Alex Fowler",
       "army": "Thousand Sons",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Jack Tite",
       "army": "Orks",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Ed Watts",
       "army": "Astra Militarum",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Christopher Radford",
       "army": "Emperor's Children",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Greg Chamberlain",
       "army": "Tyranids",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     }
   ]
 }

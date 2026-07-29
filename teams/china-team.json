@@ -6,49 +6,65 @@
       "name": "Chong Liu",
       "army": "Adeptus Custodes",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Wade Liang",
       "army": "Thousand Sons",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Mafi Chan",
       "army": "Emperor's Children",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Alaeze Ugoala",
       "army": "Dark Angels",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Eric": 4
+      }
     },
     {
       "name": "Zeen Chen",
       "army": "Tyranids",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Chris Black",
       "army": "Chaos Space Marines",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 4
+      }
     },
     {
       "name": "Qifan Zhu",
       "army": "Necrons",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Eric": 2
+      }
     },
     {
       "name": "Sepian Wang",
       "army": "Orks",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     }
   ]
 }

@@ -6,49 +6,73 @@
       "name": "Peter Steiner",
       "army": "Leagues of Votann",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 3.5,
+        "Eric": 3
+      }
     },
     {
       "name": "Kevin \u201eplanB_God\u201c Z\u00f6llinger",
       "army": "Imperial Knights",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 4,
+        "Eric": 5
+      }
     },
     {
       "name": "Thomas Wobak",
       "army": "Tyranids",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 2.5,
+        "Eric": 2
+      }
     },
     {
       "name": "Dominik Tavernaro",
       "army": "Emperor's Children",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 3.5,
+        "Eric": 3.5
+      }
     },
     {
       "name": "Stefan Stueber",
       "army": "T'au Empire",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 3.5,
+        "Eric": 3.5
+      }
     },
     {
       "name": "Sam Nowrouzi",
       "army": "Necrons",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 2,
+        "Eric": 3.5
+      }
     },
     {
       "name": "Fabian Huber",
       "army": "Chaos Daemons",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 2,
+        "Eric": 2.5
+      }
     },
     {
       "name": "Konrad Schmuck",
       "army": "Space Marines (Astartes)",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 2.5,
+        "Eric": 4
+      }
     }
   ]
 }

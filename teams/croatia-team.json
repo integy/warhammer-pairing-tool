@@ -6,49 +6,65 @@
       "name": "Ivan Fehir",
       "army": "Adeptus Mechanicus",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Max Sprung",
       "army": "Space Marines (Astartes)",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 4
+      }
     },
     {
       "name": "Ivan Rozga",
       "army": "Thousand Sons",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Karlo Krulik",
       "army": "Orks",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Mateo Trkulja",
       "army": "T'au Empire",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Igor Krulik",
       "army": "Tyranids",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "V\u00edtor Pereira",
       "army": "Emperor's Children",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Ivan Belacic",
       "army": "Necrons",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     }
   ]
 }

@@ -6,49 +6,65 @@
       "name": "Kim Imadari",
       "army": "Aeldari",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Anton Poplavnoi",
       "army": "Drukhari",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Pekka Myller",
       "army": "Necrons",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Olger Pilt",
       "army": "Imperial Knights",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Eric": 4
+      }
     },
     {
       "name": "Romet Jakobson",
       "army": "Emperor's Children",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Paul Tamm",
       "army": "T'au Empire",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Kristjan Malmstein",
       "army": "Chaos Daemons",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Matt Smith",
       "army": "Space Marines (Astartes)",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     }
   ]
 }

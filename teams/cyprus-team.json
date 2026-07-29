@@ -6,49 +6,65 @@
       "name": "Vlad Olich",
       "army": "Grey Knights",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Eric": 1
+      }
     },
     {
       "name": "Sokratis Yiannakou",
       "army": "Tyranids",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Brett Armitage",
       "army": "Necrons",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Tom Weston",
       "army": "Emperor's Children",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Konstantin Labin",
       "army": "Space Marines (Astartes)",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Alexander Mason",
       "army": "Chaos Daemons",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Alexander Kondakov",
       "army": "Orks",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Marios Kontopyrgos",
       "army": "Adeptus Custodes",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     }
   ]
 }

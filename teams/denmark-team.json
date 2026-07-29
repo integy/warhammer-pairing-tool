@@ -6,49 +6,65 @@
       "name": "Anton Frost",
       "army": "Orks",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Andy Horvath",
       "army": "Necrons",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Alexander Storm-Jessen",
       "army": "Thousand Sons",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Simon Oberl\u00e4nder",
       "army": "Leagues of Votann",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Paul Bridge",
       "army": "Dark Angels",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Michael Roune",
       "army": "Imperial Knights",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Eric": 4
+      }
     },
     {
       "name": "Martin Br\u00e6mer Nielsen",
       "army": "Grey Knights",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Eric": 2
+      }
     },
     {
       "name": "Simon Darre",
       "army": "Emperor's Children",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     }
   ]
 }

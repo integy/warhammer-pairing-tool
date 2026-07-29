@@ -6,49 +6,65 @@
       "name": "Juha Ottelin",
       "army": "Thousand Sons",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Indran Yogaswaran",
       "army": "Adeptus Custodes",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Eetu Peltola",
       "army": "Necrons",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 2
+      }
     },
     {
       "name": "Jouni Haavisto",
       "army": "Orks",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Sami-Petteri Kekki",
       "army": "Tyranids",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Eero Saukkonen",
       "army": "Imperial Knights",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Eric": 4
+      }
     },
     {
       "name": "Arto Lampila",
       "army": "Chaos Daemons",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Samppa Orhanen",
       "army": "Emperor's Children",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     }
   ]
 }

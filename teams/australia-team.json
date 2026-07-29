@@ -7,56 +7,75 @@
       "army": "Blood Angels",
       "forceDisposition": "priority-assets",
       "scores": {
-        "Quentin": 1.0,
-        "Kris": 3.0,
-        "Terrence": 4.0,
-        "Gabrielle": 3.0,
-        "Ivan": 3.0,
-        "Kevin": 2.0,
-        "Jireh": 5.0
+        "Gabrielle": 3,
+        "Ivan": 3,
+        "Eric": 2
       }
     },
     {
       "name": "Liam Hackett",
       "army": "Necrons",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 3,
+        "Ivan": 3,
+        "Eric": 2
+      }
     },
     {
       "name": "dan savage",
       "army": "Chaos Daemons",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 3,
+        "Ivan": 3.5,
+        "Eric": 3
+      }
     },
     {
       "name": "Nathan Princi",
       "army": "Adeptus Custodes",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 2.5,
+        "Eric": 3
+      }
     },
     {
       "name": "Jordan McGregor",
       "army": "Adepta Sororitas",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 3.5,
+        "Eric": 4
+      }
     },
     {
       "name": "Jacob Warn",
       "army": "Orks",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 2,
+        "Eric": 2
+      }
     },
     {
       "name": "Joshua Woods",
       "army": "Death Guard",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 3.5,
+        "Eric": 4
+      }
     },
     {
       "name": "Erik Lathouras",
       "army": "Tyranids",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 3,
+        "Eric": 3.5
+      }
     }
   ]
 }

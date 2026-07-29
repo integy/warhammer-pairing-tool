@@ -6,49 +6,65 @@
       "name": "Zach Comeau",
       "army": "T'au Empire",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "John Winter Russell",
       "army": "Astra Militarum",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Kasra Houshidar",
       "army": "Space Marines (Astartes)",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Frasier Parry",
       "army": "Emperor's Children",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Matt McWatters",
       "army": "Orks",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Nick \"Lizard\" Blackburn",
       "army": "Leagues of Votann",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Fran\u00e7ois Lalonde",
       "army": "Chaos Daemons",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Stu Angel",
       "army": "Genestealer Cult",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     }
   ]
 }
