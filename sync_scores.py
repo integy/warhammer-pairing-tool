@@ -39,7 +39,7 @@ def team_to_key(name: str) -> str:
     return name.strip().lower().replace(" ", "-").replace("/", "-")
 
 
-def extract_hk_name(row_label: str) -> str | None:
+def extract_hk_name(row_label: str) -> Optional[str]:
     """Extract HK player name from row label like 'q b - Chaos Space Marines'."""
     name_part = row_label.split(" - ")[0].strip().lower()
     # Direct match

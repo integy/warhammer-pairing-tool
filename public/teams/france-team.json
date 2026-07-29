@@ -6,49 +6,65 @@
       "name": "Matt Bonnet",
       "army": "Orks",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Nicolas SEGUIER",
       "army": "World Eaters",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Quentin Roch\u00e9",
       "army": "Leagues of Votann",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Alexandre Sacco",
       "army": "Emperor's Children",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "benjamin stroh",
       "army": "Chaos Space Marines",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Arnaud ALLOT",
       "army": "Necrons",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Alban de Polignac",
       "army": "Chaos Daemons",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Olivier WEISS",
       "army": "Space Marines (Astartes)",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     }
   ]
 }

@@ -6,49 +6,73 @@
       "name": "Pierre Debey",
       "army": "Chaos Space Marines",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 3.5,
+        "Eric": 3
+      }
     },
     {
       "name": "Guillaume \"Razorix\" Buchkremer",
       "army": "Orks",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 2,
+        "Eric": 3
+      }
     },
     {
       "name": "Pierre-Yves Desplanques",
       "army": "T'au Empire",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 3.5,
+        "Eric": 3
+      }
     },
     {
       "name": "Mathieu Clerc",
       "army": "Leagues of Votann",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 3.5,
+        "Eric": 3
+      }
     },
     {
       "name": "Nicolas Goletti",
       "army": "Adeptus Mechanicus",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 3,
+        "Eric": 3.5
+      }
     },
     {
       "name": "Florian DST.",
       "army": "Necrons",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 2.5,
+        "Eric": 2
+      }
     },
     {
       "name": "Guillaume Dusaussois",
       "army": "Emperor's Children",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 3,
+        "Eric": 3
+      }
     },
     {
       "name": "liam Vsl",
       "army": "Chaos Daemons",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Gabrielle": 2,
+        "Eric": 2
+      }
     }
   ]
 }

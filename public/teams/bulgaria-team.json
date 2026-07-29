@@ -6,49 +6,65 @@
       "name": "Dimitar \"Malice\" Peev",
       "army": "Emperor's Children",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Yoan Trendafilov",
       "army": "Chaos Daemons",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Todor \"Marinkata\" Mitev",
       "army": "Space Marines (Astartes)",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Dimitar \"Gobbo\" Donev",
       "army": "Thousand Sons",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Kaloyan Lozanov",
       "army": "Orks",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 4
+      }
     },
     {
       "name": "Hristo Nikolov",
       "army": "Tyranids",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Pavel \"Kormack\" Janachkov",
       "army": "Astra Militarum",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "George \"GG\" Georgiev",
       "army": "Adeptus Custodes",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     }
   ]
 }

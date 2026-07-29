@@ -6,49 +6,65 @@
       "name": "Dan Sochor",
       "army": "Drukhari",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Adam Tetour",
       "army": "Emperor's Children",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Luka Ladin",
       "army": "Adeptus Mechanicus",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 3
+      }
     },
     {
       "name": "Vojtech \u010cisteck\u00fd",
       "army": "Orks",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Antonin Man",
       "army": "Dark Angels",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Luk\u00e1\u0161 T\u00f6lg",
       "army": "Chaos Space Marines",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 3.5
+      }
     },
     {
       "name": "Jan Tlust\u00fd",
       "army": "Adeptus Custodes",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     },
     {
       "name": "Patrik Plsek",
       "army": "Necrons",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Eric": 2.5
+      }
     }
   ]
 }
