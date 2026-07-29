@@ -8,6 +8,7 @@
       "forceDisposition": "reconnaissance",
       "scores": {
         "Gabrielle": 3.5,
+        "Kevin": 2.5,
         "Eric": 3
       }
     },
@@ -17,6 +18,7 @@
       "forceDisposition": "purge-the-foe",
       "scores": {
         "Gabrielle": 4,
+        "Kevin": 4,
         "Eric": 5
       }
     },
@@ -62,6 +64,7 @@
       "forceDisposition": "priority-assets",
       "scores": {
         "Gabrielle": 2,
+        "Kevin": 2.5,
         "Eric": 2.5
       }
     },
