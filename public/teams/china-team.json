@@ -7,6 +7,7 @@
       "army": "Adeptus Custodes",
       "forceDisposition": "reconnaissance",
       "scores": {
+        "Ivan": 2.5,
         "Eric": 3.5
       }
     },
@@ -15,6 +16,7 @@
       "army": "Thousand Sons",
       "forceDisposition": "priority-assets",
       "scores": {
+        "Ivan": 3,
         "Eric": 3.5
       }
     },
@@ -23,6 +25,7 @@
       "army": "Emperor's Children",
       "forceDisposition": "reconnaissance",
       "scores": {
+        "Ivan": 3,
         "Eric": 3
       }
     },
@@ -31,6 +34,7 @@
       "army": "Dark Angels",
       "forceDisposition": "disruption",
       "scores": {
+        "Ivan": 3,
         "Eric": 4
       }
     },
@@ -39,6 +43,7 @@
       "army": "Tyranids",
       "forceDisposition": "take-and-hold",
       "scores": {
+        "Ivan": 2.5,
         "Eric": 3.5
       }
     },
@@ -47,6 +52,7 @@
       "army": "Chaos Space Marines",
       "forceDisposition": "priority-assets",
       "scores": {
+        "Ivan": 3.5,
         "Eric": 4
       }
     },
@@ -55,6 +61,7 @@
       "army": "Necrons",
       "forceDisposition": "purge-the-foe",
       "scores": {
+        "Ivan": 2.5,
         "Eric": 2
       }
     },
@@ -63,6 +70,7 @@
       "army": "Orks",
       "forceDisposition": "take-and-hold",
       "scores": {
+        "Ivan": 2.5,
         "Eric": 2.5
       }
     }
