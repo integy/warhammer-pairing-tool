@@ -8,6 +8,7 @@
       "forceDisposition": "reconnaissance",
       "scores": {
         "Gabrielle": 3.5,
+        "Ivan": 2,
         "Kevin": 2.5,
         "Eric": 3
       }
@@ -18,6 +19,7 @@
       "forceDisposition": "purge-the-foe",
       "scores": {
         "Gabrielle": 4,
+        "Ivan": 3.5,
         "Kevin": 4,
         "Eric": 5
       }
@@ -28,6 +30,7 @@
       "forceDisposition": "disruption",
       "scores": {
         "Gabrielle": 2.5,
+        "Ivan": 2.5,
         "Eric": 2
       }
     },
@@ -37,6 +40,7 @@
       "forceDisposition": "take-and-hold",
       "scores": {
         "Gabrielle": 3.5,
+        "Ivan": 3.5,
         "Eric": 3.5
       }
     },
@@ -46,6 +50,7 @@
       "forceDisposition": "priority-assets",
       "scores": {
         "Gabrielle": 3.5,
+        "Ivan": 2.5,
         "Eric": 3.5
       }
     },
@@ -55,6 +60,7 @@
       "forceDisposition": "reconnaissance",
       "scores": {
         "Gabrielle": 2,
+        "Ivan": 3,
         "Eric": 3.5
       }
     },
@@ -64,6 +70,7 @@
       "forceDisposition": "priority-assets",
       "scores": {
         "Gabrielle": 2,
+        "Ivan": 2.5,
         "Kevin": 2.5,
         "Eric": 2.5
       }
@@ -74,6 +81,7 @@
       "forceDisposition": "purge-the-foe",
       "scores": {
         "Gabrielle": 2.5,
+        "Ivan": 2,
         "Eric": 4
       }
     }

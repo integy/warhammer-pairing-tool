@@ -7,6 +7,7 @@
       "army": "Emperor's Children",
       "forceDisposition": "disruption",
       "scores": {
+        "Ivan": 3,
         "Eric": 3.5
       }
     },
@@ -15,6 +16,7 @@
       "army": "Chaos Daemons",
       "forceDisposition": "purge-the-foe",
       "scores": {
+        "Ivan": 3,
         "Eric": 3.5
       }
     },
@@ -23,6 +25,7 @@
       "army": "Space Marines (Astartes)",
       "forceDisposition": "priority-assets",
       "scores": {
+        "Ivan": 2,
         "Eric": 3.5
       }
     },
@@ -31,6 +34,7 @@
       "army": "Thousand Sons",
       "forceDisposition": "priority-assets",
       "scores": {
+        "Ivan": 3,
         "Eric": 3
       }
     },
@@ -39,6 +43,7 @@
       "army": "Orks",
       "forceDisposition": "take-and-hold",
       "scores": {
+        "Ivan": 3.5,
         "Eric": 4
       }
     },
@@ -47,6 +52,7 @@
       "army": "Tyranids",
       "forceDisposition": "take-and-hold",
       "scores": {
+        "Ivan": 3.5,
         "Eric": 3.5
       }
     },
@@ -55,6 +61,7 @@
       "army": "Astra Militarum",
       "forceDisposition": "reconnaissance",
       "scores": {
+        "Ivan": 3.5,
         "Eric": 2.5
       }
     },
@@ -63,6 +70,7 @@
       "army": "Adeptus Custodes",
       "forceDisposition": "reconnaissance",
       "scores": {
+        "Ivan": 2.5,
         "Eric": 2.5
       }
     }
