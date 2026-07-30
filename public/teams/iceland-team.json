@@ -6,49 +6,87 @@
       "name": "Ben Cherwien",
       "army": "Space Marines (Astartes)",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Terrence": 3,
+        "Ivan": 1,
+        "Kevin": 2.5,
+        "Eric": 2
+      }
     },
     {
       "name": "\u00c6gir \u00d3li",
       "army": "Imperial Knights",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Terrence": 3.5,
+        "Ivan": 3.5,
+        "Kevin": 3.5,
+        "Eric": 4
+      }
     },
     {
       "name": "J\u00f6kull J\u00f3hannsson",
       "army": "T'au Empire",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Terrence": 2.5,
+        "Ivan": 2.5,
+        "Kevin": 2.5,
+        "Eric": 3
+      }
     },
     {
       "name": "Hallmar Orri Schram",
       "army": "Chaos Daemons",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Terrence": 3,
+        "Ivan": 3,
+        "Kevin": 2.5,
+        "Eric": 3
+      }
     },
     {
       "name": "Bergur Johannsson",
       "army": "Orks",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Terrence": 3,
+        "Ivan": 2.5,
+        "Kevin": 2.5,
+        "Eric": 2
+      }
     },
     {
       "name": "John King",
       "army": "Necrons",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Terrence": 3,
+        "Ivan": 2.5,
+        "Kevin": 3,
+        "Eric": 2
+      }
     },
     {
       "name": "Michael Hooper",
       "army": "Emperor's Children",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Terrence": 3.5,
+        "Ivan": 3.5,
+        "Kevin": 3.5
+      }
     },
     {
       "name": "Hei\u00f0ar \u00de\u00f3r Stef\u00e1nsson",
       "army": "Adeptus Mechanicus",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Terrence": 3,
+        "Ivan": 2.5,
+        "Kevin": 2.5
+      }
     }
   ]
 }
