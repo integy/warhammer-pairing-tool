@@ -142,6 +142,34 @@
     .flip-btn { display: none; }
   }
 
+  /* ─── Terrain Layout Gallery ─── */
+  .layouts-section {
+    border-top: 1px solid var(--border); margin-top: 12px; padding-top: 12px;
+  }
+  .layouts-section h4 {
+    font-size: 0.8rem; font-weight: 700; color: var(--gold);
+    margin-bottom: 8px; letter-spacing: 1px;
+  }
+  .layout-gallery {
+    display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px;
+  }
+  .layout-gallery a {
+    flex: 0 0 auto; display: block; border-radius: 6px; overflow: hidden;
+    border: 1px solid var(--border); transition: border-color 0.2s;
+  }
+  .layout-gallery a:hover { border-color: var(--cyan); }
+  .layout-gallery img {
+    display: block; width: 140px; height: auto;
+    object-fit: cover;
+  }
+  .layout-label {
+    display: block; text-align: center; font-size: 0.7rem;
+    color: var(--text-dim); padding: 2px 0;
+  }
+  @media (max-width: 640px) {
+    .layout-gallery img { width: 110px; }
+  }
+
   .info-box {
     background: var(--card); border: 1px solid var(--border); border-radius: 12px;
     padding: 16px 20px; margin-top: 16px;
@@ -393,6 +421,87 @@ const MISSIONS = {
   }
 };
 
+// ─── Terrain Layouts (from GDM 2026) ───
+const BASE_LAYOUT = 'https://gdmissions.app/assets/11th/layouts/no-measurements';
+
+// GDM only publishes one direction; reverse pairs use the same images
+const LAYOUTS = {
+  'disruption__disruption': [
+    `${BASE_LAYOUT}/disruption-mirror-1.png`,
+    `${BASE_LAYOUT}/disruption-mirror-2.png`
+  ],
+  'disruption__priority-assets': [
+    `${BASE_LAYOUT}/disruption-vs-priority-assets-1-portrait.png`,
+    `${BASE_LAYOUT}/disruption-vs-priority-assets-2.png`,
+    `${BASE_LAYOUT}/disruption-vs-priority-assets-3.png`
+  ],
+  'disruption__purge-the-foe': [
+    `${BASE_LAYOUT}/disruption-vs-purge-the-foe-1.png`,
+    `${BASE_LAYOUT}/disruption-vs-purge-the-foe-2.png`,
+    `${BASE_LAYOUT}/disruption-vs-purge-the-foe-3-portrait.png`
+  ],
+  'disruption__reconnaissance': [
+    `${BASE_LAYOUT}/disruption-vs-reconnaissance-1.png`,
+    `${BASE_LAYOUT}/disruption-vs-reconnaissance-2-portrait.png`,
+    `${BASE_LAYOUT}/disruption-vs-reconnaissance-3.png`
+  ],
+  'priority-assets__priority-assets': [
+    `${BASE_LAYOUT}/priority-assets-mirror-2.png`,
+    `${BASE_LAYOUT}/priority-assets-mirror-3.png`
+  ],
+  'priority-assets__reconnaissance': [
+    `${BASE_LAYOUT}/priority-assets-vs-reconnaissance-1.png`,
+    `${BASE_LAYOUT}/priority-assets-vs-reconnaissance-2.png`,
+    `${BASE_LAYOUT}/priority-assets-vs-reconnaissance-3-portrait.png`
+  ],
+  'purge-the-foe__priority-assets': [
+    `${BASE_LAYOUT}/purge-the-foe-vs-priority-assets-1-portrait.png`,
+    `${BASE_LAYOUT}/purge-the-foe-vs-priority-assets-2.png`,
+    `${BASE_LAYOUT}/purge-the-foe-vs-priority-assets-3.png`
+  ],
+  'purge-the-foe__purge-the-foe': [
+    `${BASE_LAYOUT}/purge-the-foe-mirror-1.png`,
+    `${BASE_LAYOUT}/purge-the-foe-mirror-2.png`
+  ],
+  'purge-the-foe__reconnaissance': [
+    `${BASE_LAYOUT}/purge-the-foe-vs-reconnaissance-1.png`,
+    `${BASE_LAYOUT}/purge-the-foe-vs-reconnaissance-2-portrait.png`,
+    `${BASE_LAYOUT}/purge-the-foe-vs-reconnaissance-3.png`
+  ],
+  'reconnaissance__reconnaissance': [
+    `${BASE_LAYOUT}/reconnaissance-mirror-2.png`,
+    `${BASE_LAYOUT}/reconnaissance-mirror-3.png`
+  ],
+  'take-and-hold__disruption': [
+    `${BASE_LAYOUT}/take-and-hold-vs-disruption-1-portrait.png`,
+    `${BASE_LAYOUT}/take-and-hold-vs-disruption-2.png`,
+    `${BASE_LAYOUT}/take-and-hold-vs-disruption-3.png`
+  ],
+  'take-and-hold__priority-assets': [
+    `${BASE_LAYOUT}/take-and-hold-vs-priority-assets-1.png`,
+    `${BASE_LAYOUT}/take-and-hold-vs-priority-assets-2.png`,
+    `${BASE_LAYOUT}/take-and-hold-vs-priority-assets-3-portrait.png`
+  ],
+  'take-and-hold__purge-the-foe': [
+    `${BASE_LAYOUT}/take-and-hold-vs-purge-the-foe-1-portrait.png`,
+    `${BASE_LAYOUT}/take-and-hold-vs-purge-the-foe-2.png`,
+    `${BASE_LAYOUT}/take-and-hold-vs-purge-the-foe-3.png`
+  ],
+  'take-and-hold__reconnaissance': [
+    `${BASE_LAYOUT}/take-and-hold-vs-reconnaissance-1.png`,
+    `${BASE_LAYOUT}/take-and-hold-vs-reconnaissance-2-portrait.png`,
+    `${BASE_LAYOUT}/take-and-hold-vs-reconnaissance-3.png`
+  ],
+  'take-and-hold__take-and-hold': [
+    `${BASE_LAYOUT}/take-and-hold-mirror-1.png`,
+    `${BASE_LAYOUT}/take-and-hold-mirror-3.png`
+  ]
+};
+
+function getLayouts(p1, p2) {
+  return LAYOUTS[`${p1}__${p2}`] || LAYOUTS[`${p2}__${p1}`] || [];
+}
+
 const DISPOSITION_KEYS = ['disruption', 'purge-the-foe', 'priority-assets', 'take-and-hold', 'reconnaissance'];
 
 function toggleBack(btn) {
@@ -435,6 +544,18 @@ function updateMissions() {
       <button class="flip-btn" onclick="toggleBack(this)">
         <span class="flip-icon">🔄</span> Show Rules (back)
       </button>` : '';
+    const layouts = getLayouts(p1, p2);
+    const layoutHtml = layouts.length ? `
+      <div class="layouts-section">
+        <h4>🗺️ Terrain Layouts (${layouts.length})</h4>
+        <div class="layout-gallery">
+          ${layouts.map((url, i) => `
+            <a href="${url}" target="_blank" title="Layout ${i+1}">
+              <img src="${url}" alt="Layout ${i+1}" loading="lazy">
+              <span class="layout-label">Layout ${i+1}</span>
+            </a>`).join('')}
+        </div>
+      </div>` : '';
     return `
     <div class="mission-card ${cls}">
       <img class="card-img" src="${mission.image}" alt="${mission.name}" loading="lazy">
@@ -446,6 +567,7 @@ function updateMissions() {
         ${mission.objectives ? `<span>🎯 ${mission.objectives} Objective Markers</span>` : ''}
       </div>
       <div class="scoring"><strong>Primary Scoring:</strong><ul>${renderScoring(mission.scoring)}</ul></div>
+      ${layoutHtml}
     </div>`;
   };
   missionCards.innerHTML = card(p1Data, p1Mission, 'p1-card') + card(p2Data, p2Mission, 'p2-card');
