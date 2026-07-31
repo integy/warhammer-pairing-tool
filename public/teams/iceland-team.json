@@ -8,9 +8,11 @@
       "forceDisposition": "reconnaissance",
       "scores": {
         "Terrence": 3,
+        "Gabrielle": 2,
         "Ivan": 1,
-        "Kevin": 2.5,
-        "Eric": 2
+        "Kevin": 2,
+        "Jireh": 3,
+        "Eric": 2.5
       }
     },
     {
@@ -19,8 +21,10 @@
       "forceDisposition": "purge-the-foe",
       "scores": {
         "Terrence": 3.5,
+        "Gabrielle": 3,
         "Ivan": 3.5,
         "Kevin": 3.5,
+        "Jireh": 3,
         "Eric": 4
       }
     },
@@ -30,8 +34,10 @@
       "forceDisposition": "priority-assets",
       "scores": {
         "Terrence": 2.5,
+        "Gabrielle": 3,
         "Ivan": 2.5,
         "Kevin": 2.5,
+        "Jireh": 2.5,
         "Eric": 3
       }
     },
@@ -43,6 +49,7 @@
         "Terrence": 3,
         "Ivan": 3,
         "Kevin": 2.5,
+        "Jireh": 3,
         "Eric": 3
       }
     },
@@ -52,9 +59,11 @@
       "forceDisposition": "take-and-hold",
       "scores": {
         "Terrence": 3,
-        "Ivan": 2.5,
+        "Gabrielle": 2.5,
+        "Ivan": 3,
         "Kevin": 2.5,
-        "Eric": 2
+        "Jireh": 2,
+        "Eric": 2.5
       }
     },
     {
@@ -63,9 +72,11 @@
       "forceDisposition": "reconnaissance",
       "scores": {
         "Terrence": 3,
-        "Ivan": 2.5,
+        "Gabrielle": 2,
+        "Ivan": 3,
         "Kevin": 3,
-        "Eric": 2
+        "Jireh": 3.5,
+        "Eric": 3
       }
     },
     {
@@ -75,7 +86,9 @@
       "scores": {
         "Terrence": 3.5,
         "Ivan": 3.5,
-        "Kevin": 3.5
+        "Kevin": 3.5,
+        "Jireh": 2.5,
+        "Eric": 3.5
       }
     },
     {
@@ -83,9 +96,11 @@
       "army": "Adeptus Mechanicus",
       "forceDisposition": "priority-assets",
       "scores": {
-        "Terrence": 3,
+        "Terrence": 3.5,
         "Ivan": 2.5,
-        "Kevin": 2.5
+        "Kevin": 2.5,
+        "Jireh": 3,
+        "Eric": 3.5
       }
     }
   ]
