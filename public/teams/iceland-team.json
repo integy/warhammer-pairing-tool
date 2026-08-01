@@ -9,7 +9,7 @@
       "scores": {
         "Terrence": 3,
         "Gabrielle": 2,
-        "Ivan": 1,
+        "Ivan": 1.5,
         "Kevin": 2,
         "Jireh": 3,
         "Eric": 2.5
@@ -22,7 +22,7 @@
       "scores": {
         "Terrence": 3.5,
         "Gabrielle": 3,
-        "Ivan": 3.5,
+        "Ivan": 3,
         "Kevin": 3.5,
         "Jireh": 3,
         "Eric": 4
@@ -35,7 +35,7 @@
       "scores": {
         "Terrence": 2.5,
         "Gabrielle": 3,
-        "Ivan": 2.5,
+        "Ivan": 2,
         "Kevin": 2.5,
         "Jireh": 2.5,
         "Eric": 3
