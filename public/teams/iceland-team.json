@@ -7,6 +7,7 @@
       "army": "Space Marines (Astartes)",
       "forceDisposition": "reconnaissance",
       "scores": {
+        "Kris": 3,
         "Terrence": 3,
         "Gabrielle": 2,
         "Ivan": 1.5,
@@ -20,6 +21,7 @@
       "army": "Imperial Knights",
       "forceDisposition": "purge-the-foe",
       "scores": {
+        "Kris": 4,
         "Terrence": 3.5,
         "Gabrielle": 3,
         "Ivan": 3,
@@ -33,6 +35,7 @@
       "army": "T'au Empire",
       "forceDisposition": "priority-assets",
       "scores": {
+        "Kris": 3.5,
         "Terrence": 2.5,
         "Gabrielle": 3,
         "Ivan": 2,
@@ -46,7 +49,9 @@
       "army": "Chaos Daemons",
       "forceDisposition": "disruption",
       "scores": {
+        "Kris": 3.5,
         "Terrence": 3,
+        "Gabrielle": 3.5,
         "Ivan": 3,
         "Kevin": 2.5,
         "Jireh": 3,
@@ -58,6 +63,7 @@
       "army": "Orks",
       "forceDisposition": "take-and-hold",
       "scores": {
+        "Kris": 2.5,
         "Terrence": 3,
         "Gabrielle": 2.5,
         "Ivan": 3,
@@ -71,8 +77,9 @@
       "army": "Necrons",
       "forceDisposition": "reconnaissance",
       "scores": {
+        "Kris": 3.5,
         "Terrence": 3,
-        "Gabrielle": 2,
+        "Gabrielle": 3,
         "Ivan": 3,
         "Kevin": 3,
         "Jireh": 3.5,
@@ -84,7 +91,9 @@
       "army": "Emperor's Children",
       "forceDisposition": "take-and-hold",
       "scores": {
+        "Kris": 3.5,
         "Terrence": 3.5,
+        "Gabrielle": 3,
         "Ivan": 3.5,
         "Kevin": 3.5,
         "Jireh": 2.5,
@@ -96,7 +105,9 @@
       "army": "Adeptus Mechanicus",
       "forceDisposition": "priority-assets",
       "scores": {
+        "Kris": 2,
         "Terrence": 3.5,
+        "Gabrielle": 2,
         "Ivan": 2.5,
         "Kevin": 2.5,
         "Jireh": 3,

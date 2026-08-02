@@ -8,7 +8,9 @@
       "forceDisposition": "reconnaissance",
       "scores": {
         "Quentin": 1,
+        "Kris": 3.5,
         "Terrence": 3,
+        "Gabrielle": 3.5,
         "Ivan": 2.5,
         "Kevin": 3,
         "Jireh": 3.5,
@@ -21,7 +23,9 @@
       "forceDisposition": "priority-assets",
       "scores": {
         "Quentin": 1,
+        "Kris": 2.5,
         "Terrence": 3.5,
+        "Gabrielle": 2.5,
         "Ivan": 3,
         "Kevin": 3,
         "Jireh": 2.5,
@@ -34,7 +38,9 @@
       "forceDisposition": "reconnaissance",
       "scores": {
         "Quentin": 1,
+        "Kris": 3.5,
         "Terrence": 3,
+        "Gabrielle": 2,
         "Ivan": 3,
         "Kevin": 2.5,
         "Jireh": 3,
@@ -47,7 +53,9 @@
       "forceDisposition": "disruption",
       "scores": {
         "Quentin": 1,
+        "Kris": 3,
         "Terrence": 2.5,
+        "Gabrielle": 3,
         "Ivan": 3,
         "Kevin": 3,
         "Jireh": 2.5,
@@ -60,7 +68,9 @@
       "forceDisposition": "take-and-hold",
       "scores": {
         "Quentin": 1,
+        "Kris": 3,
         "Terrence": 3,
+        "Gabrielle": 2.5,
         "Ivan": 2.5,
         "Kevin": 3.5,
         "Jireh": 3.5,
@@ -73,7 +83,9 @@
       "forceDisposition": "priority-assets",
       "scores": {
         "Quentin": 1,
+        "Kris": 2.5,
         "Terrence": 3.5,
+        "Gabrielle": 3,
         "Ivan": 3.5,
         "Kevin": 2.5,
         "Jireh": 2.5,
@@ -86,7 +98,9 @@
       "forceDisposition": "purge-the-foe",
       "scores": {
         "Quentin": 1,
+        "Kris": 3.5,
         "Terrence": 3,
+        "Gabrielle": 2,
         "Ivan": 2.5,
         "Kevin": 2.5,
         "Jireh": 2.5,
@@ -99,7 +113,9 @@
       "forceDisposition": "take-and-hold",
       "scores": {
         "Quentin": 1,
+        "Kris": 2.5,
         "Terrence": 2.5,
+        "Gabrielle": 2,
         "Ivan": 2.5,
         "Kevin": 2.5,
         "Jireh": 2,
