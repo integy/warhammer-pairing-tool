@@ -7,7 +7,7 @@
       "army": "Blood Angels",
       "forceDisposition": "priority-assets",
       "scores": {
-        "Kris": 4,
+        "Kris": 3.5,
         "Gabrielle": 3,
         "Ivan": 2.5,
         "Kevin": 2.5,
@@ -19,6 +19,7 @@
       "army": "Necrons",
       "forceDisposition": "take-and-hold",
       "scores": {
+        "Kris": 3,
         "Gabrielle": 3,
         "Ivan": 3,
         "Kevin": 3.5,
@@ -30,6 +31,7 @@
       "army": "Chaos Daemons",
       "forceDisposition": "disruption",
       "scores": {
+        "Kris": 2.5,
         "Gabrielle": 3,
         "Ivan": 3.5,
         "Kevin": 3,
@@ -41,6 +43,7 @@
       "army": "Adeptus Custodes",
       "forceDisposition": "take-and-hold",
       "scores": {
+        "Kris": 3.5,
         "Gabrielle": 2.5,
         "Ivan": 2.5,
         "Kevin": 3,
@@ -52,6 +55,7 @@
       "army": "Adepta Sororitas",
       "forceDisposition": "purge-the-foe",
       "scores": {
+        "Kris": 3.5,
         "Gabrielle": 3.5,
         "Ivan": 3,
         "Kevin": 3,
@@ -63,6 +67,7 @@
       "army": "Orks",
       "forceDisposition": "reconnaissance",
       "scores": {
+        "Kris": 3,
         "Gabrielle": 2,
         "Ivan": 2.5,
         "Kevin": 2.5,
@@ -74,6 +79,7 @@
       "army": "Death Guard",
       "forceDisposition": "priority-assets",
       "scores": {
+        "Kris": 3,
         "Gabrielle": 3.5,
         "Ivan": 3,
         "Kevin": 3,
@@ -85,6 +91,7 @@
       "army": "Tyranids",
       "forceDisposition": "disruption",
       "scores": {
+        "Kris": 2.5,
         "Gabrielle": 3,
         "Ivan": 3.5,
         "Kevin": 3,
