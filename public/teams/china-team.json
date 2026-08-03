@@ -7,7 +7,7 @@
       "army": "Adeptus Custodes",
       "forceDisposition": "reconnaissance",
       "scores": {
-        "Quentin": 1,
+        "Quentin": 2.5,
         "Kris": 3.5,
         "Terrence": 3,
         "Gabrielle": 3.5,
@@ -22,7 +22,7 @@
       "army": "Thousand Sons",
       "forceDisposition": "priority-assets",
       "scores": {
-        "Quentin": 1,
+        "Quentin": 3,
         "Kris": 2.5,
         "Terrence": 3.5,
         "Gabrielle": 2.5,
@@ -37,7 +37,7 @@
       "army": "Emperor's Children",
       "forceDisposition": "reconnaissance",
       "scores": {
-        "Quentin": 1,
+        "Quentin": 3,
         "Kris": 3.5,
         "Terrence": 3,
         "Gabrielle": 2,
@@ -52,7 +52,7 @@
       "army": "Dark Angels",
       "forceDisposition": "disruption",
       "scores": {
-        "Quentin": 1,
+        "Quentin": 3,
         "Kris": 3,
         "Terrence": 2.5,
         "Gabrielle": 3,
@@ -67,7 +67,7 @@
       "army": "Tyranids",
       "forceDisposition": "take-and-hold",
       "scores": {
-        "Quentin": 1,
+        "Quentin": 3.5,
         "Kris": 3,
         "Terrence": 3,
         "Gabrielle": 2.5,
@@ -82,7 +82,7 @@
       "army": "Chaos Space Marines",
       "forceDisposition": "priority-assets",
       "scores": {
-        "Quentin": 1,
+        "Quentin": 3.5,
         "Kris": 2.5,
         "Terrence": 3.5,
         "Gabrielle": 3,
@@ -97,7 +97,7 @@
       "army": "Necrons",
       "forceDisposition": "purge-the-foe",
       "scores": {
-        "Quentin": 1,
+        "Quentin": 2.5,
         "Kris": 3.5,
         "Terrence": 3,
         "Gabrielle": 2,
@@ -112,7 +112,7 @@
       "army": "Orks",
       "forceDisposition": "take-and-hold",
       "scores": {
-        "Quentin": 1,
+        "Quentin": 2.5,
         "Kris": 2.5,
         "Terrence": 2.5,
         "Gabrielle": 2,
