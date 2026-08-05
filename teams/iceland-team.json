@@ -83,7 +83,7 @@
       "forceDisposition": "reconnaissance",
       "scores": {
         "Quentin": 2.5,
-        "Kris": 3.5,
+        "Kris": 2.5,
         "Terrence": 3,
         "Gabrielle": 3,
         "Ivan": 2.5,
@@ -113,7 +113,7 @@
       "forceDisposition": "priority-assets",
       "scores": {
         "Quentin": 3.5,
-        "Kris": 2,
+        "Kris": 3,
         "Terrence": 3.5,
         "Gabrielle": 2,
         "Ivan": 2.5,
