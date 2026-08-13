@@ -7,11 +7,11 @@
       "army": "Orks",
       "forceDisposition": "take-and-hold",
       "scores": {
-        "Quentin": 2.5,
+        "Quentin": 3,
         "Kris": 2.5,
         "Terrence": 3,
-        "Gabrielle": 3,
-        "Ivan": 3,
+        "Gabrielle": 2.5,
+        "Ivan": 2,
         "Kevin": 2,
         "Jireh": 2,
         "Eric": 2
@@ -37,12 +37,12 @@
       "army": "Leagues of Votann",
       "forceDisposition": "disruption",
       "scores": {
-        "Quentin": 3.5,
-        "Kris": 2,
+        "Quentin": 3,
+        "Kris": 3,
         "Terrence": 3,
         "Gabrielle": 3,
-        "Ivan": 2.5,
-        "Kevin": 3,
+        "Ivan": 2,
+        "Kevin": 2.5,
         "Jireh": 3,
         "Eric": 2
       }
@@ -83,7 +83,7 @@
       "forceDisposition": "purge-the-foe",
       "scores": {
         "Quentin": 2,
-        "Kris": 2,
+        "Kris": 1,
         "Terrence": 2.5,
         "Gabrielle": 2,
         "Ivan": 3,
@@ -97,14 +97,14 @@
       "army": "Chaos Daemons",
       "forceDisposition": "priority-assets",
       "scores": {
-        "Quentin": 3,
+        "Quentin": 3.5,
         "Kris": 3,
         "Terrence": 3,
         "Gabrielle": 1.5,
         "Ivan": 2,
         "Kevin": 2.5,
         "Jireh": 3,
-        "Eric": 3
+        "Eric": 3.5
       }
     },
     {
@@ -113,13 +113,13 @@
       "forceDisposition": "reconnaissance",
       "scores": {
         "Quentin": 2,
-        "Kris": 3,
+        "Kris": 2.5,
         "Terrence": 2.5,
         "Gabrielle": 3,
         "Ivan": 1,
         "Kevin": 2.5,
         "Jireh": 3,
-        "Eric": 2.5
+        "Eric": 2
       }
     }
   ]
