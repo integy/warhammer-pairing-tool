@@ -14,7 +14,7 @@
         "Ivan": 3,
         "Kevin": 3,
         "Jireh": 3.5,
-        "Eric": 3.5
+        "Eric": 2
       }
     },
     {
@@ -29,7 +29,7 @@
         "Ivan": 3,
         "Kevin": 3,
         "Jireh": 2.5,
-        "Eric": 3.5
+        "Eric": 2.5
       }
     },
     {
@@ -40,7 +40,7 @@
         "Quentin": 3,
         "Kris": 3.5,
         "Terrence": 3,
-        "Gabrielle": 2.5,
+        "Gabrielle": 2,
         "Ivan": 3,
         "Kevin": 2.5,
         "Jireh": 3,
@@ -104,7 +104,7 @@
         "Ivan": 2.5,
         "Kevin": 2.5,
         "Jireh": 2.5,
-        "Eric": 2
+        "Eric": 1
       }
     },
     {
@@ -115,7 +115,7 @@
         "Quentin": 2.5,
         "Kris": 2.5,
         "Terrence": 2.5,
-        "Gabrielle": 2,
+        "Gabrielle": 2.5,
         "Ivan": 2.5,
         "Kevin": 2.5,
         "Jireh": 2,
