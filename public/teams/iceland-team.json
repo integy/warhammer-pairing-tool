@@ -101,7 +101,7 @@
         "Kris": 3,
         "Terrence": 3.5,
         "Gabrielle": 3,
-        "Ivan": 3.5,
+        "Ivan": 3,
         "Kevin": 2.5,
         "Jireh": 2.5,
         "Eric": 3.5
@@ -113,12 +113,12 @@
       "forceDisposition": "priority-assets",
       "scores": {
         "Quentin": 3.5,
-        "Kris": 2.5,
+        "Kris": 4,
         "Terrence": 3.5,
         "Gabrielle": 2,
         "Ivan": 2.5,
         "Kevin": 2.5,
-        "Jireh": 3,
+        "Jireh": 2.5,
         "Eric": 4
       }
     }
