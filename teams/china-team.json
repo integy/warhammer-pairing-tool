@@ -67,7 +67,7 @@
       "army": "Tyranids",
       "forceDisposition": "take-and-hold",
       "scores": {
-        "Quentin": 3.5,
+        "Quentin": 2,
         "Kris": 2,
         "Terrence": 3,
         "Gabrielle": 2.5,
@@ -83,7 +83,7 @@
       "forceDisposition": "priority-assets",
       "scores": {
         "Quentin": 3.5,
-        "Kris": 1.5,
+        "Kris": 1,
         "Terrence": 3.5,
         "Gabrielle": 3,
         "Ivan": 3.5,
@@ -98,7 +98,7 @@
       "forceDisposition": "purge-the-foe",
       "scores": {
         "Quentin": 2.5,
-        "Kris": 2,
+        "Kris": 2.5,
         "Terrence": 3,
         "Gabrielle": 2.5,
         "Ivan": 2,
