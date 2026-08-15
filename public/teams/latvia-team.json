@@ -21,7 +21,16 @@
       "name": "Felix Mathiasson",
       "army": "Adeptus Mechanicus",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Quentin": 2,
+        "Kris": 3,
+        "Terrence": 3,
+        "Gabrielle": 3,
+        "Ivan": 2.5,
+        "Kevin": 2.5,
+        "Jireh": 3,
+        "Eric": 2
+      }
     },
     {
       "name": "Fess M.",

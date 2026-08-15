@@ -128,6 +128,26 @@ def sync_from_xlsx(filepath: str, dry_run: bool = False):
         with open(team_path) as f:
             team_data = json.load(f)
 
+        # Resolve opponent header names to actual JSON player names.
+        # Headers are usually "Name\nArmy", but sometimes "Name Army" (space-separated,
+        # no newline) or other variants, so do exact match first then prefix/substring.
+        player_names = [p["name"] for p in team_data["players"]]
+        resolved = {}
+        for opp_name, scores in scores_by_opponent.items():
+            match = None
+            if opp_name in player_names:
+                match = opp_name
+            else:
+                for pn in player_names:
+                    if opp_name.startswith(pn) or pn in opp_name:
+                        match = pn
+                        break
+            if match:
+                resolved[match] = scores
+            else:
+                print(f"  ⚠ {sheet_name}: cannot resolve opponent '{opp_name}' — skip")
+        scores_by_opponent = resolved
+
         changed = False
         for p in team_data["players"]:
             if p["name"] in scores_by_opponent:
