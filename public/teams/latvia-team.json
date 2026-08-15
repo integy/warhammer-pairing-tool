@@ -6,7 +6,16 @@
       "name": "Andrew Nuzhny",
       "army": "Chaos Daemons",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Quentin": 2,
+        "Kris": 2,
+        "Terrence": 2.5,
+        "Gabrielle": 1.5,
+        "Ivan": 2.5,
+        "Kevin": 2.5,
+        "Jireh": 2,
+        "Eric": 2
+      }
     },
     {
       "name": "Felix Mathiasson",
@@ -18,37 +27,91 @@
       "name": "Fess M.",
       "army": "T'au Empire",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Quentin": 2.5,
+        "Kris": 1.5,
+        "Terrence": 2,
+        "Gabrielle": 2,
+        "Ivan": 3,
+        "Kevin": 2.5,
+        "Jireh": 3,
+        "Eric": 2.5
+      }
     },
     {
       "name": "Kostya Tu",
       "army": "Orks",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Quentin": 3,
+        "Kris": 2.5,
+        "Terrence": 3,
+        "Gabrielle": 3,
+        "Ivan": 2,
+        "Kevin": 2.5,
+        "Jireh": 1.5,
+        "Eric": 2
+      }
     },
     {
       "name": "Igors Rudz\u012btis",
       "army": "Tyranids",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Quentin": 3.5,
+        "Kris": 2,
+        "Terrence": 2.5,
+        "Gabrielle": 2.5,
+        "Ivan": 3,
+        "Kevin": 2.5,
+        "Jireh": 3,
+        "Eric": 3.5
+      }
     },
     {
       "name": "Darek Nik",
       "army": "Space Marines (Astartes)",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Quentin": 3,
+        "Kris": 2.5,
+        "Terrence": 3,
+        "Gabrielle": 1.5,
+        "Ivan": 1,
+        "Kevin": 2,
+        "Jireh": 2.5,
+        "Eric": 1.5
+      }
     },
     {
       "name": "Dairis Jurciks",
       "army": "World Eaters",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Quentin": 3,
+        "Kris": 3,
+        "Terrence": 3,
+        "Gabrielle": 2,
+        "Ivan": 3,
+        "Kevin": 3,
+        "Jireh": 3,
+        "Eric": 3
+      }
     },
     {
       "name": "George Yu",
       "army": "Emperor's Children",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Quentin": 2.5,
+        "Kris": 3,
+        "Terrence": 3,
+        "Gabrielle": 2,
+        "Ivan": 3,
+        "Kevin": 2.5,
+        "Jireh": 3,
+        "Eric": 2
+      }
     }
   ]
 }
