@@ -6,49 +6,121 @@
       "name": "kasper wennerby",
       "army": "T'au Empire",
       "forceDisposition": "reconnaissance",
-      "scores": {}
+      "scores": {
+        "Quentin": 2,
+        "Kris": 2,
+        "Terrence": 2,
+        "Gabrielle": 1.5,
+        "Ivan": 2.5,
+        "Kevin": 2.5,
+        "Jireh": 3,
+        "Eric": 2.5
+      }
     },
     {
       "name": "Matt Pugh",
       "army": "Necrons",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Quentin": 2.5,
+        "Kris": 2,
+        "Terrence": 3,
+        "Gabrielle": 2.5,
+        "Ivan": 2,
+        "Kevin": 2.5,
+        "Jireh": 2,
+        "Eric": 2
+      }
     },
     {
       "name": "Geoff Legg",
       "army": "Adeptus Custodes",
       "forceDisposition": "take-and-hold",
-      "scores": {}
+      "scores": {
+        "Quentin": 3,
+        "Kris": 3.5,
+        "Terrence": 2.5,
+        "Gabrielle": 1.5,
+        "Ivan": 1.5,
+        "Kevin": 2.5,
+        "Jireh": 3.5,
+        "Eric": 2
+      }
     },
     {
       "name": "Matt Ed",
       "army": "Adeptus Mechanicus",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Quentin": 2.5,
+        "Kris": 2.5,
+        "Terrence": 2.5,
+        "Gabrielle": 2.5,
+        "Ivan": 2.5,
+        "Kevin": 2,
+        "Jireh": 3,
+        "Eric": 2
+      }
     },
     {
       "name": "Osama Al Rumaihi",
       "army": "World Eaters",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Quentin": 3.5,
+        "Kris": 3.5,
+        "Terrence": 3.5,
+        "Gabrielle": 3.5,
+        "Ivan": 3,
+        "Kevin": 2.5,
+        "Jireh": 1.5,
+        "Eric": 3.5
+      }
     },
     {
       "name": "James Phillips",
       "army": "Death Guard",
       "forceDisposition": "priority-assets",
-      "scores": {}
+      "scores": {
+        "Quentin": 3,
+        "Kris": 2,
+        "Terrence": 3.5,
+        "Gabrielle": 2,
+        "Ivan": 2.5,
+        "Kevin": 2,
+        "Jireh": 3.5,
+        "Eric": 3
+      }
     },
     {
       "name": "Jai Hill",
       "army": "Leagues of Votann",
       "forceDisposition": "purge-the-foe",
-      "scores": {}
+      "scores": {
+        "Quentin": 2,
+        "Kris": 1,
+        "Terrence": 3,
+        "Gabrielle": 2.5,
+        "Ivan": 2,
+        "Kevin": 2,
+        "Jireh": 2,
+        "Eric": 1
+      }
     },
     {
       "name": "Terry Mo",
       "army": "Emperor's Children",
       "forceDisposition": "disruption",
-      "scores": {}
+      "scores": {
+        "Quentin": 2.5,
+        "Kris": 3,
+        "Terrence": 3,
+        "Gabrielle": 1.5,
+        "Ivan": 2.5,
+        "Kevin": 2.5,
+        "Jireh": 2.5,
+        "Eric": 3.5
+      }
     }
   ]
 }
