@@ -23,7 +23,7 @@
       "forceDisposition": "take-and-hold",
       "scores": {
         "Quentin": 2.5,
-        "Kris": 2,
+        "Kris": 2.5,
         "Terrence": 3,
         "Gabrielle": 2.5,
         "Ivan": 2,
@@ -53,10 +53,10 @@
       "forceDisposition": "priority-assets",
       "scores": {
         "Quentin": 2.5,
-        "Kris": 2.5,
+        "Kris": 3,
         "Terrence": 2.5,
         "Gabrielle": 2.5,
-        "Ivan": 2.5,
+        "Ivan": 3,
         "Kevin": 2,
         "Jireh": 3,
         "Eric": 2
@@ -70,7 +70,7 @@
         "Quentin": 3.5,
         "Kris": 3.5,
         "Terrence": 3.5,
-        "Gabrielle": 3.5,
+        "Gabrielle": 3,
         "Ivan": 3,
         "Kevin": 2.5,
         "Jireh": 1.5,
@@ -86,7 +86,7 @@
         "Kris": 2,
         "Terrence": 3.5,
         "Gabrielle": 2,
-        "Ivan": 2.5,
+        "Ivan": 2,
         "Kevin": 2,
         "Jireh": 3.5,
         "Eric": 3
