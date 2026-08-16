@@ -7,7 +7,14 @@
       "army": "Orks",
       "forceDisposition": "reconnaissance",
       "scores": {
-        "Eric": 3
+        "Quentin": 2,
+        "Kris": 3,
+        "Terrence": 3,
+        "Gabrielle": 3,
+        "Ivan": 3,
+        "Kevin": 2,
+        "Jireh": 2,
+        "Eric": 2
       }
     },
     {
@@ -15,7 +22,14 @@
       "army": "Necrons",
       "forceDisposition": "purge-the-foe",
       "scores": {
-        "Eric": 2.5
+        "Quentin": 2.5,
+        "Kris": 1.5,
+        "Terrence": 2.5,
+        "Gabrielle": 2.5,
+        "Ivan": 2,
+        "Kevin": 2.5,
+        "Jireh": 2.5,
+        "Eric": 3
       }
     },
     {
@@ -23,7 +37,14 @@
       "army": "Thousand Sons",
       "forceDisposition": "take-and-hold",
       "scores": {
-        "Eric": 3
+        "Quentin": 2.5,
+        "Kris": 2.5,
+        "Terrence": 2.5,
+        "Gabrielle": 2.5,
+        "Ivan": 1,
+        "Kevin": 2,
+        "Jireh": 2,
+        "Eric": 1
       }
     },
     {
@@ -31,6 +52,13 @@
       "army": "Leagues of Votann",
       "forceDisposition": "priority-assets",
       "scores": {
+        "Quentin": 2,
+        "Kris": 1.5,
+        "Terrence": 2.5,
+        "Gabrielle": 2.5,
+        "Ivan": 2,
+        "Kevin": 2,
+        "Jireh": 2,
         "Eric": 3
       }
     },
@@ -39,7 +67,14 @@
       "army": "Dark Angels",
       "forceDisposition": "priority-assets",
       "scores": {
-        "Eric": 3.5
+        "Quentin": 3,
+        "Kris": 2.5,
+        "Terrence": 2,
+        "Gabrielle": 2.5,
+        "Ivan": 1,
+        "Kevin": 2,
+        "Jireh": 2.5,
+        "Eric": 1.5
       }
     },
     {
@@ -47,6 +82,13 @@
       "army": "Imperial Knights",
       "forceDisposition": "purge-the-foe",
       "scores": {
+        "Quentin": 2.5,
+        "Kris": 4,
+        "Terrence": 4,
+        "Gabrielle": 3,
+        "Ivan": 3,
+        "Kevin": 3,
+        "Jireh": 3.5,
         "Eric": 4
       }
     },
@@ -55,6 +97,13 @@
       "army": "Grey Knights",
       "forceDisposition": "disruption",
       "scores": {
+        "Quentin": 3,
+        "Kris": 3,
+        "Terrence": 2,
+        "Gabrielle": 2,
+        "Ivan": 2.5,
+        "Kevin": 1.5,
+        "Jireh": 2,
         "Eric": 2
       }
     },
@@ -63,7 +112,14 @@
       "army": "Emperor's Children",
       "forceDisposition": "take-and-hold",
       "scores": {
-        "Eric": 3
+        "Quentin": 2,
+        "Kris": 2,
+        "Terrence": 3,
+        "Gabrielle": 1.5,
+        "Ivan": 2.5,
+        "Kevin": 2,
+        "Jireh": 2.5,
+        "Eric": 3.5
       }
     }
   ]
